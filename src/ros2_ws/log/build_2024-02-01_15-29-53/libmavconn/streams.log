@@ -1,0 +1,35 @@
+[0.076s] Invoking command in '/src/ros2_ws/build/libmavconn': /usr/local/bin/cmake /src/ros2_ws/src/mavros/libmavconn -DCMAKE_INSTALL_PREFIX=/src/ros2_ws/install/libmavconn
+[0.225s] -- The C compiler identification is GNU 9.4.0
+[0.358s] -- The CXX compiler identification is GNU 9.4.0
+[0.411s] -- Detecting C compiler ABI info
+[0.541s] -- Detecting C compiler ABI info - done
+[0.565s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.566s] -- Detecting C compile features
+[0.566s] -- Detecting C compile features - done
+[0.596s] -- Detecting CXX compiler ABI info
+[0.751s] -- Detecting CXX compiler ABI info - done
+[0.772s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.772s] -- Detecting CXX compile features
+[0.773s] -- Detecting CXX compile features - done
+[0.779s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/install/share/ament_cmake/cmake)
+[2.537s] -- Found Python3: /usr/bin/python3.8 (found version "3.8.10") found components: Interpreter 
+[2.717s] -- Found ASIO: /usr/include  
+[2.739s] [31mCMake Error at CMakeLists.txt:33 (find_package):
+[2.739s]   By not providing "Findmavlink.cmake" in CMAKE_MODULE_PATH this project has
+[2.739s]   asked CMake to find a package configuration file provided by "mavlink", but
+[2.740s]   CMake did not find one.
+[2.740s] 
+[2.740s]   Could not find a package configuration file provided by "mavlink" with any
+[2.741s]   of the following names:
+[2.741s] 
+[2.741s]     mavlinkConfig.cmake
+[2.742s]     mavlink-config.cmake
+[2.742s] 
+[2.742s]   Add the installation prefix of "mavlink" to CMAKE_PREFIX_PATH or set
+[2.742s]   "mavlink_DIR" to a directory containing one of the above files.  If
+[2.743s]   "mavlink" provides a separate development package or SDK, be sure it has
+[2.743s]   been installed.
+[2.743s] 
+[2.743s] [0m
+[2.744s] -- Configuring incomplete, errors occurred!
+[2.759s] Invoked command in '/src/ros2_ws/build/libmavconn' returned '1': /usr/local/bin/cmake /src/ros2_ws/src/mavros/libmavconn -DCMAKE_INSTALL_PREFIX=/src/ros2_ws/install/libmavconn

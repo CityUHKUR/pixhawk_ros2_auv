@@ -1,0 +1,6 @@
+Invoking command in '/src/ros2_ws/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/src/ros2_ws/install/test_pubsub:/opt/ros/iron /usr/bin/cmake /src/ros2_ws/src/px4_msgs -DCMAKE_INSTALL_PREFIX=/src/ros2_ws/install/px4_msgs
+Invoked command in '/src/ros2_ws/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/src/ros2_ws/install/test_pubsub:/opt/ros/iron /usr/bin/cmake /src/ros2_ws/src/px4_msgs -DCMAKE_INSTALL_PREFIX=/src/ros2_ws/install/px4_msgs
+Invoking command in '/src/ros2_ws/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/src/ros2_ws/install/test_pubsub:/opt/ros/iron /usr/bin/cmake --build /src/ros2_ws/build/px4_msgs -- -j16 -l16
+Invoked command in '/src/ros2_ws/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/src/ros2_ws/install/test_pubsub:/opt/ros/iron /usr/bin/cmake --build /src/ros2_ws/build/px4_msgs -- -j16 -l16
+Invoking command in '/src/ros2_ws/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/src/ros2_ws/install/test_pubsub:/opt/ros/iron /usr/bin/cmake --install /src/ros2_ws/build/px4_msgs
+Invoked command in '/src/ros2_ws/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/src/ros2_ws/install/test_pubsub:/opt/ros/iron /usr/bin/cmake --install /src/ros2_ws/build/px4_msgs

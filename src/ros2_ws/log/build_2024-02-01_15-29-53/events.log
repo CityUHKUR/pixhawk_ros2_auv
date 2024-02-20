@@ -1,0 +1,119 @@
+[0.000000] (-) TimerEvent: {}
+[0.000723] (libmavconn) JobQueued: {'identifier': 'libmavconn', 'dependencies': OrderedDict()}
+[0.001266] (mavros_msgs) JobQueued: {'identifier': 'mavros_msgs', 'dependencies': OrderedDict()}
+[0.001576] (mavros) JobQueued: {'identifier': 'mavros', 'dependencies': OrderedDict([('libmavconn', '/src/ros2_ws/install/libmavconn'), ('mavros_msgs', '/src/ros2_ws/install/mavros_msgs')])}
+[0.002192] (mavros_extras) JobQueued: {'identifier': 'mavros_extras', 'dependencies': OrderedDict([('libmavconn', '/src/ros2_ws/install/libmavconn'), ('mavros_msgs', '/src/ros2_ws/install/mavros_msgs'), ('mavros', '/src/ros2_ws/install/mavros')])}
+[0.002315] (libmavconn) JobStarted: {'identifier': 'libmavconn'}
+[0.037655] (mavros_msgs) JobStarted: {'identifier': 'mavros_msgs'}
+[0.069621] (libmavconn) JobProgress: {'identifier': 'libmavconn', 'progress': 'cmake'}
+[0.070506] (libmavconn) Command: {'cmd': ['/usr/local/bin/cmake', '/src/ros2_ws/src/mavros/libmavconn', '-DCMAKE_INSTALL_PREFIX=/src/ros2_ws/install/libmavconn'], 'cwd': '/src/ros2_ws/build/libmavconn', 'env': OrderedDict([('OPENBLAS_CORETYPE', 'ARMV8'), ('PYTHONIOENCODING', 'utf-8'), ('HOSTNAME', 'urorinnanoalpha'), ('GIT_ASKPASS', '/root/.vscode-server-insiders/bin/5d344004f839677def958534b58e854a9ae26fd0-insider/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/install/lib:/usr/local/cuda/lib64:'), ('BROWSER', '/root/.vscode-server-insiders/bin/5d344004f839677def958534b58e854a9ae26fd0-insider/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/src/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.86.0-insider'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-06d472ca-973b-4e94-9111-fe1b6030f1a9.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server-insiders/bin/5d344004f839677def958534b58e854a9ae26fd0-insider/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server-insiders/bin/5d344004f839677def958534b58e854a9ae26fd0-insider/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/opt/ros/humble/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-465b8153-4b99-4e9c-a5db-558a59b3c174.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/ros/humble/install/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/humble/install/lib/pkgconfig'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/install/bin:/root/.vscode-server-insiders/bin/5d344004f839677def958534b58e854a9ae26fd0-insider/bin/remote-cli:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X5","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-fa4e12b9ee.sock'), ('ROS_ROOT', '/opt/ros/humble'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/opt/ros/humble/install'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X5'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/src/ros2_ws/build/libmavconn'), ('CUDA_HOME', '/usr/local/cuda'), ('PYTHONPATH', '/opt/ros/humble/install/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble/install')]), 'shell': False}
+[0.084413] (mavros_msgs) JobProgress: {'identifier': 'mavros_msgs', 'progress': 'cmake'}
+[0.084971] (mavros_msgs) Command: {'cmd': ['/usr/local/bin/cmake', '/src/ros2_ws/src/mavros/mavros_msgs', '-DCMAKE_INSTALL_PREFIX=/src/ros2_ws/install/mavros_msgs'], 'cwd': '/src/ros2_ws/build/mavros_msgs', 'env': OrderedDict([('OPENBLAS_CORETYPE', 'ARMV8'), ('PYTHONIOENCODING', 'utf-8'), ('HOSTNAME', 'urorinnanoalpha'), ('GIT_ASKPASS', '/root/.vscode-server-insiders/bin/5d344004f839677def958534b58e854a9ae26fd0-insider/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/install/lib:/usr/local/cuda/lib64:'), ('BROWSER', '/root/.vscode-server-insiders/bin/5d344004f839677def958534b58e854a9ae26fd0-insider/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/src/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.86.0-insider'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-06d472ca-973b-4e94-9111-fe1b6030f1a9.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server-insiders/bin/5d344004f839677def958534b58e854a9ae26fd0-insider/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server-insiders/bin/5d344004f839677def958534b58e854a9ae26fd0-insider/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/opt/ros/humble/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-465b8153-4b99-4e9c-a5db-558a59b3c174.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/ros/humble/install/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/humble/install/lib/pkgconfig'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/install/bin:/root/.vscode-server-insiders/bin/5d344004f839677def958534b58e854a9ae26fd0-insider/bin/remote-cli:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X5","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-fa4e12b9ee.sock'), ('ROS_ROOT', '/opt/ros/humble'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/opt/ros/humble/install'), ('DEBIAN_FRONTEND', 'noninteractive'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X5'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/src/ros2_ws/build/mavros_msgs'), ('CUDA_HOME', '/usr/local/cuda'), ('PYTHONPATH', '/opt/ros/humble/install/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble/install')]), 'shell': False}
+[0.099199] (-) TimerEvent: {}
+[0.199919] (-) TimerEvent: {}
+[0.226822] (libmavconn) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.236661] (mavros_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.300426] (-) TimerEvent: {}
+[0.360294] (libmavconn) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.375062] (mavros_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.400609] (-) TimerEvent: {}
+[0.413478] (libmavconn) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.424574] (mavros_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.500792] (-) TimerEvent: {}
+[0.543027] (libmavconn) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.555263] (mavros_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.566278] (libmavconn) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.567773] (libmavconn) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.568462] (libmavconn) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.579917] (mavros_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.580902] (mavros_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.581336] (mavros_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.598025] (libmavconn) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.600882] (-) TimerEvent: {}
+[0.608669] (mavros_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.701099] (-) TimerEvent: {}
+[0.752897] (libmavconn) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.761770] (mavros_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.773894] (libmavconn) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.774649] (libmavconn) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.775679] (libmavconn) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.781309] (libmavconn) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/install/share/ament_cmake/cmake)\n'}
+[0.781730] (mavros_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.782510] (mavros_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.783532] (mavros_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.789044] (mavros_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/install/share/ament_cmake/cmake)\n'}
+[0.801243] (-) TimerEvent: {}
+[0.901920] (-) TimerEvent: {}
+[1.002591] (-) TimerEvent: {}
+[1.103234] (-) TimerEvent: {}
+[1.203883] (-) TimerEvent: {}
+[1.304537] (-) TimerEvent: {}
+[1.405265] (-) TimerEvent: {}
+[1.505926] (-) TimerEvent: {}
+[1.606807] (-) TimerEvent: {}
+[1.707643] (-) TimerEvent: {}
+[1.808431] (-) TimerEvent: {}
+[1.909099] (-) TimerEvent: {}
+[2.009917] (-) TimerEvent: {}
+[2.110592] (-) TimerEvent: {}
+[2.211228] (-) TimerEvent: {}
+[2.311874] (-) TimerEvent: {}
+[2.412511] (-) TimerEvent: {}
+[2.513176] (-) TimerEvent: {}
+[2.538632] (libmavconn) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.8 (found version "3.8.10") found components: Interpreter \n'}
+[2.562983] (mavros_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.8 (found version "3.8.10") found components: Interpreter \n'}
+[2.613345] (-) TimerEvent: {}
+[2.714067] (-) TimerEvent: {}
+[2.718811] (libmavconn) StdoutLine: {'line': b'-- Found ASIO: /usr/include  \n'}
+[2.735591] (mavros_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/install/share/rosidl_default_generators/cmake)\n'}
+[2.740491] (libmavconn) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:33 (find_package):\n'}
+[2.741170] (libmavconn) StderrLine: {'line': b'  By not providing "Findmavlink.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[2.741545] (libmavconn) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "mavlink", but\n'}
+[2.741873] (libmavconn) StderrLine: {'line': b'  CMake did not find one.\n'}
+[2.742179] (libmavconn) StderrLine: {'line': b'\n'}
+[2.742646] (libmavconn) StderrLine: {'line': b'  Could not find a package configuration file provided by "mavlink" with any\n'}
+[2.742958] (libmavconn) StderrLine: {'line': b'  of the following names:\n'}
+[2.743245] (libmavconn) StderrLine: {'line': b'\n'}
+[2.743525] (libmavconn) StderrLine: {'line': b'    mavlinkConfig.cmake\n'}
+[2.743801] (libmavconn) StderrLine: {'line': b'    mavlink-config.cmake\n'}
+[2.744073] (libmavconn) StderrLine: {'line': b'\n'}
+[2.744337] (libmavconn) StderrLine: {'line': b'  Add the installation prefix of "mavlink" to CMAKE_PREFIX_PATH or set\n'}
+[2.744607] (libmavconn) StderrLine: {'line': b'  "mavlink_DIR" to a directory containing one of the above files.  If\n'}
+[2.744875] (libmavconn) StderrLine: {'line': b'  "mavlink" provides a separate development package or SDK, be sure it has\n'}
+[2.745143] (libmavconn) StderrLine: {'line': b'  been installed.\n'}
+[2.745411] (libmavconn) StderrLine: {'line': b'\n'}
+[2.745673] (libmavconn) StderrLine: {'line': b'\x1b[0m\n'}
+[2.746140] (mavros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.746602] (libmavconn) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.754320] (mavros_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/install/share/rosidl_adapter/cmake)\n'}
+[2.760637] (libmavconn) CommandEnded: {'returncode': 1}
+[2.814296] (-) TimerEvent: {}
+[2.851179] (mavros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.879518] (libmavconn) JobEnded: {'identifier': 'libmavconn', 'rc': 1}
+[2.914489] (-) TimerEvent: {}
+[2.940688] (mavros_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/install/share/builtin_interfaces/cmake)\n'}
+[2.994897] (mavros_msgs) StdoutLine: {'line': b'-- Found rcl_interfaces: 1.2.1 (/opt/ros/humble/install/share/rcl_interfaces/cmake)\n'}
+[3.014643] (-) TimerEvent: {}
+[3.091853] (mavros_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:18 (find_package):\n'}
+[3.092439] (mavros_msgs) StderrLine: {'line': b'  By not providing "Findgeographic_msgs.cmake" in CMAKE_MODULE_PATH this\n'}
+[3.092663] (mavros_msgs) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[3.092848] (mavros_msgs) StderrLine: {'line': b'  "geographic_msgs", but CMake did not find one.\n'}
+[3.093019] (mavros_msgs) StderrLine: {'line': b'\n'}
+[3.093182] (mavros_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "geographic_msgs"\n'}
+[3.093343] (mavros_msgs) StderrLine: {'line': b'  with any of the following names:\n'}
+[3.093518] (mavros_msgs) StderrLine: {'line': b'\n'}
+[3.093667] (mavros_msgs) StderrLine: {'line': b'    geographic_msgsConfig.cmake\n'}
+[3.093815] (mavros_msgs) StderrLine: {'line': b'    geographic_msgs-config.cmake\n'}
+[3.093961] (mavros_msgs) StderrLine: {'line': b'\n'}
+[3.094104] (mavros_msgs) StderrLine: {'line': b'  Add the installation prefix of "geographic_msgs" to CMAKE_PREFIX_PATH or\n'}
+[3.094252] (mavros_msgs) StderrLine: {'line': b'  set "geographic_msgs_DIR" to a directory containing one of the above files.\n'}
+[3.094440] (mavros_msgs) StderrLine: {'line': b'  If "geographic_msgs" provides a separate development package or SDK, be\n'}
+[3.094589] (mavros_msgs) StderrLine: {'line': b'  sure it has been installed.\n'}
+[3.094737] (mavros_msgs) StderrLine: {'line': b'\n'}
+[3.094881] (mavros_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[3.095032] (mavros_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.114522] (mavros_msgs) JobEnded: {'identifier': 'mavros_msgs', 'rc': 'SIGINT'}
+[3.115617] (-) TimerEvent: {}
+[3.126774] (mavros) JobSkipped: {'identifier': 'mavros'}
+[3.126935] (mavros_extras) JobSkipped: {'identifier': 'mavros_extras'}
+[3.127000] (-) EventReactorShutdown: {}

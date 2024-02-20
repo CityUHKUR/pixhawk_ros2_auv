@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  ros_pixhawk_node:
+    build: .
+    # image: your_image_name # Uncomment this line and comment the "build: ." line if you want to directly use a built image
+    environment:
+      - "ROS_DOMAIN_ID=42" # Important for ROS2 DDS, do not change if you want to communicate with other peoples containers
+      - "NVIDIA_VISIBLE_DEVICES=all" # Make CUDA devices visible
+      - "DISPLAY=:1" # ID of display, can be :0/:1/..., depends on how your computer's displays are setup
+    volumes:
+      - ./src:/src # Mount the src directory, which contains your ros2 workspace
+      - /tmp/.X11-unix:/tmp/.X11-unix # For enabling display (rqt gui, etc.) on UNIX machines (Linux, MacOS)
+      - /dev:/dev # Mount the /dev directory for USB connectivity
+    # runtime: nvidia # For enabling nvidia runtime
+    network_mode: "host" # Use the same network as the host, vital for ROS2 communication
+    ipc: host # Used for shared memory IPC comuncation
+    pid: host # Ensures rtps_app_id in GUID remains unique
+    privileged: true
+    stdin_open: true
+    tty: true
+

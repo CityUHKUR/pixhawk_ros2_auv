@@ -1,0 +1,4 @@
+[console_scripts]
+publisher = test_pubsub.publisher:main
+subscriber = test_pubsub.subscriber:main
+

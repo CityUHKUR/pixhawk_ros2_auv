@@ -1,0 +1,21 @@
+running egg_info
+writing ../../build/test_pubsub/imu_publisher.egg-info/PKG-INFO
+writing dependency_links to ../../build/test_pubsub/imu_publisher.egg-info/dependency_links.txt
+writing entry points to ../../build/test_pubsub/imu_publisher.egg-info/entry_points.txt
+writing requirements to ../../build/test_pubsub/imu_publisher.egg-info/requires.txt
+writing top-level names to ../../build/test_pubsub/imu_publisher.egg-info/top_level.txt
+reading manifest file '../../build/test_pubsub/imu_publisher.egg-info/SOURCES.txt'
+writing manifest file '../../build/test_pubsub/imu_publisher.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying resource/imu_publisher -> /src/ros2_ws/install/test_pubsub/share/ament_index/resource_index/packages
+creating /src/ros2_ws/install/test_pubsub/share/imu_publisher
+copying package.xml -> /src/ros2_ws/install/test_pubsub/share/imu_publisher
+running install_egg_info
+Copying ../../build/test_pubsub/imu_publisher.egg-info to /src/ros2_ws/install/test_pubsub/lib/python3.10/site-packages/imu_publisher-0.0.0-py3.10.egg-info
+running install_scripts
+Installing publisher script to /src/ros2_ws/install/test_pubsub/lib/imu_publisher
+writing list of installed files to '/src/ros2_ws/build/test_pubsub/install.log'

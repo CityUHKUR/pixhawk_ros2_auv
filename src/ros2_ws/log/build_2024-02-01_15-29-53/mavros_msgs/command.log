@@ -1,0 +1,1 @@
+Invoking command in '/src/ros2_ws/build/mavros_msgs': /usr/local/bin/cmake /src/ros2_ws/src/mavros/mavros_msgs -DCMAKE_INSTALL_PREFIX=/src/ros2_ws/install/mavros_msgs

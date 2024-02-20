@@ -1,0 +1,112 @@
+[0.036s] Invoking command in '/src/ros2_ws/build/px4_ros_com': AMENT_PREFIX_PATH=/src/ros2_ws/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/src/ros2_ws/install/px4_msgs:/src/ros2_ws/install/microxrcedds_agent:/src/ros2_ws/install/test_pubsub:/opt/ros/iron LD_LIBRARY_PATH=/src/ros2_ws/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/src/ros2_ws/install/px4_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /src/ros2_ws/src/px4_ros_com -DCMAKE_INSTALL_PREFIX=/src/ros2_ws/install/px4_ros_com
+[0.082s] -- The C compiler identification is GNU 11.4.0
+[0.129s] -- The CXX compiler identification is GNU 11.4.0
+[0.135s] -- Detecting C compiler ABI info
+[0.198s] -- Detecting C compiler ABI info - done
+[0.203s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.203s] -- Detecting C compile features
+[0.203s] -- Detecting C compile features - done
+[0.205s] -- Detecting CXX compiler ABI info
+[0.275s] -- Detecting CXX compiler ABI info - done
+[0.280s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.280s] -- Detecting CXX compile features
+[0.281s] -- Detecting CXX compile features - done
+[0.284s] -- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.395s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.471s] -- Found builtin_interfaces: 1.6.0 (/opt/ros/iron/share/builtin_interfaces/cmake)
+[0.498s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[0.509s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[0.522s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.538s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.559s] -- Found eigen3_cmake_module: 0.2.2 (/opt/ros/iron/share/eigen3_cmake_module/cmake)
+[0.567s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.568s] -- Found geometry_msgs: 5.0.0 (/opt/ros/iron/share/geometry_msgs/cmake)
+[0.630s] -- Found px4_msgs: 2.0.1 (/src/ros2_ws/install/px4_msgs/share/px4_msgs/cmake)
+[0.704s] -- Found rclcpp: 21.0.3 (/opt/ros/iron/share/rclcpp/cmake)
+[0.791s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[0.793s] -- Found rmw_fastrtps_cpp: 7.1.1 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[0.901s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.922s] -- Found FastRTPS: /opt/ros/iron/include  
+[0.961s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.092s] -- Found sensor_msgs: 5.0.0 (/opt/ros/iron/share/sensor_msgs/cmake)
+[1.174s] -- Found ament_lint_auto: 0.14.2 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[1.240s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.245s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.245s] -- Configured cppcheck include dirs: /src/ros2_ws/src/px4_ros_com/include;$<BUILD_INTERFACE:/src/ros2_ws/src/px4_ros_com/include/px4_ros_com>
+[1.245s] -- Configured cppcheck exclude dirs and/or files: 
+[1.250s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.250s] -- Configured cpplint exclude dirs and/or files: 
+[1.251s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.251s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.252s] -- Added test 'lint_cmake' to check CMake code style
+[1.253s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.257s] -- Added test 'uncrustify' to check C / C++ code style
+[1.257s] -- Configured uncrustify additional arguments: 
+[1.258s] -- Added test 'xmllint' to check XML markup files
+[1.260s] -- Configuring done
+[1.282s] -- Generating done
+[1.284s] -- Build files have been written to: /src/ros2_ws/build/px4_ros_com
+[1.292s] Invoked command in '/src/ros2_ws/build/px4_ros_com' returned '0': AMENT_PREFIX_PATH=/src/ros2_ws/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/src/ros2_ws/install/px4_msgs:/src/ros2_ws/install/microxrcedds_agent:/src/ros2_ws/install/test_pubsub:/opt/ros/iron LD_LIBRARY_PATH=/src/ros2_ws/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/src/ros2_ws/install/px4_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /src/ros2_ws/src/px4_ros_com -DCMAKE_INSTALL_PREFIX=/src/ros2_ws/install/px4_ros_com
+[1.293s] Invoking command in '/src/ros2_ws/build/px4_ros_com': AMENT_PREFIX_PATH=/src/ros2_ws/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/src/ros2_ws/install/px4_msgs:/src/ros2_ws/install/microxrcedds_agent:/src/ros2_ws/install/test_pubsub:/opt/ros/iron LD_LIBRARY_PATH=/src/ros2_ws/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/src/ros2_ws/install/px4_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /src/ros2_ws/build/px4_ros_com -- -j16 -l16
+[1.341s] [ 50%] [32mBuilding CXX object CMakeFiles/sensor_combined_listener.dir/src/examples/listeners/sensor_combined_listener.cpp.o[0m
+[1.341s] [ 50%] [32mBuilding CXX object CMakeFiles/frame_transforms.dir/src/lib/frame_transforms.cpp.o[0m
+[1.341s] [ 50%] [32mBuilding CXX object CMakeFiles/debug_vect_advertiser.dir/src/examples/advertisers/debug_vect_advertiser.cpp.o[0m
+[1.341s] [ 50%] [32mBuilding CXX object CMakeFiles/offboard_control.dir/src/examples/offboard/offboard_control.cpp.o[0m
+[1.341s] [ 50%] [32mBuilding CXX object CMakeFiles/vehicle_gps_position_listener.dir/src/examples/listeners/vehicle_gps_position_listener.cpp.o[0m
+[5.094s] [ 60%] [32m[1mLinking CXX executable debug_vect_advertiser[0m
+[5.268s] [ 60%] Built target debug_vect_advertiser
+[5.609s] [ 70%] [32m[1mLinking CXX executable offboard_control[0m
+[5.792s] [ 70%] Built target offboard_control
+[6.989s] [ 80%] [32m[1mLinking CXX shared library libframe_transforms.so[0m
+[7.104s] [ 90%] [32m[1mLinking CXX executable vehicle_gps_position_listener[0m
+[7.121s] [100%] [32m[1mLinking CXX executable sensor_combined_listener[0m
+[7.219s] [100%] Built target frame_transforms
+[7.385s] [100%] Built target vehicle_gps_position_listener
+[7.398s] [100%] Built target sensor_combined_listener
+[7.409s] Invoked command in '/src/ros2_ws/build/px4_ros_com' returned '0': AMENT_PREFIX_PATH=/src/ros2_ws/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/src/ros2_ws/install/px4_msgs:/src/ros2_ws/install/microxrcedds_agent:/src/ros2_ws/install/test_pubsub:/opt/ros/iron LD_LIBRARY_PATH=/src/ros2_ws/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/src/ros2_ws/install/px4_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /src/ros2_ws/build/px4_ros_com -- -j16 -l16
+[7.446s] Invoking command in '/src/ros2_ws/build/px4_ros_com': AMENT_PREFIX_PATH=/src/ros2_ws/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/src/ros2_ws/install/px4_msgs:/src/ros2_ws/install/microxrcedds_agent:/src/ros2_ws/install/test_pubsub:/opt/ros/iron LD_LIBRARY_PATH=/src/ros2_ws/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/src/ros2_ws/install/px4_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /src/ros2_ws/build/px4_ros_com
+[7.453s] -- Install configuration: ""
+[7.453s] -- Installing: /src/ros2_ws/install/px4_ros_com/lib/px4_ros_com/sensor_combined_listener
+[7.458s] -- Set runtime path of "/src/ros2_ws/install/px4_ros_com/lib/px4_ros_com/sensor_combined_listener" to ""
+[7.458s] -- Installing: /src/ros2_ws/install/px4_ros_com/lib/px4_ros_com/vehicle_gps_position_listener
+[7.464s] -- Set runtime path of "/src/ros2_ws/install/px4_ros_com/lib/px4_ros_com/vehicle_gps_position_listener" to ""
+[7.464s] -- Installing: /src/ros2_ws/install/px4_ros_com/lib/px4_ros_com/debug_vect_advertiser
+[7.465s] -- Set runtime path of "/src/ros2_ws/install/px4_ros_com/lib/px4_ros_com/debug_vect_advertiser" to ""
+[7.465s] -- Installing: /src/ros2_ws/install/px4_ros_com/lib/px4_ros_com/offboard_control
+[7.467s] -- Set runtime path of "/src/ros2_ws/install/px4_ros_com/lib/px4_ros_com/offboard_control" to ""
+[7.467s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com/environment/library_path.sh
+[7.468s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com/environment/library_path.dsv
+[7.468s] -- Installing: /src/ros2_ws/install/px4_ros_com/include/px4_ros_com
+[7.468s] -- Installing: /src/ros2_ws/install/px4_ros_com/include/px4_ros_com/frame_transforms.h
+[7.468s] -- Installing: /src/ros2_ws/install/px4_ros_com/lib/libframe_transforms.so
+[7.473s] -- Set runtime path of "/src/ros2_ws/install/px4_ros_com/lib/libframe_transforms.so" to ""
+[7.473s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com//launch
+[7.473s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com//launch/offboard_control_launch.yaml
+[7.473s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com//launch/sensor_combined_listener.launch.py
+[7.473s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com//test
+[7.473s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com//test/__init__.py
+[7.474s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com//test/pipeline_io_test.py
+[7.474s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com//test/test_input.py
+[7.474s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com//test/test_output.py
+[7.474s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/ament_index/resource_index/package_run_dependencies/px4_ros_com
+[7.474s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/ament_index/resource_index/parent_prefix_path/px4_ros_com
+[7.474s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.sh
+[7.474s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.dsv
+[7.474s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com/environment/path.sh
+[7.475s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com/environment/path.dsv
+[7.475s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com/local_setup.bash
+[7.475s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com/local_setup.sh
+[7.475s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com/local_setup.zsh
+[7.475s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com/local_setup.dsv
+[7.475s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com/package.dsv
+[7.475s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/ament_index/resource_index/packages/px4_ros_com
+[7.476s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport.cmake
+[7.476s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport-noconfig.cmake
+[7.476s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.476s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_targets-extras.cmake
+[7.476s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.476s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_libraries-extras.cmake
+[7.476s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig.cmake
+[7.476s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig-version.cmake
+[7.477s] -- Installing: /src/ros2_ws/install/px4_ros_com/share/px4_ros_com/package.xml
+[7.479s] Invoked command in '/src/ros2_ws/build/px4_ros_com' returned '0': AMENT_PREFIX_PATH=/src/ros2_ws/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/src/ros2_ws/install/px4_msgs:/src/ros2_ws/install/microxrcedds_agent:/src/ros2_ws/install/test_pubsub:/opt/ros/iron LD_LIBRARY_PATH=/src/ros2_ws/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/src/ros2_ws/install/px4_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /src/ros2_ws/build/px4_ros_com

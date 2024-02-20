@@ -1,0 +1,4 @@
+Invoking command in '/src/ros2_ws/build/microxrcedds_agent': /usr/bin/cmake --build /src/ros2_ws/build/microxrcedds_agent -- -j16 -l16
+Invoked command in '/src/ros2_ws/build/microxrcedds_agent' returned '0': /usr/bin/cmake --build /src/ros2_ws/build/microxrcedds_agent -- -j16 -l16
+Invoking command in '/src/ros2_ws/build/microxrcedds_agent': /usr/bin/cmake --install /src/ros2_ws/build/microxrcedds_agent
+Invoked command in '/src/ros2_ws/build/microxrcedds_agent' returned '0': /usr/bin/cmake --install /src/ros2_ws/build/microxrcedds_agent

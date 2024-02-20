@@ -1,0 +1,30 @@
+[0.412s] Invoking command in '/src/ros2_ws/src/imu_publisher': PYTHONPATH=/src/ros2_ws/build/test_pubsub/prefix_override:/src/ros2_ws/install/test_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test_pubsub build --build-base /src/ros2_ws/build/test_pubsub/build install --record /src/ros2_ws/build/test_pubsub/install.log --single-version-externally-managed
+[0.547s] running egg_info
+[0.547s] creating ../../build/test_pubsub/imu_publisher.egg-info
+[0.547s] writing ../../build/test_pubsub/imu_publisher.egg-info/PKG-INFO
+[0.548s] writing dependency_links to ../../build/test_pubsub/imu_publisher.egg-info/dependency_links.txt
+[0.548s] writing entry points to ../../build/test_pubsub/imu_publisher.egg-info/entry_points.txt
+[0.548s] writing requirements to ../../build/test_pubsub/imu_publisher.egg-info/requires.txt
+[0.548s] writing top-level names to ../../build/test_pubsub/imu_publisher.egg-info/top_level.txt
+[0.548s] writing manifest file '../../build/test_pubsub/imu_publisher.egg-info/SOURCES.txt'
+[0.549s] reading manifest file '../../build/test_pubsub/imu_publisher.egg-info/SOURCES.txt'
+[0.550s] writing manifest file '../../build/test_pubsub/imu_publisher.egg-info/SOURCES.txt'
+[0.550s] running build
+[0.550s] running build_py
+[0.550s] creating /src/ros2_ws/build/test_pubsub/build
+[0.550s] creating /src/ros2_ws/build/test_pubsub/build/lib
+[0.550s] creating /src/ros2_ws/build/test_pubsub/build/lib/imu_publisher
+[0.550s] copying imu_publisher/__init__.py -> /src/ros2_ws/build/test_pubsub/build/lib/imu_publisher
+[0.550s] copying imu_publisher/publisher.py -> /src/ros2_ws/build/test_pubsub/build/lib/imu_publisher
+[0.550s] running install
+[0.551s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.551s]   warnings.warn(
+[0.551s] running install_lib
+[0.551s] running install_data
+[0.552s] running install_egg_info
+[0.553s] removing '/src/ros2_ws/install/test_pubsub/lib/python3.10/site-packages/imu_publisher-0.0.0-py3.10.egg-info' (and everything under it)
+[0.553s] Copying ../../build/test_pubsub/imu_publisher.egg-info to /src/ros2_ws/install/test_pubsub/lib/python3.10/site-packages/imu_publisher-0.0.0-py3.10.egg-info
+[0.554s] running install_scripts
+[0.568s] Installing publisher script to /src/ros2_ws/install/test_pubsub/lib/imu_publisher
+[0.569s] writing list of installed files to '/src/ros2_ws/build/test_pubsub/install.log'
+[0.586s] Invoked command in '/src/ros2_ws/src/imu_publisher' returned '0': PYTHONPATH=/src/ros2_ws/build/test_pubsub/prefix_override:/src/ros2_ws/install/test_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/test_pubsub build --build-base /src/ros2_ws/build/test_pubsub/build install --record /src/ros2_ws/build/test_pubsub/install.log --single-version-externally-managed
