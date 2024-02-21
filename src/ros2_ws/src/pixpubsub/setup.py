@@ -22,7 +22,6 @@ setup(
         'console_scripts': [
             "publisher = pixpubsub.pix_pubsub_node:main",
             "move_pub = pixpubsub.move_pub:main"
-            "move_sub = pixpubsub.justmove_sub:main"
         ],
     },
 )

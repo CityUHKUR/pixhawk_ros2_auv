@@ -29,6 +29,7 @@ class PixhawkModule(Node):
 
     # priority[] = 
     # depth sensor control
+    
 
     def send_manual_control(self, x, y, z, r):
         self.master.mav.manual_control_send(
@@ -49,6 +50,18 @@ class PixhawkModule(Node):
         turn_bool = msg.turn_mode
         distance = msg.distance
         time = msg.time
+        header_sender = msg.header.frame_id
+        depth_list= []
+        task_list= []
+        moveguide_list= []
+        if header_sender == "depth_node":
+            depth_list.append(msg)
+            
+            vecx = self.map_to_range(float(vecx_in), -1,  1, -1000,  1000)
+            vecy = self.map_to_range(float(0), -1,  1, -1000,  1000)
+            vecz = self.map_to_range(float(vecz_in), -1,  1,  0,  1000)
+            vecr = self.map_to_range(float(0), -1,  1, -1000,  1000)
+        
         
         # veclist = msg.split()
         if turn_bool == True:
@@ -62,10 +75,10 @@ class PixhawkModule(Node):
             vecz = self.map_to_range(float(vecz_in), -1,  1,  0,  1000)
             vecr = self.map_to_range(float(0), -1,  1, -1000,  1000)
         
-        for i in range(0, 10):
-            turnLeft()
-            print('moving ')
-            time.sleep(1.5)
+        # for i in range(0, time):
+        #     turnLeft()
+        #     print('moving ')
+        #     time.sleep(1)
           
         print(vecx, vecy, vecz, vecr, turn_bool, distance, time)
         # self.send_manual_control(vecx, vecy, vecz, vecr)
