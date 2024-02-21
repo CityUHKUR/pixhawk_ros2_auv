@@ -18,4 +18,6 @@ A docker service containing ROS2 packages for interfacing with Pixhawk.
 - ``` ros2 pkg executables pixpubsub``` to see available exec
 - ```ros2 run pixpubsub publisher```
 - in another terminal ros2 run ```pixpubsub move_pub``` testing code, which sends hardcode values to topic, can change the value manually
+- may need to manually uncomment `self.send_manual_control(vecx, vecy, vecz, vecr)` as this for testing without pixhawk
+- may need to uncomment other code also
   
