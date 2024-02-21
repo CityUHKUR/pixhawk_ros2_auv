@@ -10,3 +10,12 @@ A docker service containing ROS2 packages for interfacing with Pixhawk.
 ## Topics
 - `/imu_data` - sensor_msgs/Imu
     - Only linear acceleration and angular velocity available
+      
+## Movement part
+- package.xml needs to have ```<exec_depend>pioneer_msgs</exec_depend> ```
+- topic should be ```movement_topic ```
+    - topic type should be MotionCommand
+- ``` ros2 pkg executables pixpubsub``` to see available exec
+- ```ros2 run pixpubsub publisher```
+- in another terminal ros2 run ```pixpubsub move_pub``` testing code, which sends hardcode values to topic, can change the value manually
+  
