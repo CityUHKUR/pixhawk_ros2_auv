@@ -1,0 +1,5 @@
+  File "/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/justmove_sub.py", line 30
+    priority[] = 
+             ^
+SyntaxError: invalid syntax
+

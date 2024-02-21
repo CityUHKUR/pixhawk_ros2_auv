@@ -1,0 +1,14 @@
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_cpplint --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_typesupport_c.xunit.xml --linelength 999 --root /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_c /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_c/pioneer_msgs
+
+Using '--root=/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_c' argument
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_c/pioneer_msgs/msg/motion_command__type_support.cpp
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_c/pioneer_msgs/msg/status__type_support.cpp
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_typesupport_c.xunit.xml'

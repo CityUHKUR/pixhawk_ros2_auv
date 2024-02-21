@@ -1,0 +1,258 @@
+[0.628s] Invoking command in '/src/ros2_ws/build/pioneer_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/src/ros2_ws/install/test_pubsub:/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/imu_publisher:/opt/ros/humble /usr/bin/cmake /src/ros2_ws/src/pioneer_msgs -DCMAKE_INSTALL_PREFIX=/src/ros2_ws/install/pioneer_msgs
+[2.637s] -- The C compiler identification is GNU 11.4.0
+[3.692s] -- The CXX compiler identification is GNU 11.4.0
+[3.920s] -- Detecting C compiler ABI info
+[7.199s] -- Detecting C compiler ABI info - done
+[7.235s] -- Check for working C compiler: /usr/bin/cc - skipped
+[7.236s] -- Detecting C compile features
+[7.238s] -- Detecting C compile features - done
+[7.320s] -- Detecting CXX compiler ABI info
+[10.506s] -- Detecting CXX compiler ABI info - done
+[10.549s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[10.551s] -- Detecting CXX compile features
+[10.553s] -- Detecting CXX compile features - done
+[11.127s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[16.630s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[22.997s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[23.440s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[24.548s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[27.801s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[30.200s] -- Found rosidl_default_runtime: 1.2.0 (/opt/ros/humble/share/rosidl_default_runtime/cmake)
+[30.585s] -- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)
+[31.442s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[36.281s] -- Found ament_cmake_cppcheck: 0.12.10 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[36.684s] -- Found ament_cmake_cpplint: 0.12.10 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[37.116s] -- Found ament_cmake_uncrustify: 0.12.10 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[37.540s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[42.810s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[48.569s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[49.136s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[49.566s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[50.304s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[50.305s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[50.307s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[50.308s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[50.815s] -- Found PythonExtra: .so  
+[52.315s] -- Found ament_cmake_flake8: 0.12.10 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[52.802s] -- Found ament_cmake_pep257: 0.12.10 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[53.665s] -- Configuring done
+[55.806s] -- Generating done
+[56.070s] -- Build files have been written to: /src/ros2_ws/build/pioneer_msgs
+[56.083s] Invoked command in '/src/ros2_ws/build/pioneer_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/src/ros2_ws/install/test_pubsub:/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/imu_publisher:/opt/ros/humble /usr/bin/cmake /src/ros2_ws/src/pioneer_msgs -DCMAKE_INSTALL_PREFIX=/src/ros2_ws/install/pioneer_msgs
+[56.097s] Invoking command in '/src/ros2_ws/build/pioneer_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/src/ros2_ws/install/test_pubsub:/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/imu_publisher:/opt/ros/humble /usr/bin/cmake --build /src/ros2_ws/build/pioneer_msgs -- -j16 -l16
+[58.030s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[58.537s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[58.920s] [  5%] Built target ament_cmake_python_copy_pioneer_msgs
+[61.509s] [  5%] Built target pioneer_msgs__cpp
+[61.705s] [  7%] [32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__functions.c.o[0m
+[61.723s] [ 10%] [32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/status__functions.c.o[0m
+[62.112s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[62.174s] [ 15%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[62.314s] [ 17%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[63.273s] running egg_info
+[63.275s] creating pioneer_msgs.egg-info
+[63.280s] writing pioneer_msgs.egg-info/PKG-INFO
+[63.289s] writing dependency_links to pioneer_msgs.egg-info/dependency_links.txt
+[63.298s] [ 20%] [32m[1mLinking C shared library libpioneer_msgs__rosidl_generator_c.so[0m
+[63.305s] writing top-level names to pioneer_msgs.egg-info/top_level.txt
+[63.317s] writing manifest file 'pioneer_msgs.egg-info/SOURCES.txt'
+[63.360s] reading manifest file 'pioneer_msgs.egg-info/SOURCES.txt'
+[63.427s] writing manifest file 'pioneer_msgs.egg-info/SOURCES.txt'
+[64.046s] [ 20%] Built target ament_cmake_python_build_pioneer_msgs_egg
+[64.778s] [ 20%] Built target pioneer_msgs__rosidl_generator_c
+[65.272s] [ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[65.286s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[65.329s] [ 28%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[65.878s] [ 30%] [32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pioneer_msgs/msg/motion_command__type_support.cpp.o[0m
+[65.982s] [ 33%] [32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pioneer_msgs/msg/status__type_support.cpp.o[0m
+[66.036s] [ 35%] [32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pioneer_msgs/msg/detail/motion_command__type_support.cpp.o[0m
+[66.106s] [ 38%] [32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pioneer_msgs/msg/detail/status__type_support.cpp.o[0m
+[66.309s] [ 41%] [32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/dds_fastrtps/motion_command__type_support.cpp.o[0m
+[66.359s] [ 43%] [32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/dds_fastrtps/status__type_support.cpp.o[0m
+[68.735s] [ 46%] [32m[1mLinking CXX shared library libpioneer_msgs__rosidl_typesupport_cpp.so[0m
+[69.243s] [ 48%] [32m[1mLinking CXX shared library libpioneer_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[69.451s] [ 51%] [32m[1mLinking CXX shared library libpioneer_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[70.034s] [ 53%] [32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/motion_command__type_support.cpp.o[0m
+[70.045s] [ 53%] Built target pioneer_msgs__rosidl_typesupport_cpp
+[70.116s] [ 56%] [32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/status__type_support.cpp.o[0m
+[70.275s] [ 58%] [32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pioneer_msgs/msg/detail/motion_command__type_support.c.o[0m
+[70.299s] [ 61%] [32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pioneer_msgs/msg/detail/status__type_support.c.o[0m
+[70.561s] [ 64%] [32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/motion_command__type_support_c.cpp.o[0m
+[70.710s] [ 66%] [32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/status__type_support_c.cpp.o[0m
+[71.004s] [ 66%] Built target pioneer_msgs__rosidl_typesupport_introspection_cpp
+[71.378s] [ 66%] Built target pioneer_msgs__rosidl_typesupport_fastrtps_cpp
+[71.558s] [ 69%] [32m[1mLinking CXX shared library libpioneer_msgs__rosidl_typesupport_c.so[0m
+[72.123s] [ 71%] [32m[1mLinking C shared library libpioneer_msgs__rosidl_typesupport_introspection_c.so[0m
+[72.964s] [ 71%] Built target pioneer_msgs__rosidl_typesupport_c
+[73.091s] [ 74%] [32m[1mLinking CXX shared library libpioneer_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[73.318s] [ 74%] Built target pioneer_msgs__rosidl_typesupport_introspection_c
+[74.496s] [ 74%] Built target pioneer_msgs__rosidl_typesupport_fastrtps_c
+[75.681s] [ 74%] Built target pioneer_msgs
+[76.862s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[79.563s] [ 76%] Built target pioneer_msgs__py
+[80.595s] [ 79%] [32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_generator_py.dir/rosidl_generator_py/pioneer_msgs/msg/_motion_command_s.c.o[0m
+[80.608s] [ 82%] [32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_generator_py.dir/rosidl_generator_py/pioneer_msgs/msg/_status_s.c.o[0m
+[81.719s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so[0m
+[83.021s] [ 84%] Built target pioneer_msgs__rosidl_generator_py
+[83.879s] [ 87%] [32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[83.974s] [ 89%] [32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[84.038s] [ 92%] [32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[85.174s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[85.242s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[85.278s] [100%] [32m[1mLinking C shared library rosidl_generator_py/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[86.305s] [100%] Built target pioneer_msgs__rosidl_typesupport_fastrtps_c__pyext
+[86.347s] [100%] Built target pioneer_msgs__rosidl_typesupport_c__pyext
+[86.549s] [100%] Built target pioneer_msgs__rosidl_typesupport_introspection_c__pyext
+[87.033s] Invoked command in '/src/ros2_ws/build/pioneer_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/src/ros2_ws/install/test_pubsub:/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/imu_publisher:/opt/ros/humble /usr/bin/cmake --build /src/ros2_ws/build/pioneer_msgs -- -j16 -l16
+[97.397s] Invoking command in '/src/ros2_ws/build/pioneer_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/src/ros2_ws/install/test_pubsub:/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/imu_publisher:/opt/ros/humble /usr/bin/cmake --install /src/ros2_ws/build/pioneer_msgs
+[97.753s] -- Install configuration: ""
+[97.794s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/ament_index/resource_index/rosidl_interfaces/pioneer_msgs
+[97.883s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs
+[97.912s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg
+[97.950s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail
+[98.008s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/motion_command__functions.c
+[98.124s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/motion_command__functions.h
+[98.236s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/motion_command__struct.h
+[98.351s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/motion_command__type_support.h
+[98.458s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/status__functions.c
+[98.562s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/status__functions.h
+[98.680s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/status__struct.h
+[98.811s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/status__type_support.h
+[98.914s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/motion_command.h
+[99.014s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/rosidl_generator_c__visibility_control.h
+[99.116s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/status.h
+[99.223s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/environment/library_path.sh
+[99.298s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/environment/library_path.dsv
+[99.384s] -- Installing: /src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_generator_c.so
+[99.484s] -- Set runtime path of "/src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_generator_c.so" to ""
+[99.500s] -- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs
+[99.528s] -- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg
+[99.560s] -- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail
+[99.601s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_fastrtps_c.h
+[99.709s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/status__rosidl_typesupport_fastrtps_c.h
+[99.809s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[99.897s] -- Installing: /src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_typesupport_fastrtps_c.so
+[99.986s] -- Set runtime path of "/src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[99.999s] -- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs
+[100.027s] -- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg
+[100.060s] -- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail
+[100.105s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_introspection_c.h
+[100.224s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/motion_command__type_support.c
+[100.347s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/status__rosidl_typesupport_introspection_c.h
+[100.456s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/status__type_support.c
+[100.554s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[100.657s] -- Installing: /src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_typesupport_introspection_c.so
+[100.763s] -- Set runtime path of "/src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_typesupport_introspection_c.so" to ""
+[100.782s] -- Installing: /src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_typesupport_c.so
+[100.869s] -- Set runtime path of "/src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_typesupport_c.so" to ""
+[100.883s] -- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs
+[100.911s] -- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg
+[100.945s] -- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail
+[100.990s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/motion_command__builder.hpp
+[101.109s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/motion_command__struct.hpp
+[101.233s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/motion_command__traits.hpp
+[101.369s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/status__builder.hpp
+[101.490s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/status__struct.hpp
+[101.600s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/status__traits.hpp
+[101.707s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/motion_command.hpp
+[101.800s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/status.hpp
+[101.879s] -- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs
+[101.903s] -- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg
+[101.929s] -- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail
+[101.963s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/dds_fastrtps
+[102.020s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_fastrtps_cpp.hpp
+[102.137s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/status__rosidl_typesupport_fastrtps_cpp.hpp
+[102.240s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[102.329s] -- Installing: /src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_typesupport_fastrtps_cpp.so
+[102.421s] -- Set runtime path of "/src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[102.433s] -- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs
+[102.458s] -- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg
+[102.486s] -- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail
+[102.524s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_introspection_cpp.hpp
+[102.632s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/motion_command__type_support.cpp
+[102.741s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/status__rosidl_typesupport_introspection_cpp.hpp
+[102.848s] -- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/status__type_support.cpp
+[102.949s] -- Installing: /src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_typesupport_introspection_cpp.so
+[103.028s] -- Set runtime path of "/src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[103.043s] -- Installing: /src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_typesupport_cpp.so
+[103.135s] -- Set runtime path of "/src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_typesupport_cpp.so" to ""
+[103.155s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/environment/pythonpath.sh
+[103.242s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/environment/pythonpath.dsv
+[103.320s] -- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs-0.0.0-py3.10.egg-info
+[103.370s] -- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[103.474s] -- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[103.577s] -- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[103.690s] -- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[103.788s] -- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs
+[103.828s] -- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so
+[103.923s] -- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/msg
+[103.976s] -- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/msg/_motion_command.py
+[104.088s] -- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/msg/_motion_command_s.c
+[104.197s] -- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/msg/_status.py
+[104.304s] -- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/msg/_status_s.c
+[104.426s] -- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/msg/__init__.py
+[104.542s] -- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[104.647s] -- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[104.747s] -- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[104.871s] -- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_c.c
+[104.991s] -- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[105.113s] -- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[105.217s] -- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/__init__.py
+[106.581s] Listing '/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs'...
+[106.582s] Compiling '/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/__init__.py'...
+[106.583s] Listing '/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/msg'...
+[106.584s] Compiling '/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/msg/__init__.py'...
+[106.585s] Compiling '/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/msg/_motion_command.py'...
+[106.586s] Compiling '/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/msg/_status.py'...
+[106.649s] -- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[106.801s] -- Set runtime path of "/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[106.879s] -- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[107.023s] -- Set runtime path of "/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[107.090s] -- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[107.228s] -- Set runtime path of "/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[107.251s] -- Installing: /src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_generator_py.so
+[107.358s] -- Set runtime path of "/src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_generator_py.so" to ""
+[107.397s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/msg/MotionCommand.idl
+[107.490s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/msg/Status.idl
+[107.595s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/msg/MotionCommand.msg
+[107.689s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/msg/Status.msg
+[107.808s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/ament_index/resource_index/package_run_dependencies/pioneer_msgs
+[107.941s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/ament_index/resource_index/parent_prefix_path/pioneer_msgs
+[108.025s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/environment/ament_prefix_path.sh
+[108.091s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/environment/ament_prefix_path.dsv
+[108.163s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/environment/path.sh
+[108.232s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/environment/path.dsv
+[108.303s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/local_setup.bash
+[108.369s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/local_setup.sh
+[108.435s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/local_setup.zsh
+[108.502s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/local_setup.dsv
+[108.574s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/package.dsv
+[108.669s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/ament_index/resource_index/packages/pioneer_msgs
+[108.790s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/export_pioneer_msgs__rosidl_generator_cExport.cmake
+[108.898s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/export_pioneer_msgs__rosidl_generator_cExport-noconfig.cmake
+[109.007s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/export_pioneer_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[109.106s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/export_pioneer_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[109.206s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/pioneer_msgs__rosidl_typesupport_introspection_cExport.cmake
+[109.312s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/pioneer_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[109.429s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/pioneer_msgs__rosidl_typesupport_cExport.cmake
+[109.532s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/pioneer_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[109.640s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/export_pioneer_msgs__rosidl_generator_cppExport.cmake
+[109.752s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/export_pioneer_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[109.862s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/export_pioneer_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[109.979s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/pioneer_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[110.084s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/pioneer_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[110.190s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/pioneer_msgs__rosidl_typesupport_cppExport.cmake
+[110.290s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/pioneer_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[110.401s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/export_pioneer_msgs__rosidl_generator_pyExport.cmake
+[110.517s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/export_pioneer_msgs__rosidl_generator_pyExport-noconfig.cmake
+[110.630s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/rosidl_cmake-extras.cmake
+[110.732s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[110.830s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[110.917s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[110.995s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[111.081s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[111.167s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[111.264s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/pioneer_msgsConfig.cmake
+[111.343s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/pioneer_msgsConfig-version.cmake
+[111.422s] -- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/package.xml
+[111.492s] Invoked command in '/src/ros2_ws/build/pioneer_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/src/ros2_ws/install/test_pubsub:/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/imu_publisher:/opt/ros/humble /usr/bin/cmake --install /src/ros2_ws/build/pioneer_msgs

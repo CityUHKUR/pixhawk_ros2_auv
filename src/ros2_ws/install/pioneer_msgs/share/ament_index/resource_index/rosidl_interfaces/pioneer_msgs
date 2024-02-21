@@ -1,0 +1,4 @@
+msg/MotionCommand.idl
+msg/MotionCommand.msg
+msg/Status.idl
+msg/Status.msg

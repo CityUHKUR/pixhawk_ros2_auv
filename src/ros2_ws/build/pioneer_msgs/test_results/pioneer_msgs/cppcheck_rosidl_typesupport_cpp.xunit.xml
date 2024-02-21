@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="pioneer_msgs.cppcheck_rosidl_typesupport_cpp"
+  tests="2"
+  errors="0"
+  failures="0"
+  time="0.012"
+  skipped="2"
+>
+  <testcase
+    name="/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_cpp/pioneer_msgs/msg/motion_command__type_support.cpp"
+    classname="pioneer_msgs.cppcheck_rosidl_typesupport_cpp"
+  >
+    <skipped type="skip" message="">
+      ![CDATA[Test Skipped due to cppcheck 2.7 performance issues]]
+    </skipped>
+  </testcase>
+  <testcase
+    name="/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_cpp/pioneer_msgs/msg/status__type_support.cpp"
+    classname="pioneer_msgs.cppcheck_rosidl_typesupport_cpp"
+  >
+    <skipped type="skip" message="">
+      ![CDATA[Test Skipped due to cppcheck 2.7 performance issues]]
+    </skipped>
+  </testcase>
+  <system-err>Tests Skipped due to cppcheck 2.7 performance issues</system-err>
+</testsuite>

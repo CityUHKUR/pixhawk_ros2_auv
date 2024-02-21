@@ -15,5 +15,5 @@
 /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub-0.0.0-py3.10.egg-info/SOURCES.txt
 /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub-0.0.0-py3.10.egg-info/top_level.txt
 /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub-0.0.0-py3.10.egg-info/zip-safe
-/src/ros2_ws/install/pixpubsub/lib/pixpubsub/move_pub
+/src/ros2_ws/install/pixpubsub/lib/pixpubsub/move_pub = pixpubsub.move_pub:mainmove_sub
 /src/ros2_ws/install/pixpubsub/lib/pixpubsub/publisher

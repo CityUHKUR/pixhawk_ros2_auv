@@ -1,0 +1,187 @@
+[0.000000] (-) TimerEvent: {}
+[0.000731] (-) JobUnselected: {'identifier': 'imu_publisher'}
+[0.001145] (-) JobUnselected: {'identifier': 'pioneer_msgs'}
+[0.001501] (pixpubsub) JobQueued: {'identifier': 'pixpubsub', 'dependencies': OrderedDict([('pioneer_msgs', '/src/ros2_ws/install/pioneer_msgs')])}
+[0.001912] (pixpubsub) JobStarted: {'identifier': 'pixpubsub'}
+[0.097342] (-) TimerEvent: {}
+[0.198158] (-) TimerEvent: {}
+[0.299108] (-) TimerEvent: {}
+[0.399907] (-) TimerEvent: {}
+[0.500780] (-) TimerEvent: {}
+[0.601672] (-) TimerEvent: {}
+[0.702413] (-) TimerEvent: {}
+[0.803236] (-) TimerEvent: {}
+[0.904135] (-) TimerEvent: {}
+[1.008042] (-) TimerEvent: {}
+[1.108990] (-) TimerEvent: {}
+[1.209923] (-) TimerEvent: {}
+[1.310840] (-) TimerEvent: {}
+[1.411756] (-) TimerEvent: {}
+[1.512630] (-) TimerEvent: {}
+[1.613586] (-) TimerEvent: {}
+[1.714509] (-) TimerEvent: {}
+[1.815700] (-) TimerEvent: {}
+[1.916443] (-) TimerEvent: {}
+[2.017292] (-) TimerEvent: {}
+[2.118206] (-) TimerEvent: {}
+[2.219127] (-) TimerEvent: {}
+[2.320208] (-) TimerEvent: {}
+[2.421025] (-) TimerEvent: {}
+[2.522051] (-) TimerEvent: {}
+[2.622853] (-) TimerEvent: {}
+[2.723594] (-) TimerEvent: {}
+[2.824546] (-) TimerEvent: {}
+[2.925377] (-) TimerEvent: {}
+[3.026197] (-) TimerEvent: {}
+[3.127037] (-) TimerEvent: {}
+[3.227789] (-) TimerEvent: {}
+[3.328569] (-) TimerEvent: {}
+[3.429509] (-) TimerEvent: {}
+[3.530459] (-) TimerEvent: {}
+[3.631398] (-) TimerEvent: {}
+[3.732202] (-) TimerEvent: {}
+[3.832881] (-) TimerEvent: {}
+[3.933738] (-) TimerEvent: {}
+[4.034564] (-) TimerEvent: {}
+[4.135543] (-) TimerEvent: {}
+[4.236300] (-) TimerEvent: {}
+[4.337159] (-) TimerEvent: {}
+[4.438627] (-) TimerEvent: {}
+[4.539815] (-) TimerEvent: {}
+[4.641163] (-) TimerEvent: {}
+[4.742014] (-) TimerEvent: {}
+[4.842885] (-) TimerEvent: {}
+[4.943794] (-) TimerEvent: {}
+[5.044713] (-) TimerEvent: {}
+[5.145458] (-) TimerEvent: {}
+[5.246210] (-) TimerEvent: {}
+[5.347016] (-) TimerEvent: {}
+[5.447915] (-) TimerEvent: {}
+[5.548668] (-) TimerEvent: {}
+[5.649607] (-) TimerEvent: {}
+[5.750531] (-) TimerEvent: {}
+[5.851422] (-) TimerEvent: {}
+[5.954357] (-) TimerEvent: {}
+[6.055439] (-) TimerEvent: {}
+[6.156339] (-) TimerEvent: {}
+[6.257100] (-) TimerEvent: {}
+[6.358330] (-) TimerEvent: {}
+[6.459167] (-) TimerEvent: {}
+[6.560077] (-) TimerEvent: {}
+[6.660993] (-) TimerEvent: {}
+[6.761916] (-) TimerEvent: {}
+[6.862830] (-) TimerEvent: {}
+[6.963684] (-) TimerEvent: {}
+[7.064742] (-) TimerEvent: {}
+[7.165602] (-) TimerEvent: {}
+[7.266412] (-) TimerEvent: {}
+[7.367292] (-) TimerEvent: {}
+[7.468179] (-) TimerEvent: {}
+[7.569104] (-) TimerEvent: {}
+[7.669920] (-) TimerEvent: {}
+[7.770620] (-) TimerEvent: {}
+[7.871629] (-) TimerEvent: {}
+[7.975420] (-) TimerEvent: {}
+[8.076172] (-) TimerEvent: {}
+[8.176955] (-) TimerEvent: {}
+[8.277848] (-) TimerEvent: {}
+[8.378684] (-) TimerEvent: {}
+[8.479614] (-) TimerEvent: {}
+[8.580514] (-) TimerEvent: {}
+[8.681428] (-) TimerEvent: {}
+[8.782354] (-) TimerEvent: {}
+[8.883356] (-) TimerEvent: {}
+[8.984255] (-) TimerEvent: {}
+[9.085152] (-) TimerEvent: {}
+[9.186016] (-) TimerEvent: {}
+[9.286749] (-) TimerEvent: {}
+[9.387581] (-) TimerEvent: {}
+[9.474601] (pixpubsub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/pixpubsub', 'build', '--build-base', '/src/ros2_ws/build/pixpubsub/build', 'install', '--record', '/src/ros2_ws/build/pixpubsub/install.log', '--single-version-externally-managed'], 'cwd': '/src/ros2_ws/src/pixpubsub', 'env': {'HOSTNAME': 'docker-desktop', 'GIT_ASKPASS': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/src/ros2_ws/install/pioneer_msgs/lib:/src/ros2_ws/install/px4_ros_com/lib:/src/ros2_ws/install/px4_msgs/lib:/src/ros2_ws/install/microxrcedds_agent/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/helpers/browser.sh', 'HOME': '/root', 'TERM_PROGRAM_VERSION': '1.86.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-43e5e837-e06d-4887-96cd-dac95a3a9b56.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/src/ros2_ws/install', 'ROS_DISTRO': 'humble', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-90d48fe1-c9c4-41d7-8a85-8933d630c79d.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/src/ros2_ws/install/microxrcedds_agent/bin:/opt/ros/humble/bin:/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-9583c108f8.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/src/ros2_ws/install/test_pubsub:/src/ros2_ws/install/px4_ros_com:/src/ros2_ws/install/px4_msgs:/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/pioneer_msgs:/src/ros2_ws/install/imu_publisher:/opt/ros/humble', 'SHELL': '/bin/bash', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/src/ros2_ws/build/pixpubsub', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/src/ros2_ws/build/pixpubsub/prefix_override:/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages:/src/ros2_ws/install/test_pubsub/lib/python3.10/site-packages:/src/ros2_ws/install/px4_msgs/lib/python3.10/site-packages:/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages:/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages:/src/ros2_ws/install/imu_publisher/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/src/ros2_ws/install/pioneer_msgs:/src/ros2_ws/install/px4_ros_com:/src/ros2_ws/install/px4_msgs:/src/ros2_ws/install/microxrcedds_agent'}, 'shell': False}
+[9.491800] (-) TimerEvent: {}
+[9.592611] (-) TimerEvent: {}
+[9.693526] (-) TimerEvent: {}
+[9.794554] (-) TimerEvent: {}
+[9.895488] (-) TimerEvent: {}
+[9.996285] (-) TimerEvent: {}
+[10.097685] (-) TimerEvent: {}
+[10.198535] (-) TimerEvent: {}
+[10.299388] (-) TimerEvent: {}
+[10.400271] (-) TimerEvent: {}
+[10.501097] (-) TimerEvent: {}
+[10.602051] (-) TimerEvent: {}
+[10.702918] (-) TimerEvent: {}
+[10.803705] (-) TimerEvent: {}
+[10.904497] (-) TimerEvent: {}
+[11.005329] (-) TimerEvent: {}
+[11.106334] (-) TimerEvent: {}
+[11.207213] (-) TimerEvent: {}
+[11.308016] (-) TimerEvent: {}
+[11.408947] (-) TimerEvent: {}
+[11.509734] (-) TimerEvent: {}
+[11.610769] (-) TimerEvent: {}
+[11.711560] (-) TimerEvent: {}
+[11.812313] (-) TimerEvent: {}
+[11.913415] (-) TimerEvent: {}
+[12.014445] (-) TimerEvent: {}
+[12.115126] (-) TimerEvent: {}
+[12.215974] (-) TimerEvent: {}
+[12.316732] (-) TimerEvent: {}
+[12.417459] (-) TimerEvent: {}
+[12.518295] (-) TimerEvent: {}
+[12.619323] (-) TimerEvent: {}
+[12.720137] (-) TimerEvent: {}
+[12.821211] (-) TimerEvent: {}
+[12.845046] (pixpubsub) StdoutLine: {'line': b'running egg_info\n'}
+[12.853758] (pixpubsub) StdoutLine: {'line': b'writing ../../build/pixpubsub/pixpubsub.egg-info/PKG-INFO\n'}
+[12.864180] (pixpubsub) StdoutLine: {'line': b'writing dependency_links to ../../build/pixpubsub/pixpubsub.egg-info/dependency_links.txt\n'}
+[12.873930] (pixpubsub) StdoutLine: {'line': b'writing entry points to ../../build/pixpubsub/pixpubsub.egg-info/entry_points.txt\n'}
+[12.881432] (pixpubsub) StdoutLine: {'line': b'writing requirements to ../../build/pixpubsub/pixpubsub.egg-info/requires.txt\n'}
+[12.886788] (pixpubsub) StdoutLine: {'line': b'writing top-level names to ../../build/pixpubsub/pixpubsub.egg-info/top_level.txt\n'}
+[12.921450] (-) TimerEvent: {}
+[12.953812] (pixpubsub) StdoutLine: {'line': b"reading manifest file '../../build/pixpubsub/pixpubsub.egg-info/SOURCES.txt'\n"}
+[13.021684] (-) TimerEvent: {}
+[13.068732] (pixpubsub) StdoutLine: {'line': b"writing manifest file '../../build/pixpubsub/pixpubsub.egg-info/SOURCES.txt'\n"}
+[13.073433] (pixpubsub) StdoutLine: {'line': b'running build\n'}
+[13.075013] (pixpubsub) StdoutLine: {'line': b'running build_py\n'}
+[13.114980] (pixpubsub) StdoutLine: {'line': b'copying pixpubsub/move_pub.py -> /src/ros2_ws/build/pixpubsub/build/lib/pixpubsub\n'}
+[13.145274] (-) TimerEvent: {}
+[13.155107] (pixpubsub) StdoutLine: {'line': b'copying pixpubsub/pix_pubsub_node.py -> /src/ros2_ws/build/pixpubsub/build/lib/pixpubsub\n'}
+[13.201040] (pixpubsub) StdoutLine: {'line': b'running install\n'}
+[13.202419] (pixpubsub) StdoutLine: {'line': b'running install_lib\n'}
+[13.245447] (-) TimerEvent: {}
+[13.286723] (pixpubsub) StdoutLine: {'line': b'copying /src/ros2_ws/build/pixpubsub/build/lib/pixpubsub/move_pub.py -> /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub\n'}
+[13.345679] (-) TimerEvent: {}
+[13.346383] (pixpubsub) StdoutLine: {'line': b'copying /src/ros2_ws/build/pixpubsub/build/lib/pixpubsub/pix_pubsub_node.py -> /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub\n'}
+[13.445854] (-) TimerEvent: {}
+[13.481249] (pixpubsub) StdoutLine: {'line': b'byte-compiling /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/move_pub.py to move_pub.cpython-310.pyc\n'}
+[13.546008] (-) TimerEvent: {}
+[13.561777] (pixpubsub) StdoutLine: {'line': b'byte-compiling /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/pix_pubsub_node.py to pix_pubsub_node.cpython-310.pyc\n'}
+[13.626793] (pixpubsub) StdoutLine: {'line': b'running install_data\n'}
+[13.646189] (-) TimerEvent: {}
+[13.663081] (pixpubsub) StdoutLine: {'line': b'copying package.xml -> /src/ros2_ws/install/pixpubsub/share/pixpubsub\n'}
+[13.686585] (pixpubsub) StdoutLine: {'line': b'running install_egg_info\n'}
+[13.718024] (pixpubsub) StdoutLine: {'line': b"removing '/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[13.746398] (-) TimerEvent: {}
+[13.808231] (pixpubsub) StdoutLine: {'line': b'Copying ../../build/pixpubsub/pixpubsub.egg-info to /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub-0.0.0-py3.10.egg-info\n'}
+[13.846596] (-) TimerEvent: {}
+[13.947392] (-) TimerEvent: {}
+[14.048313] (-) TimerEvent: {}
+[14.149176] (-) TimerEvent: {}
+[14.175065] (pixpubsub) StdoutLine: {'line': b'running install_scripts\n'}
+[14.249363] (-) TimerEvent: {}
+[14.350313] (-) TimerEvent: {}
+[14.441132] (pixpubsub) StdoutLine: {'line': b'Installing move_pub script to /src/ros2_ws/install/pixpubsub/lib/pixpubsub\n'}
+[14.450423] (-) TimerEvent: {}
+[14.462491] (pixpubsub) StdoutLine: {'line': b'Installing publisher script to /src/ros2_ws/install/pixpubsub/lib/pixpubsub\n'}
+[14.490254] (pixpubsub) StdoutLine: {'line': b"writing list of installed files to '/src/ros2_ws/build/pixpubsub/install.log'\n"}
+[14.550650] (-) TimerEvent: {}
+[14.563307] (pixpubsub) CommandEnded: {'returncode': 0}
+[14.650833] (-) TimerEvent: {}
+[14.751981] (-) TimerEvent: {}
+[14.852845] (-) TimerEvent: {}
+[14.953669] (-) TimerEvent: {}
+[15.055075] (-) TimerEvent: {}
+[15.155849] (-) TimerEvent: {}
+[15.257126] (-) TimerEvent: {}
+[15.310961] (pixpubsub) JobEnded: {'identifier': 'pixpubsub', 'rc': 0}
+[15.324147] (-) EventReactorShutdown: {}

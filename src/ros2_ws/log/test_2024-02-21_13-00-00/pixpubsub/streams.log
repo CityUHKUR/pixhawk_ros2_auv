@@ -1,0 +1,600 @@
+[4.429s] Invoking command in '/src/ros2_ws/src/pixpubsub': AMENT_PREFIX_PATH=/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/test_pubsub:/src/ros2_ws/install/px4_ros_com:/src/ros2_ws/install/px4_msgs:/src/ros2_ws/install/pioneer_msgs:/src/ros2_ws/install/imu_publisher:/opt/ros/humble CMAKE_PREFIX_PATH=/src/ros2_ws/install/pioneer_msgs:/src/ros2_ws/install/px4_ros_com:/src/ros2_ws/install/px4_msgs:/src/ros2_ws/install/microxrcedds_agent LD_LIBRARY_PATH=/src/ros2_ws/install/pioneer_msgs/lib:/src/ros2_ws/install/px4_ros_com/lib:/src/ros2_ws/install/px4_msgs/lib:/src/ros2_ws/install/microxrcedds_agent/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTEST_ADDOPTS=--tb=short --junit-xml=/src/ros2_ws/build/pixpubsub/pytest.xml --junit-prefix=pixpubsub -o cache_dir=/src/ros2_ws/build/pixpubsub/.pytest_cache PYTHONPATH=/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages:/src/ros2_ws/install/test_pubsub/lib/python3.10/site-packages:/src/ros2_ws/install/px4_msgs/lib/python3.10/site-packages:/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages:/src/ros2_ws/install/imu_publisher/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -m pytest
+[8.024s] [1m============================= test session starts ==============================[0m
+[8.026s] platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+[8.031s] cachedir: /src/ros2_ws/build/pixpubsub/.pytest_cache
+[8.032s] rootdir: /src/ros2_ws/src/pixpubsub
+[8.033s] plugins: ament-lint-0.12.10, launch-testing-ros-0.19.7, launch-testing-1.0.4, ament-xmllint-0.12.10, ament-flake8-0.12.10, ament-copyright-0.12.10, ament-pep257-0.12.10, colcon-core-0.15.2
+[8.623s] [1mcollecting ... [0m[1m
+[8.713s] collecting 0 items                                                             [0m[1m
+[8.714s] collected 3 items                                                              [0m
+[8.716s] 
+[8.729s] test/test_copyright.py [33ms[0m[32m                                                 [ 33%][0m
+[9.367s] test/test_flake8.py [31mF[0m[31m                                                    [ 66%][0m
+[9.639s] test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+[9.640s] 
+[9.642s] =================================== FAILURES ===================================
+[9.643s] [31m[1m_________________________________ test_flake8 __________________________________[0m
+[9.645s] [1m[31mtest/test_flake8.py[0m:23: in test_flake8
+[9.735s]     [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[9.737s] [1m[31mE   AssertionError: Found 106 code style errors / warnings:[0m
+[9.742s] [1m[31mE     ./pixpubsub/move_pub.py:6:1: E302 expected 2 blank lines, found 1[0m
+[9.744s] [1m[31mE     ./pixpubsub/move_pub.py:11:17: E222 multiple spaces after operator[0m
+[9.745s] [1m[31mE     ./pixpubsub/move_pub.py:26:18: E222 multiple spaces after operator[0m
+[9.747s] [1m[31mE     ./pixpubsub/move_pub.py:28:1: E302 expected 2 blank lines, found 1[0m
+[9.748s] [1m[31mE     ./pixpubsub/move_pub.py:39:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[9.749s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:9:1: F401 'sys' imported but unused[0m
+[9.750s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:10:1: F401 'serial' imported but unused[0m
+[9.751s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:12:1: E302 expected 2 blank lines, found 1[0m
+[9.752s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:22:1: W293 blank line contains whitespace[0m
+[9.753s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:28:26: E261 at least two spaces before inline comment[0m
+[9.754s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:31:5: E303 too many blank lines (2)[0m
+[9.755s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:41:64: W291 trailing whitespace[0m
+[9.756s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:45:53: W291 trailing whitespace[0m
+[9.757s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:51:1: W293 blank line contains whitespace[0m
+[9.759s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:58:100: E501 line too long (107 > 99 characters)[0m
+[9.760s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:59:61: E128 continuation line under-indented for visual indent[0m
+[9.761s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:59:100: E501 line too long (103 > 99 characters)[0m
+[9.762s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:60:61: E128 continuation line under-indented for visual indent[0m
+[9.764s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:60:100: E501 line too long (104 > 99 characters)[0m
+[9.765s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:61:61: E128 continuation line under-indented for visual indent[0m
+[9.765s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:71:15: E261 at least two spaces before inline comment[0m
+[9.766s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:72:15: E261 at least two spaces before inline comment[0m
+[9.767s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:73:15: E261 at least two spaces before inline comment[0m
+[9.769s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:74:15: E261 at least two spaces before inline comment[0m
+[9.770s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:78:89: W291 trailing whitespace[0m
+[9.770s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:79:1: W293 blank line contains whitespace[0m
+[9.772s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:85:9: F841 local variable 'distance' is assigned to but never used[0m
+[9.773s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:86:9: F841 local variable 'time' is assigned to but never used[0m
+[9.774s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:87:1: W293 blank line contains whitespace[0m
+[9.775s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:89:22: E712 comparison to True should be 'if cond is True:' or 'if cond:'[0m
+[9.776s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:94:14: W291 trailing whitespace[0m
+[9.777s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:99:1: W293 blank line contains whitespace[0m
+[9.779s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:100:1: W293 blank line contains whitespace[0m
+[9.780s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:101:9: E303 too many blank lines (2)[0m
+[9.781s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:104:1: W293 blank line contains whitespace[0m
+[9.782s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:105:5: E303 too many blank lines (2)[0m
+[9.783s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:109:35: W291 trailing whitespace[0m
+[9.784s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:122:1: W293 blank line contains whitespace[0m
+[9.785s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:123:1: W293 blank line contains whitespace[0m
+[9.786s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:124:1: W293 blank line contains whitespace[0m
+[9.787s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:126:1: E303 too many blank lines (4)[0m
+[9.789s] [1m[31mE     ./pixpubsub/pix_pubsub_node.py:133:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[9.790s] [1m[31mE     ./pixpubsub/poolTests/testall.py:1:1: F401 'sys' imported but unused[0m
+[9.791s] [1m[31mE     ./pixpubsub/poolTests/testall.py:6:11: E225 missing whitespace around operator[0m
+[9.792s] [1m[31mE     ./pixpubsub/poolTests/testall.py:15:1: E302 expected 2 blank lines, found 1[0m
+[9.793s] [1m[31mE     ./pixpubsub/poolTests/testall.py:18:11: E261 at least two spaces before inline comment[0m
+[9.794s] [1m[31mE     ./pixpubsub/poolTests/testall.py:19:11: E261 at least two spaces before inline comment[0m
+[9.795s] [1m[31mE     ./pixpubsub/poolTests/testall.py:20:11: E261 at least two spaces before inline comment[0m
+[9.797s] [1m[31mE     ./pixpubsub/poolTests/testall.py:21:11: E261 at least two spaces before inline comment[0m
+[9.798s] [1m[31mE     ./pixpubsub/poolTests/testall.py:23:1: W293 blank line contains whitespace[0m
+[9.799s] [1m[31mE     ./pixpubsub/poolTests/testall.py:24:1: E302 expected 2 blank lines, found 1[0m
+[9.800s] [1m[31mE     ./pixpubsub/poolTests/testall.py:26:1: E302 expected 2 blank lines, found 0[0m
+[9.801s] [1m[31mE     ./pixpubsub/poolTests/testall.py:27:37: E231 missing whitespace after ','[0m
+[9.802s] [1m[31mE     ./pixpubsub/poolTests/testall.py:28:1: W293 blank line contains whitespace[0m
+[9.803s] [1m[31mE     ./pixpubsub/poolTests/testall.py:29:1: E302 expected 2 blank lines, found 1[0m
+[9.804s] [1m[31mE     ./pixpubsub/poolTests/testall.py:31:1: E302 expected 2 blank lines, found 0[0m
+[9.805s] [1m[31mE     ./pixpubsub/poolTests/testall.py:33:1: W293 blank line contains whitespace[0m
+[9.807s] [1m[31mE     ./pixpubsub/poolTests/testall.py:34:1: E302 expected 2 blank lines, found 1[0m
+[9.808s] [1m[31mE     ./pixpubsub/poolTests/testall.py:35:26: E231 missing whitespace after ','[0m
+[9.809s] [1m[31mE     ./pixpubsub/poolTests/testall.py:35:28: E231 missing whitespace after ','[0m
+[9.811s] [1m[31mE     ./pixpubsub/poolTests/testall.py:35:32: E231 missing whitespace after ','[0m
+[9.812s] [1m[31mE     ./pixpubsub/poolTests/testall.py:36:1: E302 expected 2 blank lines, found 0[0m
+[9.813s] [1m[31mE     ./pixpubsub/poolTests/testall.py:36:16: W291 trailing whitespace[0m
+[9.814s] [1m[31mE     ./pixpubsub/poolTests/testall.py:37:26: E231 missing whitespace after ','[0m
+[9.815s] [1m[31mE     ./pixpubsub/poolTests/testall.py:37:28: E231 missing whitespace after ','[0m
+[9.816s] [1m[31mE     ./pixpubsub/poolTests/testall.py:37:32: E231 missing whitespace after ','[0m
+[9.817s] [1m[31mE     ./pixpubsub/poolTests/testall.py:37:35: W291 trailing whitespace[0m
+[9.818s] [1m[31mE     ./pixpubsub/poolTests/testall.py:38:1: W293 blank line contains whitespace[0m
+[9.819s] [1m[31mE     ./pixpubsub/poolTests/testall.py:39:1: E302 expected 2 blank lines, found 1[0m
+[9.820s] [1m[31mE     ./pixpubsub/poolTests/testall.py:40:26: E231 missing whitespace after ','[0m
+[9.822s] [1m[31mE     ./pixpubsub/poolTests/testall.py:40:28: E231 missing whitespace after ','[0m
+[9.823s] [1m[31mE     ./pixpubsub/poolTests/testall.py:40:32: E231 missing whitespace after ','[0m
+[9.824s] [1m[31mE     ./pixpubsub/poolTests/testall.py:41:1: E302 expected 2 blank lines, found 0[0m
+[9.825s] [1m[31mE     ./pixpubsub/poolTests/testall.py:42:26: E231 missing whitespace after ','[0m
+[9.826s] [1m[31mE     ./pixpubsub/poolTests/testall.py:42:28: E231 missing whitespace after ','[0m
+[9.828s] [1m[31mE     ./pixpubsub/poolTests/testall.py:42:32: E231 missing whitespace after ','[0m
+[9.829s] [1m[31mE     ./pixpubsub/poolTests/testall.py:42:38: W291 trailing whitespace[0m
+[9.830s] [1m[31mE     ./pixpubsub/poolTests/testall.py:43:1: W293 blank line contains whitespace[0m
+[9.831s] [1m[31mE     ./pixpubsub/poolTests/testall.py:45:1: E302 expected 2 blank lines, found 1[0m
+[9.832s] [1m[31mE     ./pixpubsub/poolTests/testall.py:57:1: E302 expected 2 blank lines, found 1[0m
+[9.834s] [1m[31mE     ./pixpubsub/poolTests/testall.py:70:1: E302 expected 2 blank lines, found 1[0m
+[9.835s] [1m[31mE     ./pixpubsub/poolTests/testall.py:80:1: W293 blank line contains whitespace[0m
+[9.836s] [1m[31mE     ./pixpubsub/poolTests/testall.py:82:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[9.837s] [1m[31mE     ./pixpubsub/poolTests/testall.py:86:1: E265 block comment should start with '# '[0m
+[9.839s] [1m[31mE     ./pixpubsub/poolTests/testall.py:108:13: W292 no newline at end of file[0m
+[9.840s] [1m[31mE     ./pixpubsub/poolTests/vectorinput.py:1:1: F401 'sys' imported but unused[0m
+[9.841s] [1m[31mE     ./pixpubsub/poolTests/vectorinput.py:6:11: E225 missing whitespace around operator[0m
+[9.842s] [1m[31mE     ./pixpubsub/poolTests/vectorinput.py:15:1: E302 expected 2 blank lines, found 1[0m
+[9.843s] [1m[31mE     ./pixpubsub/poolTests/vectorinput.py:26:1: W293 blank line contains whitespace[0m
+[9.844s] [1m[31mE     ./pixpubsub/poolTests/vectorinput.py:27:1: E302 expected 2 blank lines, found 1[0m
+[9.845s] [1m[31mE     ./pixpubsub/poolTests/vectorinput.py:38:1: W293 blank line contains whitespace[0m
+[9.847s] [1m[31mE     ./pixpubsub/poolTests/vectorinput.py:39:1: E302 expected 2 blank lines, found 1[0m
+[9.848s] [1m[31mE     ./pixpubsub/poolTests/vectorinput.py:48:26: W291 trailing whitespace[0m
+[9.849s] [1m[31mE     ./pixpubsub/poolTests/vectorinput.py:50:1: E302 expected 2 blank lines, found 1[0m
+[9.850s] [1m[31mE     ./pixpubsub/poolTests/vectorinput.py:53:11: E261 at least two spaces before inline comment[0m
+[9.852s] [1m[31mE     ./pixpubsub/poolTests/vectorinput.py:54:11: E261 at least two spaces before inline comment[0m
+[9.853s] [1m[31mE     ./pixpubsub/poolTests/vectorinput.py:55:11: E261 at least two spaces before inline comment[0m
+[9.854s] [1m[31mE     ./pixpubsub/poolTests/vectorinput.py:56:11: E261 at least two spaces before inline comment[0m
+[9.855s] [1m[31mE     ./pixpubsub/poolTests/vectorinput.py:59:1: E302 expected 2 blank lines, found 1[0m
+[9.856s] [1m[31mE     ./pixpubsub/poolTests/vectorinput.py:62:1: E302 expected 2 blank lines, found 1[0m
+[9.857s] [1m[31mE     ./pixpubsub/poolTests/vectorinput.py:66:29: W291 trailing whitespace[0m
+[9.858s] [1m[31mE     ./pixpubsub/poolTests/vectorinput.py:75:23: E231 missing whitespace after ','[0m
+[9.859s] [1m[31mE     ./pixpubsub/poolTests/vectorinput.py:75:28: E231 missing whitespace after ','[0m
+[9.860s] [1m[31mE     ./pixpubsub/poolTests/vectorinput.py:75:33: E231 missing whitespace after ','[0m
+[9.862s] [1m[31mE     ./pixpubsub/poolTests/vectorinput.py:80:1: W293 blank line contains whitespace[0m
+[9.863s] [1m[31mE     ./pixpubsub/poolTests/vectorinput.py:81:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[9.864s] [1m[31mE   assert 1 == 0[0m
+[9.865s] ----------------------------- Captured stdout call -----------------------------
+[9.866s] 
+[9.867s] ./pixpubsub/move_pub.py:6:1: E302 expected 2 blank lines, found 1
+[9.868s] class MinimalPublisher(Node):
+[9.870s] ^
+[9.871s] 
+[9.872s] ./pixpubsub/move_pub.py:11:17: E222 multiple spaces after operator
+[9.873s]         self.i =  0
+[9.874s]                 ^
+[9.875s] 
+[9.876s] ./pixpubsub/move_pub.py:26:18: E222 multiple spaces after operator
+[9.878s]         self.i +=  1
+[9.879s]                  ^
+[9.880s] 
+[9.882s] ./pixpubsub/move_pub.py:28:1: E302 expected 2 blank lines, found 1
+[9.884s] def main(args=None):
+[9.885s] ^
+[9.886s] 
+[9.887s] ./pixpubsub/move_pub.py:39:1: E305 expected 2 blank lines after class or function definition, found 1
+[9.888s] if __name__ == '__main__':
+[9.889s] ^
+[9.890s] 
+[9.891s] ./pixpubsub/pix_pubsub_node.py:9:1: F401 'sys' imported but unused
+[9.892s] import sys
+[9.894s] ^
+[9.895s] 
+[9.896s] ./pixpubsub/pix_pubsub_node.py:10:1: F401 'serial' imported but unused
+[9.897s] import serial
+[9.898s] ^
+[9.899s] 
+[9.900s] ./pixpubsub/pix_pubsub_node.py:12:1: E302 expected 2 blank lines, found 1
+[9.901s] class PixhawkModule(Node):
+[9.902s] ^
+[9.903s] 
+[9.904s] ./pixpubsub/pix_pubsub_node.py:22:1: W293 blank line contains whitespace
+[9.905s]         
+[9.906s] ^
+[9.907s] 
+[9.908s] ./pixpubsub/pix_pubsub_node.py:28:26: E261 at least two spaces before inline comment
+[9.910s]         self.subscription # prevent unused variable warning
+[9.911s]                          ^
+[9.912s] 
+[9.913s] ./pixpubsub/pix_pubsub_node.py:31:5: E303 too many blank lines (2)
+[9.915s]     def timer_callback(self):
+[9.916s]     ^
+[9.917s] 
+[9.919s] ./pixpubsub/pix_pubsub_node.py:41:64: W291 trailing whitespace
+[9.920s]                 imu_msg.angular_velocity.x = msg.xgyro / 1000.0  
+[9.921s]                                                                ^
+[9.923s] 
+[9.925s] ./pixpubsub/pix_pubsub_node.py:45:53: W291 trailing whitespace
+[9.926s]                 imu_msg.header.frame_id = 'imu_link'  
+[9.927s]                                                     ^
+[9.929s] 
+[9.930s] ./pixpubsub/pix_pubsub_node.py:51:1: W293 blank line contains whitespace
+[9.931s]         
+[9.933s] ^
+[9.934s] 
+[9.935s] ./pixpubsub/pix_pubsub_node.py:58:100: E501 line too long (107 > 99 characters)
+[9.937s]             self.__mavlink_connection.mav.request_data_stream_send(self.__mavlink_connection.target_system,
+[9.938s]                                                                                                    ^
+[9.939s] 
+[9.941s] ./pixpubsub/pix_pubsub_node.py:59:61: E128 continuation line under-indented for visual indent
+[9.942s]                                                             self.__mavlink_connection.target_component,
+[9.943s]                                                             ^
+[9.944s] 
+[9.945s] ./pixpubsub/pix_pubsub_node.py:59:100: E501 line too long (103 > 99 characters)
+[9.947s]                                                             self.__mavlink_connection.target_component,
+[9.948s]                                                                                                    ^
+[9.949s] 
+[9.950s] ./pixpubsub/pix_pubsub_node.py:60:61: E128 continuation line under-indented for visual indent
+[9.951s]                                                             mavutil.mavlink.MAV_DATA_STREAM_RAW_SENSORS,
+[9.952s]                                                             ^
+[9.954s] 
+[9.955s] ./pixpubsub/pix_pubsub_node.py:60:100: E501 line too long (104 > 99 characters)
+[9.956s]                                                             mavutil.mavlink.MAV_DATA_STREAM_RAW_SENSORS,
+[9.957s]                                                                                                    ^
+[9.958s] 
+[9.960s] ./pixpubsub/pix_pubsub_node.py:61:61: E128 continuation line under-indented for visual indent
+[9.961s]                                                             10, 1)  # Adjust rate as needed
+[9.962s]                                                             ^
+[9.964s] 
+[9.965s] ./pixpubsub/pix_pubsub_node.py:71:15: E261 at least two spaces before inline comment
+[9.966s]             x, # forward/background
+[9.967s]               ^
+[9.968s] 
+[9.970s] ./pixpubsub/pix_pubsub_node.py:72:15: E261 at least two spaces before inline comment
+[9.971s]             y, # strafe left/right
+[9.972s]               ^
+[9.973s] 
+[9.974s] ./pixpubsub/pix_pubsub_node.py:73:15: E261 at least two spaces before inline comment
+[9.975s]             z, # up/down
+[9.976s]               ^
+[9.977s] 
+[9.978s] ./pixpubsub/pix_pubsub_node.py:74:15: E261 at least two spaces before inline comment
+[9.980s]             r, # turn left/right
+[9.981s]               ^
+[9.982s] 
+[9.983s] ./pixpubsub/pix_pubsub_node.py:78:89: W291 trailing whitespace
+[9.984s]         return ((value - old_min) / (old_max - old_min)) * (new_max - new_min) + new_min    
+[9.985s]                                                                                         ^
+[9.986s] 
+[9.987s] ./pixpubsub/pix_pubsub_node.py:79:1: W293 blank line contains whitespace
+[9.988s]     
+[9.990s] ^
+[9.991s] 
+[9.992s] ./pixpubsub/pix_pubsub_node.py:85:9: F841 local variable 'distance' is assigned to but never used
+[9.993s]         distance = msg.distance
+[9.994s]         ^
+[9.995s] 
+[9.996s] ./pixpubsub/pix_pubsub_node.py:86:9: F841 local variable 'time' is assigned to but never used
+[9.997s]         time = msg.time
+[9.998s]         ^
+[9.999s] 
+[10.000s] ./pixpubsub/pix_pubsub_node.py:87:1: W293 blank line contains whitespace
+[10.001s]         
+[10.003s] ^
+[10.004s] 
+[10.005s] ./pixpubsub/pix_pubsub_node.py:89:22: E712 comparison to True should be 'if cond is True:' or 'if cond:'
+[10.006s]         if turn_bool == True:
+[10.007s]                      ^
+[10.008s] 
+[10.009s] ./pixpubsub/pix_pubsub_node.py:94:14: W291 trailing whitespace
+[10.010s]         else:    
+[10.011s]              ^
+[10.013s] 
+[10.014s] ./pixpubsub/pix_pubsub_node.py:99:1: W293 blank line contains whitespace
+[10.015s]         
+[10.016s] ^
+[10.018s] 
+[10.019s] ./pixpubsub/pix_pubsub_node.py:100:1: W293 blank line contains whitespace
+[10.020s]             
+[10.021s] ^
+[10.022s] 
+[10.023s] ./pixpubsub/pix_pubsub_node.py:101:9: E303 too many blank lines (2)
+[10.025s]         print(vecx, vecy, vecz, vecr)
+[10.026s]         ^
+[10.027s] 
+[10.028s] ./pixpubsub/pix_pubsub_node.py:104:1: W293 blank line contains whitespace
+[10.029s]     
+[10.031s] ^
+[10.032s] 
+[10.033s] ./pixpubsub/pix_pubsub_node.py:105:5: E303 too many blank lines (2)
+[10.035s]     # def vector_control_tl():
+[10.036s]     ^
+[10.037s] 
+[10.039s] ./pixpubsub/pix_pubsub_node.py:109:35: W291 trailing whitespace
+[10.040s]     #             vecstr = input() 
+[10.041s]                                   ^
+[10.043s] 
+[10.044s] ./pixpubsub/pix_pubsub_node.py:122:1: W293 blank line contains whitespace
+[10.045s]     
+[10.047s] ^
+[10.048s] 
+[10.049s] ./pixpubsub/pix_pubsub_node.py:123:1: W293 blank line contains whitespace
+[10.050s]     
+[10.052s] ^
+[10.053s] 
+[10.054s] ./pixpubsub/pix_pubsub_node.py:124:1: W293 blank line contains whitespace
+[10.055s]         
+[10.056s] ^
+[10.057s] 
+[10.058s] ./pixpubsub/pix_pubsub_node.py:126:1: E303 too many blank lines (4)
+[10.060s] def main(args=None):
+[10.061s] ^
+[10.062s] 
+[10.063s] ./pixpubsub/pix_pubsub_node.py:133:1: E305 expected 2 blank lines after class or function definition, found 1
+[10.064s] if __name__ == '__main__':
+[10.065s] ^
+[10.067s] 
+[10.068s] ./pixpubsub/poolTests/testall.py:1:1: F401 'sys' imported but unused
+[10.069s] import sys
+[10.070s] ^
+[10.072s] 
+[10.073s] ./pixpubsub/poolTests/testall.py:6:11: E225 missing whitespace around operator
+[10.074s] SERIALPORT='/dev/ttyACM0'
+[10.075s]           ^
+[10.076s] 
+[10.077s] ./pixpubsub/poolTests/testall.py:15:1: E302 expected 2 blank lines, found 1
+[10.078s] def send_manual_control(x, y, z, r):
+[10.080s] ^
+[10.081s] 
+[10.082s] ./pixpubsub/poolTests/testall.py:18:11: E261 at least two spaces before inline comment
+[10.083s]         x, # forward/background
+[10.084s]           ^
+[10.085s] 
+[10.086s] ./pixpubsub/poolTests/testall.py:19:11: E261 at least two spaces before inline comment
+[10.088s]         y, # strafe left/right
+[10.089s]           ^
+[10.090s] 
+[10.091s] ./pixpubsub/poolTests/testall.py:20:11: E261 at least two spaces before inline comment
+[10.092s]         z, # up/down
+[10.094s]           ^
+[10.095s] 
+[10.096s] ./pixpubsub/poolTests/testall.py:21:11: E261 at least two spaces before inline comment
+[10.097s]         r, # turn left/right
+[10.099s]           ^
+[10.100s] 
+[10.101s] ./pixpubsub/poolTests/testall.py:23:1: W293 blank line contains whitespace
+[10.102s]     
+[10.103s] ^
+[10.104s] 
+[10.105s] ./pixpubsub/poolTests/testall.py:24:1: E302 expected 2 blank lines, found 1
+[10.106s] def moveForward():
+[10.107s] ^
+[10.109s] 
+[10.110s] ./pixpubsub/poolTests/testall.py:26:1: E302 expected 2 blank lines, found 0
+[10.111s] def moveBackward():
+[10.112s] ^
+[10.114s] 
+[10.115s] ./pixpubsub/poolTests/testall.py:27:37: E231 missing whitespace after ','
+[10.116s]     send_manual_control(-500, 0, 500,0)
+[10.118s]                                     ^
+[10.119s] 
+[10.120s] ./pixpubsub/poolTests/testall.py:28:1: W293 blank line contains whitespace
+[10.121s]     
+[10.122s] ^
+[10.123s] 
+[10.125s] ./pixpubsub/poolTests/testall.py:29:1: E302 expected 2 blank lines, found 1
+[10.126s] def strafeRight():
+[10.127s] ^
+[10.128s] 
+[10.130s] ./pixpubsub/poolTests/testall.py:31:1: E302 expected 2 blank lines, found 0
+[10.131s] def strafeLeft():
+[10.132s] ^
+[10.133s] 
+[10.134s] ./pixpubsub/poolTests/testall.py:33:1: W293 blank line contains whitespace
+[10.136s]     
+[10.137s] ^
+[10.138s] 
+[10.139s] ./pixpubsub/poolTests/testall.py:34:1: E302 expected 2 blank lines, found 1
+[10.140s] def moveUp():
+[10.142s] ^
+[10.143s] 
+[10.144s] ./pixpubsub/poolTests/testall.py:35:26: E231 missing whitespace after ','
+[10.145s]     send_manual_control(0,0,700,0)
+[10.147s]                          ^
+[10.148s] 
+[10.149s] ./pixpubsub/poolTests/testall.py:35:28: E231 missing whitespace after ','
+[10.151s]     send_manual_control(0,0,700,0)
+[10.152s]                            ^
+[10.153s] 
+[10.154s] ./pixpubsub/poolTests/testall.py:35:32: E231 missing whitespace after ','
+[10.155s]     send_manual_control(0,0,700,0)
+[10.157s]                                ^
+[10.158s] 
+[10.159s] ./pixpubsub/poolTests/testall.py:36:1: E302 expected 2 blank lines, found 0
+[10.160s] def moveDown(): 
+[10.161s] ^
+[10.163s] 
+[10.164s] ./pixpubsub/poolTests/testall.py:36:16: W291 trailing whitespace
+[10.165s] def moveDown(): 
+[10.166s]                ^
+[10.167s] 
+[10.168s] ./pixpubsub/poolTests/testall.py:37:26: E231 missing whitespace after ','
+[10.169s]     send_manual_control(0,0,300,0)    
+[10.170s]                          ^
+[10.171s] 
+[10.172s] ./pixpubsub/poolTests/testall.py:37:28: E231 missing whitespace after ','
+[10.174s]     send_manual_control(0,0,300,0)    
+[10.175s]                            ^
+[10.176s] 
+[10.177s] ./pixpubsub/poolTests/testall.py:37:32: E231 missing whitespace after ','
+[10.178s]     send_manual_control(0,0,300,0)    
+[10.179s]                                ^
+[10.180s] 
+[10.181s] ./pixpubsub/poolTests/testall.py:37:35: W291 trailing whitespace
+[10.182s]     send_manual_control(0,0,300,0)    
+[10.183s]                                   ^
+[10.185s] 
+[10.186s] ./pixpubsub/poolTests/testall.py:38:1: W293 blank line contains whitespace
+[10.187s]     
+[10.188s] ^
+[10.189s] 
+[10.190s] ./pixpubsub/poolTests/testall.py:39:1: E302 expected 2 blank lines, found 1
+[10.192s] def turnLeft():
+[10.193s] ^
+[10.194s] 
+[10.195s] ./pixpubsub/poolTests/testall.py:40:26: E231 missing whitespace after ','
+[10.196s]     send_manual_control(0,0,500,500)
+[10.197s]                          ^
+[10.198s] 
+[10.200s] ./pixpubsub/poolTests/testall.py:40:28: E231 missing whitespace after ','
+[10.201s]     send_manual_control(0,0,500,500)
+[10.202s]                            ^
+[10.203s] 
+[10.204s] ./pixpubsub/poolTests/testall.py:40:32: E231 missing whitespace after ','
+[10.205s]     send_manual_control(0,0,500,500)
+[10.206s]                                ^
+[10.207s] 
+[10.208s] ./pixpubsub/poolTests/testall.py:41:1: E302 expected 2 blank lines, found 0
+[10.209s] def turnRight():
+[10.210s] ^
+[10.211s] 
+[10.212s] ./pixpubsub/poolTests/testall.py:42:26: E231 missing whitespace after ','
+[10.213s]     send_manual_control(0,0,500,-500) 
+[10.214s]                          ^
+[10.216s] 
+[10.217s] [33m=============================== warnings summary ===============================[0m
+[10.219s] test/test_flake8.py::test_flake8
+[10.220s] test/test_flake8.py::test_flake8
+[10.222s]   Warning: SelectableGroups dict interface is deprecated. Use select.
+[10.223s] 
+[10.224s] -- Docs: https://docs.pytest.org/en/stable/warnings.html
+[10.226s] ./pixpubsub/poolTests/testall.py:42:28: E231 missing whitespace after ','
+[10.227s]     send_manual_control(0,0,500,-500) 
+[10.228s]                            ^
+[10.229s] 
+[10.230s] ./pixpubsub/poolTests/testall.py:42:32: E231 missing whitespace after ','
+[10.231s]     send_manual_control(0,0,500,-500) 
+[10.232s]                                ^
+[10.234s] 
+[10.235s] ./pixpubsub/poolTests/testall.py:42:38: W291 trailing whitespace
+[10.236s]     send_manual_control(0,0,500,-500) 
+[10.238s]                                      ^
+[10.239s] 
+[10.240s] ./pixpubsub/poolTests/testall.py:43:1: W293 blank line contains whitespace
+[10.241s]     
+[10.242s] ^
+[10.243s] 
+[10.245s] ./pixpubsub/poolTests/testall.py:45:1: E302 expected 2 blank lines, found 1
+[10.246s] def armFunc():
+[10.247s] ^
+[10.248s] 
+[10.249s] ./pixpubsub/poolTests/testall.py:57:1: E302 expected 2 blank lines, found 1
+[10.250s] def modeSetFunc():
+[10.251s] ^
+[10.252s] 
+[10.253s] ./pixpubsub/poolTests/testall.py:70:1: E302 expected 2 blank lines, found 1
+[10.254s] def disarmFunc():
+[10.256s] ^
+[10.257s] 
+[10.258s] ./pixpubsub/poolTests/testall.py:80:1: W293 blank line contains whitespace
+[10.259s]     
+[10.260s] ^
+[10.261s] 
+[10.262s] ./pixpubsub/poolTests/testall.py:82:1: E305 expected 2 blank lines after class or function definition, found 1
+[10.263s] armFunc()
+[10.264s] ^
+[10.265s] 
+[10.266s] ./pixpubsub/poolTests/testall.py:86:1: E265 block comment should start with '# '
+[10.267s] #in theory should do all movement and return to original place
+[10.268s] ^
+[10.269s] 
+[10.271s] ./pixpubsub/poolTests/testall.py:108:13: W292 no newline at end of file
+[10.272s] disarmFunc()            ^
+[10.273s] 
+[10.274s] ./pixpubsub/poolTests/vectorinput.py:1:1: F401 'sys' imported but unused
+[10.275s] import sys
+[10.276s] ^
+[10.277s] 
+[10.278s] ./pixpubsub/poolTests/vectorinput.py:6:11: E225 missing whitespace around operator
+[10.279s] SERIALPORT='/dev/ttyACM0'
+[10.280s]           ^
+[10.281s] 
+[10.282s] ./pixpubsub/poolTests/vectorinput.py:15:1: E302 expected 2 blank lines, found 1
+[10.283s] def armFunc():
+[10.284s] ^
+[10.285s] 
+[10.286s] ./pixpubsub/poolTests/vectorinput.py:26:1: W293 blank line contains whitespace
+[10.287s]     
+[10.288s] ^
+[10.289s] 
+[10.290s] ./pixpubsub/poolTests/vectorinput.py:27:1: E302 expected 2 blank lines, found 1
+[10.291s] def modeSetFunc():
+[10.292s] ^
+[10.293s] 
+[10.294s] ./pixpubsub/poolTests/vectorinput.py:38:1: W293 blank line contains whitespace
+[10.296s]     
+[10.297s] ^
+[10.298s] 
+[10.299s] ./pixpubsub/poolTests/vectorinput.py:39:1: E302 expected 2 blank lines, found 1
+[10.300s] def disarmFunc():
+[10.301s] ^
+[10.302s] 
+[10.303s] ./pixpubsub/poolTests/vectorinput.py:48:26: W291 trailing whitespace
+[10.304s]     print('Disarming...')        
+[10.305s]                          ^
+[10.306s] 
+[10.307s] ./pixpubsub/poolTests/vectorinput.py:50:1: E302 expected 2 blank lines, found 1
+[10.308s] def send_manual_control(x, y, z, r):
+[10.310s] ^
+[10.311s] 
+[10.312s] ./pixpubsub/poolTests/vectorinput.py:53:11: E261 at least two spaces before inline comment
+[10.313s]         x, # forward/background
+[10.314s]           ^
+[10.315s] 
+[10.316s] ./pixpubsub/poolTests/vectorinput.py:54:11: E261 at least two spaces before inline comment
+[10.317s]         y, # strafe left/right
+[10.318s]           ^
+[10.320s] 
+[10.321s] ./pixpubsub/poolTests/vectorinput.py:55:11: E261 at least two spaces before inline comment
+[10.322s]         z, # up/down
+[10.323s]           ^
+[10.324s] 
+[10.325s] ./pixpubsub/poolTests/vectorinput.py:56:11: E261 at least two spaces before inline comment
+[10.326s]         r, # turn left/right
+[10.327s]           ^
+[10.328s] 
+[10.329s] ./pixpubsub/poolTests/vectorinput.py:59:1: E302 expected 2 blank lines, found 1
+[10.331s] def map_to_range(value, old_min, old_max, new_min, new_max):
+[10.332s] ^
+[10.333s] 
+[10.334s] ./pixpubsub/poolTests/vectorinput.py:62:1: E302 expected 2 blank lines, found 1
+[10.335s] def vector_control_tl():
+[10.337s] ^
+[10.338s] 
+[10.339s] ./pixpubsub/poolTests/vectorinput.py:66:29: W291 trailing whitespace
+[10.340s]             vecstr = input() 
+[10.342s]                             ^
+[10.343s] 
+[10.344s] ./pixpubsub/poolTests/vectorinput.py:75:23: E231 missing whitespace after ','
+[10.345s]             print(vecx,vecy,vecz,vecr)
+[10.347s]                       ^
+[10.348s] 
+[10.349s] ./pixpubsub/poolTests/vectorinput.py:75:28: E231 missing whitespace after ','
+[10.350s]             print(vecx,vecy,vecz,vecr)
+[10.351s]                            ^
+[10.352s] 
+[10.353s] ./pixpubsub/poolTests/vectorinput.py:75:33: E231 missing whitespace after ','
+[10.355s]             print(vecx,vecy,vecz,vecr)
+[10.356s]                                 ^
+[10.357s] 
+[10.358s] ./pixpubsub/poolTests/vectorinput.py:80:1: W293 blank line contains whitespace
+[10.359s]     
+[10.360s] ^
+[10.361s] 
+[10.363s] ./pixpubsub/poolTests/vectorinput.py:81:1: E305 expected 2 blank lines after class or function definition, found 1
+[10.364s] armFunc()
+[10.365s] ^
+[10.366s] 
+[10.367s] 3     E128 continuation line under-indented for visual indent
+[10.369s] 2     E222 multiple spaces after operator
+[10.370s] 2     E225 missing whitespace around operator
+[10.371s] 16    E231 missing whitespace after ','
+[10.372s] 13    E261 at least two spaces before inline comment
+[10.373s] 1     E265 block comment should start with '# '
+[10.375s] 21    E302 expected 2 blank lines, found 1
+[10.376s] 4     E303 too many blank lines (2)
+[10.377s] 4     E305 expected 2 blank lines after class or function definition, found 1
+[10.378s] 3     E501 line too long (107 > 99 characters)
+[10.380s] 1     E712 comparison to True should be 'if cond is True:' or 'if cond:'
+[10.381s] 4     F401 'sys' imported but unused
+[10.382s] 2     F841 local variable 'distance' is assigned to but never used
+[10.383s] 10    W291 trailing whitespace
+[10.384s] 1     W292 no newline at end of file
+[10.385s] 19    W293 blank line contains whitespace
+[10.386s] 
+[10.387s] 10 files checked
+[10.388s] 106 errors
+[10.389s] 
+[10.391s] 'E'-type errors: 70
+[10.392s] 'F'-type errors: 6
+[10.393s] 'W'-type errors: 30
+[10.394s] 
+[10.395s] Checked files:
+[10.397s] 
+[10.398s] * ./setup.py
+[10.399s] * ./pixpubsub/justmove_sub.py
+[10.400s] * ./pixpubsub/move_pub.py
+[10.401s] * ./pixpubsub/pix_pubsub_node.py
+[10.403s] * ./pixpubsub/__init__.py
+[10.404s] * ./pixpubsub/poolTests/testall.py
+[10.405s] * ./pixpubsub/poolTests/vectorinput.py
+[10.406s] * ./test/test_copyright.py
+[10.407s] * ./test/test_flake8.py
+[10.409s] * ./test/test_pep257.py
+[10.410s] ----------------------------- Captured stderr call -----------------------------
+[10.411s] option --max-complexity: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+[10.412s] --------- generated xml file: /src/ros2_ws/build/pixpubsub/pytest.xml ----------
+[10.413s] =========================== short test summary info ============================
+[10.414s] FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 106 code styl...
+[10.415s] [31m============== [31m[1m1 failed[0m, [32m1 passed[0m, [33m1 skipped[0m, [33m2 warnings[0m[31m in 1.72s[0m[31m ==============[0m
+[10.416s] Invoked command in '/src/ros2_ws/src/pixpubsub' returned '1': AMENT_PREFIX_PATH=/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/test_pubsub:/src/ros2_ws/install/px4_ros_com:/src/ros2_ws/install/px4_msgs:/src/ros2_ws/install/pioneer_msgs:/src/ros2_ws/install/imu_publisher:/opt/ros/humble CMAKE_PREFIX_PATH=/src/ros2_ws/install/pioneer_msgs:/src/ros2_ws/install/px4_ros_com:/src/ros2_ws/install/px4_msgs:/src/ros2_ws/install/microxrcedds_agent LD_LIBRARY_PATH=/src/ros2_ws/install/pioneer_msgs/lib:/src/ros2_ws/install/px4_ros_com/lib:/src/ros2_ws/install/px4_msgs/lib:/src/ros2_ws/install/microxrcedds_agent/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTEST_ADDOPTS=--tb=short --junit-xml=/src/ros2_ws/build/pixpubsub/pytest.xml --junit-prefix=pixpubsub -o cache_dir=/src/ros2_ws/build/pixpubsub/.pytest_cache PYTHONPATH=/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages:/src/ros2_ws/install/test_pubsub/lib/python3.10/site-packages:/src/ros2_ws/install/px4_msgs/lib/python3.10/site-packages:/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages:/src/ros2_ws/install/imu_publisher/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -m pytest

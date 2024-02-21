@@ -1,0 +1,12 @@
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_typesupport_cpp.xunit.xml --linelength 0 /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_cpp/pioneer_msgs
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_cpp/pioneer_msgs/msg/motion_command__type_support.cpp'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_cpp/pioneer_msgs/msg/status__type_support.cpp'
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_typesupport_cpp.xunit.xml'

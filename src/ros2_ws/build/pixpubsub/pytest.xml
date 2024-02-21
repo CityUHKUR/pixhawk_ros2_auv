@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="1" tests="3" time="1.559" timestamp="2024-02-21T13:04:59.098118" hostname="docker-desktop"><testcase classname="pixpubsub.test.test_copyright" name="test_copyright" time="0.001"><skipped type="pytest.skip" message="No copyright header has been placed in the generated source file.">/src/ros2_ws/src/pixpubsub/test/test_copyright.py:20: No copyright header has been placed in the generated source file.</skipped></testcase><testcase classname="pixpubsub.test.test_flake8" name="test_flake8" time="0.551"><failure message="AssertionError: Found 106 code style errors / warnings:&#10;  ./pixpubsub/move_pub.py:6:1: E302 expected 2 blank lines, found 1&#10;  ./pixpubsub/move_pub.py:11:17: E222 multiple spaces after operator&#10;  ./pixpubsub/move_pub.py:26:18: E222 multiple spaces after operator&#10;  ./pixpubsub/move_pub.py:28:1: E302 expected 2 blank lines, found 1&#10;  ./pixpubsub/move_pub.py:39:1: E305 expected 2 blank lines after class or function definition, found 1&#10;  ./pixpubsub/pix_pubsub_node.py:9:1: F401 'sys' imported but unused&#10;  ./pixpubsub/pix_pubsub_node.py:10:1: F401 'serial' imported but unused&#10;  ./pixpubsub/pix_pubsub_node.py:12:1: E302 expected 2 blank lines, found 1&#10;  ./pixpubsub/pix_pubsub_node.py:22:1: W293 blank line contains whitespace&#10;  ./pixpubsub/pix_pubsub_node.py:28:26: E261 at least two spaces before inline comment&#10;  ./pixpubsub/pix_pubsub_node.py:31:5: E303 too many blank lines (2)&#10;  ./pixpubsub/pix_pubsub_node.py:41:64: W291 trailing whitespace&#10;  ./pixpubsub/pix_pubsub_node.py:45:53: W291 trailing whitespace&#10;  ./pixpubsub/pix_pubsub_node.py:51:1: W293 blank line contains whitespace&#10;  ./pixpubsub/pix_pubsub_node.py:58:100: E501 line too long (107 &gt; 99 characters)&#10;  ./pixpubsub/pix_pubsub_node.py:59:61: E128 continuation line under-indented for visual indent&#10;  ./pixpubsub/pix_pubsub_node.py:59:100: E501 line too long (103 &gt; 99 characters)&#10;  ./pixpubsub/pix_pubsub_node.py:60:61: E128 continuation line under-indented for visual indent&#10;  ./pixpubsub/pix_pubsub_node.py:60:100: E501 line too long (104 &gt; 99 characters)&#10;  ./pixpubsub/pix_pubsub_node.py:61:61: E128 continuation line under-indented for visual indent&#10;  ./pixpubsub/pix_pubsub_node.py:71:15: E261 at least two spaces before inline comment&#10;  ./pixpubsub/pix_pubsub_node.py:72:15: E261 at least two spaces before inline comment&#10;  ./pixpubsub/pix_pubsub_node.py:73:15: E261 at least two spaces before inline comment&#10;  ./pixpubsub/pix_pubsub_node.py:74:15: E261 at least two spaces before inline comment&#10;  ./pixpubsub/pix_pubsub_node.py:78:89: W291 trailing whitespace&#10;  ./pixpubsub/pix_pubsub_node.py:79:1: W293 blank line contains whitespace&#10;  ./pixpubsub/pix_pubsub_node.py:85:9: F841 local variable 'distance' is assigned to but never used&#10;  ./pixpubsub/pix_pubsub_node.py:86:9: F841 local variable 'time' is assigned to but never used&#10;  ./pixpubsub/pix_pubsub_node.py:87:1: W293 blank line contains whitespace&#10;  ./pixpubsub/pix_pubsub_node.py:89:22: E712 comparison to True should be 'if cond is True:' or 'if cond:'&#10;  ./pixpubsub/pix_pubsub_node.py:94:14: W291 trailing whitespace&#10;  ./pixpubsub/pix_pubsub_node.py:99:1: W293 blank line contains whitespace&#10;  ./pixpubsub/pix_pubsub_node.py:100:1: W293 blank line contains whitespace&#10;  ./pixpubsub/pix_pubsub_node.py:101:9: E303 too many blank lines (2)&#10;  ./pixpubsub/pix_pubsub_node.py:104:1: W293 blank line contains whitespace&#10;  ./pixpubsub/pix_pubsub_node.py:105:5: E303 too many blank lines (2)&#10;  ./pixpubsub/pix_pubsub_node.py:109:35: W291 trailing whitespace&#10;  ./pixpubsub/pix_pubsub_node.py:122:1: W293 blank line contains whitespace&#10;  ./pixpubsub/pix_pubsub_node.py:123:1: W293 blank line contains whitespace&#10;  ./pixpubsub/pix_pubsub_node.py:124:1: W293 blank line contains whitespace&#10;  ./pixpubsub/pix_pubsub_node.py:126:1: E303 too many blank lines (4)&#10;  ./pixpubsub/pix_pubsub_node.py:133:1: E305 expected 2 blank lines after class or function definition, found 1&#10;  ./pixpubsub/poolTests/testall.py:1:1: F401 'sys' imported but unused&#10;  ./pixpubsub/poolTests/testall.py:6:11: E225 missing whitespace around operator&#10;  ./pixpubsub/poolTests/testall.py:15:1: E302 expected 2 blank lines, found 1&#10;  ./pixpubsub/poolTests/testall.py:18:11: E261 at least two spaces before inline comment&#10;  ./pixpubsub/poolTests/testall.py:19:11: E261 at least two spaces before inline comment&#10;  ./pixpubsub/poolTests/testall.py:20:11: E261 at least two spaces before inline comment&#10;  ./pixpubsub/poolTests/testall.py:21:11: E261 at least two spaces before inline comment&#10;  ./pixpubsub/poolTests/testall.py:23:1: W293 blank line contains whitespace&#10;  ./pixpubsub/poolTests/testall.py:24:1: E302 expected 2 blank lines, found 1&#10;  ./pixpubsub/poolTests/testall.py:26:1: E302 expected 2 blank lines, found 0&#10;  ./pixpubsub/poolTests/testall.py:27:37: E231 missing whitespace after ','&#10;  ./pixpubsub/poolTests/testall.py:28:1: W293 blank line contains whitespace&#10;  ./pixpubsub/poolTests/testall.py:29:1: E302 expected 2 blank lines, found 1&#10;  ./pixpubsub/poolTests/testall.py:31:1: E302 expected 2 blank lines, found 0&#10;  ./pixpubsub/poolTests/testall.py:33:1: W293 blank line contains whitespace&#10;  ./pixpubsub/poolTests/testall.py:34:1: E302 expected 2 blank lines, found 1&#10;  ./pixpubsub/poolTests/testall.py:35:26: E231 missing whitespace after ','&#10;  ./pixpubsub/poolTests/testall.py:35:28: E231 missing whitespace after ','&#10;  ./pixpubsub/poolTests/testall.py:35:32: E231 missing whitespace after ','&#10;  ./pixpubsub/poolTests/testall.py:36:1: E302 expected 2 blank lines, found 0&#10;  ./pixpubsub/poolTests/testall.py:36:16: W291 trailing whitespace&#10;  ./pixpubsub/poolTests/testall.py:37:26: E231 missing whitespace after ','&#10;  ./pixpubsub/poolTests/testall.py:37:28: E231 missing whitespace after ','&#10;  ./pixpubsub/poolTests/testall.py:37:32: E231 missing whitespace after ','&#10;  ./pixpubsub/poolTests/testall.py:37:35: W291 trailing whitespace&#10;  ./pixpubsub/poolTests/testall.py:38:1: W293 blank line contains whitespace&#10;  ./pixpubsub/poolTests/testall.py:39:1: E302 expected 2 blank lines, found 1&#10;  ./pixpubsub/poolTests/testall.py:40:26: E231 missing whitespace after ','&#10;  ./pixpubsub/poolTests/testall.py:40:28: E231 missing whitespace after ','&#10;  ./pixpubsub/poolTests/testall.py:40:32: E231 missing whitespace after ','&#10;  ./pixpubsub/poolTests/testall.py:41:1: E302 expected 2 blank lines, found 0&#10;  ./pixpubsub/poolTests/testall.py:42:26: E231 missing whitespace after ','&#10;  ./pixpubsub/poolTests/testall.py:42:28: E231 missing whitespace after ','&#10;  ./pixpubsub/poolTests/testall.py:42:32: E231 missing whitespace after ','&#10;  ./pixpubsub/poolTests/testall.py:42:38: W291 trailing whitespace&#10;  ./pixpubsub/poolTests/testall.py:43:1: W293 blank line contains whitespace&#10;  ./pixpubsub/poolTests/testall.py:45:1: E302 expected 2 blank lines, found 1&#10;  ./pixpubsub/poolTests/testall.py:57:1: E302 expected 2 blank lines, found 1&#10;  ./pixpubsub/poolTests/testall.py:70:1: E302 expected 2 blank lines, found 1&#10;  ./pixpubsub/poolTests/testall.py:80:1: W293 blank line contains whitespace&#10;  ./pixpubsub/poolTests/testall.py:82:1: E305 expected 2 blank lines after class or function definition, found 1&#10;  ./pixpubsub/poolTests/testall.py:86:1: E265 block comment should start with '# '&#10;  ./pixpubsub/poolTests/testall.py:108:13: W292 no newline at end of file&#10;  ./pixpubsub/poolTests/vectorinput.py:1:1: F401 'sys' imported but unused&#10;  ./pixpubsub/poolTests/vectorinput.py:6:11: E225 missing whitespace around operator&#10;  ./pixpubsub/poolTests/vectorinput.py:15:1: E302 expected 2 blank lines, found 1&#10;  ./pixpubsub/poolTests/vectorinput.py:26:1: W293 blank line contains whitespace&#10;  ./pixpubsub/poolTests/vectorinput.py:27:1: E302 expected 2 blank lines, found 1&#10;  ./pixpubsub/poolTests/vectorinput.py:38:1: W293 blank line contains whitespace&#10;  ./pixpubsub/poolTests/vectorinput.py:39:1: E302 expected 2 blank lines, found 1&#10;  ./pixpubsub/poolTests/vectorinput.py:48:26: W291 trailing whitespace&#10;  ./pixpubsub/poolTests/vectorinput.py:50:1: E302 expected 2 blank lines, found 1&#10;  ./pixpubsub/poolTests/vectorinput.py:53:11: E261 at least two spaces before inline comment&#10;  ./pixpubsub/poolTests/vectorinput.py:54:11: E261 at least two spaces before inline comment&#10;  ./pixpubsub/poolTests/vectorinput.py:55:11: E261 at least two spaces before inline comment&#10;  ./pixpubsub/poolTests/vectorinput.py:56:11: E261 at least two spaces before inline comment&#10;  ./pixpubsub/poolTests/vectorinput.py:59:1: E302 expected 2 blank lines, found 1&#10;  ./pixpubsub/poolTests/vectorinput.py:62:1: E302 expected 2 blank lines, found 1&#10;  ./pixpubsub/poolTests/vectorinput.py:66:29: W291 trailing whitespace&#10;  ./pixpubsub/poolTests/vectorinput.py:75:23: E231 missing whitespace after ','&#10;  ./pixpubsub/poolTests/vectorinput.py:75:28: E231 missing whitespace after ','&#10;  ./pixpubsub/poolTests/vectorinput.py:75:33: E231 missing whitespace after ','&#10;  ./pixpubsub/poolTests/vectorinput.py:80:1: W293 blank line contains whitespace&#10;  ./pixpubsub/poolTests/vectorinput.py:81:1: E305 expected 2 blank lines after class or function definition, found 1&#10;assert 1 == 0">test/test_flake8.py:23: in test_flake8
+    assert rc == 0, \
+E   AssertionError: Found 106 code style errors / warnings:
+E     ./pixpubsub/move_pub.py:6:1: E302 expected 2 blank lines, found 1
+E     ./pixpubsub/move_pub.py:11:17: E222 multiple spaces after operator
+E     ./pixpubsub/move_pub.py:26:18: E222 multiple spaces after operator
+E     ./pixpubsub/move_pub.py:28:1: E302 expected 2 blank lines, found 1
+E     ./pixpubsub/move_pub.py:39:1: E305 expected 2 blank lines after class or function definition, found 1
+E     ./pixpubsub/pix_pubsub_node.py:9:1: F401 'sys' imported but unused
+E     ./pixpubsub/pix_pubsub_node.py:10:1: F401 'serial' imported but unused
+E     ./pixpubsub/pix_pubsub_node.py:12:1: E302 expected 2 blank lines, found 1
+E     ./pixpubsub/pix_pubsub_node.py:22:1: W293 blank line contains whitespace
+E     ./pixpubsub/pix_pubsub_node.py:28:26: E261 at least two spaces before inline comment
+E     ./pixpubsub/pix_pubsub_node.py:31:5: E303 too many blank lines (2)
+E     ./pixpubsub/pix_pubsub_node.py:41:64: W291 trailing whitespace
+E     ./pixpubsub/pix_pubsub_node.py:45:53: W291 trailing whitespace
+E     ./pixpubsub/pix_pubsub_node.py:51:1: W293 blank line contains whitespace
+E     ./pixpubsub/pix_pubsub_node.py:58:100: E501 line too long (107 &gt; 99 characters)
+E     ./pixpubsub/pix_pubsub_node.py:59:61: E128 continuation line under-indented for visual indent
+E     ./pixpubsub/pix_pubsub_node.py:59:100: E501 line too long (103 &gt; 99 characters)
+E     ./pixpubsub/pix_pubsub_node.py:60:61: E128 continuation line under-indented for visual indent
+E     ./pixpubsub/pix_pubsub_node.py:60:100: E501 line too long (104 &gt; 99 characters)
+E     ./pixpubsub/pix_pubsub_node.py:61:61: E128 continuation line under-indented for visual indent
+E     ./pixpubsub/pix_pubsub_node.py:71:15: E261 at least two spaces before inline comment
+E     ./pixpubsub/pix_pubsub_node.py:72:15: E261 at least two spaces before inline comment
+E     ./pixpubsub/pix_pubsub_node.py:73:15: E261 at least two spaces before inline comment
+E     ./pixpubsub/pix_pubsub_node.py:74:15: E261 at least two spaces before inline comment
+E     ./pixpubsub/pix_pubsub_node.py:78:89: W291 trailing whitespace
+E     ./pixpubsub/pix_pubsub_node.py:79:1: W293 blank line contains whitespace
+E     ./pixpubsub/pix_pubsub_node.py:85:9: F841 local variable 'distance' is assigned to but never used
+E     ./pixpubsub/pix_pubsub_node.py:86:9: F841 local variable 'time' is assigned to but never used
+E     ./pixpubsub/pix_pubsub_node.py:87:1: W293 blank line contains whitespace
+E     ./pixpubsub/pix_pubsub_node.py:89:22: E712 comparison to True should be 'if cond is True:' or 'if cond:'
+E     ./pixpubsub/pix_pubsub_node.py:94:14: W291 trailing whitespace
+E     ./pixpubsub/pix_pubsub_node.py:99:1: W293 blank line contains whitespace
+E     ./pixpubsub/pix_pubsub_node.py:100:1: W293 blank line contains whitespace
+E     ./pixpubsub/pix_pubsub_node.py:101:9: E303 too many blank lines (2)
+E     ./pixpubsub/pix_pubsub_node.py:104:1: W293 blank line contains whitespace
+E     ./pixpubsub/pix_pubsub_node.py:105:5: E303 too many blank lines (2)
+E     ./pixpubsub/pix_pubsub_node.py:109:35: W291 trailing whitespace
+E     ./pixpubsub/pix_pubsub_node.py:122:1: W293 blank line contains whitespace
+E     ./pixpubsub/pix_pubsub_node.py:123:1: W293 blank line contains whitespace
+E     ./pixpubsub/pix_pubsub_node.py:124:1: W293 blank line contains whitespace
+E     ./pixpubsub/pix_pubsub_node.py:126:1: E303 too many blank lines (4)
+E     ./pixpubsub/pix_pubsub_node.py:133:1: E305 expected 2 blank lines after class or function definition, found 1
+E     ./pixpubsub/poolTests/testall.py:1:1: F401 'sys' imported but unused
+E     ./pixpubsub/poolTests/testall.py:6:11: E225 missing whitespace around operator
+E     ./pixpubsub/poolTests/testall.py:15:1: E302 expected 2 blank lines, found 1
+E     ./pixpubsub/poolTests/testall.py:18:11: E261 at least two spaces before inline comment
+E     ./pixpubsub/poolTests/testall.py:19:11: E261 at least two spaces before inline comment
+E     ./pixpubsub/poolTests/testall.py:20:11: E261 at least two spaces before inline comment
+E     ./pixpubsub/poolTests/testall.py:21:11: E261 at least two spaces before inline comment
+E     ./pixpubsub/poolTests/testall.py:23:1: W293 blank line contains whitespace
+E     ./pixpubsub/poolTests/testall.py:24:1: E302 expected 2 blank lines, found 1
+E     ./pixpubsub/poolTests/testall.py:26:1: E302 expected 2 blank lines, found 0
+E     ./pixpubsub/poolTests/testall.py:27:37: E231 missing whitespace after ','
+E     ./pixpubsub/poolTests/testall.py:28:1: W293 blank line contains whitespace
+E     ./pixpubsub/poolTests/testall.py:29:1: E302 expected 2 blank lines, found 1
+E     ./pixpubsub/poolTests/testall.py:31:1: E302 expected 2 blank lines, found 0
+E     ./pixpubsub/poolTests/testall.py:33:1: W293 blank line contains whitespace
+E     ./pixpubsub/poolTests/testall.py:34:1: E302 expected 2 blank lines, found 1
+E     ./pixpubsub/poolTests/testall.py:35:26: E231 missing whitespace after ','
+E     ./pixpubsub/poolTests/testall.py:35:28: E231 missing whitespace after ','
+E     ./pixpubsub/poolTests/testall.py:35:32: E231 missing whitespace after ','
+E     ./pixpubsub/poolTests/testall.py:36:1: E302 expected 2 blank lines, found 0
+E     ./pixpubsub/poolTests/testall.py:36:16: W291 trailing whitespace
+E     ./pixpubsub/poolTests/testall.py:37:26: E231 missing whitespace after ','
+E     ./pixpubsub/poolTests/testall.py:37:28: E231 missing whitespace after ','
+E     ./pixpubsub/poolTests/testall.py:37:32: E231 missing whitespace after ','
+E     ./pixpubsub/poolTests/testall.py:37:35: W291 trailing whitespace
+E     ./pixpubsub/poolTests/testall.py:38:1: W293 blank line contains whitespace
+E     ./pixpubsub/poolTests/testall.py:39:1: E302 expected 2 blank lines, found 1
+E     ./pixpubsub/poolTests/testall.py:40:26: E231 missing whitespace after ','
+E     ./pixpubsub/poolTests/testall.py:40:28: E231 missing whitespace after ','
+E     ./pixpubsub/poolTests/testall.py:40:32: E231 missing whitespace after ','
+E     ./pixpubsub/poolTests/testall.py:41:1: E302 expected 2 blank lines, found 0
+E     ./pixpubsub/poolTests/testall.py:42:26: E231 missing whitespace after ','
+E     ./pixpubsub/poolTests/testall.py:42:28: E231 missing whitespace after ','
+E     ./pixpubsub/poolTests/testall.py:42:32: E231 missing whitespace after ','
+E     ./pixpubsub/poolTests/testall.py:42:38: W291 trailing whitespace
+E     ./pixpubsub/poolTests/testall.py:43:1: W293 blank line contains whitespace
+E     ./pixpubsub/poolTests/testall.py:45:1: E302 expected 2 blank lines, found 1
+E     ./pixpubsub/poolTests/testall.py:57:1: E302 expected 2 blank lines, found 1
+E     ./pixpubsub/poolTests/testall.py:70:1: E302 expected 2 blank lines, found 1
+E     ./pixpubsub/poolTests/testall.py:80:1: W293 blank line contains whitespace
+E     ./pixpubsub/poolTests/testall.py:82:1: E305 expected 2 blank lines after class or function definition, found 1
+E     ./pixpubsub/poolTests/testall.py:86:1: E265 block comment should start with '# '
+E     ./pixpubsub/poolTests/testall.py:108:13: W292 no newline at end of file
+E     ./pixpubsub/poolTests/vectorinput.py:1:1: F401 'sys' imported but unused
+E     ./pixpubsub/poolTests/vectorinput.py:6:11: E225 missing whitespace around operator
+E     ./pixpubsub/poolTests/vectorinput.py:15:1: E302 expected 2 blank lines, found 1
+E     ./pixpubsub/poolTests/vectorinput.py:26:1: W293 blank line contains whitespace
+E     ./pixpubsub/poolTests/vectorinput.py:27:1: E302 expected 2 blank lines, found 1
+E     ./pixpubsub/poolTests/vectorinput.py:38:1: W293 blank line contains whitespace
+E     ./pixpubsub/poolTests/vectorinput.py:39:1: E302 expected 2 blank lines, found 1
+E     ./pixpubsub/poolTests/vectorinput.py:48:26: W291 trailing whitespace
+E     ./pixpubsub/poolTests/vectorinput.py:50:1: E302 expected 2 blank lines, found 1
+E     ./pixpubsub/poolTests/vectorinput.py:53:11: E261 at least two spaces before inline comment
+E     ./pixpubsub/poolTests/vectorinput.py:54:11: E261 at least two spaces before inline comment
+E     ./pixpubsub/poolTests/vectorinput.py:55:11: E261 at least two spaces before inline comment
+E     ./pixpubsub/poolTests/vectorinput.py:56:11: E261 at least two spaces before inline comment
+E     ./pixpubsub/poolTests/vectorinput.py:59:1: E302 expected 2 blank lines, found 1
+E     ./pixpubsub/poolTests/vectorinput.py:62:1: E302 expected 2 blank lines, found 1
+E     ./pixpubsub/poolTests/vectorinput.py:66:29: W291 trailing whitespace
+E     ./pixpubsub/poolTests/vectorinput.py:75:23: E231 missing whitespace after ','
+E     ./pixpubsub/poolTests/vectorinput.py:75:28: E231 missing whitespace after ','
+E     ./pixpubsub/poolTests/vectorinput.py:75:33: E231 missing whitespace after ','
+E     ./pixpubsub/poolTests/vectorinput.py:80:1: W293 blank line contains whitespace
+E     ./pixpubsub/poolTests/vectorinput.py:81:1: E305 expected 2 blank lines after class or function definition, found 1
+E   assert 1 == 0</failure></testcase><testcase classname="pixpubsub.test.test_pep257" name="test_pep257" time="0.204" /></testsuite></testsuites>

@@ -1,0 +1,30 @@
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_generated_c.xunit.xml --linelength 0 /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__functions.c'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__functions.h'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__struct.h'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__type_support.h'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/status__functions.c'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/status__functions.h'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/status__struct.h'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/status__type_support.h'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/motion_command.h'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/rosidl_generator_c__visibility_control.h'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/status.h'
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_generated_c.xunit.xml'

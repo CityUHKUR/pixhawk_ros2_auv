@@ -1,0 +1,200 @@
+[4.565s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'pioneer_msgs']
+[4.565s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['pioneer_msgs'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f521f115660>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f521f0c67d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f521f0c67d0>>, mixin_verb=('build',))
+[4.822s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[4.823s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[4.825s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[4.825s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[4.825s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[4.826s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[4.826s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[4.826s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[4.827s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/src/ros2_ws'
+[4.828s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[4.829s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[4.829s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[4.830s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[4.830s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[4.831s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[4.831s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[4.831s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[4.832s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[4.866s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[4.867s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[4.867s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[4.868s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[4.868s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[4.872s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[4.872s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[4.874s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[4.877s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[4.877s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[4.879s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[4.882s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[4.882s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[4.883s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[4.887s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[4.888s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[4.889s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[4.891s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[4.891s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[4.892s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[4.893s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[4.894s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[4.894s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[4.898s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[4.899s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[4.900s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[4.901s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[4.901s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[4.908s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_publisher) by extensions ['ignore', 'ignore_ament_install']
+[4.908s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_publisher) by extension 'ignore'
+[4.910s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_publisher) by extension 'ignore_ament_install'
+[4.913s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_publisher) by extensions ['colcon_pkg']
+[4.913s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_publisher) by extension 'colcon_pkg'
+[4.915s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_publisher) by extensions ['colcon_meta']
+[4.915s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_publisher) by extension 'colcon_meta'
+[4.917s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_publisher) by extensions ['ros']
+[4.918s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_publisher) by extension 'ros'
+[4.938s] DEBUG:colcon.colcon_core.package_identification:Package 'src/imu_publisher' with type 'ros.ament_python' and name 'imu_publisher'
+[4.943s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber) by extensions ['ignore', 'ignore_ament_install']
+[4.944s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber) by extension 'ignore'
+[4.945s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber) by extension 'ignore_ament_install'
+[4.948s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber) by extensions ['colcon_pkg']
+[4.948s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber) by extension 'colcon_pkg'
+[4.950s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber) by extensions ['colcon_meta']
+[4.951s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber) by extension 'colcon_meta'
+[4.954s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber) by extensions ['ros']
+[4.954s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber) by extension 'ros'
+[4.961s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber) by extensions ['cmake', 'python']
+[4.961s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber) by extension 'cmake'
+[4.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber) by extension 'python'
+[4.965s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber) by extensions ['python_setup_py']
+[4.966s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber) by extension 'python_setup_py'
+[4.974s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber/src) by extensions ['ignore', 'ignore_ament_install']
+[4.975s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber/src) by extension 'ignore'
+[4.978s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber/src) by extension 'ignore_ament_install'
+[4.982s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber/src) by extensions ['colcon_pkg']
+[4.982s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber/src) by extension 'colcon_pkg'
+[4.985s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber/src) by extensions ['colcon_meta']
+[4.985s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber/src) by extension 'colcon_meta'
+[4.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber/src) by extensions ['ros']
+[4.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber/src) by extension 'ros'
+[5.001s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber/src) by extensions ['cmake', 'python']
+[5.001s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber/src) by extension 'cmake'
+[5.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber/src) by extension 'python'
+[5.006s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber/src) by extensions ['python_setup_py']
+[5.006s] Level 1:colcon.colcon_core.package_identification:_identify(src/movement_subscriber/src) by extension 'python_setup_py'
+[5.013s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer_msgs) by extensions ['ignore', 'ignore_ament_install']
+[5.013s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer_msgs) by extension 'ignore'
+[5.015s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer_msgs) by extension 'ignore_ament_install'
+[5.018s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer_msgs) by extensions ['colcon_pkg']
+[5.018s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer_msgs) by extension 'colcon_pkg'
+[5.020s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer_msgs) by extensions ['colcon_meta']
+[5.020s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer_msgs) by extension 'colcon_meta'
+[5.022s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer_msgs) by extensions ['ros']
+[5.022s] Level 1:colcon.colcon_core.package_identification:_identify(src/pioneer_msgs) by extension 'ros'
+[5.039s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pioneer_msgs' with type 'ros.ament_cmake' and name 'pioneer_msgs'
+[5.044s] Level 1:colcon.colcon_core.package_identification:_identify(src/pixpubsub) by extensions ['ignore', 'ignore_ament_install']
+[5.044s] Level 1:colcon.colcon_core.package_identification:_identify(src/pixpubsub) by extension 'ignore'
+[5.046s] Level 1:colcon.colcon_core.package_identification:_identify(src/pixpubsub) by extension 'ignore_ament_install'
+[5.048s] Level 1:colcon.colcon_core.package_identification:_identify(src/pixpubsub) by extensions ['colcon_pkg']
+[5.049s] Level 1:colcon.colcon_core.package_identification:_identify(src/pixpubsub) by extension 'colcon_pkg'
+[5.051s] Level 1:colcon.colcon_core.package_identification:_identify(src/pixpubsub) by extensions ['colcon_meta']
+[5.051s] Level 1:colcon.colcon_core.package_identification:_identify(src/pixpubsub) by extension 'colcon_meta'
+[5.053s] Level 1:colcon.colcon_core.package_identification:_identify(src/pixpubsub) by extensions ['ros']
+[5.053s] Level 1:colcon.colcon_core.package_identification:_identify(src/pixpubsub) by extension 'ros'
+[5.070s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pixpubsub' with type 'ros.ament_python' and name 'pixpubsub'
+[5.070s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[5.070s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[5.071s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[5.071s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[5.071s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[5.421s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'imu_publisher' in 'src/imu_publisher'
+[5.422s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'pixpubsub' in 'src/pixpubsub'
+[5.462s] Level 5:colcon.colcon_core.verb:set package 'pioneer_msgs' build argument 'cmake_args' from command line to 'None'
+[5.462s] Level 5:colcon.colcon_core.verb:set package 'pioneer_msgs' build argument 'cmake_target' from command line to 'None'
+[5.463s] Level 5:colcon.colcon_core.verb:set package 'pioneer_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.463s] Level 5:colcon.colcon_core.verb:set package 'pioneer_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[5.463s] Level 5:colcon.colcon_core.verb:set package 'pioneer_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[5.463s] Level 5:colcon.colcon_core.verb:set package 'pioneer_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[5.464s] Level 5:colcon.colcon_core.verb:set package 'pioneer_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[5.464s] Level 5:colcon.colcon_core.verb:set package 'pioneer_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[5.464s] Level 5:colcon.colcon_core.verb:set package 'pioneer_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.464s] DEBUG:colcon.colcon_core.verb:Building package 'pioneer_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/src/ros2_ws/build/pioneer_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/src/ros2_ws/install/pioneer_msgs', 'merge_install': False, 'path': '/src/ros2_ws/src/pioneer_msgs', 'symlink_install': False, 'test_result_base': None}
+[5.505s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[5.548s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[5.548s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/src/ros2_ws/src/pioneer_msgs' with build type 'ament_cmake'
+[5.549s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/src/ros2_ws/src/pioneer_msgs'
+[5.619s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[5.620s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.620s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.180s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/src/ros2_ws/build/pioneer_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/src/ros2_ws/install/test_pubsub:/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/imu_publisher:/opt/ros/humble /usr/bin/cmake /src/ros2_ws/src/pioneer_msgs -DCMAKE_INSTALL_PREFIX=/src/ros2_ws/install/pioneer_msgs
+[61.635s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/src/ros2_ws/build/pioneer_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/src/ros2_ws/install/test_pubsub:/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/imu_publisher:/opt/ros/humble /usr/bin/cmake /src/ros2_ws/src/pioneer_msgs -DCMAKE_INSTALL_PREFIX=/src/ros2_ws/install/pioneer_msgs
+[61.649s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/src/ros2_ws/build/pioneer_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/src/ros2_ws/install/test_pubsub:/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/imu_publisher:/opt/ros/humble /usr/bin/cmake --build /src/ros2_ws/build/pioneer_msgs -- -j16 -l16
+[92.585s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/src/ros2_ws/build/pioneer_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/src/ros2_ws/install/test_pubsub:/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/imu_publisher:/opt/ros/humble /usr/bin/cmake --build /src/ros2_ws/build/pioneer_msgs -- -j16 -l16
+[102.949s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/src/ros2_ws/build/pioneer_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/src/ros2_ws/install/test_pubsub:/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/imu_publisher:/opt/ros/humble /usr/bin/cmake --install /src/ros2_ws/build/pioneer_msgs
+[117.042s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pioneer_msgs)
+[117.044s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/src/ros2_ws/build/pioneer_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/src/ros2_ws/install/test_pubsub:/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/imu_publisher:/opt/ros/humble /usr/bin/cmake --install /src/ros2_ws/build/pioneer_msgs
+[117.129s] Level 1:colcon.colcon_core.environment:checking '/src/ros2_ws/install/pioneer_msgs' for CMake module files
+[117.348s] Level 1:colcon.colcon_core.environment:checking '/src/ros2_ws/install/pioneer_msgs' for CMake config files
+[117.540s] Level 1:colcon.colcon_core.shell:create_environment_hook('pioneer_msgs', 'cmake_prefix_path')
+[117.579s] INFO:colcon.colcon_core.shell:Creating environment hook '/src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/hook/cmake_prefix_path.ps1'
+[117.596s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/hook/cmake_prefix_path.dsv'
+[117.614s] INFO:colcon.colcon_core.shell:Creating environment hook '/src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/hook/cmake_prefix_path.sh'
+[117.637s] Level 1:colcon.colcon_core.environment:checking '/src/ros2_ws/install/pioneer_msgs/lib'
+[117.642s] Level 1:colcon.colcon_core.shell:create_environment_hook('pioneer_msgs', 'ld_library_path_lib')
+[117.682s] INFO:colcon.colcon_core.shell:Creating environment hook '/src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/hook/ld_library_path_lib.ps1'
+[117.698s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/hook/ld_library_path_lib.dsv'
+[117.716s] INFO:colcon.colcon_core.shell:Creating environment hook '/src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/hook/ld_library_path_lib.sh'
+[117.733s] Level 1:colcon.colcon_core.environment:checking '/src/ros2_ws/install/pioneer_msgs/bin'
+[117.735s] Level 1:colcon.colcon_core.environment:checking '/src/ros2_ws/install/pioneer_msgs/lib/pkgconfig/pioneer_msgs.pc'
+[117.751s] Level 1:colcon.colcon_core.environment:checking '/src/ros2_ws/install/pioneer_msgs/lib/python3.10/site-packages'
+[117.754s] Level 1:colcon.colcon_core.environment:checking '/src/ros2_ws/install/pioneer_msgs/bin'
+[117.797s] INFO:colcon.colcon_core.shell:Creating package script '/src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/package.ps1'
+[117.812s] INFO:colcon.colcon_core.shell:Creating package descriptor '/src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/package.dsv'
+[117.828s] INFO:colcon.colcon_core.shell:Creating package script '/src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/package.sh'
+[117.845s] INFO:colcon.colcon_core.shell:Creating package script '/src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/package.bash'
+[117.860s] INFO:colcon.colcon_core.shell:Creating package script '/src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/package.zsh'
+[117.875s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/src/ros2_ws/install/pioneer_msgs/share/colcon-core/packages/pioneer_msgs)
+[126.519s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pioneer_msgs)
+[126.561s] Level 1:colcon.colcon_core.environment:checking '/src/ros2_ws/install/pioneer_msgs' for CMake module files
+[126.779s] Level 1:colcon.colcon_core.environment:checking '/src/ros2_ws/install/pioneer_msgs' for CMake config files
+[127.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('pioneer_msgs', 'cmake_prefix_path')
+[127.059s] INFO:colcon.colcon_core.shell:Creating environment hook '/src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/hook/cmake_prefix_path.ps1'
+[127.080s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/hook/cmake_prefix_path.dsv'
+[127.099s] INFO:colcon.colcon_core.shell:Creating environment hook '/src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/hook/cmake_prefix_path.sh'
+[127.123s] Level 1:colcon.colcon_core.environment:checking '/src/ros2_ws/install/pioneer_msgs/lib'
+[127.129s] Level 1:colcon.colcon_core.shell:create_environment_hook('pioneer_msgs', 'ld_library_path_lib')
+[127.178s] INFO:colcon.colcon_core.shell:Creating environment hook '/src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/hook/ld_library_path_lib.ps1'
+[127.195s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/hook/ld_library_path_lib.dsv'
+[127.216s] INFO:colcon.colcon_core.shell:Creating environment hook '/src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/hook/ld_library_path_lib.sh'
+[127.235s] Level 1:colcon.colcon_core.environment:checking '/src/ros2_ws/install/pioneer_msgs/bin'
+[127.237s] Level 1:colcon.colcon_core.environment:checking '/src/ros2_ws/install/pioneer_msgs/lib/pkgconfig/pioneer_msgs.pc'
+[127.240s] Level 1:colcon.colcon_core.environment:checking '/src/ros2_ws/install/pioneer_msgs/lib/python3.10/site-packages'
+[127.242s] Level 1:colcon.colcon_core.environment:checking '/src/ros2_ws/install/pioneer_msgs/bin'
+[127.286s] INFO:colcon.colcon_core.shell:Creating package script '/src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/package.ps1'
+[127.299s] INFO:colcon.colcon_core.shell:Creating package descriptor '/src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/package.dsv'
+[127.312s] INFO:colcon.colcon_core.shell:Creating package script '/src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/package.sh'
+[127.326s] INFO:colcon.colcon_core.shell:Creating package script '/src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/package.bash'
+[127.338s] INFO:colcon.colcon_core.shell:Creating package script '/src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/package.zsh'
+[127.351s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/src/ros2_ws/install/pioneer_msgs/share/colcon-core/packages/pioneer_msgs)
+[127.363s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[127.363s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[127.364s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[127.364s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[127.491s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[127.492s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[127.492s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[127.493s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[127.493s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.InvalidFileContent: D-Bus library appears to be incorrectly set up: see the manual page for dbus-uuidgen to correct this issue. (Failed to open "/var/lib/dbus/machine-id": No such file or directory; UUID file '/etc/machine-id' should contain a hex string of length 32, not length 0, with no other text)
+[127.494s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[127.529s] INFO:colcon.colcon_core.shell:Creating prefix script '/src/ros2_ws/install/local_setup.ps1'
+[127.536s] INFO:colcon.colcon_core.shell:Creating prefix util module '/src/ros2_ws/install/_local_setup_util_ps1.py'
+[127.543s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/src/ros2_ws/install/setup.ps1'
+[127.625s] INFO:colcon.colcon_core.shell:Creating prefix script '/src/ros2_ws/install/local_setup.sh'
+[127.631s] INFO:colcon.colcon_core.shell:Creating prefix util module '/src/ros2_ws/install/_local_setup_util_sh.py'
+[127.638s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/src/ros2_ws/install/setup.sh'
+[127.721s] INFO:colcon.colcon_core.shell:Creating prefix script '/src/ros2_ws/install/local_setup.bash'
+[127.727s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/src/ros2_ws/install/setup.bash'
+[127.825s] INFO:colcon.colcon_core.shell:Creating prefix script '/src/ros2_ws/install/local_setup.zsh'
+[127.832s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/src/ros2_ws/install/setup.zsh'

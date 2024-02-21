@@ -1,0 +1,7 @@
+{
+  "package_name": "pioneer_msgs",
+  "non_idl_tuples": [
+    "/src/ros2_ws/src/pioneer_msgs:msg/MotionCommand.msg",
+    "/src/ros2_ws/src/pioneer_msgs:msg/Status.msg"
+  ]
+}

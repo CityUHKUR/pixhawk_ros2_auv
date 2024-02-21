@@ -1,0 +1,26 @@
+[9.271s] Invoking command in '/src/ros2_ws/src/pixpubsub': CMAKE_PREFIX_PATH=/src/ros2_ws/install/pioneer_msgs:/src/ros2_ws/install/px4_ros_com:/src/ros2_ws/install/px4_msgs:/src/ros2_ws/install/microxrcedds_agent LD_LIBRARY_PATH=/src/ros2_ws/install/pioneer_msgs/lib:/src/ros2_ws/install/px4_ros_com/lib:/src/ros2_ws/install/px4_msgs/lib:/src/ros2_ws/install/microxrcedds_agent/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/src/ros2_ws/build/pixpubsub/prefix_override:/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pixpubsub build --build-base /src/ros2_ws/build/pixpubsub/build install --record /src/ros2_ws/build/pixpubsub/install.log --single-version-externally-managed
+[12.625s] running egg_info
+[12.634s] writing ../../build/pixpubsub/pixpubsub.egg-info/PKG-INFO
+[12.646s] writing dependency_links to ../../build/pixpubsub/pixpubsub.egg-info/dependency_links.txt
+[12.657s] writing entry points to ../../build/pixpubsub/pixpubsub.egg-info/entry_points.txt
+[12.667s] writing requirements to ../../build/pixpubsub/pixpubsub.egg-info/requires.txt
+[12.672s] writing top-level names to ../../build/pixpubsub/pixpubsub.egg-info/top_level.txt
+[12.743s] reading manifest file '../../build/pixpubsub/pixpubsub.egg-info/SOURCES.txt'
+[12.847s] writing manifest file '../../build/pixpubsub/pixpubsub.egg-info/SOURCES.txt'
+[12.851s] running build
+[12.853s] running build_py
+[12.940s] copying pixpubsub/pix_pubsub_node.py -> /src/ros2_ws/build/pixpubsub/build/lib/pixpubsub
+[12.957s] running install
+[12.958s] running install_lib
+[13.069s] copying /src/ros2_ws/build/pixpubsub/build/lib/pixpubsub/pix_pubsub_node.py -> /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub
+[13.216s] byte-compiling /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/pix_pubsub_node.py to pix_pubsub_node.cpython-310.pyc
+[13.245s] Sorry: IndentationError: expected an indented block after function definition on line 31 (pix_pubsub_node.py, line 68)
+[13.266s] running install_data
+[13.303s] running install_egg_info
+[13.333s] removing '/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub-0.0.0-py3.10.egg-info' (and everything under it)
+[13.422s] Copying ../../build/pixpubsub/pixpubsub.egg-info to /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub-0.0.0-py3.10.egg-info
+[13.795s] running install_scripts
+[14.064s] Installing move_pub script to /src/ros2_ws/install/pixpubsub/lib/pixpubsub
+[14.083s] Installing publisher script to /src/ros2_ws/install/pixpubsub/lib/pixpubsub
+[14.105s] writing list of installed files to '/src/ros2_ws/build/pixpubsub/install.log'
+[14.148s] Invoked command in '/src/ros2_ws/src/pixpubsub' returned '0': CMAKE_PREFIX_PATH=/src/ros2_ws/install/pioneer_msgs:/src/ros2_ws/install/px4_ros_com:/src/ros2_ws/install/px4_msgs:/src/ros2_ws/install/microxrcedds_agent LD_LIBRARY_PATH=/src/ros2_ws/install/pioneer_msgs/lib:/src/ros2_ws/install/px4_ros_com/lib:/src/ros2_ws/install/px4_msgs/lib:/src/ros2_ws/install/microxrcedds_agent/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/src/ros2_ws/build/pixpubsub/prefix_override:/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pixpubsub build --build-base /src/ros2_ws/build/pixpubsub/build install --record /src/ros2_ws/build/pixpubsub/install.log --single-version-externally-managed

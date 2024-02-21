@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="pioneer_msgs.cppcheck_rosidl_generated_c"
+  tests="11"
+  errors="0"
+  failures="0"
+  time="0.021"
+  skipped="11"
+>
+  <testcase
+    name="/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__functions.c"
+    classname="pioneer_msgs.cppcheck_rosidl_generated_c"
+  >
+    <skipped type="skip" message="">
+      ![CDATA[Test Skipped due to cppcheck 2.7 performance issues]]
+    </skipped>
+  </testcase>
+  <testcase
+    name="/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__functions.h"
+    classname="pioneer_msgs.cppcheck_rosidl_generated_c"
+  >
+    <skipped type="skip" message="">
+      ![CDATA[Test Skipped due to cppcheck 2.7 performance issues]]
+    </skipped>
+  </testcase>
+  <testcase
+    name="/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__struct.h"
+    classname="pioneer_msgs.cppcheck_rosidl_generated_c"
+  >
+    <skipped type="skip" message="">
+      ![CDATA[Test Skipped due to cppcheck 2.7 performance issues]]
+    </skipped>
+  </testcase>
+  <testcase
+    name="/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__type_support.h"
+    classname="pioneer_msgs.cppcheck_rosidl_generated_c"
+  >
+    <skipped type="skip" message="">
+      ![CDATA[Test Skipped due to cppcheck 2.7 performance issues]]
+    </skipped>
+  </testcase>
+  <testcase
+    name="/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/status__functions.c"
+    classname="pioneer_msgs.cppcheck_rosidl_generated_c"
+  >
+    <skipped type="skip" message="">
+      ![CDATA[Test Skipped due to cppcheck 2.7 performance issues]]
+    </skipped>
+  </testcase>
+  <testcase
+    name="/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/status__functions.h"
+    classname="pioneer_msgs.cppcheck_rosidl_generated_c"
+  >
+    <skipped type="skip" message="">
+      ![CDATA[Test Skipped due to cppcheck 2.7 performance issues]]
+    </skipped>
+  </testcase>
+  <testcase
+    name="/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/status__struct.h"
+    classname="pioneer_msgs.cppcheck_rosidl_generated_c"
+  >
+    <skipped type="skip" message="">
+      ![CDATA[Test Skipped due to cppcheck 2.7 performance issues]]
+    </skipped>
+  </testcase>
+  <testcase
+    name="/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/status__type_support.h"
+    classname="pioneer_msgs.cppcheck_rosidl_generated_c"
+  >
+    <skipped type="skip" message="">
+      ![CDATA[Test Skipped due to cppcheck 2.7 performance issues]]
+    </skipped>
+  </testcase>
+  <testcase
+    name="/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/motion_command.h"
+    classname="pioneer_msgs.cppcheck_rosidl_generated_c"
+  >
+    <skipped type="skip" message="">
+      ![CDATA[Test Skipped due to cppcheck 2.7 performance issues]]
+    </skipped>
+  </testcase>
+  <testcase
+    name="/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/rosidl_generator_c__visibility_control.h"
+    classname="pioneer_msgs.cppcheck_rosidl_generated_c"
+  >
+    <skipped type="skip" message="">
+      ![CDATA[Test Skipped due to cppcheck 2.7 performance issues]]
+    </skipped>
+  </testcase>
+  <testcase
+    name="/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/status.h"
+    classname="pioneer_msgs.cppcheck_rosidl_generated_c"
+  >
+    <skipped type="skip" message="">
+      ![CDATA[Test Skipped due to cppcheck 2.7 performance issues]]
+    </skipped>
+  </testcase>
+  <system-err>Tests Skipped due to cppcheck 2.7 performance issues</system-err>
+</testsuite>

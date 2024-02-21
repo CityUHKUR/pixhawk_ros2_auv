@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="pioneer_msgs.flake8_rosidl_generated_py"
+  tests="1"
+  errors="0"
+  failures="0"
+  time="0.667"
+>
+  <testcase
+    name="flake8"
+    classname="pioneer_msgs.flake8_rosidl_generated_py"/>
+  <system-out>Checked files:
+* /src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/__init__.py
+* /src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/msg/_motion_command.py
+* /src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/msg/_status.py
+* /src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/msg/__init__.py</system-out>
+</testsuite>

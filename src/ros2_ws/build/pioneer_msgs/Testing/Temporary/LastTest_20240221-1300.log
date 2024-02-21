@@ -1,0 +1,807 @@
+Start testing: Feb 21 13:00 UTC
+----------------------------------------------------------
+1/29 Testing: cppcheck_rosidl_generated_c
+1/29 Test: cppcheck_rosidl_generated_c
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_generated_c.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_cppcheck/cppcheck_rosidl_generated_c.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_generated_c.xunit.xml" "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"cppcheck_rosidl_generated_c" start time: Feb 21 13:00 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_cppcheck --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_generated_c.xunit.xml /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs
+cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_generated_c.xunit.xml'
+<end of output>
+Test time =   3.95 sec
+----------------------------------------------------------
+Test Passed.
+"cppcheck_rosidl_generated_c" end time: Feb 21 13:00 UTC
+"cppcheck_rosidl_generated_c" time elapsed: 00:00:03
+----------------------------------------------------------
+
+2/29 Testing: cpplint_rosidl_generated_c
+2/29 Test: cpplint_rosidl_generated_c
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_generated_c.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_cpplint/cpplint_rosidl_generated_c.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_generated_c.xunit.xml" "--linelength" "999" "--root" "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c" "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"cpplint_rosidl_generated_c" start time: Feb 21 13:00 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_cpplint --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_generated_c.xunit.xml --linelength 999 --root /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs
+Using '--root=/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c' argument
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__functions.c
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__functions.h
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__struct.h
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__type_support.h
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/status__functions.c
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/status__functions.h
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/status__struct.h
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/status__type_support.h
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/motion_command.h
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/rosidl_generator_c__visibility_control.h
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/status.h
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_generated_c.xunit.xml'
+<end of output>
+Test time =  42.90 sec
+----------------------------------------------------------
+Test Passed.
+"cpplint_rosidl_generated_c" end time: Feb 21 13:00 UTC
+"cpplint_rosidl_generated_c" time elapsed: 00:00:42
+----------------------------------------------------------
+
+3/29 Testing: uncrustify_rosidl_generated_c
+3/29 Test: uncrustify_rosidl_generated_c
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_generated_c.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_uncrustify/uncrustify_rosidl_generated_c.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_generated_c.xunit.xml" "--linelength" "0" "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"uncrustify_rosidl_generated_c" start time: Feb 21 13:00 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_generated_c.xunit.xml --linelength 0 /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__functions.c'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__functions.h'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__struct.h'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__type_support.h'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/status__functions.c'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/status__functions.h'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/status__struct.h'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/status__type_support.h'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/motion_command.h'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/rosidl_generator_c__visibility_control.h'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/status.h'
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_generated_c.xunit.xml'
+<end of output>
+Test time =   4.38 sec
+----------------------------------------------------------
+Test Passed.
+"uncrustify_rosidl_generated_c" end time: Feb 21 13:00 UTC
+"uncrustify_rosidl_generated_c" time elapsed: 00:00:04
+----------------------------------------------------------
+
+4/29 Testing: cppcheck_rosidl_typesupport_fastrtps_c
+4/29 Test: cppcheck_rosidl_typesupport_fastrtps_c
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_typesupport_fastrtps_c.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_cppcheck/cppcheck_rosidl_typesupport_fastrtps_c.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_typesupport_fastrtps_c.xunit.xml" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_fastrtps_c.h" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/motion_command__type_support_c.cpp" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/status__rosidl_typesupport_fastrtps_c.h" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/status__type_support_c.cpp"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"cppcheck_rosidl_typesupport_fastrtps_c" start time: Feb 21 13:00 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_cppcheck --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_typesupport_fastrtps_c.xunit.xml /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_fastrtps_c.h /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/motion_command__type_support_c.cpp /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/status__rosidl_typesupport_fastrtps_c.h /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/status__type_support_c.cpp
+cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_typesupport_fastrtps_c.xunit.xml'
+<end of output>
+Test time =   3.89 sec
+----------------------------------------------------------
+Test Passed.
+"cppcheck_rosidl_typesupport_fastrtps_c" end time: Feb 21 13:01 UTC
+"cppcheck_rosidl_typesupport_fastrtps_c" time elapsed: 00:00:03
+----------------------------------------------------------
+
+5/29 Testing: cpplint_rosidl_typesupport_fastrtps_c
+5/29 Test: cpplint_rosidl_typesupport_fastrtps_c
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_typesupport_fastrtps_c.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_cpplint/cpplint_rosidl_typesupport_fastrtps_c.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_typesupport_fastrtps_c.xunit.xml" "--linelength" "999" "--root" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_fastrtps_c.h" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/motion_command__type_support_c.cpp" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/status__rosidl_typesupport_fastrtps_c.h" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/status__type_support_c.cpp"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"cpplint_rosidl_typesupport_fastrtps_c" start time: Feb 21 13:01 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_cpplint --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_typesupport_fastrtps_c.xunit.xml --linelength 999 --root /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_fastrtps_c.h /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/motion_command__type_support_c.cpp /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/status__rosidl_typesupport_fastrtps_c.h /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/status__type_support_c.cpp
+Using '--root=/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c' argument
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_fastrtps_c.h
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/motion_command__type_support_c.cpp
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/status__rosidl_typesupport_fastrtps_c.h
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/status__type_support_c.cpp
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_typesupport_fastrtps_c.xunit.xml'
+<end of output>
+Test time =  18.34 sec
+----------------------------------------------------------
+Test Passed.
+"cpplint_rosidl_typesupport_fastrtps_c" end time: Feb 21 13:01 UTC
+"cpplint_rosidl_typesupport_fastrtps_c" time elapsed: 00:00:18
+----------------------------------------------------------
+
+6/29 Testing: uncrustify_rosidl_typesupport_fastrtps_c
+6/29 Test: uncrustify_rosidl_typesupport_fastrtps_c
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_typesupport_fastrtps_c.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_uncrustify/uncrustify_rosidl_typesupport_fastrtps_c.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_typesupport_fastrtps_c.xunit.xml" "--linelength" "0" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_fastrtps_c.h" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/motion_command__type_support_c.cpp" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/status__rosidl_typesupport_fastrtps_c.h" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/status__type_support_c.cpp"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"uncrustify_rosidl_typesupport_fastrtps_c" start time: Feb 21 13:01 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_typesupport_fastrtps_c.xunit.xml --linelength 0 /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_fastrtps_c.h /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/motion_command__type_support_c.cpp /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/status__rosidl_typesupport_fastrtps_c.h /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/status__type_support_c.cpp
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_fastrtps_c.h'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/motion_command__type_support_c.cpp'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/status__rosidl_typesupport_fastrtps_c.h'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/status__type_support_c.cpp'
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_typesupport_fastrtps_c.xunit.xml'
+<end of output>
+Test time =   4.42 sec
+----------------------------------------------------------
+Test Passed.
+"uncrustify_rosidl_typesupport_fastrtps_c" end time: Feb 21 13:01 UTC
+"uncrustify_rosidl_typesupport_fastrtps_c" time elapsed: 00:00:04
+----------------------------------------------------------
+
+7/29 Testing: cppcheck_rosidl_typesupport_introspection_c
+7/29 Test: cppcheck_rosidl_typesupport_introspection_c
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_typesupport_introspection_c.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_cppcheck/cppcheck_rosidl_typesupport_introspection_c.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_typesupport_introspection_c.xunit.xml" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_c/pioneer_msgs"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"cppcheck_rosidl_typesupport_introspection_c" start time: Feb 21 13:01 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_cppcheck --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_typesupport_introspection_c.xunit.xml /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_c/pioneer_msgs
+cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_typesupport_introspection_c.xunit.xml'
+<end of output>
+Test time =   3.92 sec
+----------------------------------------------------------
+Test Passed.
+"cppcheck_rosidl_typesupport_introspection_c" end time: Feb 21 13:01 UTC
+"cppcheck_rosidl_typesupport_introspection_c" time elapsed: 00:00:03
+----------------------------------------------------------
+
+8/29 Testing: cpplint_rosidl_typesupport_introspection_c
+8/29 Test: cpplint_rosidl_typesupport_introspection_c
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_typesupport_introspection_c.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_cpplint/cpplint_rosidl_typesupport_introspection_c.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_typesupport_introspection_c.xunit.xml" "--linelength" "999" "--root" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_c" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_c/pioneer_msgs"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"cpplint_rosidl_typesupport_introspection_c" start time: Feb 21 13:01 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_cpplint --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_typesupport_introspection_c.xunit.xml --linelength 999 --root /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_c /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_c/pioneer_msgs
+Using '--root=/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_c' argument
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_c/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_introspection_c.h
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_c/pioneer_msgs/msg/detail/motion_command__type_support.c
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_c/pioneer_msgs/msg/detail/status__rosidl_typesupport_introspection_c.h
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_c/pioneer_msgs/msg/detail/status__type_support.c
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_c/pioneer_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_typesupport_introspection_c.xunit.xml'
+<end of output>
+Test time =  17.88 sec
+----------------------------------------------------------
+Test Passed.
+"cpplint_rosidl_typesupport_introspection_c" end time: Feb 21 13:01 UTC
+"cpplint_rosidl_typesupport_introspection_c" time elapsed: 00:00:17
+----------------------------------------------------------
+
+9/29 Testing: uncrustify_rosidl_typesupport_introspection_c
+9/29 Test: uncrustify_rosidl_typesupport_introspection_c
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_typesupport_introspection_c.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_uncrustify/uncrustify_rosidl_typesupport_introspection_c.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_typesupport_introspection_c.xunit.xml" "--linelength" "0" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_c/pioneer_msgs"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"uncrustify_rosidl_typesupport_introspection_c" start time: Feb 21 13:01 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_typesupport_introspection_c.xunit.xml --linelength 0 /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_c/pioneer_msgs
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_c/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_introspection_c.h'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_c/pioneer_msgs/msg/detail/motion_command__type_support.c'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_c/pioneer_msgs/msg/detail/status__rosidl_typesupport_introspection_c.h'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_c/pioneer_msgs/msg/detail/status__type_support.c'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_c/pioneer_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h'
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_typesupport_introspection_c.xunit.xml'
+<end of output>
+Test time =   4.13 sec
+----------------------------------------------------------
+Test Passed.
+"uncrustify_rosidl_typesupport_introspection_c" end time: Feb 21 13:01 UTC
+"uncrustify_rosidl_typesupport_introspection_c" time elapsed: 00:00:04
+----------------------------------------------------------
+
+10/29 Testing: cppcheck_rosidl_typesupport_c
+10/29 Test: cppcheck_rosidl_typesupport_c
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_typesupport_c.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_cppcheck/cppcheck_rosidl_typesupport_c.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_typesupport_c.xunit.xml" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_c/pioneer_msgs"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"cppcheck_rosidl_typesupport_c" start time: Feb 21 13:01 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_cppcheck --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_typesupport_c.xunit.xml /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_c/pioneer_msgs
+cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_typesupport_c.xunit.xml'
+<end of output>
+Test time =   4.18 sec
+----------------------------------------------------------
+Test Passed.
+"cppcheck_rosidl_typesupport_c" end time: Feb 21 13:01 UTC
+"cppcheck_rosidl_typesupport_c" time elapsed: 00:00:04
+----------------------------------------------------------
+
+11/29 Testing: cpplint_rosidl_typesupport_c
+11/29 Test: cpplint_rosidl_typesupport_c
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_typesupport_c.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_cpplint/cpplint_rosidl_typesupport_c.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_typesupport_c.xunit.xml" "--linelength" "999" "--root" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_c" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_c/pioneer_msgs"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"cpplint_rosidl_typesupport_c" start time: Feb 21 13:01 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_cpplint --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_typesupport_c.xunit.xml --linelength 999 --root /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_c /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_c/pioneer_msgs
+Using '--root=/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_c' argument
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_c/pioneer_msgs/msg/motion_command__type_support.cpp
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_c/pioneer_msgs/msg/status__type_support.cpp
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_typesupport_c.xunit.xml'
+<end of output>
+Test time =   8.20 sec
+----------------------------------------------------------
+Test Passed.
+"cpplint_rosidl_typesupport_c" end time: Feb 21 13:02 UTC
+"cpplint_rosidl_typesupport_c" time elapsed: 00:00:08
+----------------------------------------------------------
+
+12/29 Testing: uncrustify_rosidl_typesupport_c
+12/29 Test: uncrustify_rosidl_typesupport_c
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_typesupport_c.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_uncrustify/uncrustify_rosidl_typesupport_c.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_typesupport_c.xunit.xml" "--linelength" "0" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_c/pioneer_msgs"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"uncrustify_rosidl_typesupport_c" start time: Feb 21 13:02 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_typesupport_c.xunit.xml --linelength 0 /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_c/pioneer_msgs
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_c/pioneer_msgs/msg/motion_command__type_support.cpp'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_c/pioneer_msgs/msg/status__type_support.cpp'
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_typesupport_c.xunit.xml'
+<end of output>
+Test time =   3.99 sec
+----------------------------------------------------------
+Test Passed.
+"uncrustify_rosidl_typesupport_c" end time: Feb 21 13:02 UTC
+"uncrustify_rosidl_typesupport_c" time elapsed: 00:00:03
+----------------------------------------------------------
+
+13/29 Testing: cppcheck_rosidl_generated_cpp
+13/29 Test: cppcheck_rosidl_generated_cpp
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_generated_cpp.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_cppcheck/cppcheck_rosidl_generated_cpp.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_generated_cpp.xunit.xml" "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_cpp/pioneer_msgs"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"cppcheck_rosidl_generated_cpp" start time: Feb 21 13:02 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_cppcheck --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_generated_cpp.xunit.xml /src/ros2_ws/build/pioneer_msgs/rosidl_generator_cpp/pioneer_msgs
+cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_generated_cpp.xunit.xml'
+<end of output>
+Test time =   3.96 sec
+----------------------------------------------------------
+Test Passed.
+"cppcheck_rosidl_generated_cpp" end time: Feb 21 13:02 UTC
+"cppcheck_rosidl_generated_cpp" time elapsed: 00:00:03
+----------------------------------------------------------
+
+14/29 Testing: cpplint_rosidl_generated_cpp
+14/29 Test: cpplint_rosidl_generated_cpp
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_generated_cpp.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_cpplint/cpplint_rosidl_generated_cpp.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_generated_cpp.xunit.xml" "--linelength" "999" "--root" "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_cpp" "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_cpp/pioneer_msgs"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"cpplint_rosidl_generated_cpp" start time: Feb 21 13:02 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_cpplint --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_generated_cpp.xunit.xml --linelength 999 --root /src/ros2_ws/build/pioneer_msgs/rosidl_generator_cpp /src/ros2_ws/build/pioneer_msgs/rosidl_generator_cpp/pioneer_msgs
+Using '--root=/src/ros2_ws/build/pioneer_msgs/rosidl_generator_cpp' argument
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_generator_cpp/pioneer_msgs/msg/detail/motion_command__builder.hpp
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_generator_cpp/pioneer_msgs/msg/detail/motion_command__struct.hpp
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_generator_cpp/pioneer_msgs/msg/detail/motion_command__traits.hpp
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_generator_cpp/pioneer_msgs/msg/detail/status__builder.hpp
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_generator_cpp/pioneer_msgs/msg/detail/status__struct.hpp
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_generator_cpp/pioneer_msgs/msg/detail/status__traits.hpp
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_generator_cpp/pioneer_msgs/msg/motion_command.hpp
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_generator_cpp/pioneer_msgs/msg/status.hpp
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_generated_cpp.xunit.xml'
+<end of output>
+Test time =  52.30 sec
+----------------------------------------------------------
+Test Passed.
+"cpplint_rosidl_generated_cpp" end time: Feb 21 13:03 UTC
+"cpplint_rosidl_generated_cpp" time elapsed: 00:00:52
+----------------------------------------------------------
+
+15/29 Testing: uncrustify_rosidl_generated_cpp
+15/29 Test: uncrustify_rosidl_generated_cpp
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_generated_cpp.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_uncrustify/uncrustify_rosidl_generated_cpp.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_generated_cpp.xunit.xml" "--linelength" "0" "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_cpp/pioneer_msgs"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"uncrustify_rosidl_generated_cpp" start time: Feb 21 13:03 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_generated_cpp.xunit.xml --linelength 0 /src/ros2_ws/build/pioneer_msgs/rosidl_generator_cpp/pioneer_msgs
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_cpp/pioneer_msgs/msg/detail/motion_command__builder.hpp'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_cpp/pioneer_msgs/msg/detail/motion_command__struct.hpp'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_cpp/pioneer_msgs/msg/detail/motion_command__traits.hpp'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_cpp/pioneer_msgs/msg/detail/status__builder.hpp'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_cpp/pioneer_msgs/msg/detail/status__struct.hpp'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_cpp/pioneer_msgs/msg/detail/status__traits.hpp'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_cpp/pioneer_msgs/msg/motion_command.hpp'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_cpp/pioneer_msgs/msg/status.hpp'
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_generated_cpp.xunit.xml'
+<end of output>
+Test time =   4.21 sec
+----------------------------------------------------------
+Test Passed.
+"uncrustify_rosidl_generated_cpp" end time: Feb 21 13:03 UTC
+"uncrustify_rosidl_generated_cpp" time elapsed: 00:00:04
+----------------------------------------------------------
+
+16/29 Testing: cppcheck_rosidl_typesupport_fastrtps_cpp
+16/29 Test: cppcheck_rosidl_typesupport_fastrtps_cpp
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_typesupport_fastrtps_cpp.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_cppcheck/cppcheck_rosidl_typesupport_fastrtps_cpp.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_typesupport_fastrtps_cpp.xunit.xml" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/dds_fastrtps/motion_command__type_support.cpp" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_fastrtps_cpp.hpp" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/dds_fastrtps/status__type_support.cpp" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/status__rosidl_typesupport_fastrtps_cpp.hpp"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"cppcheck_rosidl_typesupport_fastrtps_cpp" start time: Feb 21 13:03 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_cppcheck --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_typesupport_fastrtps_cpp.xunit.xml /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/dds_fastrtps/motion_command__type_support.cpp /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_fastrtps_cpp.hpp /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/dds_fastrtps/status__type_support.cpp /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/status__rosidl_typesupport_fastrtps_cpp.hpp
+cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_typesupport_fastrtps_cpp.xunit.xml'
+<end of output>
+Test time =   3.98 sec
+----------------------------------------------------------
+Test Passed.
+"cppcheck_rosidl_typesupport_fastrtps_cpp" end time: Feb 21 13:03 UTC
+"cppcheck_rosidl_typesupport_fastrtps_cpp" time elapsed: 00:00:03
+----------------------------------------------------------
+
+17/29 Testing: cpplint_rosidl_typesupport_fastrtps_cpp
+17/29 Test: cpplint_rosidl_typesupport_fastrtps_cpp
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_typesupport_fastrtps_cpp.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_cpplint/cpplint_rosidl_typesupport_fastrtps_cpp.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_typesupport_fastrtps_cpp.xunit.xml" "--linelength" "999" "--root" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/dds_fastrtps/motion_command__type_support.cpp" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_fastrtps_cpp.hpp" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/dds_fastrtps/status__type_support.cpp" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/status__rosidl_typesupport_fastrtps_cpp.hpp"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"cpplint_rosidl_typesupport_fastrtps_cpp" start time: Feb 21 13:03 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_cpplint --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_typesupport_fastrtps_cpp.xunit.xml --linelength 999 --root /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/dds_fastrtps/motion_command__type_support.cpp /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_fastrtps_cpp.hpp /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/dds_fastrtps/status__type_support.cpp /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/status__rosidl_typesupport_fastrtps_cpp.hpp
+Using '--root=/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp' argument
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/dds_fastrtps/motion_command__type_support.cpp
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/dds_fastrtps/status__type_support.cpp
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_fastrtps_cpp.hpp
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/status__rosidl_typesupport_fastrtps_cpp.hpp
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_typesupport_fastrtps_cpp.xunit.xml'
+<end of output>
+Test time =  23.21 sec
+----------------------------------------------------------
+Test Passed.
+"cpplint_rosidl_typesupport_fastrtps_cpp" end time: Feb 21 13:03 UTC
+"cpplint_rosidl_typesupport_fastrtps_cpp" time elapsed: 00:00:23
+----------------------------------------------------------
+
+18/29 Testing: uncrustify_rosidl_typesupport_fastrtps_cpp
+18/29 Test: uncrustify_rosidl_typesupport_fastrtps_cpp
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_typesupport_fastrtps_cpp.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_uncrustify/uncrustify_rosidl_typesupport_fastrtps_cpp.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_typesupport_fastrtps_cpp.xunit.xml" "--linelength" "0" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/dds_fastrtps/motion_command__type_support.cpp" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_fastrtps_cpp.hpp" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/dds_fastrtps/status__type_support.cpp" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/status__rosidl_typesupport_fastrtps_cpp.hpp"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"uncrustify_rosidl_typesupport_fastrtps_cpp" start time: Feb 21 13:03 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_typesupport_fastrtps_cpp.xunit.xml --linelength 0 /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/dds_fastrtps/motion_command__type_support.cpp /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_fastrtps_cpp.hpp /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/dds_fastrtps/status__type_support.cpp /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/status__rosidl_typesupport_fastrtps_cpp.hpp
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/dds_fastrtps/motion_command__type_support.cpp'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/dds_fastrtps/status__type_support.cpp'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_fastrtps_cpp.hpp'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/status__rosidl_typesupport_fastrtps_cpp.hpp'
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_typesupport_fastrtps_cpp.xunit.xml'
+<end of output>
+Test time =   3.97 sec
+----------------------------------------------------------
+Test Passed.
+"uncrustify_rosidl_typesupport_fastrtps_cpp" end time: Feb 21 13:03 UTC
+"uncrustify_rosidl_typesupport_fastrtps_cpp" time elapsed: 00:00:03
+----------------------------------------------------------
+
+19/29 Testing: cppcheck_rosidl_typesupport_introspection_cpp
+19/29 Test: cppcheck_rosidl_typesupport_introspection_cpp
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_typesupport_introspection_cpp.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_cppcheck/cppcheck_rosidl_typesupport_introspection_cpp.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_typesupport_introspection_cpp.xunit.xml" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_cpp/pioneer_msgs"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"cppcheck_rosidl_typesupport_introspection_cpp" start time: Feb 21 13:03 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_cppcheck --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_typesupport_introspection_cpp.xunit.xml /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_cpp/pioneer_msgs
+cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_typesupport_introspection_cpp.xunit.xml'
+<end of output>
+Test time =   3.75 sec
+----------------------------------------------------------
+Test Passed.
+"cppcheck_rosidl_typesupport_introspection_cpp" end time: Feb 21 13:03 UTC
+"cppcheck_rosidl_typesupport_introspection_cpp" time elapsed: 00:00:03
+----------------------------------------------------------
+
+20/29 Testing: cpplint_rosidl_typesupport_introspection_cpp
+20/29 Test: cpplint_rosidl_typesupport_introspection_cpp
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_typesupport_introspection_cpp.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_cpplint/cpplint_rosidl_typesupport_introspection_cpp.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_typesupport_introspection_cpp.xunit.xml" "--linelength" "999" "--root" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_cpp" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_cpp/pioneer_msgs"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"cpplint_rosidl_typesupport_introspection_cpp" start time: Feb 21 13:03 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_cpplint --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_typesupport_introspection_cpp.xunit.xml --linelength 999 --root /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_cpp /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_cpp/pioneer_msgs
+Using '--root=/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_cpp' argument
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_cpp/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_introspection_cpp.hpp
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_cpp/pioneer_msgs/msg/detail/motion_command__type_support.cpp
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_cpp/pioneer_msgs/msg/detail/status__rosidl_typesupport_introspection_cpp.hpp
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_cpp/pioneer_msgs/msg/detail/status__type_support.cpp
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_typesupport_introspection_cpp.xunit.xml'
+<end of output>
+Test time =  17.04 sec
+----------------------------------------------------------
+Test Passed.
+"cpplint_rosidl_typesupport_introspection_cpp" end time: Feb 21 13:03 UTC
+"cpplint_rosidl_typesupport_introspection_cpp" time elapsed: 00:00:17
+----------------------------------------------------------
+
+21/29 Testing: uncrustify_rosidl_typesupport_introspection_cpp
+21/29 Test: uncrustify_rosidl_typesupport_introspection_cpp
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_typesupport_introspection_cpp.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_uncrustify/uncrustify_rosidl_typesupport_introspection_cpp.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_typesupport_introspection_cpp.xunit.xml" "--linelength" "0" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_cpp/pioneer_msgs"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"uncrustify_rosidl_typesupport_introspection_cpp" start time: Feb 21 13:03 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_typesupport_introspection_cpp.xunit.xml --linelength 0 /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_cpp/pioneer_msgs
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_cpp/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_introspection_cpp.hpp'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_cpp/pioneer_msgs/msg/detail/motion_command__type_support.cpp'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_cpp/pioneer_msgs/msg/detail/status__rosidl_typesupport_introspection_cpp.hpp'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_introspection_cpp/pioneer_msgs/msg/detail/status__type_support.cpp'
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_typesupport_introspection_cpp.xunit.xml'
+<end of output>
+Test time =   4.22 sec
+----------------------------------------------------------
+Test Passed.
+"uncrustify_rosidl_typesupport_introspection_cpp" end time: Feb 21 13:04 UTC
+"uncrustify_rosidl_typesupport_introspection_cpp" time elapsed: 00:00:04
+----------------------------------------------------------
+
+22/29 Testing: cppcheck_rosidl_typesupport_cpp
+22/29 Test: cppcheck_rosidl_typesupport_cpp
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_typesupport_cpp.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_cppcheck/cppcheck_rosidl_typesupport_cpp.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_typesupport_cpp.xunit.xml" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_cpp/pioneer_msgs"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"cppcheck_rosidl_typesupport_cpp" start time: Feb 21 13:04 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_cppcheck --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_typesupport_cpp.xunit.xml /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_cpp/pioneer_msgs
+cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_typesupport_cpp.xunit.xml'
+<end of output>
+Test time =   4.11 sec
+----------------------------------------------------------
+Test Passed.
+"cppcheck_rosidl_typesupport_cpp" end time: Feb 21 13:04 UTC
+"cppcheck_rosidl_typesupport_cpp" time elapsed: 00:00:04
+----------------------------------------------------------
+
+23/29 Testing: cpplint_rosidl_typesupport_cpp
+23/29 Test: cpplint_rosidl_typesupport_cpp
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_typesupport_cpp.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_cpplint/cpplint_rosidl_typesupport_cpp.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_typesupport_cpp.xunit.xml" "--linelength" "999" "--root" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_cpp" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_cpp/pioneer_msgs"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"cpplint_rosidl_typesupport_cpp" start time: Feb 21 13:04 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_cpplint --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_typesupport_cpp.xunit.xml --linelength 999 --root /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_cpp /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_cpp/pioneer_msgs
+Using '--root=/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_cpp' argument
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_cpp/pioneer_msgs/msg/motion_command__type_support.cpp
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_cpp/pioneer_msgs/msg/status__type_support.cpp
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_typesupport_cpp.xunit.xml'
+<end of output>
+Test time =   8.56 sec
+----------------------------------------------------------
+Test Passed.
+"cpplint_rosidl_typesupport_cpp" end time: Feb 21 13:04 UTC
+"cpplint_rosidl_typesupport_cpp" time elapsed: 00:00:08
+----------------------------------------------------------
+
+24/29 Testing: uncrustify_rosidl_typesupport_cpp
+24/29 Test: uncrustify_rosidl_typesupport_cpp
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_typesupport_cpp.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_uncrustify/uncrustify_rosidl_typesupport_cpp.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_typesupport_cpp.xunit.xml" "--linelength" "0" "/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_cpp/pioneer_msgs"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"uncrustify_rosidl_typesupport_cpp" start time: Feb 21 13:04 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_typesupport_cpp.xunit.xml --linelength 0 /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_cpp/pioneer_msgs
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_cpp/pioneer_msgs/msg/motion_command__type_support.cpp'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_cpp/pioneer_msgs/msg/status__type_support.cpp'
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_typesupport_cpp.xunit.xml'
+<end of output>
+Test time =   4.05 sec
+----------------------------------------------------------
+Test Passed.
+"uncrustify_rosidl_typesupport_cpp" end time: Feb 21 13:04 UTC
+"uncrustify_rosidl_typesupport_cpp" time elapsed: 00:00:04
+----------------------------------------------------------
+
+25/29 Testing: cppcheck_rosidl_generated_py
+25/29 Test: cppcheck_rosidl_generated_py
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_generated_py.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_cppcheck/cppcheck_rosidl_generated_py.txt" "--command" "/opt/ros/humble/bin/ament_cppcheck" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_generated_py.xunit.xml" "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"cppcheck_rosidl_generated_py" start time: Feb 21 13:04 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_cppcheck --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_generated_py.xunit.xml /src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs
+cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_generated_py.xunit.xml'
+<end of output>
+Test time =   3.90 sec
+----------------------------------------------------------
+Test Passed.
+"cppcheck_rosidl_generated_py" end time: Feb 21 13:04 UTC
+"cppcheck_rosidl_generated_py" time elapsed: 00:00:03
+----------------------------------------------------------
+
+26/29 Testing: cpplint_rosidl_generated_py
+26/29 Test: cpplint_rosidl_generated_py
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_generated_py.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_cpplint/cpplint_rosidl_generated_py.txt" "--command" "/opt/ros/humble/bin/ament_cpplint" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_generated_py.xunit.xml" "--filters=-readability/fn_size" "--linelength" "999" "--root" "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py" "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"cpplint_rosidl_generated_py" start time: Feb 21 13:04 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_cpplint --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_generated_py.xunit.xml --filters=-readability/fn_size --linelength 999 --root /src/ros2_ws/build/pioneer_msgs/rosidl_generator_py /src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs
+Using '--root=/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py' argument
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_c.c
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_introspection_c.c
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/msg/_motion_command_s.c
+
+Done processing /src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/msg/_status_s.c
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cpplint_rosidl_generated_py.xunit.xml'
+<end of output>
+Test time =  13.66 sec
+----------------------------------------------------------
+Test Passed.
+"cpplint_rosidl_generated_py" end time: Feb 21 13:04 UTC
+"cpplint_rosidl_generated_py" time elapsed: 00:00:13
+----------------------------------------------------------
+
+27/29 Testing: flake8_rosidl_generated_py
+27/29 Test: flake8_rosidl_generated_py
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/flake8_rosidl_generated_py.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_flake8/flake8_rosidl_generated_py.txt" "--command" "/opt/ros/humble/bin/ament_flake8" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/flake8_rosidl_generated_py.xunit.xml" "--linelength" "999" "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"flake8_rosidl_generated_py" start time: Feb 21 13:04 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_flake8 --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/flake8_rosidl_generated_py.xunit.xml --linelength 999 /src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs
+
+4 files checked
+No problems found
+
+Checked files:
+
+* /src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/__init__.py
+* /src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/msg/_motion_command.py
+* /src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/msg/_status.py
+* /src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/msg/__init__.py
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/flake8_rosidl_generated_py.xunit.xml'
+<end of output>
+Test time =   4.66 sec
+----------------------------------------------------------
+Test Passed.
+"flake8_rosidl_generated_py" end time: Feb 21 13:04 UTC
+"flake8_rosidl_generated_py" time elapsed: 00:00:04
+----------------------------------------------------------
+
+28/29 Testing: pep257_rosidl_generated_py
+28/29 Test: pep257_rosidl_generated_py
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/pep257_rosidl_generated_py.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_pep257/pep257_rosidl_generated_py.txt" "--command" "/opt/ros/humble/bin/ament_pep257" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/pep257_rosidl_generated_py.xunit.xml" "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"pep257_rosidl_generated_py" start time: Feb 21 13:04 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_pep257 --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/pep257_rosidl_generated_py.xunit.xml /src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs
+checking /src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/__init__.py
+checking /src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/msg/__init__.py
+checking /src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/msg/_motion_command.py
+checking /src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/msg/_status.py
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/pep257_rosidl_generated_py.xunit.xml'
+<end of output>
+Test time =   4.10 sec
+----------------------------------------------------------
+Test Passed.
+"pep257_rosidl_generated_py" end time: Feb 21 13:04 UTC
+"pep257_rosidl_generated_py" time elapsed: 00:00:04
+----------------------------------------------------------
+
+29/29 Testing: uncrustify_rosidl_generated_py
+29/29 Test: uncrustify_rosidl_generated_py
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_generated_py.xunit.xml" "--package-name" "pioneer_msgs" "--output-file" "/src/ros2_ws/build/pioneer_msgs/ament_uncrustify/uncrustify_rosidl_generated_py.txt" "--command" "/opt/ros/humble/bin/ament_uncrustify" "--xunit-file" "/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_generated_py.xunit.xml" "--linelength" "0" "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs"
+Directory: /src/ros2_ws/src/pioneer_msgs
+"uncrustify_rosidl_generated_py" start time: Feb 21 13:04 UTC
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
+ - /opt/ros/humble/bin/ament_uncrustify --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_generated_py.xunit.xml --linelength 0 /src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_c.c'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_introspection_c.c'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/msg/_motion_command_s.c'
+
+No code style divergence in file '/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/msg/_status_s.c'
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/uncrustify_rosidl_generated_py.xunit.xml'
+<end of output>
+Test time =   4.19 sec
+----------------------------------------------------------
+Test Passed.
+"uncrustify_rosidl_generated_py" end time: Feb 21 13:04 UTC
+"uncrustify_rosidl_generated_py" time elapsed: 00:00:04
+----------------------------------------------------------
+
+End testing: Feb 21 13:04 UTC
+
+cppcheck =  35.62 sec*proc
+
+cpplint = 202.08 sec*proc
+
+flake8 =   4.66 sec*proc
+
+linter = 284.05 sec*proc
+
+pep257 =   4.10 sec*proc
+
+uncrustify =  37.58 sec*proc
+

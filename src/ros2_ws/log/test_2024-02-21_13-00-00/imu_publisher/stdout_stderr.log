@@ -1,0 +1,132 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+cachedir: /src/ros2_ws/build/imu_publisher/.pytest_cache
+rootdir: /src/ros2_ws/src/imu_publisher
+plugins: ament-lint-0.12.10, launch-testing-ros-0.19.7, launch-testing-1.0.4, ament-xmllint-0.12.10, ament-flake8-0.12.10, ament-copyright-0.12.10, ament-pep257-0.12.10, colcon-core-0.15.2
+[1mcollecting ... [0m[1m
+collecting 0 items                                                             [0m[1m
+collected 3 items                                                              [0m
+
+test/test_copyright.py [33ms[0m[32m                                                 [ 33%][0m
+test/test_flake8.py [31mF[0m[31m                                                    [ 66%][0m
+test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+
+=================================== FAILURES ===================================
+[31m[1m_________________________________ test_flake8 __________________________________[0m
+[1m[31mtest/test_flake8.py[0m:23: in test_flake8
+    [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[1m[31mE   AssertionError: Found 15 code style errors / warnings:[0m
+[1m[31mE     ./imu_publisher/publisher.py:7:1: E302 expected 2 blank lines, found 1[0m
+[1m[31mE     ./imu_publisher/publisher.py:12:31: E261 at least two spaces before inline comment[0m
+[1m[31mE     ./imu_publisher/publisher.py:26:64: W291 trailing whitespace[0m
+[1m[31mE     ./imu_publisher/publisher.py:30:53: W291 trailing whitespace[0m
+[1m[31mE     ./imu_publisher/publisher.py:36:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./imu_publisher/publisher.py:42:9: F841 local variable 'e' is assigned to but never used[0m
+[1m[31mE     ./imu_publisher/publisher.py:51:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./imu_publisher/publisher.py:55:100: E501 line too long (103 > 99 characters)[0m
+[1m[31mE     ./imu_publisher/publisher.py:56:57: E128 continuation line under-indented for visual indent[0m
+[1m[31mE     ./imu_publisher/publisher.py:57:57: E128 continuation line under-indented for visual indent[0m
+[1m[31mE     ./imu_publisher/publisher.py:57:100: E501 line too long (100 > 99 characters)[0m
+[1m[31mE     ./imu_publisher/publisher.py:58:57: E128 continuation line under-indented for visual indent[0m
+[1m[31mE     ./imu_publisher/publisher.py:58:65: W291 trailing whitespace[0m
+[1m[31mE     ./imu_publisher/publisher.py:59:1: W293 blank line contains whitespace[0m
+[1m[31mE     ./imu_publisher/publisher.py:68:1: E305 expected 2 blank lines after class or function definition, found 1[0m
+[1m[31mE   assert 1 == 0[0m
+----------------------------- Captured stdout call -----------------------------
+
+./imu_publisher/publisher.py:7:1: E302 expected 2 blank lines, found 1
+class IMUPublisher(Node):
+^
+
+./imu_publisher/publisher.py:12:31: E261 at least two spaces before inline comment
+        timer_period = 1 / 300 # 300hz
+                              ^
+
+./imu_publisher/publisher.py:26:64: W291 trailing whitespace
+                imu_msg.angular_velocity.x = msg.xgyro / 1000.0  
+                                                               ^
+
+./imu_publisher/publisher.py:30:53: W291 trailing whitespace
+                imu_msg.header.frame_id = 'imu_link'  
+                                                    ^
+
+./imu_publisher/publisher.py:36:1: W293 blank line contains whitespace
+        
+^
+
+./imu_publisher/publisher.py:42:9: F841 local variable 'e' is assigned to but never used
+        except Exception as e:
+        ^
+
+./imu_publisher/publisher.py:51:1: W293 blank line contains whitespace
+            
+^
+
+./imu_publisher/publisher.py:55:100: E501 line too long (103 > 99 characters)
+        self.__mavlink_connection.mav.request_data_stream_send(self.__mavlink_connection.target_system,
+                                                                                                   ^
+
+./imu_publisher/publisher.py:56:57: E128 continuation line under-indented for visual indent
+                                                        self.__mavlink_connection.target_component,
+                                                        ^
+
+./imu_publisher/publisher.py:57:57: E128 continuation line under-indented for visual indent
+                                                        mavutil.mavlink.MAV_DATA_STREAM_RAW_SENSORS,
+                                                        ^
+
+./imu_publisher/publisher.py:57:100: E501 line too long (100 > 99 characters)
+                                                        mavutil.mavlink.MAV_DATA_STREAM_RAW_SENSORS,
+                                                                                                   ^
+
+./imu_publisher/publisher.py:58:57: E128 continuation line under-indented for visual indent
+                                                        rate, 1)  
+                                                        ^
+
+./imu_publisher/publisher.py:58:65: W291 trailing whitespace
+                                                        rate, 1)  
+                                                                ^
+
+./imu_publisher/publisher.py:59:1: W293 blank line contains whitespace
+        
+^
+
+./imu_publisher/publisher.py:68:1: E305 expected 2 blank lines after class or function definition, found 1
+if __name__ == '__main__':
+^
+
+3     E128 continuation line under-indented for visual indent
+1     E261 at least two spaces before inline comment
+1     E302 expected 2 blank lines, found 1
+1     E305 expected 2 blank lines after class or function definition, found 1
+2     E501 line too long (103 > 99 characters)
+1     F841 local variable 'e' is assigned to but never used
+3     W291 trailing whitespace
+3     W293 blank line contains whitespace
+
+6 files checked
+15 errors
+
+'E'-type errors: 8
+'F'-type errors: 1
+'W'-type errors: 6
+
+Checked files:
+
+* ./setup.py
+* ./imu_publisher/publisher.py
+* ./imu_publisher/__init__.py
+* ./test/test_copyright.py
+* ./test/test_flake8.py
+* ./test/test_pep257.py
+----------------------------- Captured stderr call -----------------------------
+option --max-complexity: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future
+------- generated xml file: /src/ros2_ws/build/imu_publisher/pytest.xml --------
+[33m=============================== warnings summary ===============================[0m
+test/test_flake8.py::test_flake8
+test/test_flake8.py::test_flake8
+  Warning: SelectableGroups dict interface is deprecated. Use select.
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=========================== short test summary info ============================
+FAILED test/test_flake8.py::test_flake8 - AssertionError: Found 15 code style...
+[31m============== [31m[1m1 failed[0m, [32m1 passed[0m, [33m1 skipped[0m, [33m2 warnings[0m[31m in 1.75s[0m[31m ==============[0m
