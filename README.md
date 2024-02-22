@@ -10,7 +10,11 @@ A docker service containing ROS2 packages for interfacing with Pixhawk.
 ## Topics
 - `/imu_data` - sensor_msgs/Imu
     - Only linear acceleration and angular velocity available
-      
+## docker
+- docker ps
+- docker compose up --build
+- vscode attach to dev container
+- 
 ## Movement part
 - package.xml needs to have ```<exec_depend>pioneer_msgs</exec_depend> ```
 - topic should be ```movement_topic ```
