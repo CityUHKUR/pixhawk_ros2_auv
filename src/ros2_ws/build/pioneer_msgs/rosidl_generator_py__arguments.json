@@ -4,7 +4,8 @@
   "template_dir": "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
     "/src/ros2_ws/build/pioneer_msgs/rosidl_adapter/pioneer_msgs:msg/MotionCommand.idl",
-    "/src/ros2_ws/build/pioneer_msgs/rosidl_adapter/pioneer_msgs:msg/Status.idl"
+    "/src/ros2_ws/build/pioneer_msgs/rosidl_adapter/pioneer_msgs:msg/Status.idl",
+    "/src/ros2_ws/build/pioneer_msgs/rosidl_adapter/pioneer_msgs:msg/AUVState.idl"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/humble/share/std_msgs/msg/Bool.idl",
@@ -85,6 +86,7 @@
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
     "/src/ros2_ws/build/pioneer_msgs/rosidl_adapter/pioneer_msgs/msg/MotionCommand.idl",
     "/src/ros2_ws/build/pioneer_msgs/rosidl_adapter/pioneer_msgs/msg/Status.idl",
+    "/src/ros2_ws/build/pioneer_msgs/rosidl_adapter/pioneer_msgs/msg/AUVState.idl",
     "/opt/ros/humble/share/std_msgs/msg/Bool.idl",
     "/opt/ros/humble/share/std_msgs/msg/Byte.idl",
     "/opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl",

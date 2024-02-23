@@ -60,6 +60,8 @@ cdr_serialize(
   std_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
     ros_message.header,
     cdr);
+  // Member: current_state
+  cdr << ros_message.current_state;
   // Member: status
   cdr << ros_message.status;
   return true;
@@ -74,6 +76,9 @@ cdr_deserialize(
   // Member: header
   std_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
     cdr, ros_message.header);
+
+  // Member: current_state
+  cdr >> ros_message.current_state;
 
   // Member: status
   cdr >> ros_message.status;
@@ -99,6 +104,10 @@ get_serialized_size(
   current_alignment +=
     std_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
     ros_message.header, current_alignment);
+  // Member: current_state
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.current_state.size() + 1);
   // Member: status
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
@@ -143,6 +152,19 @@ max_serialized_size_Status(
       current_alignment += inner_size;
       full_bounded &= inner_full_bounded;
       is_plain &= inner_is_plain;
+    }
+  }
+
+  // Member: current_state
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
     }
   }
 

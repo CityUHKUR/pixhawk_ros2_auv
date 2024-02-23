@@ -68,6 +68,21 @@ bool pioneer_msgs__msg__status__convert_from_py(PyObject * _pymsg, void * _ros_m
     }
     Py_DECREF(field);
   }
+  {  // current_state
+    PyObject * field = PyObject_GetAttrString(_pymsg, "current_state");
+    if (!field) {
+      return false;
+    }
+    assert(PyUnicode_Check(field));
+    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
+    if (!encoded_field) {
+      Py_DECREF(field);
+      return false;
+    }
+    rosidl_runtime_c__String__assign(&ros_message->current_state, PyBytes_AS_STRING(encoded_field));
+    Py_DECREF(encoded_field);
+    Py_DECREF(field);
+  }
   {  // status
     PyObject * field = PyObject_GetAttrString(_pymsg, "status");
     if (!field) {
@@ -113,6 +128,23 @@ PyObject * pioneer_msgs__msg__status__convert_to_py(void * raw_ros_message)
     }
     {
       int rc = PyObject_SetAttrString(_pymessage, "header", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // current_state
+    PyObject * field = NULL;
+    field = PyUnicode_DecodeUTF8(
+      ros_message->current_state.data,
+      strlen(ros_message->current_state.data),
+      "replace");
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "current_state", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

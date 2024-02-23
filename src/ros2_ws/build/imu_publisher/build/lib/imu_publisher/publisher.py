@@ -38,9 +38,11 @@ class IMUPublisher(Node):
         print("Connecting to Pixhawk...")
         try:
             self.__init_mavlink()
+            self.get_logger().info('Connected to Pixhawk on /dev/ttyACM1')
         except Exception as e:
             try:
                 self.__init_mavlink("/dev/ttyACM0")
+                self.get_logger().info('Connected to Pixhawk on /dev/ttyACM0')
             except Exception as e:
                 self.get_logger().error('Failed to connect to Pixhawk: {}'.format(e))
                 self.__status = False

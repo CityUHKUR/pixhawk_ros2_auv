@@ -6,9 +6,25 @@
 
 module pioneer_msgs {
   module msg {
+    @verbatim (language="comment", text=
+      "Message for conversation between flow control and AUV specify task algorithm" "\n"
+      "Please include your node name as the frame_id")
     struct Status {
       std_msgs::msg::Header header;
 
+      @verbatim (language="comment", text=
+        "State Name Example" "\n"
+        "\"state_navigate_task1\"" "\n"
+        "\"recover_mode\"" "\n"
+        "Detail refer to state machine repo readme")
+      string current_state;
+
+      @verbatim (language="comment", text=
+        "Status of your algorithm" "\n"
+        "\"START\"" "\n"
+        "\"IN PROGRESS\"" "\n"
+        "\"FAIL\"" "\n"
+        "\"SUCESS\"")
       string status;
     };
   };

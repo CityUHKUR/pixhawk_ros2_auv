@@ -37,16 +37,32 @@ private:
   ::pioneer_msgs::msg::Status msg_;
 };
 
+class Init_Status_current_state
+{
+public:
+  explicit Init_Status_current_state(::pioneer_msgs::msg::Status & msg)
+  : msg_(msg)
+  {}
+  Init_Status_status current_state(::pioneer_msgs::msg::Status::_current_state_type arg)
+  {
+    msg_.current_state = std::move(arg);
+    return Init_Status_status(msg_);
+  }
+
+private:
+  ::pioneer_msgs::msg::Status msg_;
+};
+
 class Init_Status_header
 {
 public:
   Init_Status_header()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_Status_status header(::pioneer_msgs::msg::Status::_header_type arg)
+  Init_Status_current_state header(::pioneer_msgs::msg::Status::_header_type arg)
   {
     msg_.header = std::move(arg);
-    return Init_Status_status(msg_);
+    return Init_Status_current_state(msg_);
   }
 
 private:

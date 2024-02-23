@@ -14,6 +14,7 @@
 // Include directives for member types
 // Member `header`
 #include "std_msgs/msg/detail/header__functions.h"
+// Member `current_state`
 // Member `status`
 #include "rosidl_runtime_c/string_functions.h"
 
@@ -25,6 +26,11 @@ pioneer_msgs__msg__Status__init(pioneer_msgs__msg__Status * msg)
   }
   // header
   if (!std_msgs__msg__Header__init(&msg->header)) {
+    pioneer_msgs__msg__Status__fini(msg);
+    return false;
+  }
+  // current_state
+  if (!rosidl_runtime_c__String__init(&msg->current_state)) {
     pioneer_msgs__msg__Status__fini(msg);
     return false;
   }
@@ -44,6 +50,8 @@ pioneer_msgs__msg__Status__fini(pioneer_msgs__msg__Status * msg)
   }
   // header
   std_msgs__msg__Header__fini(&msg->header);
+  // current_state
+  rosidl_runtime_c__String__fini(&msg->current_state);
   // status
   rosidl_runtime_c__String__fini(&msg->status);
 }
@@ -57,6 +65,12 @@ pioneer_msgs__msg__Status__are_equal(const pioneer_msgs__msg__Status * lhs, cons
   // header
   if (!std_msgs__msg__Header__are_equal(
       &(lhs->header), &(rhs->header)))
+  {
+    return false;
+  }
+  // current_state
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->current_state), &(rhs->current_state)))
   {
     return false;
   }
@@ -80,6 +94,12 @@ pioneer_msgs__msg__Status__copy(
   // header
   if (!std_msgs__msg__Header__copy(
       &(input->header), &(output->header)))
+  {
+    return false;
+  }
+  // current_state
+  if (!rosidl_runtime_c__String__copy(
+      &(input->current_state), &(output->current_state)))
   {
     return false;
   }

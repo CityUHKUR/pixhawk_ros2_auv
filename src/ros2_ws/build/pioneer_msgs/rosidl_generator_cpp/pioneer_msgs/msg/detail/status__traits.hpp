@@ -36,6 +36,13 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
+  // member: current_state
+  {
+    out << "current_state: ";
+    rosidl_generator_traits::value_to_yaml(msg.current_state, out);
+    out << ", ";
+  }
+
   // member: status
   {
     out << "status: ";
@@ -55,6 +62,16 @@ inline void to_block_style_yaml(
     }
     out << "header:\n";
     to_block_style_yaml(msg.header, out, indentation + 2);
+  }
+
+  // member: current_state
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "current_state: ";
+    rosidl_generator_traits::value_to_yaml(msg.current_state, out);
+    out << "\n";
   }
 
   // member: status

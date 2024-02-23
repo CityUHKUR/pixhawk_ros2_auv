@@ -43,17 +43,20 @@ struct Status_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
+      this->current_state = "";
       this->status = "";
     }
   }
 
   explicit Status_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
   : header(_alloc, _init),
+    current_state(_alloc),
     status(_alloc)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
+      this->current_state = "";
       this->status = "";
     }
   }
@@ -62,6 +65,9 @@ struct Status_
   using _header_type =
     std_msgs::msg::Header_<ContainerAllocator>;
   _header_type header;
+  using _current_state_type =
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+  _current_state_type current_state;
   using _status_type =
     std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
   _status_type status;
@@ -71,6 +77,12 @@ struct Status_
     const std_msgs::msg::Header_<ContainerAllocator> & _arg)
   {
     this->header = _arg;
+    return *this;
+  }
+  Type & set__current_state(
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+  {
+    this->current_state = _arg;
     return *this;
   }
   Type & set__status(
@@ -123,6 +135,9 @@ struct Status_
   bool operator==(const Status_ & other) const
   {
     if (this->header != other.header) {
+      return false;
+    }
+    if (this->current_state != other.current_state) {
       return false;
     }
     if (this->status != other.status) {

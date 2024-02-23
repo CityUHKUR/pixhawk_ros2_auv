@@ -71,9 +71,11 @@ pioneer_msgs__py/CMakeFiles/pioneer_msgs__py: rosidl_generator_py/pioneer_msgs/_
 pioneer_msgs__py/CMakeFiles/pioneer_msgs__py: rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_c.c
 pioneer_msgs__py/CMakeFiles/pioneer_msgs__py: rosidl_generator_py/pioneer_msgs/msg/_motion_command.py
 pioneer_msgs__py/CMakeFiles/pioneer_msgs__py: rosidl_generator_py/pioneer_msgs/msg/_status.py
+pioneer_msgs__py/CMakeFiles/pioneer_msgs__py: rosidl_generator_py/pioneer_msgs/msg/_auv_state.py
 pioneer_msgs__py/CMakeFiles/pioneer_msgs__py: rosidl_generator_py/pioneer_msgs/msg/__init__.py
 pioneer_msgs__py/CMakeFiles/pioneer_msgs__py: rosidl_generator_py/pioneer_msgs/msg/_motion_command_s.c
 pioneer_msgs__py/CMakeFiles/pioneer_msgs__py: rosidl_generator_py/pioneer_msgs/msg/_status_s.c
+pioneer_msgs__py/CMakeFiles/pioneer_msgs__py: rosidl_generator_py/pioneer_msgs/msg/_auv_state_s.c
 
 rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -90,6 +92,7 @@ rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_
 rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/pioneer_msgs/msg/MotionCommand.idl
 rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/pioneer_msgs/msg/Status.idl
+rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/pioneer_msgs/msg/AUVState.idl
 rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -166,6 +169,9 @@ rosidl_generator_py/pioneer_msgs/msg/_motion_command.py: rosidl_generator_py/pio
 rosidl_generator_py/pioneer_msgs/msg/_status.py: rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/pioneer_msgs/msg/_status.py
 
+rosidl_generator_py/pioneer_msgs/msg/_auv_state.py: rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/pioneer_msgs/msg/_auv_state.py
+
 rosidl_generator_py/pioneer_msgs/msg/__init__.py: rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/pioneer_msgs/msg/__init__.py
 
@@ -175,11 +181,16 @@ rosidl_generator_py/pioneer_msgs/msg/_motion_command_s.c: rosidl_generator_py/pi
 rosidl_generator_py/pioneer_msgs/msg/_status_s.c: rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/pioneer_msgs/msg/_status_s.c
 
+rosidl_generator_py/pioneer_msgs/msg/_auv_state_s.c: rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/pioneer_msgs/msg/_auv_state_s.c
+
 pioneer_msgs__py: pioneer_msgs__py/CMakeFiles/pioneer_msgs__py
 pioneer_msgs__py: rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_c.c
 pioneer_msgs__py: rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 pioneer_msgs__py: rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_introspection_c.c
 pioneer_msgs__py: rosidl_generator_py/pioneer_msgs/msg/__init__.py
+pioneer_msgs__py: rosidl_generator_py/pioneer_msgs/msg/_auv_state.py
+pioneer_msgs__py: rosidl_generator_py/pioneer_msgs/msg/_auv_state_s.c
 pioneer_msgs__py: rosidl_generator_py/pioneer_msgs/msg/_motion_command.py
 pioneer_msgs__py: rosidl_generator_py/pioneer_msgs/msg/_motion_command_s.c
 pioneer_msgs__py: rosidl_generator_py/pioneer_msgs/msg/_status.py

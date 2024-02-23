@@ -212,4 +212,7 @@ CMakeFiles/pioneer_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_ge
  /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__functions.h \
  /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/status__type_support.h \
  /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/status__struct.h \
- /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/status__functions.h
+ /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/status__functions.h \
+ /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__type_support.h \
+ /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__struct.h \
+ /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.h
