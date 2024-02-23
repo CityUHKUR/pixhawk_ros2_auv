@@ -60,16 +60,19 @@ class Status(metaclass=Metaclass_Status):
 
     __slots__ = [
         '_header',
+        '_current_state',
         '_status',
     ]
 
     _fields_and_field_types = {
         'header': 'std_msgs/Header',
+        'current_state': 'string',
         'status': 'string',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Header'),  # noqa: E501
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
     )
 
@@ -79,6 +82,7 @@ class Status(metaclass=Metaclass_Status):
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         from std_msgs.msg import Header
         self.header = kwargs.get('header', Header())
+        self.current_state = kwargs.get('current_state', str())
         self.status = kwargs.get('status', str())
 
     def __repr__(self):
@@ -112,6 +116,8 @@ class Status(metaclass=Metaclass_Status):
             return False
         if self.header != other.header:
             return False
+        if self.current_state != other.current_state:
+            return False
         if self.status != other.status:
             return False
         return True
@@ -134,6 +140,19 @@ class Status(metaclass=Metaclass_Status):
                 isinstance(value, Header), \
                 "The 'header' field must be a sub message of type 'Header'"
         self._header = value
+
+    @builtins.property
+    def current_state(self):
+        """Message field 'current_state'."""
+        return self._current_state
+
+    @current_state.setter
+    def current_state(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, str), \
+                "The 'current_state' field must be of type 'str'"
+        self._current_state = value
 
     @builtins.property
     def status(self):

@@ -34,8 +34,8 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/string.h"  // status
-#include "rosidl_runtime_c/string_functions.h"  // status
+#include "rosidl_runtime_c/string.h"  // current_state, status
+#include "rosidl_runtime_c/string_functions.h"  // current_state, status
 #include "std_msgs/msg/detail/header__functions.h"  // header
 
 // forward declare type support functions
@@ -80,6 +80,20 @@ static bool _Status__cdr_serialize(
     }
   }
 
+  // Field name: current_state
+  {
+    const rosidl_runtime_c__String * str = &ros_message->current_state;
+    if (str->capacity == 0 || str->capacity <= str->size) {
+      fprintf(stderr, "string capacity not greater than size\n");
+      return false;
+    }
+    if (str->data[str->size] != '\0') {
+      fprintf(stderr, "string not null-terminated\n");
+      return false;
+    }
+    cdr << str->data;
+  }
+
   // Field name: status
   {
     const rosidl_runtime_c__String * str = &ros_message->status;
@@ -116,6 +130,22 @@ static bool _Status__cdr_deserialize(
     if (!callbacks->cdr_deserialize(
         cdr, &ros_message->header))
     {
+      return false;
+    }
+  }
+
+  // Field name: current_state
+  {
+    std::string tmp;
+    cdr >> tmp;
+    if (!ros_message->current_state.data) {
+      rosidl_runtime_c__String__init(&ros_message->current_state);
+    }
+    bool succeeded = rosidl_runtime_c__String__assign(
+      &ros_message->current_state,
+      tmp.c_str());
+    if (!succeeded) {
+      fprintf(stderr, "failed to assign string into field 'current_state'\n");
       return false;
     }
   }
@@ -157,6 +187,10 @@ size_t get_serialized_size_pioneer_msgs__msg__Status(
 
   current_alignment += get_serialized_size_std_msgs__msg__Header(
     &(ros_message->header), current_alignment);
+  // field.name current_state
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message->current_state.size + 1);
   // field.name status
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
@@ -207,6 +241,18 @@ size_t max_serialized_size_pioneer_msgs__msg__Status(
       current_alignment += inner_size;
       full_bounded &= inner_full_bounded;
       is_plain &= inner_is_plain;
+    }
+  }
+  // member: current_state
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
     }
   }
   // member: status

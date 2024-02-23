@@ -20,13 +20,28 @@ extern "C"
 // Include directives for member types
 // Member 'header'
 #include "std_msgs/msg/detail/header__struct.h"
+// Member 'current_state'
 // Member 'status'
 #include "rosidl_runtime_c/string.h"
 
 /// Struct defined in msg/Status in the package pioneer_msgs.
+/**
+  * Message for conversation between flow control and AUV specify task algorithm
+  * Please include your node name as the frame_id
+ */
 typedef struct pioneer_msgs__msg__Status
 {
   std_msgs__msg__Header header;
+  /// State Name Example
+  /// "state_navigate_task1"
+  /// "recover_mode"
+  /// Detail refer to state machine repo readme
+  rosidl_runtime_c__String current_state;
+  /// Status of your algorithm
+  /// "START"
+  /// "IN PROGRESS"
+  /// "FAIL"
+  /// "SUCESS"
   rosidl_runtime_c__String status;
 } pioneer_msgs__msg__Status;
 

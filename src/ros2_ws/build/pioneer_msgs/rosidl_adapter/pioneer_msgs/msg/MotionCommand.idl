@@ -7,15 +7,29 @@
 
 module pioneer_msgs {
   module msg {
+    @verbatim (language="comment", text=
+      "Defines a standard motion command send to pixhawk/motion control node")
     struct MotionCommand {
       std_msgs::msg::Header header;
 
+      @verbatim (language="comment", text=
+        "is pure turning/yaw or displacement included")
       boolean turn_mode;
 
+      @verbatim (language="comment", text=
+        "x,y,z value must between [-1, 1]" "\n"
+        "x is frontward and backward" "\n"
+        "y is horizontal movement, positive is right" "\n"
+        "z is up and down")
       geometry_msgs::msg::Vector3 direction;
 
+      @verbatim (language="comment", text=
+        "Distance mode and Time mode is exclusive" "\n"
+        "-1 to disable distance mode, measure in meter")
       float distance;
 
+      @verbatim (language="comment", text=
+        "-1 to disable time mode, measure in sec")
       float time;
     };
   };

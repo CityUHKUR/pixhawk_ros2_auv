@@ -24,12 +24,23 @@ extern "C"
 #include "geometry_msgs/msg/detail/vector3__struct.h"
 
 /// Struct defined in msg/MotionCommand in the package pioneer_msgs.
+/**
+  * Defines a standard motion command send to pixhawk/motion control node
+ */
 typedef struct pioneer_msgs__msg__MotionCommand
 {
   std_msgs__msg__Header header;
+  /// is pure turning/yaw or displacement included
   bool turn_mode;
+  /// x,y,z value must between [-1, 1]
+  /// x is frontward and backward
+  /// y is horizontal movement, positive is right
+  /// z is up and down
   geometry_msgs__msg__Vector3 direction;
+  /// Distance mode and Time mode is exclusive
+  /// -1 to disable distance mode, measure in meter
   float distance;
+  /// -1 to disable time mode, measure in sec
   float time;
 } pioneer_msgs__msg__MotionCommand;
 

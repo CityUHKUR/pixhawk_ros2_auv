@@ -1,3 +1,5 @@
+msg/AUVState.idl
+msg/AUVState.msg
 msg/MotionCommand.idl
 msg/MotionCommand.msg
 msg/Status.idl

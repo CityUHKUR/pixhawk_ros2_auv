@@ -84,6 +84,7 @@ rosidl_generator_c/pioneer_msgs/msg/motion_command.h: /opt/ros/humble/share/rosi
 rosidl_generator_c/pioneer_msgs/msg/motion_command.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/pioneer_msgs/msg/motion_command.h: rosidl_adapter/pioneer_msgs/msg/MotionCommand.idl
 rosidl_generator_c/pioneer_msgs/msg/motion_command.h: rosidl_adapter/pioneer_msgs/msg/Status.idl
+rosidl_generator_c/pioneer_msgs/msg/motion_command.h: rosidl_adapter/pioneer_msgs/msg/AUVState.idl
 rosidl_generator_c/pioneer_msgs/msg/motion_command.h: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_generator_c/pioneer_msgs/msg/motion_command.h: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 rosidl_generator_c/pioneer_msgs/msg/motion_command.h: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -169,11 +170,26 @@ rosidl_generator_c/pioneer_msgs/msg/detail/status__struct.h: rosidl_generator_c/
 rosidl_generator_c/pioneer_msgs/msg/detail/status__type_support.h: rosidl_generator_c/pioneer_msgs/msg/motion_command.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/pioneer_msgs/msg/detail/status__type_support.h
 
+rosidl_generator_c/pioneer_msgs/msg/auv_state.h: rosidl_generator_c/pioneer_msgs/msg/motion_command.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/pioneer_msgs/msg/auv_state.h
+
+rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.h: rosidl_generator_c/pioneer_msgs/msg/motion_command.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.h
+
+rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__struct.h: rosidl_generator_c/pioneer_msgs/msg/motion_command.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__struct.h
+
+rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__type_support.h: rosidl_generator_c/pioneer_msgs/msg/motion_command.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__type_support.h
+
 rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__functions.c: rosidl_generator_c/pioneer_msgs/msg/motion_command.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__functions.c
 
 rosidl_generator_c/pioneer_msgs/msg/detail/status__functions.c: rosidl_generator_c/pioneer_msgs/msg/motion_command.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/pioneer_msgs/msg/detail/status__functions.c
+
+rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.c: rosidl_generator_c/pioneer_msgs/msg/motion_command.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.c
 
 CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__functions.c.o: CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__functions.c.o: rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__functions.c
@@ -203,16 +219,32 @@ CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/status__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/status__functions.c -o CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/status__functions.c.s
 
+CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.c.o: CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.c.o: rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.c
+CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.c.o: CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/src/ros2_ws/build/pioneer_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.c.o -MF CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.c.o.d -o CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.c.o -c /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.c
+
+CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.c > CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.c.i
+
+CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.c -o CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.c.s
+
 # Object files for target pioneer_msgs__rosidl_generator_c
 pioneer_msgs__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__functions.c.o" \
-"CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/status__functions.c.o"
+"CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/status__functions.c.o" \
+"CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.c.o"
 
 # External object files for target pioneer_msgs__rosidl_generator_c
 pioneer_msgs__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 libpioneer_msgs__rosidl_generator_c.so: CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__functions.c.o
 libpioneer_msgs__rosidl_generator_c.so: CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/status__functions.c.o
+libpioneer_msgs__rosidl_generator_c.so: CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.c.o
 libpioneer_msgs__rosidl_generator_c.so: CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/build.make
 libpioneer_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
 libpioneer_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
@@ -220,7 +252,7 @@ libpioneer_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_interface
 libpioneer_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libpioneer_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libpioneer_msgs__rosidl_generator_c.so: CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/src/ros2_ws/build/pioneer_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libpioneer_msgs__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/src/ros2_ws/build/pioneer_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libpioneer_msgs__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -231,6 +263,11 @@ CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/clean
 
+CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pioneer_msgs/msg/auv_state.h
+CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.c
+CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.h
+CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__struct.h
+CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__type_support.h
 CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__functions.c
 CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__functions.h
 CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__struct.h

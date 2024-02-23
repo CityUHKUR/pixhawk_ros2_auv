@@ -1,2 +1,3 @@
 /src/ros2_ws/build/pioneer_msgs/rosidl_adapter/pioneer_msgs:msg/MotionCommand.idl
 /src/ros2_ws/build/pioneer_msgs/rosidl_adapter/pioneer_msgs:msg/Status.idl
+/src/ros2_ws/build/pioneer_msgs/rosidl_adapter/pioneer_msgs:msg/AUVState.idl

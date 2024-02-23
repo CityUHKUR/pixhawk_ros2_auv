@@ -17,6 +17,7 @@
 #include "std_msgs/msg/header.h"
 // Member `header`
 #include "std_msgs/msg/detail/header__rosidl_typesupport_introspection_c.h"
+// Member `current_state`
 // Member `status`
 #include "rosidl_runtime_c/string_functions.h"
 
@@ -39,7 +40,7 @@ void pioneer_msgs__msg__Status__rosidl_typesupport_introspection_c__Status_fini_
   pioneer_msgs__msg__Status__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember pioneer_msgs__msg__Status__rosidl_typesupport_introspection_c__Status_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember pioneer_msgs__msg__Status__rosidl_typesupport_introspection_c__Status_message_member_array[3] = {
   {
     "header",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -49,6 +50,23 @@ static rosidl_typesupport_introspection_c__MessageMember pioneer_msgs__msg__Stat
     0,  // array size
     false,  // is upper bound
     offsetof(pioneer_msgs__msg__Status, header),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "current_state",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(pioneer_msgs__msg__Status, current_state),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -79,7 +97,7 @@ static rosidl_typesupport_introspection_c__MessageMember pioneer_msgs__msg__Stat
 static const rosidl_typesupport_introspection_c__MessageMembers pioneer_msgs__msg__Status__rosidl_typesupport_introspection_c__Status_message_members = {
   "pioneer_msgs__msg",  // message namespace
   "Status",  // message name
-  2,  // number of fields
+  3,  // number of fields
   sizeof(pioneer_msgs__msg__Status),
   pioneer_msgs__msg__Status__rosidl_typesupport_introspection_c__Status_message_member_array,  // message members
   pioneer_msgs__msg__Status__rosidl_typesupport_introspection_c__Status_init_function,  // function to initialize message memory (memory has to be allocated)

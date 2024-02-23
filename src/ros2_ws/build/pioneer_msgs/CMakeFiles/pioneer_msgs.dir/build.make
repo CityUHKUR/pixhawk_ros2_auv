@@ -68,6 +68,7 @@ include CMakeFiles/pioneer_msgs.dir/progress.make
 
 CMakeFiles/pioneer_msgs: /src/ros2_ws/src/pioneer_msgs/msg/MotionCommand.msg
 CMakeFiles/pioneer_msgs: /src/ros2_ws/src/pioneer_msgs/msg/Status.msg
+CMakeFiles/pioneer_msgs: /src/ros2_ws/src/pioneer_msgs/msg/AUVState.msg
 CMakeFiles/pioneer_msgs: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 CMakeFiles/pioneer_msgs: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 CMakeFiles/pioneer_msgs: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl

@@ -74,6 +74,10 @@ CMakeFiles/pioneer_msgs__cpp: rosidl_generator_cpp/pioneer_msgs/msg/status.hpp
 CMakeFiles/pioneer_msgs__cpp: rosidl_generator_cpp/pioneer_msgs/msg/detail/status__builder.hpp
 CMakeFiles/pioneer_msgs__cpp: rosidl_generator_cpp/pioneer_msgs/msg/detail/status__struct.hpp
 CMakeFiles/pioneer_msgs__cpp: rosidl_generator_cpp/pioneer_msgs/msg/detail/status__traits.hpp
+CMakeFiles/pioneer_msgs__cpp: rosidl_generator_cpp/pioneer_msgs/msg/auv_state.hpp
+CMakeFiles/pioneer_msgs__cpp: rosidl_generator_cpp/pioneer_msgs/msg/detail/auv_state__builder.hpp
+CMakeFiles/pioneer_msgs__cpp: rosidl_generator_cpp/pioneer_msgs/msg/detail/auv_state__struct.hpp
+CMakeFiles/pioneer_msgs__cpp: rosidl_generator_cpp/pioneer_msgs/msg/detail/auv_state__traits.hpp
 
 rosidl_generator_cpp/pioneer_msgs/msg/motion_command.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/pioneer_msgs/msg/motion_command.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -92,6 +96,7 @@ rosidl_generator_cpp/pioneer_msgs/msg/motion_command.hpp: /opt/ros/humble/share/
 rosidl_generator_cpp/pioneer_msgs/msg/motion_command.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/pioneer_msgs/msg/motion_command.hpp: rosidl_adapter/pioneer_msgs/msg/MotionCommand.idl
 rosidl_generator_cpp/pioneer_msgs/msg/motion_command.hpp: rosidl_adapter/pioneer_msgs/msg/Status.idl
+rosidl_generator_cpp/pioneer_msgs/msg/motion_command.hpp: rosidl_adapter/pioneer_msgs/msg/AUVState.idl
 rosidl_generator_cpp/pioneer_msgs/msg/motion_command.hpp: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_generator_cpp/pioneer_msgs/msg/motion_command.hpp: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 rosidl_generator_cpp/pioneer_msgs/msg/motion_command.hpp: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -177,7 +182,23 @@ rosidl_generator_cpp/pioneer_msgs/msg/detail/status__struct.hpp: rosidl_generato
 rosidl_generator_cpp/pioneer_msgs/msg/detail/status__traits.hpp: rosidl_generator_cpp/pioneer_msgs/msg/motion_command.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pioneer_msgs/msg/detail/status__traits.hpp
 
+rosidl_generator_cpp/pioneer_msgs/msg/auv_state.hpp: rosidl_generator_cpp/pioneer_msgs/msg/motion_command.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pioneer_msgs/msg/auv_state.hpp
+
+rosidl_generator_cpp/pioneer_msgs/msg/detail/auv_state__builder.hpp: rosidl_generator_cpp/pioneer_msgs/msg/motion_command.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pioneer_msgs/msg/detail/auv_state__builder.hpp
+
+rosidl_generator_cpp/pioneer_msgs/msg/detail/auv_state__struct.hpp: rosidl_generator_cpp/pioneer_msgs/msg/motion_command.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pioneer_msgs/msg/detail/auv_state__struct.hpp
+
+rosidl_generator_cpp/pioneer_msgs/msg/detail/auv_state__traits.hpp: rosidl_generator_cpp/pioneer_msgs/msg/motion_command.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pioneer_msgs/msg/detail/auv_state__traits.hpp
+
 pioneer_msgs__cpp: CMakeFiles/pioneer_msgs__cpp
+pioneer_msgs__cpp: rosidl_generator_cpp/pioneer_msgs/msg/auv_state.hpp
+pioneer_msgs__cpp: rosidl_generator_cpp/pioneer_msgs/msg/detail/auv_state__builder.hpp
+pioneer_msgs__cpp: rosidl_generator_cpp/pioneer_msgs/msg/detail/auv_state__struct.hpp
+pioneer_msgs__cpp: rosidl_generator_cpp/pioneer_msgs/msg/detail/auv_state__traits.hpp
 pioneer_msgs__cpp: rosidl_generator_cpp/pioneer_msgs/msg/detail/motion_command__builder.hpp
 pioneer_msgs__cpp: rosidl_generator_cpp/pioneer_msgs/msg/detail/motion_command__struct.hpp
 pioneer_msgs__cpp: rosidl_generator_cpp/pioneer_msgs/msg/detail/motion_command__traits.hpp

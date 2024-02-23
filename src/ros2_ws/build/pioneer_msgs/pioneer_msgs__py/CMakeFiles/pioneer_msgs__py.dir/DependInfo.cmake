@@ -15,6 +15,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_c.c" "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_introspection_c.c" "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/msg/__init__.py" "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/msg/_auv_state.py" "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/msg/_auv_state_s.c" "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/msg/_motion_command.py" "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/msg/_motion_command_s.c" "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/msg/_status.py" "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"

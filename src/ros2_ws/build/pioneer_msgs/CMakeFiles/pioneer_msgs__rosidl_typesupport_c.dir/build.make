@@ -77,6 +77,7 @@ rosidl_typesupport_c/pioneer_msgs/msg/motion_command__type_support.cpp: /opt/ros
 rosidl_typesupport_c/pioneer_msgs/msg/motion_command__type_support.cpp: /opt/ros/humble/share/rosidl_typesupport_c/resource/srv__type_support.cpp.em
 rosidl_typesupport_c/pioneer_msgs/msg/motion_command__type_support.cpp: rosidl_adapter/pioneer_msgs/msg/MotionCommand.idl
 rosidl_typesupport_c/pioneer_msgs/msg/motion_command__type_support.cpp: rosidl_adapter/pioneer_msgs/msg/Status.idl
+rosidl_typesupport_c/pioneer_msgs/msg/motion_command__type_support.cpp: rosidl_adapter/pioneer_msgs/msg/AUVState.idl
 rosidl_typesupport_c/pioneer_msgs/msg/motion_command__type_support.cpp: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_typesupport_c/pioneer_msgs/msg/motion_command__type_support.cpp: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 rosidl_typesupport_c/pioneer_msgs/msg/motion_command__type_support.cpp: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -144,6 +145,9 @@ rosidl_typesupport_c/pioneer_msgs/msg/motion_command__type_support.cpp: /opt/ros
 rosidl_typesupport_c/pioneer_msgs/msg/status__type_support.cpp: rosidl_typesupport_c/pioneer_msgs/msg/motion_command__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_c/pioneer_msgs/msg/status__type_support.cpp
 
+rosidl_typesupport_c/pioneer_msgs/msg/auv_state__type_support.cpp: rosidl_typesupport_c/pioneer_msgs/msg/motion_command__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_c/pioneer_msgs/msg/auv_state__type_support.cpp
+
 CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/motion_command__type_support.cpp.o: CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/flags.make
 CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/motion_command__type_support.cpp.o: rosidl_typesupport_c/pioneer_msgs/msg/motion_command__type_support.cpp
 CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/motion_command__type_support.cpp.o: CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/compiler_depend.ts
@@ -172,16 +176,32 @@ CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_m
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/status__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_c/pioneer_msgs/msg/status__type_support.cpp -o CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/status__type_support.cpp.s
 
+CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/auv_state__type_support.cpp.o: CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/flags.make
+CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/auv_state__type_support.cpp.o: rosidl_typesupport_c/pioneer_msgs/msg/auv_state__type_support.cpp
+CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/auv_state__type_support.cpp.o: CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/src/ros2_ws/build/pioneer_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/auv_state__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/auv_state__type_support.cpp.o -MF CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/auv_state__type_support.cpp.o.d -o CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/auv_state__type_support.cpp.o -c /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_c/pioneer_msgs/msg/auv_state__type_support.cpp
+
+CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/auv_state__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/auv_state__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_c/pioneer_msgs/msg/auv_state__type_support.cpp > CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/auv_state__type_support.cpp.i
+
+CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/auv_state__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/auv_state__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_c/pioneer_msgs/msg/auv_state__type_support.cpp -o CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/auv_state__type_support.cpp.s
+
 # Object files for target pioneer_msgs__rosidl_typesupport_c
 pioneer_msgs__rosidl_typesupport_c_OBJECTS = \
 "CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/motion_command__type_support.cpp.o" \
-"CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/status__type_support.cpp.o"
+"CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/status__type_support.cpp.o" \
+"CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/auv_state__type_support.cpp.o"
 
 # External object files for target pioneer_msgs__rosidl_typesupport_c
 pioneer_msgs__rosidl_typesupport_c_EXTERNAL_OBJECTS =
 
 libpioneer_msgs__rosidl_typesupport_c.so: CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/motion_command__type_support.cpp.o
 libpioneer_msgs__rosidl_typesupport_c.so: CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/status__type_support.cpp.o
+libpioneer_msgs__rosidl_typesupport_c.so: CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/auv_state__type_support.cpp.o
 libpioneer_msgs__rosidl_typesupport_c.so: CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/build.make
 libpioneer_msgs__rosidl_typesupport_c.so: libpioneer_msgs__rosidl_generator_c.so
 libpioneer_msgs__rosidl_typesupport_c.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
@@ -194,7 +214,7 @@ libpioneer_msgs__rosidl_typesupport_c.so: /opt/ros/humble/lib/libbuiltin_interfa
 libpioneer_msgs__rosidl_typesupport_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libpioneer_msgs__rosidl_typesupport_c.so: /opt/ros/humble/lib/librcutils.so
 libpioneer_msgs__rosidl_typesupport_c.so: CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/src/ros2_ws/build/pioneer_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libpioneer_msgs__rosidl_typesupport_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/src/ros2_ws/build/pioneer_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libpioneer_msgs__rosidl_typesupport_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -205,6 +225,7 @@ CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/clean
 
+CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/pioneer_msgs/msg/auv_state__type_support.cpp
 CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/pioneer_msgs/msg/motion_command__type_support.cpp
 CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/pioneer_msgs/msg/status__type_support.cpp
 	cd /src/ros2_ws/build/pioneer_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /src/ros2_ws/src/pioneer_msgs /src/ros2_ws/src/pioneer_msgs /src/ros2_ws/build/pioneer_msgs /src/ros2_ws/build/pioneer_msgs /src/ros2_ws/build/pioneer_msgs/CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/DependInfo.cmake --color=$(COLOR)
