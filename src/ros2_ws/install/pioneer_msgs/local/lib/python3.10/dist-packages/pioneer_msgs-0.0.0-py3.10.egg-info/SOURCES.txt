@@ -4,6 +4,3 @@ pioneer_msgs.egg-info/PKG-INFO
 pioneer_msgs.egg-info/SOURCES.txt
 pioneer_msgs.egg-info/dependency_links.txt
 pioneer_msgs.egg-info/top_level.txt
-pioneer_msgs/msg/__init__.py
-pioneer_msgs/msg/_motion_command.py
-pioneer_msgs/msg/_status.py

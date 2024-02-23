@@ -1,0 +1,22 @@
+[1.290s] Invoking command in '/src/ros2_ws/src/pixpubsub': CMAKE_PREFIX_PATH=/src/ros2_ws/install/pioneer_msgs:/src/ros2_ws/install/px4_ros_com:/src/ros2_ws/install/px4_msgs:/src/ros2_ws/install/microxrcedds_agent LD_LIBRARY_PATH=/src/ros2_ws/install/pioneer_msgs/lib:/src/ros2_ws/install/px4_ros_com/lib:/src/ros2_ws/install/px4_msgs/lib:/src/ros2_ws/install/microxrcedds_agent/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/src/ros2_ws/build/pixpubsub/prefix_override:/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pixpubsub build --build-base /src/ros2_ws/build/pixpubsub/build install --record /src/ros2_ws/build/pixpubsub/install.log --single-version-externally-managed
+[1.703s] running egg_info
+[1.704s] writing ../../build/pixpubsub/pixpubsub.egg-info/PKG-INFO
+[1.704s] writing dependency_links to ../../build/pixpubsub/pixpubsub.egg-info/dependency_links.txt
+[1.705s] writing entry points to ../../build/pixpubsub/pixpubsub.egg-info/entry_points.txt
+[1.705s] writing requirements to ../../build/pixpubsub/pixpubsub.egg-info/requires.txt
+[1.706s] writing top-level names to ../../build/pixpubsub/pixpubsub.egg-info/top_level.txt
+[1.709s] reading manifest file '../../build/pixpubsub/pixpubsub.egg-info/SOURCES.txt'
+[1.710s] writing manifest file '../../build/pixpubsub/pixpubsub.egg-info/SOURCES.txt'
+[1.710s] running build
+[1.711s] running build_py
+[1.711s] running install
+[1.712s] running install_lib
+[1.715s] running install_data
+[1.715s] running install_egg_info
+[1.719s] removing '/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub-0.0.0-py3.10.egg-info' (and everything under it)
+[1.720s] Copying ../../build/pixpubsub/pixpubsub.egg-info to /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub-0.0.0-py3.10.egg-info
+[1.728s] running install_scripts
+[1.769s] Installing move_pub script to /src/ros2_ws/install/pixpubsub/lib/pixpubsub
+[1.769s] Installing publisher script to /src/ros2_ws/install/pixpubsub/lib/pixpubsub
+[1.771s] writing list of installed files to '/src/ros2_ws/build/pixpubsub/install.log'
+[1.837s] Invoked command in '/src/ros2_ws/src/pixpubsub' returned '0': CMAKE_PREFIX_PATH=/src/ros2_ws/install/pioneer_msgs:/src/ros2_ws/install/px4_ros_com:/src/ros2_ws/install/px4_msgs:/src/ros2_ws/install/microxrcedds_agent LD_LIBRARY_PATH=/src/ros2_ws/install/pioneer_msgs/lib:/src/ros2_ws/install/px4_ros_com/lib:/src/ros2_ws/install/px4_msgs/lib:/src/ros2_ws/install/microxrcedds_agent/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/src/ros2_ws/build/pixpubsub/prefix_override:/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pixpubsub build --build-base /src/ros2_ws/build/pixpubsub/build install --record /src/ros2_ws/build/pixpubsub/install.log --single-version-externally-managed

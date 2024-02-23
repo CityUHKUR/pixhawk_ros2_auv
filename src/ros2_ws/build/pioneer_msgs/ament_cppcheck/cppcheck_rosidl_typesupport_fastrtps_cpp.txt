@@ -1,8 +1,0 @@
--- run_test.py: invoking following command in '/src/ros2_ws/src/pioneer_msgs':
- - /opt/ros/humble/bin/ament_cppcheck --xunit-file /src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_typesupport_fastrtps_cpp.xunit.xml /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/dds_fastrtps/motion_command__type_support.cpp /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_fastrtps_cpp.hpp /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/dds_fastrtps/status__type_support.cpp /src/ros2_ws/build/pioneer_msgs/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/status__rosidl_typesupport_fastrtps_cpp.hpp
-
-cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
-
-
--- run_test.py: return code 0
--- run_test.py: verify result file '/src/ros2_ws/build/pioneer_msgs/test_results/pioneer_msgs/cppcheck_rosidl_typesupport_fastrtps_cpp.xunit.xml'
