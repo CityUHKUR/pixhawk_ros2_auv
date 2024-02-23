@@ -9,6 +9,7 @@ class MinimalPublisher(Node):
         super().__init__('minimal_publisher')
         self.publisher_ = self.create_publisher(MotionCommand, 'movement_topic',  10)
         self.i =  0
+        self.timer = self.create_timer(2.0, self.publish_motion_command)
 
     def publish_motion_command(self):
         msg = MotionCommand()

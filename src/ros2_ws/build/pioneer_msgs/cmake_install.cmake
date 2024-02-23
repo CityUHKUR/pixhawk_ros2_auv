@@ -275,7 +275,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so"
-         OLD_RPATH "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs:/src/ros2_ws/build/pioneer_msgs:/opt/ros/humble/lib:"
+         OLD_RPATH "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs:/src/ros2_ws/build/pioneer_msgs:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so")
@@ -298,7 +298,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so"
-         OLD_RPATH "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs:/src/ros2_ws/build/pioneer_msgs:/opt/ros/humble/lib:"
+         OLD_RPATH "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs:/src/ros2_ws/build/pioneer_msgs:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so")
@@ -321,7 +321,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so"
-         OLD_RPATH "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs:/src/ros2_ws/build/pioneer_msgs:/opt/ros/humble/lib:"
+         OLD_RPATH "/src/ros2_ws/build/pioneer_msgs/rosidl_generator_py/pioneer_msgs:/src/ros2_ws/build/pioneer_msgs:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so")
@@ -344,7 +344,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libpioneer_msgs__rosidl_generator_py.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libpioneer_msgs__rosidl_generator_py.so"
-         OLD_RPATH "/src/ros2_ws/build/pioneer_msgs:/opt/ros/humble/lib:"
+         OLD_RPATH "/src/ros2_ws/build/pioneer_msgs:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libpioneer_msgs__rosidl_generator_py.so")

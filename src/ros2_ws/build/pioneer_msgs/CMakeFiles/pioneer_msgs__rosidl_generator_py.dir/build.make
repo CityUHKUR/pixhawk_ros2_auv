@@ -114,7 +114,6 @@ rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: /opt/r
 rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: libpioneer_msgs__rosidl_generator_c.so
 rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
 rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
-rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
 rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
 rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
@@ -123,6 +122,7 @@ rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: /opt/r
 rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/librcutils.so
+rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: /usr/lib/aarch64-linux-gnu/libpython3.10.so
 rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: CMakeFiles/pioneer_msgs__rosidl_generator_py.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/src/ros2_ws/build/pioneer_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pioneer_msgs__rosidl_generator_py.dir/link.txt --verbose=$(VERBOSE)

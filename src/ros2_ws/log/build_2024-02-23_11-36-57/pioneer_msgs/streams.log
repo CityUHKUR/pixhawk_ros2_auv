@@ -1,0 +1,24 @@
+[0.106s] Invoking command in '/src/ros2_ws/build/pioneer_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/src/ros2_ws/install/test_pubsub:/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/imu_publisher:/opt/ros/humble /usr/bin/cmake --build /src/ros2_ws/build/pioneer_msgs -- -j6 -l6
+[0.200s] [  7%] Built target pioneer_msgs__cpp
+[0.200s] [ 12%] Built target pioneer_msgs__rosidl_generator_c
+[0.220s] [ 12%] Built target ament_cmake_python_copy_pioneer_msgs
+[0.263s] [ 23%] Built target pioneer_msgs__rosidl_typesupport_introspection_c
+[0.268s] [ 33%] Built target pioneer_msgs__rosidl_typesupport_fastrtps_c
+[0.269s] [ 43%] Built target pioneer_msgs__rosidl_typesupport_c
+[0.282s] [ 53%] Built target pioneer_msgs__rosidl_typesupport_introspection_cpp
+[0.287s] [ 64%] Built target pioneer_msgs__rosidl_typesupport_fastrtps_cpp
+[0.316s] [ 74%] Built target pioneer_msgs__rosidl_typesupport_cpp
+[0.354s] [ 74%] Built target pioneer_msgs
+[0.393s] [ 76%] Built target pioneer_msgs__py
+[0.421s] gmake[2]: *** No rule to make target '/usr/lib/x86_64-linux-gnu/libpython3.10.so', needed by 'rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so'.  Stop.
+[0.422s] gmake[1]: *** [CMakeFiles/Makefile2:475: CMakeFiles/pioneer_msgs__rosidl_generator_py.dir/all] Error 2
+[0.422s] gmake[1]: *** Waiting for unfinished jobs....
+[0.659s] running egg_info
+[0.661s] writing pioneer_msgs.egg-info/PKG-INFO
+[0.661s] writing dependency_links to pioneer_msgs.egg-info/dependency_links.txt
+[0.662s] writing top-level names to pioneer_msgs.egg-info/top_level.txt
+[0.665s] reading manifest file 'pioneer_msgs.egg-info/SOURCES.txt'
+[0.666s] writing manifest file 'pioneer_msgs.egg-info/SOURCES.txt'
+[0.727s] [ 76%] Built target ament_cmake_python_build_pioneer_msgs_egg
+[0.729s] gmake: *** [Makefile:146: all] Error 2
+[0.733s] Invoked command in '/src/ros2_ws/build/pioneer_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/src/ros2_ws/install/test_pubsub:/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/imu_publisher:/opt/ros/humble /usr/bin/cmake --build /src/ros2_ws/build/pioneer_msgs -- -j6 -l6
