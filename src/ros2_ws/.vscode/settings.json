@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "/src/ros2_ws/src/pioneer_msgs"
+    "cmake.sourceDirectory": "/src/ros2_ws/src/pioneer_msgs",
+    "python.analysis.autoImportCompletions": true
 }

@@ -24,10 +24,11 @@ def armFunc():
     master.motors_armed_wait()
     print('Armed!')
     
-def modeSetFunc():
+def modeSetFunc(mode='MANUAL'):
     # mode section, tbh dont get
     # mode = 'STABILIZE'
-    mode = 'MANUAL'
+    # mode = 'MANUAL'
+    # mode = 'ALT_HOLD'
     mode_id = master.mode_mapping()[mode]
     print(mode_id)
     master.mav.set_mode_send(
