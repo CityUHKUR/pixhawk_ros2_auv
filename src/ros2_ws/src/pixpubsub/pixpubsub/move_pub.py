@@ -36,21 +36,21 @@ class MinimalPublisher(Node):
     # count = 0    
     def cmd_selector(self, count):
         match count:
-            case  0:
+            case  0: #move forward
                 return self.send_msg(False,   1.0,   0.0,   0.0,   1.0,   0.0)
-            case  1:
+            case  1: #move background
                 return self.send_msg(False, -1.0,   0.0,   0.0,   1.0,   0.0)
-            case  2:
+            case  2: #strafe left
                 return self.send_msg(False,   0.0, -1.0,   0.0,   1.0,   0.0)
-            case  3:
+            case  3: #strafe right
                 return self.send_msg(False,   0.0,   1.0,   0.0,   1.0,   0.0)
-            case  4:
+            case  4: #go up
                 return self.send_msg(False,   0.0,   0.0,   1.0,   1.0,   0.0)
-            case  5:
+            case  5: #go down
                 return self.send_msg(False,   0.0,   0.0, -1.0,   1.0,   0.0)
-            case  6:
+            case  6: #turn left
                 return self.send_msg(True,   0.0,   1.0,   0.0,   1.0,   0.0)
-            case  7:
+            case  7: # turn right
                 return self.send_msg(True,   0.0, -1.0,   0.0,   1.0,   0.0)
             case _:  # Use _ for default case in Python  3.10
                 return self.send_msg(True,   0.0, -1.0,   0.0,   1.0,   0.0)
@@ -61,6 +61,11 @@ class MinimalPublisher(Node):
             msg = self.cmd_selector(i)
             self.get_logger().info(f'Publishing: "{msg}"')
             time.sleep(1)
+        self.get_logger().info('Publishing completed.')
+        for i in range(8):  # Loop from  0 to  7
+            msg = self.cmd_selector(i)
+            self.get_logger().info(f'Publishing: "{msg}"')
+            time.sleep(5)
         self.get_logger().info('Publishing completed.')
 
 def main(args=None):

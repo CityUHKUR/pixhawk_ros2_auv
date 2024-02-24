@@ -1,0 +1,21 @@
+[6.685s] Invoking command in '/src/ros2_ws/src/imu_publisher': PYTHONPATH=/src/ros2_ws/build/imu_publisher/prefix_override:/src/ros2_ws/install/imu_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/imu_publisher build --build-base /src/ros2_ws/build/imu_publisher/build install --record /src/ros2_ws/build/imu_publisher/install.log --single-version-externally-managed
+[8.801s] running egg_info
+[8.809s] writing ../../build/imu_publisher/imu_publisher.egg-info/PKG-INFO
+[8.820s] writing dependency_links to ../../build/imu_publisher/imu_publisher.egg-info/dependency_links.txt
+[8.831s] writing entry points to ../../build/imu_publisher/imu_publisher.egg-info/entry_points.txt
+[8.838s] writing requirements to ../../build/imu_publisher/imu_publisher.egg-info/requires.txt
+[8.845s] writing top-level names to ../../build/imu_publisher/imu_publisher.egg-info/top_level.txt
+[8.907s] reading manifest file '../../build/imu_publisher/imu_publisher.egg-info/SOURCES.txt'
+[9.001s] writing manifest file '../../build/imu_publisher/imu_publisher.egg-info/SOURCES.txt'
+[9.005s] running build
+[9.006s] running build_py
+[9.049s] running install
+[9.050s] running install_lib
+[9.190s] running install_data
+[9.226s] running install_egg_info
+[9.247s] removing '/src/ros2_ws/install/imu_publisher/lib/python3.10/site-packages/imu_publisher-0.0.0-py3.10.egg-info' (and everything under it)
+[9.330s] Copying ../../build/imu_publisher/imu_publisher.egg-info to /src/ros2_ws/install/imu_publisher/lib/python3.10/site-packages/imu_publisher-0.0.0-py3.10.egg-info
+[9.672s] running install_scripts
+[9.834s] Installing publisher script to /src/ros2_ws/install/imu_publisher/lib/imu_publisher
+[9.850s] writing list of installed files to '/src/ros2_ws/build/imu_publisher/install.log'
+[9.903s] Invoked command in '/src/ros2_ws/src/imu_publisher' returned '0': PYTHONPATH=/src/ros2_ws/build/imu_publisher/prefix_override:/src/ros2_ws/install/imu_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/imu_publisher build --build-base /src/ros2_ws/build/imu_publisher/build install --record /src/ros2_ws/build/imu_publisher/install.log --single-version-externally-managed

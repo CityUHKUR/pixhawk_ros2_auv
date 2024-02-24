@@ -1,0 +1,26 @@
+[5.384s] Invoking command in '/src/ros2_ws/src/pixpubsub': PYTHONPATH=/src/ros2_ws/build/pixpubsub/prefix_override:/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pixpubsub build --build-base /src/ros2_ws/build/pixpubsub/build install --record /src/ros2_ws/build/pixpubsub/install.log --single-version-externally-managed
+[7.507s] running egg_info
+[7.513s] writing ../../build/pixpubsub/pixpubsub.egg-info/PKG-INFO
+[7.522s] writing dependency_links to ../../build/pixpubsub/pixpubsub.egg-info/dependency_links.txt
+[7.530s] writing entry points to ../../build/pixpubsub/pixpubsub.egg-info/entry_points.txt
+[7.537s] writing requirements to ../../build/pixpubsub/pixpubsub.egg-info/requires.txt
+[7.542s] writing top-level names to ../../build/pixpubsub/pixpubsub.egg-info/top_level.txt
+[7.593s] reading manifest file '../../build/pixpubsub/pixpubsub.egg-info/SOURCES.txt'
+[7.688s] writing manifest file '../../build/pixpubsub/pixpubsub.egg-info/SOURCES.txt'
+[7.693s] running build
+[7.695s] running build_py
+[7.718s] copying pixpubsub/justmove_sub.py -> /src/ros2_ws/build/pixpubsub/build/lib/pixpubsub
+[7.788s] running install
+[7.789s] running install_lib
+[7.841s] copying /src/ros2_ws/build/pixpubsub/build/lib/pixpubsub/justmove_sub.py -> /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub
+[7.993s] byte-compiling /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/justmove_sub.py to justmove_sub.cpython-310.pyc
+[8.093s] running install_data
+[8.126s] running install_egg_info
+[8.149s] removing '/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub-0.0.0-py3.10.egg-info' (and everything under it)
+[8.236s] Copying ../../build/pixpubsub/pixpubsub.egg-info to /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub-0.0.0-py3.10.egg-info
+[8.607s] running install_scripts
+[8.771s] Installing justmove_sub script to /src/ros2_ws/install/pixpubsub/lib/pixpubsub
+[8.787s] Installing move_pub script to /src/ros2_ws/install/pixpubsub/lib/pixpubsub
+[8.801s] Installing publisher script to /src/ros2_ws/install/pixpubsub/lib/pixpubsub
+[8.819s] writing list of installed files to '/src/ros2_ws/build/pixpubsub/install.log'
+[8.867s] Invoked command in '/src/ros2_ws/src/pixpubsub' returned '0': PYTHONPATH=/src/ros2_ws/build/pixpubsub/prefix_override:/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pixpubsub build --build-base /src/ros2_ws/build/pixpubsub/build install --record /src/ros2_ws/build/pixpubsub/install.log --single-version-externally-managed
