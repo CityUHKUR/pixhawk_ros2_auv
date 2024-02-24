@@ -10,4 +10,28 @@ class bank_msg:
         self.start_time = 0
         self.end_time = 0
         self.init_time = time.time()
-        
+    
+    
+    def to_xyzr(self):
+        if self.turn_mode:
+            __x = 0
+            __y = 0
+            __z = 500
+            __r = map_to_range(self.y)
+        else:
+            __x = map_to_range(self.x)
+            __y = map_to_range(self.y)
+            __z = map_to_range(self.z, new_min=0)
+            __r = 0
+            
+        return __x, __y, __z, __r
+
+def map_to_range(self, value, old_min=-1, old_max=1, new_min=-1000, new_max=1000):
+    # if value type is not float, convert it to float
+    try:
+        if type(value) != float:
+            value = float(value)
+    except ValueError:
+        self.get_logger().error('ValueError: value is not a number')
+        return 0
+    return ((value - old_min) / (old_max - old_min)) * (new_max - new_min) + new_min

@@ -100,18 +100,30 @@ class PixhawkModule(Node):
         
 
     def control_callback(self):
+        # remove commands that have expired
+        for key in self.command_bank:
+            self.command_bank[key].remove(item for item in self.command_bank[key] if time.time() - item.init_time > item.time + self.ALLOW_RANGE)
+            
+        
         # load commands from command bank into command loader
         self.command_loader("depth_node", preepmtive=True)
         self.command_loader("task_node")
         self.command_loader("sm_node")
         
         # compute the command to be executed
-        
+        __command = {"x": 0, "y": 0, "z": 0, "r": 0}
         for key in self.command_loader:
-            if self.command_loader[key] == None: continue
+            __this_command = self.command_loader[key]
+            if __this_command == None: continue
+            __x, __y, __z, __r = __this_command.to_xyzr()
+            __command["x"] += __x
+            __command["y"] += __y
+            __command["z"] += __z
+            __command["r"] += __r
             
-        pass
-    
+        self.send_manual_control(__command["x"], __command["y"], __command["z"], __command["r"])
+        self.get_logger().info(f'Executing: "{__command}"')    
+
     def send_manual_control(self, x, y, z, r):
         self.master.mav.manual_control_send(
             self.target_system,
@@ -121,15 +133,7 @@ class PixhawkModule(Node):
             r, # turn left/right
             0)
 
-    def map_to_range(self, value, old_min=-1, old_max=1, new_min=-1000, new_max=1000):
-        # if value type is not float, convert it to float
-        try:
-            if type(value) != float:
-                value = float(value)
-        except ValueError:
-            self.get_logger().error('ValueError: value is not a number')
-            return 0
-        return ((value - old_min) / (old_max - old_min)) * (new_max - new_min) + new_min    
+    
     
     def listener_callback(self, msg):
         __frame_id = msg.header.frame_id
@@ -146,34 +150,6 @@ class PixhawkModule(Node):
         if __frame_id == "sm_node":
             self.command_bank["sm_node"].append(msg_)
         
-        # remove commands that have expired
-        for key in self.command_bank:
-            self.command_bank[key].remove(item for item in self.command_bank[key] if time.time() - item.init_time > item.time + self.ALLOW_RANGE)
-        
-        
-        
-        # vecx_in = msg.direction.x
-        # vecy_in = msg.direction.y
-        # vecz_in = msg.direction.z
-        # turn_bool = msg.turn_mode
-        # distance = msg.distance
-        # time = msg.time
-        
-        # # veclist = msg.split()
-        # if turn_bool == True:
-        #     vecx = 0
-        #     vecy = 0
-        #     vecz = 500
-        #     vecr = self.map_to_range(vecy_in)
-        # else:    
-        #     vecx = self.map_to_range(vecx_in)
-        #     vecy = self.map_to_range(vecy_in)
-        #     vecz = self.map_to_range(vecz_in, new_min=0)
-        #     vecr = 0
-        
-            
-        # print(vecx, vecy, vecz, vecr, turn_bool, distance, time)
-        # self.send_manual_control(vecx, vecy, vecz, vecr)
 
     
     # def vector_control_tl():
