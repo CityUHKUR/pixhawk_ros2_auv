@@ -1,0 +1,20 @@
+bin
+docker/docker
+.DS_Store
+docs/_build
+docs/_static
+docs/_templates
+*.test
+bundles/
+.hg/
+.git/
+log/
+
+# eclipse stuff
+.project
+.cproject
+
+# qcreator stuff
+CMakeLists.txt.user
+
+.vscode/
