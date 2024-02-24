@@ -1,2 +1,0 @@
-Invoking command in '/src/ros2_ws/build/libmavconn': /usr/local/bin/cmake /src/ros2_ws/src/mavros/libmavconn -DCMAKE_INSTALL_PREFIX=/src/ros2_ws/install/libmavconn
-Invoked command in '/src/ros2_ws/build/libmavconn' returned '1': /usr/local/bin/cmake /src/ros2_ws/src/mavros/libmavconn -DCMAKE_INSTALL_PREFIX=/src/ros2_ws/install/libmavconn
