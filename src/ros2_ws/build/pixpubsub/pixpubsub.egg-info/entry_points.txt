@@ -1,4 +1,5 @@
 [console_scripts]
+justmove_sub = pixpubsub.justmove_sub:main
 move_pub = pixpubsub.move_pub:main
 publisher = pixpubsub.pix_pubsub_node:main
 

@@ -1,0 +1,37 @@
+[3.093s] Invoking command in '/src/ros2_ws/src/imu_publisher': PYTHONPATH=/src/ros2_ws/build/imu_publisher/prefix_override:/src/ros2_ws/install/imu_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/imu_publisher build --build-base /src/ros2_ws/build/imu_publisher/build install --record /src/ros2_ws/build/imu_publisher/install.log --single-version-externally-managed
+[4.549s] running egg_info
+[4.555s] creating ../../build/imu_publisher/imu_publisher.egg-info
+[4.561s] writing ../../build/imu_publisher/imu_publisher.egg-info/PKG-INFO
+[4.579s] writing dependency_links to ../../build/imu_publisher/imu_publisher.egg-info/dependency_links.txt
+[4.590s] writing entry points to ../../build/imu_publisher/imu_publisher.egg-info/entry_points.txt
+[4.597s] writing requirements to ../../build/imu_publisher/imu_publisher.egg-info/requires.txt
+[4.603s] writing top-level names to ../../build/imu_publisher/imu_publisher.egg-info/top_level.txt
+[4.612s] writing manifest file '../../build/imu_publisher/imu_publisher.egg-info/SOURCES.txt'
+[4.669s] reading manifest file '../../build/imu_publisher/imu_publisher.egg-info/SOURCES.txt'
+[4.746s] writing manifest file '../../build/imu_publisher/imu_publisher.egg-info/SOURCES.txt'
+[4.752s] running build
+[4.754s] running build_py
+[4.764s] creating /src/ros2_ws/build/imu_publisher/build
+[4.766s] creating /src/ros2_ws/build/imu_publisher/build/lib
+[4.771s] creating /src/ros2_ws/build/imu_publisher/build/lib/imu_publisher
+[4.789s] copying imu_publisher/publisher.py -> /src/ros2_ws/build/imu_publisher/build/lib/imu_publisher
+[4.829s] copying imu_publisher/__init__.py -> /src/ros2_ws/build/imu_publisher/build/lib/imu_publisher
+[4.859s] running install
+[4.860s] running install_lib
+[4.898s] creating /src/ros2_ws/install/imu_publisher/lib/python3.10/site-packages/imu_publisher
+[4.930s] copying /src/ros2_ws/build/imu_publisher/build/lib/imu_publisher/publisher.py -> /src/ros2_ws/install/imu_publisher/lib/python3.10/site-packages/imu_publisher
+[4.995s] copying /src/ros2_ws/build/imu_publisher/build/lib/imu_publisher/__init__.py -> /src/ros2_ws/install/imu_publisher/lib/python3.10/site-packages/imu_publisher
+[5.048s] byte-compiling /src/ros2_ws/install/imu_publisher/lib/python3.10/site-packages/imu_publisher/publisher.py to publisher.cpython-310.pyc
+[5.109s] byte-compiling /src/ros2_ws/install/imu_publisher/lib/python3.10/site-packages/imu_publisher/__init__.py to __init__.cpython-310.pyc
+[5.149s] running install_data
+[5.156s] creating /src/ros2_ws/install/imu_publisher/share/ament_index
+[5.160s] creating /src/ros2_ws/install/imu_publisher/share/ament_index/resource_index
+[5.164s] creating /src/ros2_ws/install/imu_publisher/share/ament_index/resource_index/packages
+[5.181s] copying resource/imu_publisher -> /src/ros2_ws/install/imu_publisher/share/ament_index/resource_index/packages
+[5.216s] copying package.xml -> /src/ros2_ws/install/imu_publisher/share/imu_publisher
+[5.237s] running install_egg_info
+[5.253s] Copying ../../build/imu_publisher/imu_publisher.egg-info to /src/ros2_ws/install/imu_publisher/lib/python3.10/site-packages/imu_publisher-0.0.0-py3.10.egg-info
+[5.573s] running install_scripts
+[5.696s] Installing publisher script to /src/ros2_ws/install/imu_publisher/lib/imu_publisher
+[5.710s] writing list of installed files to '/src/ros2_ws/build/imu_publisher/install.log'
+[5.783s] Invoked command in '/src/ros2_ws/src/imu_publisher' returned '0': PYTHONPATH=/src/ros2_ws/build/imu_publisher/prefix_override:/src/ros2_ws/install/imu_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/imu_publisher build --build-base /src/ros2_ws/build/imu_publisher/build install --record /src/ros2_ws/build/imu_publisher/install.log --single-version-externally-managed

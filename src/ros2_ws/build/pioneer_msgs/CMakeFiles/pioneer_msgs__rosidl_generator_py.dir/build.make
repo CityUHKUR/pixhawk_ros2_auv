@@ -124,13 +124,13 @@ rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: CMakeF
 rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: CMakeFiles/pioneer_msgs__rosidl_generator_py.dir/rosidl_generator_py/pioneer_msgs/msg/_status_s.c.o
 rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: CMakeFiles/pioneer_msgs__rosidl_generator_py.dir/rosidl_generator_py/pioneer_msgs/msg/_auv_state_s.c.o
 rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: CMakeFiles/pioneer_msgs__rosidl_generator_py.dir/build.make
-rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: libpioneer_msgs__rosidl_typesupport_c.so
 rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
 rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: libpioneer_msgs__rosidl_generator_c.so
 rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
 rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
-rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
 rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
 rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so

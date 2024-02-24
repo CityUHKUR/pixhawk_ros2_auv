@@ -2,9 +2,11 @@ from pymavlink import mavutil
 import time
 import rclpy
 from rclpy.node import Node
+from rclpy.time import Time
 from sensor_msgs.msg import Imu
 # from std_msgs.msg import String
 from pioneer_msgs.msg import MotionCommand
+import queue
 
 import sys
 import serial
@@ -13,12 +15,6 @@ class PixhawkModule(Node):
 
     def __init__(self):
         super().__init__('pixhawk_module')
-        # # Changed to publish Imu type instead of String
-        # self.publisher_ = self.create_publisher(Imu, 'imu_data', 1)
-        # # Data rate (in seconds) - Adjust as needed for your application
-        # timer_period = 0.1  # 10 Hz
-        # self.timer = self.create_timer(timer_period, self.timer_callback)
-        # self.__status = False
         
         self.subscription = self.create_subscription(
             MotionCommand,
@@ -26,10 +22,17 @@ class PixhawkModule(Node):
             self.listener_callback,
             10)
         self.subscription # prevent unused variable warning
+        self.last_msg_time = None
+        depth_list= queue.Queue()
+        task_list= queue.Queue()
+        statem_list= queue.Queue()
+        depth_load= None
+        task_load= None
+        statem_load= None
+        
 
     # priority[] = 
     # depth sensor control
-    
 
     def send_manual_control(self, x, y, z, r):
         self.master.mav.manual_control_send(
@@ -43,6 +46,14 @@ class PixhawkModule(Node):
     def map_to_range(self, value, old_min, old_max, new_min, new_max):
         return ((value - old_min) / (old_max - old_min)) * (new_max - new_min) + new_min    
     
+    # def if time < 2 sec:
+    #   send cmd to cut motors
+    # else > 2sec run that cmd for that time
+    def loader_refresh():
+        depth_load = depth_list.get()
+        task_load = task_list.get()
+        statem_load = statem_list.get()
+    
     def listener_callback(self, msg):
         vecx_in = msg.direction.x
         vecy_in = msg.direction.y
@@ -51,19 +62,33 @@ class PixhawkModule(Node):
         distance = msg.distance
         time = msg.time
         header_sender = msg.header.frame_id
-        depth_list= []
-        task_list= []
-        moveguide_list= []
+        
+        time_diff = 0
+        
         if header_sender == "depth_node":
-            depth_list.append(msg)
+            depth_list.put(msg)
+        elif header_sender == "task_node":
+            task_list.put(msg)    
+        elif header_sender == "statem_node":
+            statem_list.put(msg)    
             
-            vecx = self.map_to_range(float(vecx_in), -1,  1, -1000,  1000)
-            vecy = self.map_to_range(float(0), -1,  1, -1000,  1000)
-            vecz = self.map_to_range(float(vecz_in), -1,  1,  0,  1000)
-            vecr = self.map_to_range(float(0), -1,  1, -1000,  1000)
+        loader_refresh()
         
         
-        # veclist = msg.split()
+        current_time = msg.header.stamp.sec + msg.header.stamp.nanosec * 1e-9 
+        if self.last_msg_time is not None:
+            time_diff = current_time - self.last_msg_time
+        self.last_msg_time = current_time  # Update the last message time
+        
+        # if header_sender == "depth_node":
+        #     depth_list.append(msg)
+            
+        #     vecx = self.map_to_range(float(vecx_in), -1,  1, -1000,  1000)
+        #     vecy = self.map_to_range(float(0), -1,  1, -1000,  1000)
+        #     vecz = self.map_to_range(float(vecz_in), -1,  1,  0,  1000)
+        #     vecr = self.map_to_range(float(0), -1,  1, -1000,  1000)
+        
+        
         if turn_bool == True:
             vecx = self.map_to_range(float(0), -1,  1, -1000,  1000)
             vecy = self.map_to_range(float(0), -1,  1, -1000,  1000)
@@ -80,7 +105,13 @@ class PixhawkModule(Node):
         #     print('moving ')
         #     time.sleep(1)
           
-        print(vecx, vecy, vecz, vecr, turn_bool, distance, time)
+        print(vecx, vecy, vecz, vecr, turn_bool, distance, time, time_diff, current_time)
+        # if time < 2.0:
+        #     self.send_manual_control(vecx, vecy, vecz, vecr)
+        #     time.sleep(time)
+        #     self.send_manual_control(0, 0, 0, 0)
+        # else:
+                
         # self.send_manual_control(vecx, vecy, vecz, vecr)
 
     

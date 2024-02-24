@@ -1,0 +1,1161 @@
+[0.000000] (-) TimerEvent: {}
+[0.000780] (imu_publisher) JobQueued: {'identifier': 'imu_publisher', 'dependencies': OrderedDict()}
+[0.001246] (pioneer_msgs) JobQueued: {'identifier': 'pioneer_msgs', 'dependencies': OrderedDict()}
+[0.001687] (pixpubsub) JobQueued: {'identifier': 'pixpubsub', 'dependencies': OrderedDict([('pioneer_msgs', '/src/ros2_ws/install/pioneer_msgs')])}
+[0.002131] (pioneer_msgs) JobStarted: {'identifier': 'pioneer_msgs'}
+[0.096846] (-) TimerEvent: {}
+[0.150688] (imu_publisher) JobStarted: {'identifier': 'imu_publisher'}
+[0.197095] (-) TimerEvent: {}
+[0.298179] (-) TimerEvent: {}
+[0.400106] (-) TimerEvent: {}
+[0.436076] (pioneer_msgs) JobProgress: {'identifier': 'pioneer_msgs', 'progress': 'cmake'}
+[0.443558] (pioneer_msgs) Command: {'cmd': ['/usr/bin/cmake', '/src/ros2_ws/src/pioneer_msgs', '-DCMAKE_INSTALL_PREFIX=/src/ros2_ws/install/pioneer_msgs'], 'cwd': '/src/ros2_ws/build/pioneer_msgs', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('GIT_ASKPASS', '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/src/ros2_ws/install/pioneer_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/helpers/browser.sh'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-84ddc29a-14a6-431a-8f9b-d0aeb2aae856.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/src/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-dbca9774-d502-4a1d-b3e1-1565a7a326b3.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '[]'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-9583c108f8.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/pioneer_msgs:/src/ros2_ws/install/imu_publisher:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/src/ros2_ws/build/pioneer_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages:/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages:/src/ros2_ws/install/imu_publisher/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/src/ros2_ws/install/pioneer_msgs:/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/imu_publisher:/opt/ros/humble')]), 'shell': False}
+[0.500342] (-) TimerEvent: {}
+[0.601082] (-) TimerEvent: {}
+[0.702062] (-) TimerEvent: {}
+[0.802946] (-) TimerEvent: {}
+[0.903795] (-) TimerEvent: {}
+[1.005135] (-) TimerEvent: {}
+[1.106597] (-) TimerEvent: {}
+[1.195115] (pioneer_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.206785] (-) TimerEvent: {}
+[1.307644] (-) TimerEvent: {}
+[1.408462] (-) TimerEvent: {}
+[1.509298] (-) TimerEvent: {}
+[1.610114] (-) TimerEvent: {}
+[1.659762] (pioneer_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.710277] (-) TimerEvent: {}
+[1.755867] (pioneer_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.810456] (-) TimerEvent: {}
+[1.911316] (-) TimerEvent: {}
+[2.012508] (-) TimerEvent: {}
+[2.113589] (-) TimerEvent: {}
+[2.214755] (-) TimerEvent: {}
+[2.315946] (-) TimerEvent: {}
+[2.417135] (-) TimerEvent: {}
+[2.518115] (-) TimerEvent: {}
+[2.619491] (-) TimerEvent: {}
+[2.720500] (-) TimerEvent: {}
+[2.821329] (-) TimerEvent: {}
+[2.922222] (-) TimerEvent: {}
+[3.005506] (pioneer_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.022573] (-) TimerEvent: {}
+[3.051948] (pioneer_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.054174] (pioneer_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.055931] (pioneer_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.122717] (-) TimerEvent: {}
+[3.141570] (pioneer_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.226407] (imu_publisher) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/imu_publisher', 'build', '--build-base', '/src/ros2_ws/build/imu_publisher/build', 'install', '--record', '/src/ros2_ws/build/imu_publisher/install.log', '--single-version-externally-managed'], 'cwd': '/src/ros2_ws/src/imu_publisher', 'env': {'HOSTNAME': 'docker-desktop', 'GIT_ASKPASS': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/src/ros2_ws/install/pioneer_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/helpers/browser.sh', 'HOME': '/root', 'TERM_PROGRAM_VERSION': '1.86.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-84ddc29a-14a6-431a-8f9b-d0aeb2aae856.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/src/ros2_ws/install', 'ROS_DISTRO': 'humble', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-dbca9774-d502-4a1d-b3e1-1565a7a326b3.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '[]', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-9583c108f8.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/pioneer_msgs:/src/ros2_ws/install/imu_publisher:/opt/ros/humble', 'SHELL': '/bin/bash', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/src/ros2_ws/build/imu_publisher', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/src/ros2_ws/build/imu_publisher/prefix_override:/src/ros2_ws/install/imu_publisher/lib/python3.10/site-packages:/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages:/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages:/src/ros2_ws/install/imu_publisher/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/src/ros2_ws/install/pioneer_msgs'}, 'shell': False}
+[3.245384] (-) TimerEvent: {}
+[3.346176] (-) TimerEvent: {}
+[3.447301] (-) TimerEvent: {}
+[3.549249] (-) TimerEvent: {}
+[3.650165] (-) TimerEvent: {}
+[3.751397] (-) TimerEvent: {}
+[3.852797] (-) TimerEvent: {}
+[3.954011] (-) TimerEvent: {}
+[4.054950] (-) TimerEvent: {}
+[4.155865] (-) TimerEvent: {}
+[4.233796] (pioneer_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[4.256084] (-) TimerEvent: {}
+[4.279414] (pioneer_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[4.281207] (pioneer_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[4.283229] (pioneer_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[4.356267] (-) TimerEvent: {}
+[4.457223] (-) TimerEvent: {}
+[4.489783] (pioneer_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[4.557432] (-) TimerEvent: {}
+[4.658776] (-) TimerEvent: {}
+[4.698412] (imu_publisher) StdoutLine: {'line': b'running egg_info\n'}
+[4.705131] (imu_publisher) StdoutLine: {'line': b'creating ../../build/imu_publisher/imu_publisher.egg-info\n'}
+[4.710677] (imu_publisher) StdoutLine: {'line': b'writing ../../build/imu_publisher/imu_publisher.egg-info/PKG-INFO\n'}
+[4.727946] (imu_publisher) StdoutLine: {'line': b'writing dependency_links to ../../build/imu_publisher/imu_publisher.egg-info/dependency_links.txt\n'}
+[4.739505] (imu_publisher) StdoutLine: {'line': b'writing entry points to ../../build/imu_publisher/imu_publisher.egg-info/entry_points.txt\n'}
+[4.747234] (imu_publisher) StdoutLine: {'line': b'writing requirements to ../../build/imu_publisher/imu_publisher.egg-info/requires.txt\n'}
+[4.752222] (imu_publisher) StdoutLine: {'line': b'writing top-level names to ../../build/imu_publisher/imu_publisher.egg-info/top_level.txt\n'}
+[4.758971] (-) TimerEvent: {}
+[4.762780] (imu_publisher) StdoutLine: {'line': b"writing manifest file '../../build/imu_publisher/imu_publisher.egg-info/SOURCES.txt'\n"}
+[4.818045] (imu_publisher) StdoutLine: {'line': b"reading manifest file '../../build/imu_publisher/imu_publisher.egg-info/SOURCES.txt'\n"}
+[4.859147] (-) TimerEvent: {}
+[4.896386] (imu_publisher) StdoutLine: {'line': b"writing manifest file '../../build/imu_publisher/imu_publisher.egg-info/SOURCES.txt'\n"}
+[4.901651] (imu_publisher) StdoutLine: {'line': b'running build\n'}
+[4.903743] (imu_publisher) StdoutLine: {'line': b'running build_py\n'}
+[4.913347] (imu_publisher) StdoutLine: {'line': b'creating /src/ros2_ws/build/imu_publisher/build\n'}
+[4.916238] (imu_publisher) StdoutLine: {'line': b'creating /src/ros2_ws/build/imu_publisher/build/lib\n'}
+[4.920995] (imu_publisher) StdoutLine: {'line': b'creating /src/ros2_ws/build/imu_publisher/build/lib/imu_publisher\n'}
+[4.939477] (imu_publisher) StdoutLine: {'line': b'copying imu_publisher/publisher.py -> /src/ros2_ws/build/imu_publisher/build/lib/imu_publisher\n'}
+[4.959406] (-) TimerEvent: {}
+[4.978527] (imu_publisher) StdoutLine: {'line': b'copying imu_publisher/__init__.py -> /src/ros2_ws/build/imu_publisher/build/lib/imu_publisher\n'}
+[5.008452] (imu_publisher) StdoutLine: {'line': b'running install\n'}
+[5.010487] (imu_publisher) StdoutLine: {'line': b'running install_lib\n'}
+[5.048556] (imu_publisher) StdoutLine: {'line': b'creating /src/ros2_ws/install/imu_publisher/lib/python3.10/site-packages/imu_publisher\n'}
+[5.059710] (-) TimerEvent: {}
+[5.080234] (imu_publisher) StdoutLine: {'line': b'copying /src/ros2_ws/build/imu_publisher/build/lib/imu_publisher/publisher.py -> /src/ros2_ws/install/imu_publisher/lib/python3.10/site-packages/imu_publisher\n'}
+[5.144881] (imu_publisher) StdoutLine: {'line': b'copying /src/ros2_ws/build/imu_publisher/build/lib/imu_publisher/__init__.py -> /src/ros2_ws/install/imu_publisher/lib/python3.10/site-packages/imu_publisher\n'}
+[5.160047] (-) TimerEvent: {}
+[5.197664] (imu_publisher) StdoutLine: {'line': b'byte-compiling /src/ros2_ws/install/imu_publisher/lib/python3.10/site-packages/imu_publisher/publisher.py to publisher.cpython-310.pyc\n'}
+[5.258873] (imu_publisher) StdoutLine: {'line': b'byte-compiling /src/ros2_ws/install/imu_publisher/lib/python3.10/site-packages/imu_publisher/__init__.py to __init__.cpython-310.pyc\n'}
+[5.260667] (-) TimerEvent: {}
+[5.299085] (imu_publisher) StdoutLine: {'line': b'running install_data\n'}
+[5.306528] (imu_publisher) StdoutLine: {'line': b'creating /src/ros2_ws/install/imu_publisher/share/ament_index\n'}
+[5.309701] (imu_publisher) StdoutLine: {'line': b'creating /src/ros2_ws/install/imu_publisher/share/ament_index/resource_index\n'}
+[5.314439] (imu_publisher) StdoutLine: {'line': b'creating /src/ros2_ws/install/imu_publisher/share/ament_index/resource_index/packages\n'}
+[5.330558] (imu_publisher) StdoutLine: {'line': b'copying resource/imu_publisher -> /src/ros2_ws/install/imu_publisher/share/ament_index/resource_index/packages\n'}
+[5.360828] (-) TimerEvent: {}
+[5.365963] (imu_publisher) StdoutLine: {'line': b'copying package.xml -> /src/ros2_ws/install/imu_publisher/share/imu_publisher\n'}
+[5.387746] (imu_publisher) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.403627] (imu_publisher) StdoutLine: {'line': b'Copying ../../build/imu_publisher/imu_publisher.egg-info to /src/ros2_ws/install/imu_publisher/lib/python3.10/site-packages/imu_publisher-0.0.0-py3.10.egg-info\n'}
+[5.461147] (-) TimerEvent: {}
+[5.562145] (-) TimerEvent: {}
+[5.663169] (-) TimerEvent: {}
+[5.723025] (imu_publisher) StdoutLine: {'line': b'running install_scripts\n'}
+[5.757892] (pioneer_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[5.763297] (-) TimerEvent: {}
+[5.845616] (imu_publisher) StdoutLine: {'line': b'Installing publisher script to /src/ros2_ws/install/imu_publisher/lib/imu_publisher\n'}
+[5.860334] (imu_publisher) StdoutLine: {'line': b"writing list of installed files to '/src/ros2_ws/build/imu_publisher/install.log'\n"}
+[5.863425] (-) TimerEvent: {}
+[5.932825] (imu_publisher) CommandEnded: {'returncode': 0}
+[5.964433] (-) TimerEvent: {}
+[6.065533] (-) TimerEvent: {}
+[6.166549] (-) TimerEvent: {}
+[6.267489] (-) TimerEvent: {}
+[6.349866] (imu_publisher) JobEnded: {'identifier': 'imu_publisher', 'rc': 0}
+[6.367724] (-) TimerEvent: {}
+[6.468848] (-) TimerEvent: {}
+[6.569669] (-) TimerEvent: {}
+[6.670645] (-) TimerEvent: {}
+[6.771962] (-) TimerEvent: {}
+[6.872957] (-) TimerEvent: {}
+[6.974050] (-) TimerEvent: {}
+[7.074941] (-) TimerEvent: {}
+[7.175685] (-) TimerEvent: {}
+[7.276642] (-) TimerEvent: {}
+[7.377592] (-) TimerEvent: {}
+[7.443346] (pioneer_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[7.477756] (-) TimerEvent: {}
+[7.549913] (pioneer_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.577961] (-) TimerEvent: {}
+[7.678809] (-) TimerEvent: {}
+[7.773782] (pioneer_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[7.778901] (-) TimerEvent: {}
+[7.879635] (-) TimerEvent: {}
+[7.980492] (-) TimerEvent: {}
+[8.081317] (-) TimerEvent: {}
+[8.182324] (-) TimerEvent: {}
+[8.283294] (-) TimerEvent: {}
+[8.384185] (-) TimerEvent: {}
+[8.485073] (-) TimerEvent: {}
+[8.586136] (-) TimerEvent: {}
+[8.591627] (pioneer_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.686317] (-) TimerEvent: {}
+[8.787333] (-) TimerEvent: {}
+[8.888170] (-) TimerEvent: {}
+[8.989275] (-) TimerEvent: {}
+[9.092605] (-) TimerEvent: {}
+[9.193668] (-) TimerEvent: {}
+[9.293055] (pioneer_msgs) StdoutLine: {'line': b'-- Found rosidl_default_runtime: 1.2.0 (/opt/ros/humble/share/rosidl_default_runtime/cmake)\n'}
+[9.294535] (-) TimerEvent: {}
+[9.371674] (pioneer_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[9.394761] (-) TimerEvent: {}
+[9.496102] (-) TimerEvent: {}
+[9.597605] (-) TimerEvent: {}
+[9.652353] (pioneer_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[9.697815] (-) TimerEvent: {}
+[9.798859] (-) TimerEvent: {}
+[9.900936] (-) TimerEvent: {}
+[10.001810] (-) TimerEvent: {}
+[10.102739] (-) TimerEvent: {}
+[10.203792] (-) TimerEvent: {}
+[10.304699] (-) TimerEvent: {}
+[10.405643] (-) TimerEvent: {}
+[10.506514] (-) TimerEvent: {}
+[10.607321] (-) TimerEvent: {}
+[10.708289] (-) TimerEvent: {}
+[10.809203] (-) TimerEvent: {}
+[10.910121] (-) TimerEvent: {}
+[11.011128] (-) TimerEvent: {}
+[11.112462] (-) TimerEvent: {}
+[11.213634] (-) TimerEvent: {}
+[11.314503] (-) TimerEvent: {}
+[11.415510] (-) TimerEvent: {}
+[11.516581] (-) TimerEvent: {}
+[11.617894] (-) TimerEvent: {}
+[11.718714] (-) TimerEvent: {}
+[11.819584] (-) TimerEvent: {}
+[11.920762] (-) TimerEvent: {}
+[12.021611] (-) TimerEvent: {}
+[12.122486] (-) TimerEvent: {}
+[12.223307] (-) TimerEvent: {}
+[12.324195] (-) TimerEvent: {}
+[12.425215] (-) TimerEvent: {}
+[12.526294] (-) TimerEvent: {}
+[12.627125] (-) TimerEvent: {}
+[12.722122] (pioneer_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.12.10 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)\n'}
+[12.727267] (-) TimerEvent: {}
+[12.828348] (-) TimerEvent: {}
+[12.834471] (pioneer_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.12.10 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)\n'}
+[12.928572] (-) TimerEvent: {}
+[12.938772] (pioneer_msgs) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.12.10 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)\n'}
+[13.028762] (-) TimerEvent: {}
+[13.052385] (pioneer_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[13.128929] (-) TimerEvent: {}
+[13.229885] (-) TimerEvent: {}
+[13.330738] (-) TimerEvent: {}
+[13.431680] (-) TimerEvent: {}
+[13.532635] (-) TimerEvent: {}
+[13.634308] (-) TimerEvent: {}
+[13.735297] (-) TimerEvent: {}
+[13.836298] (-) TimerEvent: {}
+[13.937445] (-) TimerEvent: {}
+[14.038365] (-) TimerEvent: {}
+[14.139098] (-) TimerEvent: {}
+[14.239993] (-) TimerEvent: {}
+[14.341073] (-) TimerEvent: {}
+[14.441820] (-) TimerEvent: {}
+[14.542771] (-) TimerEvent: {}
+[14.643715] (-) TimerEvent: {}
+[14.744674] (-) TimerEvent: {}
+[14.845590] (-) TimerEvent: {}
+[14.946424] (-) TimerEvent: {}
+[15.047261] (-) TimerEvent: {}
+[15.148482] (-) TimerEvent: {}
+[15.249309] (-) TimerEvent: {}
+[15.350210] (-) TimerEvent: {}
+[15.450952] (-) TimerEvent: {}
+[15.551913] (-) TimerEvent: {}
+[15.652828] (-) TimerEvent: {}
+[15.753698] (-) TimerEvent: {}
+[15.854538] (-) TimerEvent: {}
+[15.955328] (-) TimerEvent: {}
+[16.056381] (-) TimerEvent: {}
+[16.157522] (-) TimerEvent: {}
+[16.245692] (pioneer_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[16.257745] (-) TimerEvent: {}
+[16.359451] (-) TimerEvent: {}
+[16.460458] (-) TimerEvent: {}
+[16.561353] (-) TimerEvent: {}
+[16.662201] (-) TimerEvent: {}
+[16.763477] (-) TimerEvent: {}
+[16.864503] (-) TimerEvent: {}
+[16.965430] (-) TimerEvent: {}
+[17.066332] (-) TimerEvent: {}
+[17.167272] (-) TimerEvent: {}
+[17.268219] (-) TimerEvent: {}
+[17.369271] (-) TimerEvent: {}
+[17.470053] (-) TimerEvent: {}
+[17.570885] (-) TimerEvent: {}
+[17.671844] (-) TimerEvent: {}
+[17.772784] (-) TimerEvent: {}
+[17.873647] (-) TimerEvent: {}
+[17.974695] (-) TimerEvent: {}
+[18.075699] (-) TimerEvent: {}
+[18.176554] (-) TimerEvent: {}
+[18.278255] (-) TimerEvent: {}
+[18.379253] (-) TimerEvent: {}
+[18.480164] (-) TimerEvent: {}
+[18.581199] (-) TimerEvent: {}
+[18.682199] (-) TimerEvent: {}
+[18.782926] (-) TimerEvent: {}
+[18.883860] (-) TimerEvent: {}
+[18.984875] (-) TimerEvent: {}
+[19.085686] (-) TimerEvent: {}
+[19.186520] (-) TimerEvent: {}
+[19.287792] (-) TimerEvent: {}
+[19.388888] (-) TimerEvent: {}
+[19.490090] (-) TimerEvent: {}
+[19.591395] (-) TimerEvent: {}
+[19.693012] (-) TimerEvent: {}
+[19.794248] (-) TimerEvent: {}
+[19.895227] (-) TimerEvent: {}
+[19.996344] (-) TimerEvent: {}
+[20.098019] (-) TimerEvent: {}
+[20.199140] (-) TimerEvent: {}
+[20.215956] (pioneer_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[20.299293] (-) TimerEvent: {}
+[20.400649] (-) TimerEvent: {}
+[20.425021] (pioneer_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[20.500928] (-) TimerEvent: {}
+[20.564088] (pioneer_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[20.601090] (-) TimerEvent: {}
+[20.702344] (-) TimerEvent: {}
+[20.803291] (-) TimerEvent: {}
+[20.818573] (pioneer_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[20.820418] (pioneer_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[20.821910] (pioneer_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[20.823510] (pioneer_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[20.903461] (-) TimerEvent: {}
+[20.953647] (pioneer_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[21.003688] (-) TimerEvent: {}
+[21.104618] (-) TimerEvent: {}
+[21.205430] (-) TimerEvent: {}
+[21.306323] (-) TimerEvent: {}
+[21.407138] (-) TimerEvent: {}
+[21.508373] (-) TimerEvent: {}
+[21.609356] (-) TimerEvent: {}
+[21.710086] (-) TimerEvent: {}
+[21.811102] (-) TimerEvent: {}
+[21.907632] (pioneer_msgs) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.12.10 (/opt/ros/humble/share/ament_cmake_flake8/cmake)\n'}
+[21.911236] (-) TimerEvent: {}
+[22.012129] (-) TimerEvent: {}
+[22.035675] (pioneer_msgs) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.12.10 (/opt/ros/humble/share/ament_cmake_pep257/cmake)\n'}
+[22.112306] (-) TimerEvent: {}
+[22.213177] (-) TimerEvent: {}
+[22.314114] (-) TimerEvent: {}
+[22.415021] (-) TimerEvent: {}
+[22.515920] (-) TimerEvent: {}
+[22.616685] (-) TimerEvent: {}
+[22.717590] (-) TimerEvent: {}
+[22.818556] (-) TimerEvent: {}
+[22.919469] (-) TimerEvent: {}
+[23.020499] (-) TimerEvent: {}
+[23.121268] (-) TimerEvent: {}
+[23.215666] (pioneer_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[23.221389] (-) TimerEvent: {}
+[23.322129] (-) TimerEvent: {}
+[23.423062] (-) TimerEvent: {}
+[23.524188] (-) TimerEvent: {}
+[23.624985] (-) TimerEvent: {}
+[23.725819] (-) TimerEvent: {}
+[23.826634] (-) TimerEvent: {}
+[23.927533] (-) TimerEvent: {}
+[24.028424] (-) TimerEvent: {}
+[24.129485] (-) TimerEvent: {}
+[24.230495] (-) TimerEvent: {}
+[24.331495] (-) TimerEvent: {}
+[24.432475] (-) TimerEvent: {}
+[24.533456] (-) TimerEvent: {}
+[24.634709] (-) TimerEvent: {}
+[24.735939] (-) TimerEvent: {}
+[24.836914] (-) TimerEvent: {}
+[24.938518] (-) TimerEvent: {}
+[25.039730] (-) TimerEvent: {}
+[25.140760] (-) TimerEvent: {}
+[25.241675] (-) TimerEvent: {}
+[25.342634] (-) TimerEvent: {}
+[25.443517] (-) TimerEvent: {}
+[25.544482] (-) TimerEvent: {}
+[25.645424] (-) TimerEvent: {}
+[25.746353] (-) TimerEvent: {}
+[25.847346] (-) TimerEvent: {}
+[25.948460] (-) TimerEvent: {}
+[26.049491] (-) TimerEvent: {}
+[26.150544] (-) TimerEvent: {}
+[26.251786] (-) TimerEvent: {}
+[26.293134] (pioneer_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[26.352231] (-) TimerEvent: {}
+[26.453164] (-) TimerEvent: {}
+[26.554105] (-) TimerEvent: {}
+[26.655252] (-) TimerEvent: {}
+[26.678504] (pioneer_msgs) StdoutLine: {'line': b'-- Build files have been written to: /src/ros2_ws/build/pioneer_msgs\n'}
+[26.693916] (pioneer_msgs) CommandEnded: {'returncode': 0}
+[26.700927] (pioneer_msgs) JobProgress: {'identifier': 'pioneer_msgs', 'progress': 'build'}
+[26.711076] (pioneer_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/src/ros2_ws/build/pioneer_msgs', '--', '-j16', '-l16'], 'cwd': '/src/ros2_ws/build/pioneer_msgs', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('GIT_ASKPASS', '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/src/ros2_ws/install/pioneer_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/helpers/browser.sh'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-84ddc29a-14a6-431a-8f9b-d0aeb2aae856.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/src/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-dbca9774-d502-4a1d-b3e1-1565a7a326b3.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '[]'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-9583c108f8.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/pioneer_msgs:/src/ros2_ws/install/imu_publisher:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/src/ros2_ws/build/pioneer_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages:/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages:/src/ros2_ws/install/imu_publisher/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/src/ros2_ws/install/pioneer_msgs:/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/imu_publisher:/opt/ros/humble')]), 'shell': False}
+[26.755501] (-) TimerEvent: {}
+[26.856575] (-) TimerEvent: {}
+[26.957874] (-) TimerEvent: {}
+[27.058888] (-) TimerEvent: {}
+[27.159941] (-) TimerEvent: {}
+[27.261007] (-) TimerEvent: {}
+[27.293175] (pioneer_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[27.361311] (-) TimerEvent: {}
+[27.379422] (pioneer_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[27.451155] (pioneer_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_pioneer_msgs\n'}
+[27.461539] (-) TimerEvent: {}
+[27.562614] (-) TimerEvent: {}
+[27.663540] (-) TimerEvent: {}
+[27.764322] (-) TimerEvent: {}
+[27.865104] (-) TimerEvent: {}
+[27.965890] (-) TimerEvent: {}
+[28.066767] (-) TimerEvent: {}
+[28.167743] (-) TimerEvent: {}
+[28.268734] (-) TimerEvent: {}
+[28.369835] (-) TimerEvent: {}
+[28.470865] (-) TimerEvent: {}
+[28.538224] (pioneer_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[28.540928] (pioneer_msgs) StdoutLine: {'line': b'creating pioneer_msgs.egg-info\n'}
+[28.545255] (pioneer_msgs) StdoutLine: {'line': b'writing pioneer_msgs.egg-info/PKG-INFO\n'}
+[28.551716] (pioneer_msgs) StdoutLine: {'line': b'writing dependency_links to pioneer_msgs.egg-info/dependency_links.txt\n'}
+[28.561395] (pioneer_msgs) StdoutLine: {'line': b'writing top-level names to pioneer_msgs.egg-info/top_level.txt\n'}
+[28.568011] (pioneer_msgs) StdoutLine: {'line': b"writing manifest file 'pioneer_msgs.egg-info/SOURCES.txt'\n"}
+[28.570984] (-) TimerEvent: {}
+[28.599617] (pioneer_msgs) StdoutLine: {'line': b"reading manifest file 'pioneer_msgs.egg-info/SOURCES.txt'\n"}
+[28.631794] (pioneer_msgs) StdoutLine: {'line': b"writing manifest file 'pioneer_msgs.egg-info/SOURCES.txt'\n"}
+[28.671172] (-) TimerEvent: {}
+[28.726918] (pioneer_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_pioneer_msgs_egg\n'}
+[28.771339] (-) TimerEvent: {}
+[28.872375] (-) TimerEvent: {}
+[28.975463] (-) TimerEvent: {}
+[29.004108] (pioneer_msgs) StdoutLine: {'line': b'[  4%] Built target pioneer_msgs__cpp\n'}
+[29.075691] (-) TimerEvent: {}
+[29.096651] (pioneer_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[29.105719] (pioneer_msgs) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[29.140602] (pioneer_msgs) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[29.175951] (-) TimerEvent: {}
+[29.276984] (-) TimerEvent: {}
+[29.363719] (pioneer_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__functions.c.o\x1b[0m\n'}
+[29.376584] (pioneer_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/status__functions.c.o\x1b[0m\n'}
+[29.378927] (-) TimerEvent: {}
+[29.394409] (pioneer_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.c.o\x1b[0m\n'}
+[29.479132] (-) TimerEvent: {}
+[29.580253] (-) TimerEvent: {}
+[29.681264] (-) TimerEvent: {}
+[29.703614] (pioneer_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library libpioneer_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[29.781427] (-) TimerEvent: {}
+[29.882455] (-) TimerEvent: {}
+[29.983352] (-) TimerEvent: {}
+[30.075364] (pioneer_msgs) StdoutLine: {'line': b'[ 19%] Built target pioneer_msgs__rosidl_generator_c\n'}
+[30.083497] (-) TimerEvent: {}
+[30.176657] (pioneer_msgs) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[30.183661] (-) TimerEvent: {}
+[30.190553] (pioneer_msgs) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[30.220879] (pioneer_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[30.283838] (-) TimerEvent: {}
+[30.384736] (-) TimerEvent: {}
+[30.485841] (-) TimerEvent: {}
+[30.586705] (-) TimerEvent: {}
+[30.641309] (pioneer_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pioneer_msgs/msg/motion_command__type_support.cpp.o\x1b[0m\n'}
+[30.649849] (pioneer_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pioneer_msgs/msg/auv_state__type_support.cpp.o\x1b[0m\n'}
+[30.662229] (pioneer_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pioneer_msgs/msg/status__type_support.cpp.o\x1b[0m\n'}
+[30.686874] (-) TimerEvent: {}
+[30.788017] (-) TimerEvent: {}
+[30.890794] (-) TimerEvent: {}
+[30.913215] (pioneer_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pioneer_msgs/msg/detail/motion_command__type_support.cpp.o\x1b[0m\n'}
+[30.919669] (pioneer_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pioneer_msgs/msg/detail/status__type_support.cpp.o\x1b[0m\n'}
+[30.985272] (pioneer_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pioneer_msgs/msg/detail/auv_state__type_support.cpp.o\x1b[0m\n'}
+[30.990963] (-) TimerEvent: {}
+[31.092355] (-) TimerEvent: {}
+[31.193965] (-) TimerEvent: {}
+[31.295665] (-) TimerEvent: {}
+[31.333598] (pioneer_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/dds_fastrtps/motion_command__type_support.cpp.o\x1b[0m\n'}
+[31.354717] (pioneer_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/dds_fastrtps/status__type_support.cpp.o\x1b[0m\n'}
+[31.396146] (-) TimerEvent: {}
+[31.400525] (pioneer_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/dds_fastrtps/auv_state__type_support.cpp.o\x1b[0m\n'}
+[31.496379] (-) TimerEvent: {}
+[31.597887] (-) TimerEvent: {}
+[31.699640] (-) TimerEvent: {}
+[31.800876] (-) TimerEvent: {}
+[31.903125] (-) TimerEvent: {}
+[32.005216] (-) TimerEvent: {}
+[32.109167] (-) TimerEvent: {}
+[32.210832] (-) TimerEvent: {}
+[32.314571] (-) TimerEvent: {}
+[32.370959] (pioneer_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libpioneer_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[32.385836] (pioneer_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/motion_command__type_support.cpp.o\x1b[0m\n'}
+[32.414786] (-) TimerEvent: {}
+[32.454262] (pioneer_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/status__type_support.cpp.o\x1b[0m\n'}
+[32.464518] (pioneer_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/auv_state__type_support.cpp.o\x1b[0m\n'}
+[32.515734] (-) TimerEvent: {}
+[32.618796] (-) TimerEvent: {}
+[32.720389] (-) TimerEvent: {}
+[32.821979] (-) TimerEvent: {}
+[32.827233] (pioneer_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pioneer_msgs/msg/detail/motion_command__type_support.c.o\x1b[0m\n'}
+[32.856203] (pioneer_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pioneer_msgs/msg/detail/auv_state__type_support.c.o\x1b[0m\n'}
+[32.888975] (pioneer_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pioneer_msgs/msg/detail/status__type_support.c.o\x1b[0m\n'}
+[32.922207] (-) TimerEvent: {}
+[33.024041] (-) TimerEvent: {}
+[33.064722] (pioneer_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/motion_command__type_support_c.cpp.o\x1b[0m\n'}
+[33.073317] (pioneer_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX shared library libpioneer_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[33.115599] (pioneer_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/status__type_support_c.cpp.o\x1b[0m\n'}
+[33.124180] (-) TimerEvent: {}
+[33.177488] (pioneer_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/auv_state__type_support_c.cpp.o\x1b[0m\n'}
+[33.224402] (-) TimerEvent: {}
+[33.296351] (pioneer_msgs) StdoutLine: {'line': b'[ 68%] Built target pioneer_msgs__rosidl_typesupport_cpp\n'}
+[33.324775] (-) TimerEvent: {}
+[33.427919] (-) TimerEvent: {}
+[33.529786] (-) TimerEvent: {}
+[33.606229] (pioneer_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libpioneer_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[33.629984] (-) TimerEvent: {}
+[33.731618] (-) TimerEvent: {}
+[33.810637] (pioneer_msgs) StdoutLine: {'line': b'[ 70%] Built target pioneer_msgs__rosidl_typesupport_c\n'}
+[33.831832] (-) TimerEvent: {}
+[33.833771] (pioneer_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking C shared library libpioneer_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[33.932011] (-) TimerEvent: {}
+[34.033289] (-) TimerEvent: {}
+[34.134418] (-) TimerEvent: {}
+[34.235541] (-) TimerEvent: {}
+[34.295498] (pioneer_msgs) StdoutLine: {'line': b'[ 72%] Built target pioneer_msgs__rosidl_typesupport_introspection_cpp\n'}
+[34.335783] (-) TimerEvent: {}
+[34.383074] (pioneer_msgs) StdoutLine: {'line': b'[ 72%] Built target pioneer_msgs__rosidl_typesupport_introspection_c\n'}
+[34.435995] (-) TimerEvent: {}
+[34.537398] (-) TimerEvent: {}
+[34.638807] (-) TimerEvent: {}
+[34.739956] (-) TimerEvent: {}
+[34.841647] (-) TimerEvent: {}
+[34.942490] (-) TimerEvent: {}
+[34.976042] (pioneer_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libpioneer_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[35.007066] (pioneer_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libpioneer_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[35.042706] (-) TimerEvent: {}
+[35.143694] (-) TimerEvent: {}
+[35.245132] (-) TimerEvent: {}
+[35.347071] (-) TimerEvent: {}
+[35.431674] (pioneer_msgs) StdoutLine: {'line': b'[ 76%] Built target pioneer_msgs__rosidl_typesupport_fastrtps_c\n'}
+[35.447214] (-) TimerEvent: {}
+[35.467743] (pioneer_msgs) StdoutLine: {'line': b'[ 76%] Built target pioneer_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[35.547407] (-) TimerEvent: {}
+[35.648395] (-) TimerEvent: {}
+[35.673574] (pioneer_msgs) StdoutLine: {'line': b'[ 76%] Built target pioneer_msgs\n'}
+[35.748573] (-) TimerEvent: {}
+[35.849611] (-) TimerEvent: {}
+[35.909026] (pioneer_msgs) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[35.949850] (-) TimerEvent: {}
+[36.051050] (-) TimerEvent: {}
+[36.152204] (-) TimerEvent: {}
+[36.253165] (-) TimerEvent: {}
+[36.354453] (-) TimerEvent: {}
+[36.455888] (-) TimerEvent: {}
+[36.556991] (-) TimerEvent: {}
+[36.658501] (-) TimerEvent: {}
+[36.759482] (-) TimerEvent: {}
+[36.860534] (-) TimerEvent: {}
+[36.961659] (-) TimerEvent: {}
+[37.063006] (-) TimerEvent: {}
+[37.164669] (-) TimerEvent: {}
+[37.266003] (-) TimerEvent: {}
+[37.366924] (-) TimerEvent: {}
+[37.467820] (-) TimerEvent: {}
+[37.568786] (-) TimerEvent: {}
+[37.669637] (-) TimerEvent: {}
+[37.770703] (-) TimerEvent: {}
+[37.871765] (-) TimerEvent: {}
+[37.972587] (-) TimerEvent: {}
+[38.073654] (-) TimerEvent: {}
+[38.176284] (-) TimerEvent: {}
+[38.185292] (pioneer_msgs) StdoutLine: {'line': b'[ 78%] Built target pioneer_msgs__py\n'}
+[38.276526] (-) TimerEvent: {}
+[38.377566] (-) TimerEvent: {}
+[38.430825] (pioneer_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_generator_py.dir/rosidl_generator_py/pioneer_msgs/msg/_motion_command_s.c.o\x1b[0m\n'}
+[38.433239] (pioneer_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_generator_py.dir/rosidl_generator_py/pioneer_msgs/msg/_status_s.c.o\x1b[0m\n'}
+[38.459225] (pioneer_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_generator_py.dir/rosidl_generator_py/pioneer_msgs/msg/_auv_state_s.c.o\x1b[0m\n'}
+[38.477748] (-) TimerEvent: {}
+[38.578771] (-) TimerEvent: {}
+[38.679670] (-) TimerEvent: {}
+[38.780584] (-) TimerEvent: {}
+[38.881492] (-) TimerEvent: {}
+[38.982625] (-) TimerEvent: {}
+[39.083798] (-) TimerEvent: {}
+[39.174591] (pioneer_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[39.183969] (-) TimerEvent: {}
+[39.285040] (-) TimerEvent: {}
+[39.386059] (-) TimerEvent: {}
+[39.486871] (-) TimerEvent: {}
+[39.560542] (pioneer_msgs) StdoutLine: {'line': b'[ 87%] Built target pioneer_msgs__rosidl_generator_py\n'}
+[39.587053] (-) TimerEvent: {}
+[39.687857] (-) TimerEvent: {}
+[39.714312] (pioneer_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[39.732401] (pioneer_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[39.788039] (-) TimerEvent: {}
+[39.801641] (pioneer_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[39.888248] (-) TimerEvent: {}
+[39.989170] (-) TimerEvent: {}
+[40.090043] (-) TimerEvent: {}
+[40.191093] (-) TimerEvent: {}
+[40.292696] (-) TimerEvent: {}
+[40.393566] (-) TimerEvent: {}
+[40.494612] (-) TimerEvent: {}
+[40.542538] (pioneer_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[40.568025] (pioneer_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[40.583128] (pioneer_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[40.594779] (-) TimerEvent: {}
+[40.696026] (-) TimerEvent: {}
+[40.796941] (-) TimerEvent: {}
+[40.832531] (pioneer_msgs) StdoutLine: {'line': b'[100%] Built target pioneer_msgs__rosidl_typesupport_c__pyext\n'}
+[40.848304] (pioneer_msgs) StdoutLine: {'line': b'[100%] Built target pioneer_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[40.897127] (-) TimerEvent: {}
+[40.928691] (pioneer_msgs) StdoutLine: {'line': b'[100%] Built target pioneer_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[40.997395] (-) TimerEvent: {}
+[41.100797] (-) TimerEvent: {}
+[41.201717] (-) TimerEvent: {}
+[41.258521] (pioneer_msgs) CommandEnded: {'returncode': 0}
+[41.301929] (-) TimerEvent: {}
+[41.403668] (-) TimerEvent: {}
+[41.505193] (-) TimerEvent: {}
+[41.606206] (-) TimerEvent: {}
+[41.707137] (-) TimerEvent: {}
+[41.808324] (-) TimerEvent: {}
+[41.909667] (-) TimerEvent: {}
+[42.010647] (-) TimerEvent: {}
+[42.111778] (-) TimerEvent: {}
+[42.212766] (-) TimerEvent: {}
+[42.313887] (-) TimerEvent: {}
+[42.415085] (-) TimerEvent: {}
+[42.516534] (-) TimerEvent: {}
+[42.617453] (-) TimerEvent: {}
+[42.718471] (-) TimerEvent: {}
+[42.819473] (-) TimerEvent: {}
+[42.920470] (-) TimerEvent: {}
+[43.021579] (-) TimerEvent: {}
+[43.122341] (-) TimerEvent: {}
+[43.223363] (-) TimerEvent: {}
+[43.324472] (-) TimerEvent: {}
+[43.425200] (-) TimerEvent: {}
+[43.465447] (pioneer_msgs) JobProgress: {'identifier': 'pioneer_msgs', 'progress': 'install'}
+[43.525784] (-) TimerEvent: {}
+[43.539046] (pioneer_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/src/ros2_ws/build/pioneer_msgs'], 'cwd': '/src/ros2_ws/build/pioneer_msgs', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('GIT_ASKPASS', '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/src/ros2_ws/install/pioneer_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/helpers/browser.sh'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-84ddc29a-14a6-431a-8f9b-d0aeb2aae856.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/src/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-dbca9774-d502-4a1d-b3e1-1565a7a326b3.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '[]'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-9583c108f8.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/pioneer_msgs:/src/ros2_ws/install/imu_publisher:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/src/ros2_ws/build/pioneer_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages:/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages:/src/ros2_ws/install/imu_publisher/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/src/ros2_ws/install/pioneer_msgs:/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/imu_publisher:/opt/ros/humble')]), 'shell': False}
+[43.592018] (pioneer_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[43.625972] (-) TimerEvent: {}
+[43.648139] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/ament_index/resource_index/rosidl_interfaces/pioneer_msgs\n'}
+[43.726192] (-) TimerEvent: {}
+[43.747508] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs\n'}
+[43.779460] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg\n'}
+[43.820147] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/auv_state.h\n'}
+[43.826406] (-) TimerEvent: {}
+[43.927522] (-) TimerEvent: {}
+[43.928334] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail\n'}
+[43.983832] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/auv_state__functions.c\n'}
+[44.027755] (-) TimerEvent: {}
+[44.103609] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/auv_state__functions.h\n'}
+[44.127939] (-) TimerEvent: {}
+[44.228901] (-) TimerEvent: {}
+[44.243090] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/auv_state__struct.h\n'}
+[44.329088] (-) TimerEvent: {}
+[44.392098] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/auv_state__type_support.h\n'}
+[44.429286] (-) TimerEvent: {}
+[44.519240] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/motion_command__functions.c\n'}
+[44.529440] (-) TimerEvent: {}
+[44.630250] (-) TimerEvent: {}
+[44.651581] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/motion_command__functions.h\n'}
+[44.730410] (-) TimerEvent: {}
+[44.775093] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/motion_command__struct.h\n'}
+[44.830557] (-) TimerEvent: {}
+[44.880920] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/motion_command__type_support.h\n'}
+[44.930857] (-) TimerEvent: {}
+[44.992658] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/status__functions.c\n'}
+[45.031067] (-) TimerEvent: {}
+[45.121228] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/status__functions.h\n'}
+[45.131242] (-) TimerEvent: {}
+[45.225336] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/status__struct.h\n'}
+[45.231425] (-) TimerEvent: {}
+[45.332420] (-) TimerEvent: {}
+[45.333975] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/status__type_support.h\n'}
+[45.432588] (-) TimerEvent: {}
+[45.448879] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/motion_command.h\n'}
+[45.532774] (-) TimerEvent: {}
+[45.553076] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[45.632940] (-) TimerEvent: {}
+[45.660460] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/status.h\n'}
+[45.733187] (-) TimerEvent: {}
+[45.834238] (-) TimerEvent: {}
+[45.844660] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/environment/library_path.sh\n'}
+[45.934450] (-) TimerEvent: {}
+[45.942301] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/environment/library_path.dsv\n'}
+[46.034657] (-) TimerEvent: {}
+[46.071333] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_generator_c.so\n'}
+[46.134922] (-) TimerEvent: {}
+[46.236348] (-) TimerEvent: {}
+[46.237184] (pioneer_msgs) StdoutLine: {'line': b'-- Set runtime path of "/src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_generator_c.so" to ""\n'}
+[46.252865] (pioneer_msgs) StdoutLine: {'line': b'-- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs\n'}
+[46.287048] (pioneer_msgs) StdoutLine: {'line': b'-- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg\n'}
+[46.331762] (pioneer_msgs) StdoutLine: {'line': b'-- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail\n'}
+[46.336493] (-) TimerEvent: {}
+[46.392466] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/auv_state__rosidl_typesupport_fastrtps_c.h\n'}
+[46.436679] (-) TimerEvent: {}
+[46.534359] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_fastrtps_c.h\n'}
+[46.536780] (-) TimerEvent: {}
+[46.637493] (-) TimerEvent: {}
+[46.671926] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/status__rosidl_typesupport_fastrtps_c.h\n'}
+[46.737781] (-) TimerEvent: {}
+[46.794785] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[46.838042] (-) TimerEvent: {}
+[46.903736] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[46.938216] (-) TimerEvent: {}
+[47.004364] (pioneer_msgs) StdoutLine: {'line': b'-- Set runtime path of "/src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[47.020285] (pioneer_msgs) StdoutLine: {'line': b'-- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs\n'}
+[47.038410] (-) TimerEvent: {}
+[47.051892] (pioneer_msgs) StdoutLine: {'line': b'-- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg\n'}
+[47.092931] (pioneer_msgs) StdoutLine: {'line': b'-- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail\n'}
+[47.138681] (-) TimerEvent: {}
+[47.153217] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/auv_state__rosidl_typesupport_introspection_c.h\n'}
+[47.238834] (-) TimerEvent: {}
+[47.274190] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/auv_state__type_support.c\n'}
+[47.339180] (-) TimerEvent: {}
+[47.412094] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_introspection_c.h\n'}
+[47.439567] (-) TimerEvent: {}
+[47.540412] (-) TimerEvent: {}
+[47.555820] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/motion_command__type_support.c\n'}
+[47.640586] (-) TimerEvent: {}
+[47.686918] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/status__rosidl_typesupport_introspection_c.h\n'}
+[47.740760] (-) TimerEvent: {}
+[47.800648] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/status__type_support.c\n'}
+[47.840968] (-) TimerEvent: {}
+[47.913204] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[47.941151] (-) TimerEvent: {}
+[48.004163] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_typesupport_introspection_c.so\n'}
+[48.041412] (-) TimerEvent: {}
+[48.142468] (pioneer_msgs) StdoutLine: {'line': b'-- Set runtime path of "/src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[48.144615] (-) TimerEvent: {}
+[48.172522] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_typesupport_c.so\n'}
+[48.244850] (-) TimerEvent: {}
+[48.307076] (pioneer_msgs) StdoutLine: {'line': b'-- Set runtime path of "/src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_typesupport_c.so" to ""\n'}
+[48.323503] (pioneer_msgs) StdoutLine: {'line': b'-- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs\n'}
+[48.345066] (-) TimerEvent: {}
+[48.355933] (pioneer_msgs) StdoutLine: {'line': b'-- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg\n'}
+[48.397178] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/auv_state.hpp\n'}
+[48.445266] (-) TimerEvent: {}
+[48.493227] (pioneer_msgs) StdoutLine: {'line': b'-- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail\n'}
+[48.533301] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/auv_state__builder.hpp\n'}
+[48.545453] (-) TimerEvent: {}
+[48.646624] (-) TimerEvent: {}
+[48.647330] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/auv_state__struct.hpp\n'}
+[48.746867] (-) TimerEvent: {}
+[48.762222] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/auv_state__traits.hpp\n'}
+[48.847064] (-) TimerEvent: {}
+[48.887963] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/motion_command__builder.hpp\n'}
+[48.947285] (-) TimerEvent: {}
+[49.022568] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/motion_command__struct.hpp\n'}
+[49.047499] (-) TimerEvent: {}
+[49.148195] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/motion_command__traits.hpp\n'}
+[49.149863] (-) TimerEvent: {}
+[49.250583] (-) TimerEvent: {}
+[49.257894] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/status__builder.hpp\n'}
+[49.350841] (-) TimerEvent: {}
+[49.398293] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/status__struct.hpp\n'}
+[49.451046] (-) TimerEvent: {}
+[49.517097] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/status__traits.hpp\n'}
+[49.551248] (-) TimerEvent: {}
+[49.644965] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/motion_command.hpp\n'}
+[49.651347] (-) TimerEvent: {}
+[49.746310] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/status.hpp\n'}
+[49.751464] (-) TimerEvent: {}
+[49.831783] (pioneer_msgs) StdoutLine: {'line': b'-- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs\n'}
+[49.851647] (-) TimerEvent: {}
+[49.857956] (pioneer_msgs) StdoutLine: {'line': b'-- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg\n'}
+[49.902701] (pioneer_msgs) StdoutLine: {'line': b'-- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail\n'}
+[49.951828] (-) TimerEvent: {}
+[49.954237] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/auv_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[50.052087] (-) TimerEvent: {}
+[50.081110] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/dds_fastrtps\n'}
+[50.151749] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[50.153359] (-) TimerEvent: {}
+[50.254161] (-) TimerEvent: {}
+[50.294644] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[50.354329] (-) TimerEvent: {}
+[50.435860] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[50.454549] (-) TimerEvent: {}
+[50.555624] (-) TimerEvent: {}
+[50.559805] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[50.655794] (-) TimerEvent: {}
+[50.661912] (pioneer_msgs) StdoutLine: {'line': b'-- Set runtime path of "/src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[50.677816] (pioneer_msgs) StdoutLine: {'line': b'-- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs\n'}
+[50.704496] (pioneer_msgs) StdoutLine: {'line': b'-- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg\n'}
+[50.741486] (pioneer_msgs) StdoutLine: {'line': b'-- Up-to-date: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail\n'}
+[50.755911] (-) TimerEvent: {}
+[50.785701] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/auv_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[50.856126] (-) TimerEvent: {}
+[50.889301] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/auv_state__type_support.cpp\n'}
+[50.956600] (-) TimerEvent: {}
+[50.998943] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/motion_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[51.056787] (-) TimerEvent: {}
+[51.110272] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/motion_command__type_support.cpp\n'}
+[51.156961] (-) TimerEvent: {}
+[51.240478] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[51.257138] (-) TimerEvent: {}
+[51.353482] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/include/pioneer_msgs/pioneer_msgs/msg/detail/status__type_support.cpp\n'}
+[51.357243] (-) TimerEvent: {}
+[51.457918] (-) TimerEvent: {}
+[51.484366] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[51.558109] (-) TimerEvent: {}
+[51.573201] (pioneer_msgs) StdoutLine: {'line': b'-- Set runtime path of "/src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[51.598190] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_typesupport_cpp.so\n'}
+[51.658280] (-) TimerEvent: {}
+[51.689689] (pioneer_msgs) StdoutLine: {'line': b'-- Set runtime path of "/src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[51.712126] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/environment/pythonpath.sh\n'}
+[51.758517] (-) TimerEvent: {}
+[51.789253] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/environment/pythonpath.dsv\n'}
+[51.852408] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs-0.0.0-py3.10.egg-info\n'}
+[51.858734] (-) TimerEvent: {}
+[51.899292] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[51.958910] (-) TimerEvent: {}
+[51.997653] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[52.059108] (-) TimerEvent: {}
+[52.120212] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[52.159291] (-) TimerEvent: {}
+[52.260179] (-) TimerEvent: {}
+[52.286987] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[52.360384] (-) TimerEvent: {}
+[52.438856] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs\n'}
+[52.460601] (-) TimerEvent: {}
+[52.497145] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so\n'}
+[52.560891] (-) TimerEvent: {}
+[52.607913] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/msg\n'}
+[52.661064] (-) TimerEvent: {}
+[52.677496] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/msg/_auv_state.py\n'}
+[52.761264] (-) TimerEvent: {}
+[52.824802] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/msg/_auv_state_s.c\n'}
+[52.861458] (-) TimerEvent: {}
+[52.962279] (-) TimerEvent: {}
+[52.974368] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/msg/_motion_command.py\n'}
+[53.062480] (-) TimerEvent: {}
+[53.104213] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/msg/_motion_command_s.c\n'}
+[53.162631] (-) TimerEvent: {}
+[53.222390] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/msg/_status.py\n'}
+[53.262769] (-) TimerEvent: {}
+[53.344840] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/msg/_status_s.c\n'}
+[53.362972] (-) TimerEvent: {}
+[53.460141] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/msg/__init__.py\n'}
+[53.463124] (-) TimerEvent: {}
+[53.563977] (-) TimerEvent: {}
+[53.567102] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[53.661278] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[53.664103] (-) TimerEvent: {}
+[53.761875] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[53.764202] (-) TimerEvent: {}
+[53.864902] (-) TimerEvent: {}
+[53.879636] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[53.965104] (-) TimerEvent: {}
+[54.002897] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[54.065326] (-) TimerEvent: {}
+[54.109328] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/_pioneer_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[54.165497] (-) TimerEvent: {}
+[54.220188] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/__init__.py\n'}
+[54.265740] (-) TimerEvent: {}
+[54.366823] (-) TimerEvent: {}
+[54.467566] (-) TimerEvent: {}
+[54.568271] (-) TimerEvent: {}
+[54.669318] (-) TimerEvent: {}
+[54.770379] (-) TimerEvent: {}
+[54.871317] (-) TimerEvent: {}
+[54.972452] (-) TimerEvent: {}
+[55.075256] (-) TimerEvent: {}
+[55.176451] (-) TimerEvent: {}
+[55.277584] (-) TimerEvent: {}
+[55.378680] (-) TimerEvent: {}
+[55.479642] (-) TimerEvent: {}
+[55.580625] (-) TimerEvent: {}
+[55.598404] (pioneer_msgs) StdoutLine: {'line': b"Listing '/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs'...\n"}
+[55.600061] (pioneer_msgs) StdoutLine: {'line': b"Compiling '/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/__init__.py'...\n"}
+[55.601197] (pioneer_msgs) StdoutLine: {'line': b"Listing '/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/msg'...\n"}
+[55.602239] (pioneer_msgs) StdoutLine: {'line': b"Compiling '/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/msg/__init__.py'...\n"}
+[55.603175] (pioneer_msgs) StdoutLine: {'line': b"Compiling '/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/msg/_auv_state.py'...\n"}
+[55.604136] (pioneer_msgs) StdoutLine: {'line': b"Compiling '/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/msg/_motion_command.py'...\n"}
+[55.605066] (pioneer_msgs) StdoutLine: {'line': b"Compiling '/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/msg/_status.py'...\n"}
+[55.680582] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[55.682468] (-) TimerEvent: {}
+[55.783165] (-) TimerEvent: {}
+[55.862904] (pioneer_msgs) StdoutLine: {'line': b'-- Set runtime path of "/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[55.883404] (-) TimerEvent: {}
+[55.955702] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[55.983639] (-) TimerEvent: {}
+[56.084584] (-) TimerEvent: {}
+[56.141859] (pioneer_msgs) StdoutLine: {'line': b'-- Set runtime path of "/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[56.184758] (-) TimerEvent: {}
+[56.216765] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[56.285036] (-) TimerEvent: {}
+[56.374908] (pioneer_msgs) StdoutLine: {'line': b'-- Set runtime path of "/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages/pioneer_msgs/pioneer_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[56.385231] (-) TimerEvent: {}
+[56.402068] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_generator_py.so\n'}
+[56.485430] (-) TimerEvent: {}
+[56.494987] (pioneer_msgs) StdoutLine: {'line': b'-- Set runtime path of "/src/ros2_ws/install/pioneer_msgs/lib/libpioneer_msgs__rosidl_generator_py.so" to ""\n'}
+[56.536803] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/msg/MotionCommand.idl\n'}
+[56.585592] (-) TimerEvent: {}
+[56.631536] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/msg/Status.idl\n'}
+[56.685794] (-) TimerEvent: {}
+[56.735615] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/msg/AUVState.idl\n'}
+[56.785985] (-) TimerEvent: {}
+[56.842094] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/msg/MotionCommand.msg\n'}
+[56.886166] (-) TimerEvent: {}
+[56.931545] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/msg/Status.msg\n'}
+[56.986374] (-) TimerEvent: {}
+[57.016653] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/msg/AUVState.msg\n'}
+[57.086651] (-) TimerEvent: {}
+[57.146993] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/ament_index/resource_index/package_run_dependencies/pioneer_msgs\n'}
+[57.186883] (-) TimerEvent: {}
+[57.288156] (-) TimerEvent: {}
+[57.323384] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/ament_index/resource_index/parent_prefix_path/pioneer_msgs\n'}
+[57.388315] (-) TimerEvent: {}
+[57.459684] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/environment/ament_prefix_path.sh\n'}
+[57.488522] (-) TimerEvent: {}
+[57.543523] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/environment/ament_prefix_path.dsv\n'}
+[57.588750] (-) TimerEvent: {}
+[57.619110] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/environment/path.sh\n'}
+[57.688904] (-) TimerEvent: {}
+[57.707702] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/environment/path.dsv\n'}
+[57.776245] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/local_setup.bash\n'}
+[57.789063] (-) TimerEvent: {}
+[57.846528] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/local_setup.sh\n'}
+[57.889253] (-) TimerEvent: {}
+[57.928084] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/local_setup.zsh\n'}
+[57.989412] (-) TimerEvent: {}
+[58.015073] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/local_setup.dsv\n'}
+[58.089197] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/package.dsv\n'}
+[58.090809] (-) TimerEvent: {}
+[58.191576] (-) TimerEvent: {}
+[58.200526] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/ament_index/resource_index/packages/pioneer_msgs\n'}
+[58.291771] (-) TimerEvent: {}
+[58.352090] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/export_pioneer_msgs__rosidl_generator_cExport.cmake\n'}
+[58.391971] (-) TimerEvent: {}
+[58.473510] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/export_pioneer_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[58.492232] (-) TimerEvent: {}
+[58.593335] (-) TimerEvent: {}
+[58.610660] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/export_pioneer_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[58.693453] (-) TimerEvent: {}
+[58.731090] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/export_pioneer_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[58.793667] (-) TimerEvent: {}
+[58.836355] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/pioneer_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[58.893838] (-) TimerEvent: {}
+[58.957288] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/pioneer_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[58.994023] (-) TimerEvent: {}
+[59.082765] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/pioneer_msgs__rosidl_typesupport_cExport.cmake\n'}
+[59.094192] (-) TimerEvent: {}
+[59.195013] (-) TimerEvent: {}
+[59.207026] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/pioneer_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[59.295209] (-) TimerEvent: {}
+[59.340337] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/export_pioneer_msgs__rosidl_generator_cppExport.cmake\n'}
+[59.395457] (-) TimerEvent: {}
+[59.480410] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/export_pioneer_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[59.495696] (-) TimerEvent: {}
+[59.596848] (-) TimerEvent: {}
+[59.645210] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/export_pioneer_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[59.697094] (-) TimerEvent: {}
+[59.783551] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/pioneer_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[59.797418] (-) TimerEvent: {}
+[59.898805] (-) TimerEvent: {}
+[59.907658] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/pioneer_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[59.998952] (-) TimerEvent: {}
+[60.038788] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/pioneer_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[60.099229] (-) TimerEvent: {}
+[60.141773] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/pioneer_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[60.199423] (-) TimerEvent: {}
+[60.246196] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/export_pioneer_msgs__rosidl_generator_pyExport.cmake\n'}
+[60.299596] (-) TimerEvent: {}
+[60.340328] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/export_pioneer_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[60.399833] (-) TimerEvent: {}
+[60.441125] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[60.500060] (-) TimerEvent: {}
+[60.529633] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[60.600296] (-) TimerEvent: {}
+[60.630626] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[60.700510] (-) TimerEvent: {}
+[60.725930] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[60.800705] (-) TimerEvent: {}
+[60.816103] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[60.901083] (-) TimerEvent: {}
+[60.910463] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[61.001303] (-) TimerEvent: {}
+[61.008130] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[61.101536] (-) TimerEvent: {}
+[61.111228] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/pioneer_msgsConfig.cmake\n'}
+[61.201767] (-) TimerEvent: {}
+[61.208806] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/cmake/pioneer_msgsConfig-version.cmake\n'}
+[61.302012] (-) TimerEvent: {}
+[61.314891] (pioneer_msgs) StdoutLine: {'line': b'-- Installing: /src/ros2_ws/install/pioneer_msgs/share/pioneer_msgs/package.xml\n'}
+[61.394925] (pioneer_msgs) CommandEnded: {'returncode': 0}
+[61.402163] (-) TimerEvent: {}
+[61.503109] (-) TimerEvent: {}
+[61.604780] (-) TimerEvent: {}
+[61.705553] (-) TimerEvent: {}
+[61.806504] (-) TimerEvent: {}
+[61.907313] (-) TimerEvent: {}
+[62.008323] (-) TimerEvent: {}
+[62.110446] (-) TimerEvent: {}
+[62.211398] (-) TimerEvent: {}
+[62.312435] (-) TimerEvent: {}
+[62.413518] (-) TimerEvent: {}
+[62.514625] (-) TimerEvent: {}
+[62.615552] (-) TimerEvent: {}
+[62.716579] (-) TimerEvent: {}
+[62.817489] (-) TimerEvent: {}
+[62.918319] (-) TimerEvent: {}
+[63.019509] (-) TimerEvent: {}
+[63.120512] (-) TimerEvent: {}
+[63.221372] (-) TimerEvent: {}
+[63.322606] (-) TimerEvent: {}
+[63.423800] (-) TimerEvent: {}
+[63.524732] (-) TimerEvent: {}
+[63.625985] (-) TimerEvent: {}
+[63.726853] (-) TimerEvent: {}
+[63.827661] (-) TimerEvent: {}
+[63.928435] (-) TimerEvent: {}
+[64.029592] (-) TimerEvent: {}
+[64.130487] (-) TimerEvent: {}
+[64.231531] (-) TimerEvent: {}
+[64.332974] (-) TimerEvent: {}
+[64.434224] (-) TimerEvent: {}
+[64.535405] (-) TimerEvent: {}
+[64.636696] (-) TimerEvent: {}
+[64.737750] (-) TimerEvent: {}
+[64.838568] (-) TimerEvent: {}
+[64.939743] (-) TimerEvent: {}
+[65.040720] (-) TimerEvent: {}
+[65.141722] (-) TimerEvent: {}
+[65.243131] (-) TimerEvent: {}
+[65.344148] (-) TimerEvent: {}
+[65.445099] (-) TimerEvent: {}
+[65.546119] (-) TimerEvent: {}
+[65.646874] (-) TimerEvent: {}
+[65.747635] (-) TimerEvent: {}
+[65.848455] (-) TimerEvent: {}
+[65.949776] (-) TimerEvent: {}
+[66.050586] (-) TimerEvent: {}
+[66.151434] (-) TimerEvent: {}
+[66.252319] (-) TimerEvent: {}
+[66.353373] (-) TimerEvent: {}
+[66.454523] (-) TimerEvent: {}
+[66.555867] (-) TimerEvent: {}
+[66.656659] (-) TimerEvent: {}
+[66.757643] (-) TimerEvent: {}
+[66.858679] (-) TimerEvent: {}
+[66.959583] (-) TimerEvent: {}
+[67.060404] (-) TimerEvent: {}
+[67.161306] (-) TimerEvent: {}
+[67.262365] (-) TimerEvent: {}
+[67.363339] (-) TimerEvent: {}
+[67.464431] (-) TimerEvent: {}
+[67.565894] (-) TimerEvent: {}
+[67.667806] (-) TimerEvent: {}
+[67.768949] (-) TimerEvent: {}
+[67.870461] (-) TimerEvent: {}
+[67.971554] (-) TimerEvent: {}
+[68.072651] (-) TimerEvent: {}
+[68.173604] (-) TimerEvent: {}
+[68.274740] (-) TimerEvent: {}
+[68.375935] (-) TimerEvent: {}
+[68.477114] (-) TimerEvent: {}
+[68.578157] (-) TimerEvent: {}
+[68.657625] (pioneer_msgs) JobEnded: {'identifier': 'pioneer_msgs', 'rc': 0}
+[68.685877] (-) TimerEvent: {}
+[68.686623] (pixpubsub) JobStarted: {'identifier': 'pixpubsub'}
+[68.786151] (-) TimerEvent: {}
+[68.887065] (-) TimerEvent: {}
+[68.987974] (-) TimerEvent: {}
+[69.089056] (-) TimerEvent: {}
+[69.190151] (-) TimerEvent: {}
+[69.291156] (-) TimerEvent: {}
+[69.392184] (-) TimerEvent: {}
+[69.493029] (-) TimerEvent: {}
+[69.594032] (-) TimerEvent: {}
+[69.694870] (-) TimerEvent: {}
+[69.796365] (-) TimerEvent: {}
+[69.897244] (-) TimerEvent: {}
+[69.998745] (-) TimerEvent: {}
+[70.099887] (-) TimerEvent: {}
+[70.200616] (-) TimerEvent: {}
+[70.301383] (-) TimerEvent: {}
+[70.402377] (-) TimerEvent: {}
+[70.503113] (-) TimerEvent: {}
+[70.603937] (-) TimerEvent: {}
+[70.704718] (-) TimerEvent: {}
+[70.805409] (-) TimerEvent: {}
+[70.907474] (-) TimerEvent: {}
+[71.009684] (-) TimerEvent: {}
+[71.110735] (-) TimerEvent: {}
+[71.212121] (-) TimerEvent: {}
+[71.313371] (-) TimerEvent: {}
+[71.414360] (-) TimerEvent: {}
+[71.515414] (-) TimerEvent: {}
+[71.616159] (-) TimerEvent: {}
+[71.717027] (-) TimerEvent: {}
+[71.817815] (-) TimerEvent: {}
+[71.918726] (-) TimerEvent: {}
+[72.019677] (-) TimerEvent: {}
+[72.120921] (-) TimerEvent: {}
+[72.221875] (-) TimerEvent: {}
+[72.322956] (-) TimerEvent: {}
+[72.424062] (-) TimerEvent: {}
+[72.525137] (-) TimerEvent: {}
+[72.626209] (-) TimerEvent: {}
+[72.727440] (-) TimerEvent: {}
+[72.828979] (-) TimerEvent: {}
+[72.930643] (-) TimerEvent: {}
+[73.031930] (-) TimerEvent: {}
+[73.133173] (-) TimerEvent: {}
+[73.234151] (-) TimerEvent: {}
+[73.335187] (-) TimerEvent: {}
+[73.436291] (-) TimerEvent: {}
+[73.537442] (-) TimerEvent: {}
+[73.638648] (-) TimerEvent: {}
+[73.739693] (-) TimerEvent: {}
+[73.840996] (-) TimerEvent: {}
+[73.941944] (-) TimerEvent: {}
+[74.043008] (-) TimerEvent: {}
+[74.144010] (-) TimerEvent: {}
+[74.192587] (pixpubsub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/pixpubsub', 'build', '--build-base', '/src/ros2_ws/build/pixpubsub/build', 'install', '--record', '/src/ros2_ws/build/pixpubsub/install.log', '--single-version-externally-managed'], 'cwd': '/src/ros2_ws/src/pixpubsub', 'env': {'HOSTNAME': 'docker-desktop', 'GIT_ASKPASS': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/src/ros2_ws/install/pioneer_msgs/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/helpers/browser.sh', 'HOME': '/root', 'TERM_PROGRAM_VERSION': '1.86.2', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-84ddc29a-14a6-431a-8f9b-d0aeb2aae856.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'COLCON_PREFIX_PATH': '/src/ros2_ws/install', 'ROS_DISTRO': 'humble', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-dbca9774-d502-4a1d-b3e1-1565a7a326b3.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/root/.vscode-server/bin/903b1e9d8990623e3d7da1df3d33db3e42d80eda/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '[]', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-9583c108f8.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/pioneer_msgs:/src/ros2_ws/install/imu_publisher:/opt/ros/humble', 'SHELL': '/bin/bash', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/src/ros2_ws/build/pixpubsub', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/src/ros2_ws/build/pixpubsub/prefix_override:/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages:/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages:/src/ros2_ws/install/pioneer_msgs/local/lib/python3.10/dist-packages:/src/ros2_ws/install/imu_publisher/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/src/ros2_ws/install/pioneer_msgs'}, 'shell': False}
+[74.244331] (-) TimerEvent: {}
+[74.345558] (-) TimerEvent: {}
+[74.446897] (-) TimerEvent: {}
+[74.548344] (-) TimerEvent: {}
+[74.649613] (-) TimerEvent: {}
+[74.750579] (-) TimerEvent: {}
+[74.851671] (-) TimerEvent: {}
+[74.952812] (-) TimerEvent: {}
+[75.054162] (-) TimerEvent: {}
+[75.155436] (-) TimerEvent: {}
+[75.256606] (-) TimerEvent: {}
+[75.358385] (-) TimerEvent: {}
+[75.459572] (-) TimerEvent: {}
+[75.560829] (-) TimerEvent: {}
+[75.662231] (-) TimerEvent: {}
+[75.763588] (-) TimerEvent: {}
+[75.865189] (-) TimerEvent: {}
+[75.966380] (-) TimerEvent: {}
+[76.067298] (-) TimerEvent: {}
+[76.168342] (-) TimerEvent: {}
+[76.269359] (-) TimerEvent: {}
+[76.370153] (-) TimerEvent: {}
+[76.470979] (-) TimerEvent: {}
+[76.533542] (pixpubsub) StdoutLine: {'line': b'running egg_info\n'}
+[76.538831] (pixpubsub) StdoutLine: {'line': b'creating ../../build/pixpubsub/pixpubsub.egg-info\n'}
+[76.543758] (pixpubsub) StdoutLine: {'line': b'writing ../../build/pixpubsub/pixpubsub.egg-info/PKG-INFO\n'}
+[76.563723] (pixpubsub) StdoutLine: {'line': b'writing dependency_links to ../../build/pixpubsub/pixpubsub.egg-info/dependency_links.txt\n'}
+[76.571117] (-) TimerEvent: {}
+[76.572398] (pixpubsub) StdoutLine: {'line': b'writing entry points to ../../build/pixpubsub/pixpubsub.egg-info/entry_points.txt\n'}
+[76.578905] (pixpubsub) StdoutLine: {'line': b'writing requirements to ../../build/pixpubsub/pixpubsub.egg-info/requires.txt\n'}
+[76.584025] (pixpubsub) StdoutLine: {'line': b'writing top-level names to ../../build/pixpubsub/pixpubsub.egg-info/top_level.txt\n'}
+[76.592907] (pixpubsub) StdoutLine: {'line': b"writing manifest file '../../build/pixpubsub/pixpubsub.egg-info/SOURCES.txt'\n"}
+[76.637722] (pixpubsub) StdoutLine: {'line': b"reading manifest file '../../build/pixpubsub/pixpubsub.egg-info/SOURCES.txt'\n"}
+[76.671402] (-) TimerEvent: {}
+[76.706908] (pixpubsub) StdoutLine: {'line': b"writing manifest file '../../build/pixpubsub/pixpubsub.egg-info/SOURCES.txt'\n"}
+[76.711472] (pixpubsub) StdoutLine: {'line': b'running build\n'}
+[76.712699] (pixpubsub) StdoutLine: {'line': b'running build_py\n'}
+[76.718498] (pixpubsub) StdoutLine: {'line': b'creating /src/ros2_ws/build/pixpubsub/build\n'}
+[76.721734] (pixpubsub) StdoutLine: {'line': b'creating /src/ros2_ws/build/pixpubsub/build/lib\n'}
+[76.725538] (pixpubsub) StdoutLine: {'line': b'creating /src/ros2_ws/build/pixpubsub/build/lib/pixpubsub\n'}
+[76.739613] (pixpubsub) StdoutLine: {'line': b'copying pixpubsub/justmove_sub.py -> /src/ros2_ws/build/pixpubsub/build/lib/pixpubsub\n'}
+[76.768919] (pixpubsub) StdoutLine: {'line': b'copying pixpubsub/move_pub.py -> /src/ros2_ws/build/pixpubsub/build/lib/pixpubsub\n'}
+[76.771502] (-) TimerEvent: {}
+[76.801123] (pixpubsub) StdoutLine: {'line': b'copying pixpubsub/pix_pubsub_node.py -> /src/ros2_ws/build/pixpubsub/build/lib/pixpubsub\n'}
+[76.832153] (pixpubsub) StdoutLine: {'line': b'copying pixpubsub/__init__.py -> /src/ros2_ws/build/pixpubsub/build/lib/pixpubsub\n'}
+[76.852173] (pixpubsub) StdoutLine: {'line': b'running install\n'}
+[76.853533] (pixpubsub) StdoutLine: {'line': b'running install_lib\n'}
+[76.871617] (-) TimerEvent: {}
+[76.884311] (pixpubsub) StdoutLine: {'line': b'creating /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub\n'}
+[76.908729] (pixpubsub) StdoutLine: {'line': b'copying /src/ros2_ws/build/pixpubsub/build/lib/pixpubsub/justmove_sub.py -> /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub\n'}
+[76.951766] (pixpubsub) StdoutLine: {'line': b'copying /src/ros2_ws/build/pixpubsub/build/lib/pixpubsub/move_pub.py -> /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub\n'}
+[76.971892] (-) TimerEvent: {}
+[76.991930] (pixpubsub) StdoutLine: {'line': b'copying /src/ros2_ws/build/pixpubsub/build/lib/pixpubsub/pix_pubsub_node.py -> /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub\n'}
+[77.028074] (pixpubsub) StdoutLine: {'line': b'copying /src/ros2_ws/build/pixpubsub/build/lib/pixpubsub/__init__.py -> /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub\n'}
+[77.067904] (pixpubsub) StdoutLine: {'line': b'byte-compiling /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/justmove_sub.py to justmove_sub.cpython-310.pyc\n'}
+[77.071987] (-) TimerEvent: {}
+[77.121277] (pixpubsub) StdoutLine: {'line': b'byte-compiling /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/move_pub.py to move_pub.cpython-310.pyc\n'}
+[77.165098] (pixpubsub) StdoutLine: {'line': b'byte-compiling /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/pix_pubsub_node.py to pix_pubsub_node.cpython-310.pyc\n'}
+[77.172121] (-) TimerEvent: {}
+[77.237311] (pixpubsub) StdoutLine: {'line': b'byte-compiling /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/__init__.py to __init__.cpython-310.pyc\n'}
+[77.272296] (-) TimerEvent: {}
+[77.285600] (pixpubsub) StdoutLine: {'line': b'running install_data\n'}
+[77.299173] (pixpubsub) StdoutLine: {'line': b'creating /src/ros2_ws/install/pixpubsub/share/ament_index\n'}
+[77.303086] (pixpubsub) StdoutLine: {'line': b'creating /src/ros2_ws/install/pixpubsub/share/ament_index/resource_index\n'}
+[77.307394] (pixpubsub) StdoutLine: {'line': b'creating /src/ros2_ws/install/pixpubsub/share/ament_index/resource_index/packages\n'}
+[77.324888] (pixpubsub) StdoutLine: {'line': b'copying resource/pixpubsub -> /src/ros2_ws/install/pixpubsub/share/ament_index/resource_index/packages\n'}
+[77.356626] (pixpubsub) StdoutLine: {'line': b'copying package.xml -> /src/ros2_ws/install/pixpubsub/share/pixpubsub\n'}
+[77.372503] (-) TimerEvent: {}
+[77.376290] (pixpubsub) StdoutLine: {'line': b'running install_egg_info\n'}
+[77.410744] (pixpubsub) StdoutLine: {'line': b'Copying ../../build/pixpubsub/pixpubsub.egg-info to /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub-0.0.0-py3.10.egg-info\n'}
+[77.472699] (-) TimerEvent: {}
+[77.573466] (-) TimerEvent: {}
+[77.674285] (-) TimerEvent: {}
+[77.775416] (-) TimerEvent: {}
+[77.796626] (pixpubsub) StdoutLine: {'line': b'running install_scripts\n'}
+[77.875579] (-) TimerEvent: {}
+[77.976472] (-) TimerEvent: {}
+[78.016842] (pixpubsub) StdoutLine: {'line': b'Installing justmove_sub script to /src/ros2_ws/install/pixpubsub/lib/pixpubsub\n'}
+[78.034377] (pixpubsub) StdoutLine: {'line': b'Installing move_pub script to /src/ros2_ws/install/pixpubsub/lib/pixpubsub\n'}
+[78.053589] (pixpubsub) StdoutLine: {'line': b'Installing publisher script to /src/ros2_ws/install/pixpubsub/lib/pixpubsub\n'}
+[78.075839] (pixpubsub) StdoutLine: {'line': b"writing list of installed files to '/src/ros2_ws/build/pixpubsub/install.log'\n"}
+[78.077759] (-) TimerEvent: {}
+[78.153963] (pixpubsub) CommandEnded: {'returncode': 0}
+[78.177927] (-) TimerEvent: {}
+[78.278727] (-) TimerEvent: {}
+[78.379800] (-) TimerEvent: {}
+[78.481215] (-) TimerEvent: {}
+[78.582187] (-) TimerEvent: {}
+[78.642745] (pixpubsub) JobEnded: {'identifier': 'pixpubsub', 'rc': 0}
+[78.656483] (-) EventReactorShutdown: {}

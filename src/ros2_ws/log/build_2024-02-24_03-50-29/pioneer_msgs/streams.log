@@ -1,0 +1,161 @@
+[0.551s] Invoking command in '/src/ros2_ws/build/pioneer_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/imu_publisher:/opt/ros/humble /usr/bin/cmake --build /src/ros2_ws/build/pioneer_msgs -- -j16 -l16
+[1.134s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.660s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.703s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.707s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.778s] [33mCMake Warning at /opt/ros/humble/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+[2.780s]   Package 'rcutils' exports library 'dl' which couldn't be found
+[2.781s] Call Stack (most recent call first):
+[2.782s]   /opt/ros/humble/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+[2.783s]   /opt/ros/humble/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[2.784s]   /opt/ros/humble/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+[2.785s]   /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[2.786s]   /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/cmake/rosidl_typesupport_fastrtps_cConfig.cmake:41 (include)
+[2.787s]   /opt/ros/humble/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:13 (find_package)
+[2.788s]   /opt/ros/humble/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)
+[2.789s]   /opt/ros/humble/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)
+[2.790s]   /opt/ros/humble/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)
+[2.791s]   CMakeLists.txt:13 (find_package)
+[2.792s] 
+[2.792s] [0m
+[2.809s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.847s] -- Found rosidl_default_runtime: 1.2.0 (/opt/ros/humble/share/rosidl_default_runtime/cmake)
+[2.861s] -- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)
+[2.921s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[6.243s] -- Found ament_cmake_cppcheck: 0.12.10 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[6.246s] -- Found ament_cmake_cpplint: 0.12.10 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[6.249s] -- Found ament_cmake_uncrustify: 0.12.10 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[6.252s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[9.289s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[13.287s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[13.477s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[13.661s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[13.662s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[13.663s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[14.249s] -- Found ament_cmake_flake8: 0.12.10 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[14.251s] -- Found ament_cmake_pep257: 0.12.10 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[14.968s] -- Configuring done
+[16.631s] [33mCMake Warning at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:166 (add_library):
+[16.632s]   Cannot generate a safe runtime search path for target
+[16.633s]   pioneer_msgs__rosidl_generator_py because files in some directories may
+[16.634s]   conflict with libraries in implicit directories:
+[16.635s] 
+[16.637s]     runtime library [libpython3.10.so] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+[16.638s]       /usr/lib/x86_64-linux-gnu
+[16.639s] 
+[16.640s]   Some of these libraries may not be found correctly.
+[16.641s] Call Stack (most recent call first):
+[16.642s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[16.643s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[16.644s]   CMakeLists.txt:23 (rosidl_generate_interfaces)
+[16.645s] 
+[16.646s] [0m
+[16.783s] [33mCMake Warning at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:226 (add_library):
+[16.784s]   Cannot generate a safe runtime search path for target
+[16.785s]   pioneer_msgs__rosidl_typesupport_fastrtps_c__pyext because files in some
+[16.786s]   directories may conflict with libraries in implicit directories:
+[16.787s] 
+[16.788s]     runtime library [libpython3.10.so] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+[16.790s]       /usr/lib/x86_64-linux-gnu
+[16.790s] 
+[16.791s]   Some of these libraries may not be found correctly.
+[16.792s] Call Stack (most recent call first):
+[16.793s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[16.794s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[16.795s]   CMakeLists.txt:23 (rosidl_generate_interfaces)
+[16.796s] 
+[16.797s] [0m
+[16.928s] [33mCMake Warning at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:226 (add_library):
+[16.929s]   Cannot generate a safe runtime search path for target
+[16.930s]   pioneer_msgs__rosidl_typesupport_introspection_c__pyext because files in
+[16.931s]   some directories may conflict with libraries in implicit directories:
+[16.932s] 
+[16.933s]     runtime library [libpython3.10.so] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+[16.934s]       /usr/lib/x86_64-linux-gnu
+[16.935s] 
+[16.936s]   Some of these libraries may not be found correctly.
+[16.937s] Call Stack (most recent call first):
+[16.938s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[16.939s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[16.940s]   CMakeLists.txt:23 (rosidl_generate_interfaces)
+[16.941s] 
+[16.942s] [0m
+[17.071s] [33mCMake Warning at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:226 (add_library):
+[17.073s]   Cannot generate a safe runtime search path for target
+[17.074s]   pioneer_msgs__rosidl_typesupport_c__pyext because files in some directories
+[17.074s]   may conflict with libraries in implicit directories:
+[17.075s] 
+[17.076s]     runtime library [libpython3.10.so] in /usr/lib/aarch64-linux-gnu may be hidden by files in:
+[17.077s]       /usr/lib/x86_64-linux-gnu
+[17.078s] 
+[17.079s]   Some of these libraries may not be found correctly.
+[17.080s] Call Stack (most recent call first):
+[17.081s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[17.081s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[17.082s]   CMakeLists.txt:23 (rosidl_generate_interfaces)
+[17.083s] 
+[17.084s] [0m
+[17.979s] -- Generating done
+[18.265s] -- Build files have been written to: /src/ros2_ws/build/pioneer_msgs
+[18.761s] [35m[1mConsolidate compiler generated dependencies of target pioneer_msgs__rosidl_generator_c[0m
+[18.925s] [  2%] Built target pioneer_msgs__cpp
+[19.104s] [  4%] [32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__functions.c.o[0m
+[19.160s] [  6%] [32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/status__functions.c.o[0m
+[19.171s] [35m[1mConsolidate compiler generated dependencies of target pioneer_msgs__rosidl_typesupport_cpp[0m
+[19.222s] [  8%] [32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_generator_c.dir/rosidl_generator_c/pioneer_msgs/msg/detail/auv_state__functions.c.o[0m
+[19.227s] [35m[1mConsolidate compiler generated dependencies of target pioneer_msgs__rosidl_typesupport_introspection_cpp[0m
+[19.242s] [35m[1mConsolidate compiler generated dependencies of target pioneer_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[20.011s] [ 10%] [32m[1mLinking C shared library libpioneer_msgs__rosidl_generator_c.so[0m
+[20.044s] [ 14%] [32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pioneer_msgs/msg/status__type_support.cpp.o[0m
+[20.050s] [ 14%] [32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pioneer_msgs/msg/motion_command__type_support.cpp.o[0m
+[20.084s] [ 17%] [32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pioneer_msgs/msg/auv_state__type_support.cpp.o[0m
+[20.129s] [ 19%] [32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pioneer_msgs/msg/detail/motion_command__type_support.cpp.o[0m
+[20.160s] [ 21%] [32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pioneer_msgs/msg/detail/status__type_support.cpp.o[0m
+[20.199s] [ 25%] [32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pioneer_msgs/msg/detail/auv_state__type_support.cpp.o[0m
+[20.202s] [ 25%] Built target ament_cmake_python_copy_pioneer_msgs
+[20.206s] [ 25%] [32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/dds_fastrtps/motion_command__type_support.cpp.o[0m
+[20.292s] [ 27%] [32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/dds_fastrtps/status__type_support.cpp.o[0m
+[20.337s] [ 29%] [32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pioneer_msgs/msg/detail/dds_fastrtps/auv_state__type_support.cpp.o[0m
+[20.977s] [ 31%] Built target pioneer_msgs__rosidl_generator_c
+[21.336s] [ 34%] [32m[1mLinking CXX shared library libpioneer_msgs__rosidl_typesupport_cpp.so[0m
+[21.382s] [35m[1mConsolidate compiler generated dependencies of target pioneer_msgs__rosidl_typesupport_c[0m
+[21.454s] [35m[1mConsolidate compiler generated dependencies of target pioneer_msgs__rosidl_typesupport_introspection_c[0m
+[21.532s] [35m[1mConsolidate compiler generated dependencies of target pioneer_msgs__rosidl_typesupport_fastrtps_c[0m
+[21.872s] [ 36%] [32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/motion_command__type_support.cpp.o[0m
+[21.905s] [ 38%] [32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/status__type_support.cpp.o[0m
+[21.942s] [ 40%] [32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/pioneer_msgs/msg/auv_state__type_support.cpp.o[0m
+[21.979s] [ 42%] [32m[1mLinking CXX shared library libpioneer_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[22.141s] [ 44%] [32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pioneer_msgs/msg/detail/motion_command__type_support.c.o[0m
+[22.161s] [ 46%] [32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pioneer_msgs/msg/detail/status__type_support.c.o[0m
+[22.235s] [ 51%] Built target pioneer_msgs__rosidl_typesupport_cpp
+[22.239s] [ 51%] [32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pioneer_msgs/msg/detail/auv_state__type_support.c.o[0m
+[22.477s] [ 53%] [32m[1mLinking CXX shared library libpioneer_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[22.582s] [ 55%] [32m[1mLinking CXX shared library libpioneer_msgs__rosidl_typesupport_c.so[0m
+[22.730s] [ 57%] [32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/motion_command__type_support_c.cpp.o[0m
+[22.776s] [ 61%] [32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/status__type_support_c.cpp.o[0m
+[22.796s] [ 61%] Built target pioneer_msgs__rosidl_typesupport_introspection_cpp
+[22.843s] [ 63%] [32mBuilding CXX object CMakeFiles/pioneer_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pioneer_msgs/msg/detail/auv_state__type_support_c.cpp.o[0m
+[23.086s] [ 65%] [32m[1mLinking C shared library libpioneer_msgs__rosidl_typesupport_introspection_c.so[0m
+[23.174s] [ 68%] Built target pioneer_msgs__rosidl_typesupport_c
+[23.276s] [ 70%] Built target pioneer_msgs__rosidl_typesupport_fastrtps_cpp
+[23.612s] [ 72%] Built target pioneer_msgs__rosidl_typesupport_introspection_c
+[23.976s] running egg_info
+[23.980s] writing pioneer_msgs.egg-info/PKG-INFO
+[23.986s] writing dependency_links to pioneer_msgs.egg-info/dependency_links.txt
+[23.993s] writing top-level names to pioneer_msgs.egg-info/top_level.txt
+[24.031s] reading manifest file 'pioneer_msgs.egg-info/SOURCES.txt'
+[24.058s] [ 74%] [32m[1mLinking CXX shared library libpioneer_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[24.064s] writing manifest file 'pioneer_msgs.egg-info/SOURCES.txt'
+[24.184s] [ 74%] Built target ament_cmake_python_build_pioneer_msgs_egg
+[24.468s] [ 76%] Built target pioneer_msgs__rosidl_typesupport_fastrtps_c
+[24.859s] [ 76%] Built target pioneer_msgs
+[25.290s] [ 78%] Built target pioneer_msgs__py
+[25.491s] [35m[1mConsolidate compiler generated dependencies of target pioneer_msgs__rosidl_generator_py[0m
+[25.844s] gmake[2]: *** No rule to make target '/usr/lib/aarch64-linux-gnu/libpython3.10.so', needed by 'rosidl_generator_py/pioneer_msgs/libpioneer_msgs__rosidl_generator_py.so'.  Stop.
+[25.846s] gmake[2]: *** Waiting for unfinished jobs....
+[25.870s] [ 82%] [32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_generator_py.dir/rosidl_generator_py/pioneer_msgs/msg/_motion_command_s.c.o[0m
+[25.872s] [ 82%] [32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_generator_py.dir/rosidl_generator_py/pioneer_msgs/msg/_status_s.c.o[0m
+[25.907s] [ 85%] [32mBuilding C object CMakeFiles/pioneer_msgs__rosidl_generator_py.dir/rosidl_generator_py/pioneer_msgs/msg/_auv_state_s.c.o[0m
+[26.399s] gmake[1]: *** [CMakeFiles/Makefile2:475: CMakeFiles/pioneer_msgs__rosidl_generator_py.dir/all] Error 2
+[26.400s] gmake: *** [Makefile:146: all] Error 2
+[26.403s] Invoked command in '/src/ros2_ws/build/pioneer_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/src/ros2_ws/install/pixpubsub:/src/ros2_ws/install/imu_publisher:/opt/ros/humble /usr/bin/cmake --build /src/ros2_ws/build/pioneer_msgs -- -j16 -l16
