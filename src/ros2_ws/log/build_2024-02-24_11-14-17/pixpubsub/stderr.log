@@ -1,6 +1,0 @@
-Sorry: IndentationError: expected an indented block after 'else' statement on line 113 (justmove_sub.py, line 139)
-  File "/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/move_pub.py", line 40
-    break
-    ^^^^^
-SyntaxError: 'break' outside loop
-

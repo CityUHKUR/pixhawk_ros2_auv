@@ -1,9 +1,17 @@
 /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/justmove_sub.py
+<<<<<<< HEAD
+/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/bank_msg.py
+=======
 /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/move_pub.py
+>>>>>>> 170d3a4d6404e6dd7a07288e65858d502f940e0f
 /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/pix_pubsub_node.py
 /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/__init__.py
 /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/__pycache__/justmove_sub.cpython-310.pyc
+<<<<<<< HEAD
+/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/__pycache__/bank_msg.cpython-310.pyc
+=======
 /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/__pycache__/move_pub.cpython-310.pyc
+>>>>>>> 170d3a4d6404e6dd7a07288e65858d502f940e0f
 /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/__pycache__/pix_pubsub_node.cpython-310.pyc
 /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/__pycache__/__init__.cpython-310.pyc
 /src/ros2_ws/install/pixpubsub/share/ament_index/resource_index/packages/pixpubsub
