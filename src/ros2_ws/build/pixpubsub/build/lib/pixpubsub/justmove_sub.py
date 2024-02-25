@@ -53,11 +53,6 @@ class PixhawkModule(Node):
         depth_load = depth_list.get()
         task_load = task_list.get()
         statem_load = statem_list.get()
-        
-    def vector_sum(self,depth_list, task_list):
-        sum_vecx = depth_list[0].direction.x +task_list[0].direction.x
-        sum_vecy = depth_list[0].direction.y +task_list[0].direction.y
-        sum_vecz = depth_list[0].direction.z +task_list[0].direction.z
     
     def listener_callback(self, msg):
         vecx_in = msg.direction.x
@@ -85,9 +80,6 @@ class PixhawkModule(Node):
             time_diff = current_time - self.last_msg_time
         self.last_msg_time = current_time  # Update the last message time
         
-        vector_sum(depth_list[0], task_list[0])
-        
-        
         # if header_sender == "depth_node":
         #     depth_list.append(msg)
             
@@ -114,16 +106,11 @@ class PixhawkModule(Node):
         #     time.sleep(1)
           
         print(vecx, vecy, vecz, vecr, turn_bool, distance, time, time_diff, current_time)
-        
-        if time < 2.0: #time module, how long to run
-            self.send_manual_control(vecx, vecy, vecz, vecr)
-            time.sleep(time)
-            self.send_manual_control(0, 0, 0, 0)
-        else:
-            for i in range(time):
-                self.send_manual_control(vecx, vecy, vecz, vecr)
-                time.sleep(1)
-                
+        # if time < 2.0:
+        #     self.send_manual_control(vecx, vecy, vecz, vecr)
+        #     time.sleep(time)
+        #     self.send_manual_control(0, 0, 0, 0)
+        # else:
                 
         # self.send_manual_control(vecx, vecy, vecz, vecr)
 

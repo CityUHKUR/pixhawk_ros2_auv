@@ -20,9 +20,12 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "publisher = pixpubsub.pix_pubsub_node:main",
+            "main_sub = pixpubsub.pix_pubsub_node:main",
             "move_pub = pixpubsub.move_pub:main",
-            "justmove_sub = pixpubsub.justmove_sub:main"
+            "justmove_sub = pixpubsub.justmove_sub:main",
+            "depth_pub = pixpubxub.testdepth_pub:main",
+            "task_pub = pixpubxub.testtask_pub:main",
+            "state_pub = pixpubxub.teststatem_pub:main"            
         ],
     },
 )

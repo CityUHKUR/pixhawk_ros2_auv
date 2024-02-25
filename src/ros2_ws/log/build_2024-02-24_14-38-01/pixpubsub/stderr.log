@@ -1,5 +1,0 @@
-  File "/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/justmove_sub.py", line 123
-    for i in range(time)
-                        ^
-SyntaxError: expected ':'
-

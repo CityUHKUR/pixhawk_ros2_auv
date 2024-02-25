@@ -1,4 +1,3 @@
-from turtle import mode
 from pymavlink import mavutil
 import time
 import rclpy
@@ -6,7 +5,7 @@ from rclpy.node import Node
 from sensor_msgs.msg import Imu
 # from std_msgs.msg import String
 from pioneer_msgs.msg import MotionCommand
-from bank_msg import bank_msg
+from .bank_msg import bank_msg
 import sys
 import serial
 
@@ -28,18 +27,32 @@ class PixhawkModule(Node):
         self.publisher_ = self.create_publisher(Imu, 'imu_data', 1)
         # Data rate (in seconds) - Adjust as needed for your application
         timer_period = 0.1  # 10 Hz
-        self.timer = self.create_timer(timer_period, self.timer_callback)
+        # self.timer = self.create_timer(timer_period, self.timer_callback)
         self.__status = False
-        rate = 1 / 100
+        rate = 0.1
         self.control_timer = self.create_timer(rate, self.control_callback)
         
         self.subscription = self.create_subscription(
             MotionCommand,
-            'movement_topic',
+            'movement_cmd',
             self.listener_callback,
             10)
         self.subscription # prevent unused variable warning
+    
+    def armFunc(self):
+        master = self.__mavlink_connection
+        master.mav.command_long_send(
+            master.target_system,
+            master.target_component,
+            mavutil.mavlink.MAV_CMD_COMPONENT_ARM_DISARM,
+            0,
+            1, 0, 0, 0, 0, 0, 0)
+        # wait until arming confirmed (can manually check with master.motors_armed())
+        print("Waiting for the vehicle to arm")
+        master.motors_armed_wait()
+        print('Armed!')
         
+    
     def modeSetFunc(self, mode='MANUAL'):
         # mode section, tbh dont get
         # mode = 'STABILIZE'
@@ -52,45 +65,46 @@ class PixhawkModule(Node):
             mode_id)
         self.get_logger().info('{} mode set!'.format(mode))
         
-    def timer_callback(self):
-        if not self.__status:
-            self.__connect()
-        try:
-            msg = self.__mavlink_connection.recv_match(type='RAW_IMU', blocking=False)
-            if msg:
-                imu_msg = Imu()
-                imu_msg.linear_acceleration.x = msg.xacc / 1000.0
-                imu_msg.linear_acceleration.y = msg.yacc / 1000.0
-                imu_msg.linear_acceleration.z = msg.zacc / 1000.0
-                imu_msg.angular_velocity.x = msg.xgyro / 1000.0  
-                imu_msg.angular_velocity.y = msg.ygyro / 1000.0
-                imu_msg.angular_velocity.z = msg.zgyro / 1000.0
-                imu_msg.header.stamp = self.get_clock().now().to_msg()
-                imu_msg.header.frame_id = 'imu_link'  
-                self.publisher_.publish(imu_msg)
-        except Exception as e:
-            self.__status = False
-            self.get_logger().error('Failed to read IMU data: {}'.format(e))
-            time.sleep(1)
+    # def timer_callback(self):
+    #     if not self.__status:
+    #         self.__connect()
+    #     try:
+    #         msg = self.__mavlink_connection.recv_match(type='RAW_IMU', blocking=False)
+    #         if msg:
+    #             imu_msg = Imu()
+    #             imu_msg.linear_acceleration.x = msg.xacc / 1000.0
+    #             imu_msg.linear_acceleration.y = msg.yacc / 1000.0
+    #             imu_msg.linear_acceleration.z = msg.zacc / 1000.0
+    #             imu_msg.angular_velocity.x = msg.xgyro / 1000.0  
+    #             imu_msg.angular_velocity.y = msg.ygyro / 1000.0
+    #             imu_msg.angular_velocity.z = msg.zgyro / 1000.0
+    #             imu_msg.header.stamp = self.get_clock().now().to_msg()
+    #             imu_msg.header.frame_id = 'imu_link'  
+    #             self.publisher_.publish(imu_msg)
+    #     except Exception as e:
+    #         self.__status = False
+    #         self.get_logger().error('Failed to read IMU data: {}'.format(e))
+    #         time.sleep(1)
     
-    def __connect(self):
-        print("Connecting to Pixhawk...")
-        try:
-            self.__mavlink_connection = mavutil.mavlink_connection('/dev/ttyACM0', baud=115200)
-            self.__mavlink_connection.wait_heartbeat()
-            # Request IMU data at an appropriate data rate
-            self.__mavlink_connection.mav.request_data_stream_send(self.__mavlink_connection.target_system,
-                                                            self.__mavlink_connection.target_component,
-                                                            mavutil.mavlink.MAV_DATA_STREAM_RAW_SENSORS,
-                                                            10, 1)  # Adjust rate as needed
-            self.__status = True
-            print("Connected to Pixhawk!")
-            self.modeSetFunc(mode='ALT_HOLD')
-        except Exception as e:
-            self.get_logger().error('Failed to connect to Pixhawk: {}'.format(e))
-            self.__status = False
+    # def __connect(self):
+    #     print("Connecting to Pixhawk...")
+    #     try:
+    #         self.__mavlink_connection = mavutil.mavlink_connection('/dev/ttyACM1', baud=115200)
+    #         self.__mavlink_connection.wait_heartbeat()
+    #         # Request IMU data at an appropriate data rate
+    #         self.__mavlink_connection.mav.request_data_stream_send(self.__mavlink_connection.target_system,
+    #                                                         self.__mavlink_connection.target_component,
+    #                                                         mavutil.mavlink.MAV_DATA_STREAM_RAW_SENSORS,
+    #                                                         10, 1)  # Adjust rate as needed
+    #         self.__status = True
+    #         print("Connected to Pixhawk!")
+    #         self.modeSetFunc(mode='ALT_HOLD')
+    #         self.armFunc()
+    #     except Exception as e:
+    #         self.get_logger().error('Failed to connect to Pixhawk: {}'.format(e))
+    #         self.__status = False
 
-    def command_loader(self, node_name,preepmtive=False):
+    def load_command(self, node_name,preepmtive=False):
         if len(self.command_bank[node_name]) <= 0: return
         if preepmtive:
             self.command_loader[node_name] = self.command_bank[node_name].pop(0)
@@ -101,14 +115,16 @@ class PixhawkModule(Node):
 
     def control_callback(self):
         # remove commands that have expired
-        for key in self.command_bank:
-            self.command_bank[key].remove(item for item in self.command_bank[key] if time.time() - item.init_time > item.time + self.ALLOW_RANGE)
+        # self.get_logger().info(f'Executing: "{self.command_bank}"')
+        # for key in self.command_bank:
+        #     if len(self.command_bank[key]) <= 0: return
+        #     self.command_bank[key].remove(item for item in self.command_bank[key] if time.time() - item.init_time > item.time + self.ALLOW_RANGE)
             
         
         # load commands from command bank into command loader
-        self.command_loader("depth_node", preepmtive=True)
-        self.command_loader("task_node")
-        self.command_loader("sm_node")
+        self.load_command("depth_node", preepmtive=True)
+        self.load_command("task_node")
+        self.load_command("sm_node")
         
         # compute the command to be executed
         __command = {"x": 0, "y": 0, "z": 0, "r": 0}
@@ -121,12 +137,12 @@ class PixhawkModule(Node):
             __command["z"] += __z
             __command["r"] += __r
             
-        self.send_manual_control(__command["x"], __command["y"], __command["z"], __command["r"])
+        # self.send_manual_control(__command["x"], __command["y"], __command["z"], __command["r"])
         self.get_logger().info(f'Executing: "{__command}"')    
 
     def send_manual_control(self, x, y, z, r):
-        self.master.mav.manual_control_send(
-            self.target_system,
+        self.__mavlink_connection.mav.manual_control_send(
+            self.__mavlink_connection.target_system,
             x, # forward/background
             y, # strafe left/right
             z, # up/down
@@ -142,7 +158,7 @@ class PixhawkModule(Node):
             # TODO: implement distance to time conversion
             pass
                
-        msg_ = bank_msg(x=msg.direction.x, y=msg.direction.y, z=msg.direction.z, turn_mode=msg.turn_mode, distance=msg.distance, time=msg.time) 
+        msg_ = bank_msg(x=msg.direction.x, y=msg.direction.y, z=msg.direction.z, turn_mode=msg.turn_mode, distance=msg.distance, time_=msg.time) 
         if __frame_id == "depth_node":
             self.command_bank["depth_node"].append(msg_)
         if __frame_id == "task1_node" or __frame_id == "task2_node" or __frame_id == "task4_node":
