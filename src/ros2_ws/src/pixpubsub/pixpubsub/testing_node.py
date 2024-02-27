@@ -11,15 +11,6 @@ class MinimalPublisher(Node):
         self.publisher_ = self.create_publisher(MotionCommand, 'movement_cmd',  10)
         self.i =  0
 
-    # def send_manual_control(self, x, y, z, r):
-    # self.master.mav.manual_control_send(
-    #     self.target_system,
-    #     x, # forward/background
-    #     y, # strafe left/right
-    #     z, # up/down
-    #     r, # turn left/right
-    #     0)
-
     def send_msg(self, turnin, xin, yin, zin, disin, timein):
         msg = MotionCommand()
         msg.header.stamp = self.get_clock().now().to_msg()  # Set the timestamp

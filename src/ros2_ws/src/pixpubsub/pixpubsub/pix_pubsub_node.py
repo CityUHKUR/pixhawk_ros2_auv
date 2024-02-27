@@ -27,7 +27,7 @@ class PixhawkModule(Node):
         self.publisher_ = self.create_publisher(Imu, 'imu_data', 1)
         # Data rate (in seconds) - Adjust as needed for your application
         timer_period = 0.1  # 10 Hz
-        # self.timer = self.create_timer(timer_period, self.timer_callback)
+        self.timer = self.create_timer(timer_period, self.timer_callback)
         self.__status = False
         rate = 0.1
         self.control_timer = self.create_timer(rate, self.control_callback)
@@ -65,60 +65,72 @@ class PixhawkModule(Node):
             mode_id)
         self.get_logger().info('{} mode set!'.format(mode))
         
-    # def timer_callback(self):
-    #     if not self.__status:
-    #         self.__connect()
-    #     try:
-    #         msg = self.__mavlink_connection.recv_match(type='RAW_IMU', blocking=False)
-    #         if msg:
-    #             imu_msg = Imu()
-    #             imu_msg.linear_acceleration.x = msg.xacc / 1000.0
-    #             imu_msg.linear_acceleration.y = msg.yacc / 1000.0
-    #             imu_msg.linear_acceleration.z = msg.zacc / 1000.0
-    #             imu_msg.angular_velocity.x = msg.xgyro / 1000.0  
-    #             imu_msg.angular_velocity.y = msg.ygyro / 1000.0
-    #             imu_msg.angular_velocity.z = msg.zgyro / 1000.0
-    #             imu_msg.header.stamp = self.get_clock().now().to_msg()
-    #             imu_msg.header.frame_id = 'imu_link'  
-    #             self.publisher_.publish(imu_msg)
-    #     except Exception as e:
-    #         self.__status = False
-    #         self.get_logger().error('Failed to read IMU data: {}'.format(e))
-    #         time.sleep(1)
+    def timer_callback(self):
+        if not self.__status:
+            self.__connect()
+            
+        
+        try:
+            msg = self.__mavlink_connection.recv_match(type='RAW_IMU', blocking=False)
+            if msg:
+                imu_msg = Imu()
+                imu_msg.linear_acceleration.x = msg.xacc / 1000.0
+                imu_msg.linear_acceleration.y = msg.yacc / 1000.0
+                imu_msg.linear_acceleration.z = msg.zacc / 1000.0
+                imu_msg.angular_velocity.x = msg.xgyro / 1000.0  
+                imu_msg.angular_velocity.y = msg.ygyro / 1000.0
+                imu_msg.angular_velocity.z = msg.zgyro / 1000.0
+                imu_msg.header.stamp = self.get_clock().now().to_msg()
+                imu_msg.header.frame_id = 'imu_link'  
+                self.publisher_.publish(imu_msg)
+        except Exception as e:
+            self.__status = False
+            self.get_logger().error('Failed to read IMU data: {}'.format(e))
+            time.sleep(1)
     
-    # def __connect(self):
-    #     print("Connecting to Pixhawk...")
-    #     try:
-    #         self.__mavlink_connection = mavutil.mavlink_connection('/dev/ttyACM1', baud=115200)
-    #         self.__mavlink_connection.wait_heartbeat()
-    #         # Request IMU data at an appropriate data rate
-    #         self.__mavlink_connection.mav.request_data_stream_send(self.__mavlink_connection.target_system,
-    #                                                         self.__mavlink_connection.target_component,
-    #                                                         mavutil.mavlink.MAV_DATA_STREAM_RAW_SENSORS,
-    #                                                         10, 1)  # Adjust rate as needed
-    #         self.__status = True
-    #         print("Connected to Pixhawk!")
-    #         self.modeSetFunc(mode='ALT_HOLD')
-    #         self.armFunc()
-    #     except Exception as e:
-    #         self.get_logger().error('Failed to connect to Pixhawk: {}'.format(e))
-    #         self.__status = False
+    def __connect(self):
+        print("Connecting to Pixhawk...")
+        try:
+            self.__mavlink_connection = mavutil.mavlink_connection('/dev/ttyACM1', baud=115200)
+            self.__mavlink_connection.wait_heartbeat()
+            # Request IMU data at an appropriate data rate
+            self.__mavlink_connection.mav.request_data_stream_send(self.__mavlink_connection.target_system,
+                                                            self.__mavlink_connection.target_component,
+                                                            mavutil.mavlink.MAV_DATA_STREAM_RAW_SENSORS,
+                                                            10, 1)  # Adjust rate as needed
+            self.__status = True
+            print("Connected to Pixhawk!")
+            self.modeSetFunc(mode='ALT_HOLD')
+            self.armFunc()
+        except Exception as e:
+            self.get_logger().error('Failed to connect to Pixhawk: {}'.format(e))
+            self.__status = False
 
     def load_command(self, node_name,preepmtive=False):
         if len(self.command_bank[node_name]) <= 0: return
         if preepmtive:
             self.command_loader[node_name] = self.command_bank[node_name].pop(0)
             self.command_loader[node_name].start_time = time.time()
+            self.command_loader[node_name].end_time = time.time() + self.command_loader[node_name].time
         
         # TODO: implement time based command loading
+        if self.command_loader[node_name].end_time < time.time():
+            self.command_loader[node_name] = self.command_bank[node_name].pop(0)
+            self.command_loader[node_name].start_time = time.time()
         
 
     def control_callback(self):
         # remove commands that have expired
-        # self.get_logger().info(f'Executing: "{self.command_bank}"')
-        # for key in self.command_bank:
-        #     if len(self.command_bank[key]) <= 0: return
-        #     self.command_bank[key].remove(item for item in self.command_bank[key] if time.time() - item.init_time > item.time + self.ALLOW_RANGE)
+        self.get_logger().info(f'Executing: "{self.command_bank}"')
+        for key in self.command_bank:
+            if len(self.command_bank[key]) <= 0: continue
+            # find all index of the expired command
+            __expired_index = []
+            for i in range(len(self.command_bank[key])):
+                if self.command_bank[key][i].end_time < time.time(): __expired_index.append(i)
+            # remove all expired commands
+            self.command_bank[key].pop(i for i in __expired_index)
+                
             
         
         # load commands from command bank into command loader
@@ -137,7 +149,7 @@ class PixhawkModule(Node):
             __command["z"] += __z
             __command["r"] += __r
             
-        # self.send_manual_control(__command["x"], __command["y"], __command["z"], __command["r"])
+        self.send_manual_control(__command["x"], __command["y"], __command["z"], __command["r"])
         self.get_logger().info(f'Executing: "{__command}"')    
 
     def send_manual_control(self, x, y, z, r):
@@ -165,26 +177,6 @@ class PixhawkModule(Node):
             self.command_bank["task_node"].append(msg_)
         if __frame_id == "sm_node":
             self.command_bank["sm_node"].append(msg_)
-        
-
-    
-    # def vector_control_tl():
-    #     while True:  # Keep running until a non-number input is given
-    #         try:
-    #             print("Please enter four floats between -1 and 1:")
-    #             vecstr = input() 
-    #             veclist = vecstr.split()
-    #             #  vectors = get_float_input("Float 1: ")
-    #             # Map each float to the range -1000 to 1000
-    #             vecx = map_to_range(float(veclist[0]), -1, 1, -1000, 1000)
-    #             vecy = map_to_range(float(veclist[1]), -1, 1, -1000, 1000)
-    #             vecz = map_to_range(float(veclist[2]), -1, 1, 0, 1000)
-    #             vecr = map_to_range(float(veclist[3]), -1, 1, -1000, 1000)
-    #             print(vecx,vecy,vecz,vecr)
-    #             send_manual_control(vecx, vecy, vecz, vecr)
-    #         except ValueError:
-    #             print("Non-number input detected. Exiting the program.")
-    #             break  # Exit the loop when a non-number input is given
     
     
         
