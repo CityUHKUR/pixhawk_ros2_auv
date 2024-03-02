@@ -10,12 +10,8 @@ setup.py
 ../../build/pixpubsub/pixpubsub.egg-info/zip-safe
 pixpubsub/__init__.py
 pixpubsub/bank_msg.py
-pixpubsub/justmove_sub.py
-pixpubsub/move_pub.py
 pixpubsub/pix_pubsub_node.py
-pixpubsub/testdepth_pub.py
-pixpubsub/teststatem_pub.py
-pixpubsub/testtask_pub.py
+pixpubsub/testing_node.py
 resource/pixpubsub
 test/test_copyright.py
 test/test_flake8.py

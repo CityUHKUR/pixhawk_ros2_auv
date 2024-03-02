@@ -1,8 +1,4 @@
 [console_scripts]
-depth_pub = pixpubxub.testdepth_pub:main
-justmove_sub = pixpubsub.justmove_sub:main
-main_sub = pixpubsub.pix_pubsub_node:main
-move_pub = pixpubsub.move_pub:main
-state_pub = pixpubxub.teststatem_pub:main
-task_pub = pixpubxub.testtask_pub:main
+pixhawk_worker = pixpubsub.pix_pubsub_node:main
+testing_node = pixpubsub.testing_node:main
 
