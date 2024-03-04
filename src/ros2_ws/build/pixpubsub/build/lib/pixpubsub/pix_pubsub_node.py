@@ -105,7 +105,7 @@ class PixhawkModule(Node):
     def __connect(self):
         print("Connecting to Pixhawk...")
         try:
-            self.__mavlink_connection = mavutil.mavlink_connection('/dev/ttyACM1', baud=115200)
+            self.__mavlink_connection = mavutil.mavlink_connection('/dev/ttyACM0', baud=115200)
             self.__mavlink_connection.wait_heartbeat()
             # Request IMU data at an appropriate data rate
             self.__mavlink_connection.mav.request_data_stream_send(self.__mavlink_connection.target_system,
@@ -115,6 +115,14 @@ class PixhawkModule(Node):
             self.__status = True
             print("Connected to Pixhawk!")
             mode_in = self.get_parameter('mode_param').get_parameter_value().string_value
+            # self.modeSetFunc(mode=mode_in)
+            new_mode_param = rclpy.parameter.Parameter(
+                'mode_param',
+                rclpy.Parameter.Type.STRING,
+                'ALT_HOLD'
+            )
+            all_new_parameters = [new_mode_param]
+            self.set_parameters(all_new_parameters)
             self.modeSetFunc(mode=mode_in)
             self.armFunc()
         except Exception as e:
