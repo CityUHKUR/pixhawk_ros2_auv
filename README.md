@@ -20,4 +20,10 @@ A docker service containing ROS2 packages for interfacing with Pixhawk.
 - in another terminal ```ros2 run pixpubsub move_pub``` testing code, which sends movement, front/back, left/right, up/down, turn left/right
 - may need to manually uncomment `self.send_manual_control(vecx, vecy, vecz, vecr)` as this for testing without pixhawk
 - may need to uncomment other code also
+
+## Param cmds
+- `ros2 param list`
+- `ros2 run pixpubsub pixhawk_worker --ros-args -p "mode_param:=MANUAL"`change mode at start switch the MANUAL with other mode names
+- `ros2 param get /pixhawk_module mode_param` get current mode
+- `ros2 param set /pixhawk_module mode_param "MANUAL"`set mode when node is running
   
