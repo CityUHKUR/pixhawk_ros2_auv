@@ -9,6 +9,14 @@ class MinimalPublisher(Node):
     def __init__(self):
         super().__init__('minimal_publisher')
         self.publisher_ = self.create_publisher(MotionCommand, 'movement_cmd',  10)
+        self.declare_parameter('bool_param', rclpy.Parameter.Type.BOOL, default_value=False)
+        self.declare_parameter('double_array_param', rclpy.Parameter.Type.DOUBLE_ARRAY, default_value=[1.0, 0.0, 0.0])
+
+        # param_bl = self.get_parameter('turn_bl')
+        # param_arr = self.get_parameter('vector_arr')
+        # self.get_logger().info("bool: %s, double[]: %s" %
+        #                     (str(param_bl.value),
+        #                     str(param_arr.value),))
         self.i =  0
 
     def send_msg(self, turnin, xin, yin, zin, disin, timein):
@@ -48,6 +56,17 @@ class MinimalPublisher(Node):
 
 
     def publish_motion_command(self):
+        bool_param = self.get_parameter('bool_param').value
+        double_array_param = self.get_parameter('double_array_param').value
+        
+        self.get_logger().info("bool: %s, double[]: %s" %
+                               (str(bool_param),
+                                str(double_array_param),))
+        
+        x, y, z = double_array_param
+        while True:
+            self.send_msg(bool_param, x, y, z, 1.0, 0.0)
+
         time.sleep(6)
         # for i in range(8): # should go up
         #     msg = self.cmd_selector(4)
@@ -59,23 +78,23 @@ class MinimalPublisher(Node):
         #     self.get_logger().info(f'Publishing: "{msg}"')
         #     time.sleep(1)
         # self.get_logger().info('Publishing completed.')
-        time.sleep(6)
-        for i in range(8):  # Loop from  0 to  7
-            msg = self.cmd_selector(i)
-            self.get_logger().info(f'Publishing: "{msg}"')
-            time.sleep(1)
-        self.get_logger().info('Publishing completed.')
         
-        for i in range(8):  # Loop from  0 to  7
-            msg = self.cmd_selector(i)
-            self.get_logger().info(f'Publishing: "{msg}"')
-            time.sleep(5)
-        self.get_logger().info('Publishing completed.')
+        # for i in range(8):  # Loop from  0 to  7
+        #     msg = self.cmd_selector(i)
+        #     self.get_logger().info(f'Publishing: "{msg}"')
+        #     time.sleep(1)
+        # self.get_logger().info('Publishing completed.')
         
-        msg = self.cmd_selector(8)
-        self.get_logger().info(f'Publishing: "{msg}"')
-        time.sleep(1)
-        self.get_logger().info('Publishing completed.')
+        # for i in range(8):  # Loop from  0 to  7
+        #     msg = self.cmd_selector(i)
+        #     self.get_logger().info(f'Publishing: "{msg}"')
+        #     time.sleep(5)
+        # self.get_logger().info('Publishing completed.')
+        
+        # msg = self.cmd_selector(8)
+        # self.get_logger().info(f'Publishing: "{msg}"')
+        # time.sleep(1)
+        # self.get_logger().info('Publishing completed.')
         
         
 
