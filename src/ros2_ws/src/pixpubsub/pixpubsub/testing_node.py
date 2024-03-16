@@ -56,16 +56,21 @@ class MinimalPublisher(Node):
 
 
     def publish_motion_command(self):
-        bool_param_in = self.get_parameter('bool_param')
-        double_array_param_in = self.get_parameter('arr_param')
-        
-        self.get_logger().info("bool: %s, double[]: %s" %
-                               (str(bool_param_in),
-                                str(double_array_param_in),))
-        
-        x, y, z = double_array_param_in
-        while True:
-            self.send_msg(bool_param_in, x, y, z, 1.0, 0.0)
+        try:
+            
+            bool_param_in = self.get_parameter('bool_param')
+            double_array_param_in = self.get_parameter('arr_param')
+            
+            self.get_logger().info("bool: %s, double[]: %s" %
+                                (str(bool_param_in),
+                                    str(double_array_param_in),))
+            self.get_logger().info(type(double_array_param_in))
+            x, y, z = double_array_param_in
+            while True:
+                self.send_msg(bool_param_in, x, y, z, 1.0, 0.0)
+        except:
+            self.get_logger().warn("smth wrong")
+            pass
 
         time.sleep(6)
         # for i in range(8): # should go up

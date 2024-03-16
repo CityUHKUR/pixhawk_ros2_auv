@@ -155,7 +155,7 @@ class PixhawkModule(Node):
             for i in range(len(self.command_bank[key])):
                 if self.command_bank[key][i].end_time < time.time(): __expired_index.append(i)
             # remove all expired commands
-            self.command_bank[key].pop(i for i in __expired_index)
+            self.command_bank[key].pop(int(i) for i in __expired_index)
         
         # load commands from command bank into command loader
         self.load_command("depth_node", preepmtive=True)

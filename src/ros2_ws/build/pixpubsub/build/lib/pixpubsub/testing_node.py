@@ -8,10 +8,10 @@ class MinimalPublisher(Node):
 
     def __init__(self):
         super().__init__('minimal_publisher')
-        self.publisher_ = self.create_publisher(MotionCommand, 'movement_cmd',  10)
-        self.declare_parameter('bool_param', rclpy.Parameter.Type.BOOL, default_value=False)
-        self.declare_parameter('double_array_param', rclpy.Parameter.Type.DOUBLE_ARRAY, default_value=[1.0, 0.0, 0.0])
-
+        self.publisher_ = self.create_publisher(MotionCommand, 'movement_cmd',  10)      
+        self.declare_parameter('bool_param', False)
+        self.declare_parameter('arr_param', [1.0, 0.0, 0.0])
+        
         # param_bl = self.get_parameter('turn_bl')
         # param_arr = self.get_parameter('vector_arr')
         # self.get_logger().info("bool: %s, double[]: %s" %
@@ -56,16 +56,21 @@ class MinimalPublisher(Node):
 
 
     def publish_motion_command(self):
-        bool_param = self.get_parameter('bool_param').value
-        double_array_param = self.get_parameter('double_array_param').value
-        
-        self.get_logger().info("bool: %s, double[]: %s" %
-                               (str(bool_param),
-                                str(double_array_param),))
-        
-        x, y, z = double_array_param
-        while True:
-            self.send_msg(bool_param, x, y, z, 1.0, 0.0)
+        try:
+            
+            bool_param_in = self.get_parameter('bool_param')
+            double_array_param_in = self.get_parameter('arr_param')
+            
+            self.get_logger().info("bool: %s, double[]: %s" %
+                                (str(bool_param_in),
+                                    str(double_array_param_in),))
+            self.get_logger().info(type(double_array_param_in))
+            x, y, z = double_array_param_in
+            while True:
+                self.send_msg(bool_param_in, x, y, z, 1.0, 0.0)
+        except:
+            self.get_logger().warn("smth wrong")
+            pass
 
         time.sleep(6)
         # for i in range(8): # should go up

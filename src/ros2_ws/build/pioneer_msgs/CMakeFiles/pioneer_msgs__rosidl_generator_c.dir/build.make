@@ -147,7 +147,7 @@ rosidl_generator_c/pioneer_msgs/msg/motion_command.h: /opt/ros/humble/share/geom
 rosidl_generator_c/pioneer_msgs/msg/motion_command.h: /opt/ros/humble/share/geometry_msgs/msg/Wrench.idl
 rosidl_generator_c/pioneer_msgs/msg/motion_command.h: /opt/ros/humble/share/geometry_msgs/msg/WrenchStamped.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/src/ros2_ws/build/pioneer_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
-	/usr/bin/python3.10 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c__arguments.json
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /src/ros2_ws/build/pioneer_msgs/rosidl_generator_c__arguments.json
 
 rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__functions.h: rosidl_generator_c/pioneer_msgs/msg/motion_command.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/pioneer_msgs/msg/detail/motion_command__functions.h
