@@ -5,6 +5,7 @@ from rclpy.node import Node
 from sensor_msgs.msg import Imu, FluidPressure
 from pioneer_msgs.msg import MotionCommand
 from .bank_msg import bank_msg
+from diagnostic_msgs.msg import DiagnosticArray, DiagnosticStatus, KeyValue
 
 class PixhawkModule(Node):
 
@@ -38,6 +39,12 @@ class PixhawkModule(Node):
             self.listener_callback,
             10)
         self.subscription # prevent unused variable warning
+        
+        self.sub_status = self.create_subscription(
+            DiagnosticArray,
+            'hardware_status',
+            self.status_callback,
+            10)
     
     def armFunc(self):
         master = self.__mavlink_connection
@@ -65,7 +72,18 @@ class PixhawkModule(Node):
             mode_id)
         self.get_logger().info('{} mode set!'.format(mode))
         
+    def status_callback(self, msg):
+        for status in msg.status:
+            if status.name == 'Shark Fin':
+                for kv in status.values:
+                    if kv.key == 'State':
+                        self.get_logger().info('Shark Fin is %s' % kv.value)
+                        if kv.value == 'Attached' and not self.__status:
+                            self.__connect()
+                            
+        
     def timer_callback(self):
+        
         if not self.__status:
             self.__connect()
             
