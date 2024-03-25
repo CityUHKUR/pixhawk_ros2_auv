@@ -9,8 +9,8 @@ class MinimalPublisher(Node):
     def __init__(self):
         super().__init__('minimal_publisher')
         self.publisher_ = self.create_publisher(MotionCommand, 'movement_cmd',  10)      
-        self.declare_parameter('bool_param', False)
-        self.declare_parameter('arr_param', [1.0, 0.0, 0.0])
+        #self.declare_parameter('bool_param', False)
+        #self.declare_parameter('arr_param', [1.0, 0.0, 0.0])
         
         # param_bl = self.get_parameter('turn_bl')
         # param_arr = self.get_parameter('vector_arr')
@@ -56,6 +56,7 @@ class MinimalPublisher(Node):
 
 
     def publish_motion_command(self):
+        """
         try:
             
             bool_param_in = self.get_parameter('bool_param')
@@ -71,13 +72,14 @@ class MinimalPublisher(Node):
         except:
             self.get_logger().warn("smth wrong")
             pass
+        """
 
         time.sleep(6)
-        # for i in range(8): # should go up
-        #     msg = self.cmd_selector(4)
-        #     self.get_logger().info(f'Publishing: "{msg}"')
-        #     time.sleep(1)
-        # self.get_logger().info('Publishing completed.')
+        for i in range(8): # should go up
+            msg = self.cmd_selector(0)
+            self.get_logger().info(f'Publishing: "{msg}"')
+            time.sleep(1)
+        self.get_logger().info('Publishing completed.')
         # for i in range(8): # should go up
         #     msg = self.cmd_selector(0)
         #     self.get_logger().info(f'Publishing: "{msg}"')
@@ -100,8 +102,7 @@ class MinimalPublisher(Node):
         # self.get_logger().info(f'Publishing: "{msg}"')
         # time.sleep(1)
         # self.get_logger().info('Publishing completed.')
-        
-        
+               
 
 
 def main(args=None):

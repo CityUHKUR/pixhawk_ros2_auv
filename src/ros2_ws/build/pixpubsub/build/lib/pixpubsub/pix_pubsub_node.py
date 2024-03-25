@@ -31,6 +31,7 @@ class PixhawkModule(Node):
         self.__status = False
         rate = 0.1
         self.control_timer = self.create_timer(rate, self.control_callback)
+
         
         self.subscription = self.create_subscription(
             MotionCommand,
@@ -93,7 +94,7 @@ class PixhawkModule(Node):
             self.publisher_imu.publish(imu_msg)
     
     def send_sensor_msg(self):
-        msg = self.__mavlink_connection.recv_match(type='RAW_PRESSURE', blocking=False)
+        msg = self.__mavlink_connection.recv_match(type='SCALED_PRESSURE2', blocking=False)
         if msg:
             sensor_msg = FluidPressure()
             sensor_msg.fluid_pressure = msg.press_abs
@@ -139,9 +140,9 @@ class PixhawkModule(Node):
             self.command_loader[node_name].end_time = time.time() + self.command_loader[node_name].time
         
         # TODO: implement time based command loading
-        if self.command_loader[node_name].end_time < time.time():
-            self.command_loader[node_name] = self.command_bank[node_name].pop(0)
-            self.command_loader[node_name].start_time = time.time()
+        #if self.command_loader[node_name].end_time < time.time():
+        #   self.command_loader[node_name] = self.command_bank[node_name].pop(0)
+        #    self.command_loader[node_name].start_time = time.time()
 
         
 
@@ -155,7 +156,7 @@ class PixhawkModule(Node):
             for i in range(len(self.command_bank[key])):
                 if self.command_bank[key][i].end_time < time.time(): __expired_index.append(i)
             # remove all expired commands
-            self.command_bank[key].pop(int(i) for i in __expired_index)
+            # self.command_bank[key].pop(int(i) for i in __expired_index)
         
         # load commands from command bank into command loader
         self.load_command("depth_node", preepmtive=True)

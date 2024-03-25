@@ -1,7 +1,9 @@
+/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/fuck_node.py
 /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/__init__.py
 /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/bank_msg.py
 /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/testing_node.py
 /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/pix_pubsub_node.py
+/src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/__pycache__/fuck_node.cpython-310.pyc
 /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/__pycache__/__init__.cpython-310.pyc
 /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/__pycache__/bank_msg.cpython-310.pyc
 /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub/__pycache__/testing_node.cpython-310.pyc
@@ -15,5 +17,6 @@
 /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub-0.0.0-py3.10.egg-info/requires.txt
 /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub-0.0.0-py3.10.egg-info/SOURCES.txt
 /src/ros2_ws/install/pixpubsub/lib/python3.10/site-packages/pixpubsub-0.0.0-py3.10.egg-info/entry_points.txt
+/src/ros2_ws/install/pixpubsub/lib/pixpubsub/fucknode
 /src/ros2_ws/install/pixpubsub/lib/pixpubsub/pixhawk_worker
 /src/ros2_ws/install/pixpubsub/lib/pixpubsub/testing_node

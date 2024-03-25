@@ -21,7 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             "pixhawk_worker = pixpubsub.pix_pubsub_node:main",
-            "testing_node = pixpubsub.testing_node:main"           
+            "testing_node = pixpubsub.testing_node:main",  
+            "fucknode = pixpubsub.fuck_node:main",
         ],
     },
 )

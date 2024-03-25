@@ -10,6 +10,7 @@ setup.py
 ../../build/pixpubsub/pixpubsub.egg-info/zip-safe
 pixpubsub/__init__.py
 pixpubsub/bank_msg.py
+pixpubsub/fuck_node.py
 pixpubsub/pix_pubsub_node.py
 pixpubsub/testing_node.py
 resource/pixpubsub
