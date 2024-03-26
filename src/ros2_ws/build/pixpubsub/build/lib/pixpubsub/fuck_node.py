@@ -7,7 +7,7 @@ import time
 class MinimalSubscriber(Node):
     def __init__(self):
         super().__init__('minimal_subscriber')
-        self.last_msg_time = self.get_clock().now()
+        self.first_callback = True
 
     def build_subscriber(self):
         self.get_logger().info("Starting depth node")
@@ -20,7 +20,6 @@ class MinimalSubscriber(Node):
         self.subscription  # prevent unused variable warning
         # Initialize configurable parameters
         self.initialize_parameters()
-        self.timer = self.create_timer(1.0, self.check_for_messages)
 
     def initialize_parameters(self):
         # Configurable parameters
@@ -43,42 +42,49 @@ class MinimalSubscriber(Node):
         return depth
 
     def depth_callback(self, msg):
-        self.get_logger().info("I heard msg {}".format(msg))
-        self.last_msg_time = self.get_clock().now()
-        # Check if the 'fluid_pressure' field exists in the message
+        if self.first_callback:
+            self.get_logger().info("sucessfully enter callback function")
+            self.first_callback = False
+            
         try:
-            if hasattr(msg, 'fluid_pressure'):
-                depth = self.calculate_depth(msg.fluid_pressure)
-                print(f'Calculated Depth: {depth} meters')
-                self.get_logger().info("Float")
+            self.get_logger().info("I heard msg {}".format(msg.data))
+            self.last_msg_time = self.get_clock().now()
+            depth = self.calculate_depth(msg.data)
+            print(f'Calculated Depth: {depth} meters')
+
+            if (depth > 1.8):
+                self.get_logger().warn("Float")
             else:
-                self.get_logger().info('The message does not contain a fluid_pressure field')
+                self.get_logger().info("Fine")
         except:
-            self.get_logger().warn("fuck")
+            self.get_logger().warn("The message does not contain a fluid_pressure field")
             pass
-
-    def check_for_messages(self):
-        # If it's been more than a second since the last message
-        if self.get_clock().now() - self.last_msg_time > rclpy.duration.Duration(seconds=1):
-            self.get_logger().info('The message does not contain a fluid_pressure field')
-
             
 def main(args=None):
     rclpy.init(args=args)
     minimal_subscriber = MinimalSubscriber()
+    ros_shutdown = False
 
     def ros_spin():
+        nonlocal ros_shutdown
         print("ROS2 Spins")
+
         try:
             while rclpy.ok():
                 rclpy.spin_once(minimal_subscriber, timeout_sec=0.001)  # or other value
         except KeyboardInterrupt:
             pass
 
+        finally:
+            if not ros_shutdown:
+                rclpy.shutdown()
+                ros_shutdown = True
+
     ros_thread = threading.Thread(target=ros_spin, args=())
     ros_thread.start()
     time.sleep(0)
     minimal_subscriber.build_subscriber()
+
     # Main thread
     print("Main thread begins")
     while True:
@@ -87,8 +93,10 @@ def main(args=None):
         except KeyboardInterrupt:
             break
 
-    minimal_subscriber.destroy_node()
-    rclpy.shutdown()
+    if not ros_shutdown and rclpy.ok():
+        minimal_subscriber.destroy_node()
+        rclpy.shutdown()
 
+    
 if __name__ == '__main__':
     main()
