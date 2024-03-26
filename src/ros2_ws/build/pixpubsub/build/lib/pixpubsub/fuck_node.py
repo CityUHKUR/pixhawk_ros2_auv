@@ -23,42 +23,51 @@ class MinimalSubscriber(Node):
 
     def initialize_parameters(self):
         # Configurable parameters
-        self.declare_parameter("surface_pressure", 101325)  # Pa
-        self.declare_parameter("fluid_density", 1025)  # kg/m³
+        # self.declare_parameter("surface_pressure", 101325)  # Pa
+        self.declare_parameter("fluid_density", 997.04)  # kg/m³
         self.declare_parameter("gravity", 9.81)  # m/s²
-        self.declare_parameter("max_depth", 0.5)  # meters
+        self.declare_parameter("max_depth", 2.0)  # meters
 
     def calculate_depth(self, fluid_pressure):
         # Get the configurable parameters
-        surface_pressure = self.get_parameter("surface_pressure").value
+        # surface_pressure = self.get_parameter("surface_pressure").value
         fluid_density = self.get_parameter("fluid_density").value
         gravity = self.get_parameter("gravity").value
         max_depth = self.get_parameter("max_depth").value
         # Calculate the depth
-        depth = (fluid_pressure - surface_pressure) / (fluid_density * gravity)
+        depth = fluid_pressure / (fluid_density * gravity)
         # Ensure the depth is within the pool's maximum depth
         if depth > max_depth:
             depth = max_depth
         return depth
 
     def depth_callback(self, msg):
+        self.get_logger().info("I heard msg {}".format(msg.fluid_pressure))
         if self.first_callback:
             self.get_logger().info("sucessfully enter callback function")
             self.first_callback = False
-            
-        try:
-            self.get_logger().info("I heard msg {}".format(msg.data))
-            self.last_msg_time = self.get_clock().now()
-            depth = self.calculate_depth(msg.data)
-            print(f'Calculated Depth: {depth} meters')
 
+        if hasattr(msg, 'fluid_pressure'):
+            depth = self.calculate_depth(msg.fluid_pressure)
+            self.get_logger().info(f'Calculated Depth: {depth} meters')
             if (depth > 1.8):
                 self.get_logger().warn("Float")
             else:
                 self.get_logger().info("Fine")
-        except:
+        else:
             self.get_logger().warn("The message does not contain a fluid_pressure field")
-            pass
+        
+        # try:
+        #     depth = self.calculate_depth(msg.fluid_pressure)
+        #     print(f'Calculated Depth: {depth} meters')
+
+        #     if (depth > 1.8):
+        #         self.get_logger().warn("Float")
+        #     else:
+        #         self.get_logger().info("Fine")
+        # except:
+        #     self.get_logger().warn("The message does not contain a fluid_pressure field")
+        #     pass
             
 def main(args=None):
     rclpy.init(args=args)

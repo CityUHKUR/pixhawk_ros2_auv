@@ -102,6 +102,7 @@ class PixhawkModule(Node):
             sensor_msg.header.frame_id = 'pixhawk_node'
             sensor_msg.variance = 0.0
             self.publisher_sensor.publish(sensor_msg)
+
     
     def __connect(self):
         print("Connecting to Pixhawk...")
@@ -135,14 +136,15 @@ class PixhawkModule(Node):
     def load_command(self, node_name,preepmtive=False):
         if len(self.command_bank[node_name]) <= 0: return
         if preepmtive:
-            self.command_loader[node_name] = self.command_bank[node_name].pop(0)
+            self.command_loader[node_name] = self.command_bank[node_name].pop(0).deepcopy()
             self.command_loader[node_name].start_time = time.time()
             self.command_loader[node_name].end_time = time.time() + self.command_loader[node_name].time
+            return
         
         # TODO: implement time based command loading
-        #if self.command_loader[node_name].end_time < time.time():
-        #   self.command_loader[node_name] = self.command_bank[node_name].pop(0)
-        #    self.command_loader[node_name].start_time = time.time()
+        if self.command_loader[node_name].end_time < time.time():
+            self.command_loader[node_name] = self.command_bank[node_name].pop(0)
+            self.command_loader[node_name].start_time = time.time()
 
         
 

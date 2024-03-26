@@ -20,6 +20,9 @@ class PixhawkModule(Node):
             "sm_node": []
         }       
         self.command_loader = {}
+        self.command_loader["depth_node"] = None
+        self.command_loader["task_node"] = None
+        self.command_loader["sm_node"] = None
         self.ALLOW_RANGE = 0.5
         
         # Changed to publish Imu type instead of String
@@ -102,6 +105,7 @@ class PixhawkModule(Node):
             sensor_msg.header.frame_id = 'pixhawk_node'
             sensor_msg.variance = 0.0
             self.publisher_sensor.publish(sensor_msg)
+
     
     def __connect(self):
         print("Connecting to Pixhawk...")
@@ -133,38 +137,42 @@ class PixhawkModule(Node):
 
 
     def load_command(self, node_name,preepmtive=False):
-        if len(self.command_bank[node_name]) <= 0: return
-        if preepmtive:
-            self.command_loader[node_name] = self.command_bank[node_name].pop(0)
-            self.command_loader[node_name].start_time = time.time()
-            self.command_loader[node_name].end_time = time.time() + self.command_loader[node_name].time
-        
         # TODO: implement time based command loading
-        #if self.command_loader[node_name].end_time < time.time():
-        #   self.command_loader[node_name] = self.command_bank[node_name].pop(0)
-        #    self.command_loader[node_name].start_time = time.time()
-
-        
+        if preepmtive or self.command_loader[node_name] == None or self.command_loader[node_name].end_time < time.time():
+            if len(self.command_bank[node_name]) > 0:
+                self.command_loader[node_name] = self.command_bank[node_name].pop(0)
+                self.command_loader[node_name].start_time = time.time()
+                self.command_loader[node_name].end_time = time.time() + self.command_loader[node_name].time
+                
+            if self.command_loader[node_name] == None: return
+            if not preepmtive: self.command_loader[node_name] = None
+            
+            if preepmtive and self.command_loader[node_name].end_time < time.time():
+                self.command_loader[node_name] = None
+            
+            
 
     def control_callback(self):
         # remove commands that have expired
-        self.get_logger().info(f'Executing: "{self.command_bank}"')
+        # self.get_logger().info(f'Waiting: "{self.command_bank}"')
         for key in self.command_bank:
             if len(self.command_bank[key]) <= 0: continue
-            # find all index of the expired command
-            __expired_index = []
-            for i in range(len(self.command_bank[key])):
-                if self.command_bank[key][i].end_time < time.time(): __expired_index.append(i)
-            # remove all expired commands
-            # self.command_bank[key].pop(int(i) for i in __expired_index)
+            for item in self.command_bank[key]:
+                if item.init_time + item.time > time.time(): continue
+                self.command_bank[key].remove(item)
         
         # load commands from command bank into command loader
         self.load_command("depth_node", preepmtive=True)
         self.load_command("task_node")
         self.load_command("sm_node")
         
+        __cur = []
+        for key in self.command_loader:
+            __cur.append(self.command_loader[key].to_str() if self.command_loader[key] != None else None)
+            
+        self.get_logger().info(f'Executing: "{__cur}"')
         # compute the command to be executed
-        __command = {"x": 0, "y": 0, "z": 0, "r": 0}
+        __command = {"x": 0, "y": 0, "z": 500, "r": 0}
         for key in self.command_loader:
             __this_command = self.command_loader[key]
             if __this_command == None: continue
@@ -190,7 +198,7 @@ class PixhawkModule(Node):
     
     def listener_callback(self, msg):
         __frame_id = msg.header.frame_id
-        
+        # self.get_logger().info(f'Received: "{msg}"')
         if msg.distance != -1:
             # TODO: implement distance to time conversion
             pass
@@ -199,7 +207,7 @@ class PixhawkModule(Node):
             msg.time = 1
         
         msg_ = bank_msg(x=msg.direction.x, y=msg.direction.y, z=msg.direction.z, turn_mode=msg.turn_mode, distance=msg.distance, time_=msg.time) 
-        if __frame_id == "depth_node":
+        if __frame_id == "fucknode":
             self.command_bank["depth_node"].append(msg_)
         if __frame_id == "task1_node" or __frame_id == "task2_node" or __frame_id == "task4_node":
             self.command_bank["task_node"].append(msg_)

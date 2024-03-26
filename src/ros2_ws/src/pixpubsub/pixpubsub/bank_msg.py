@@ -24,10 +24,14 @@ class bank_msg:
         else:
             __x = map_to_range(self.x)
             __y = map_to_range(self.y)
-            __z = map_to_range(self.z, new_min=0)
+            __z = map_to_range(self.z, new_min=-500, new_max=500)
+            # __z = map_to_range(self.z)
             __r = 0
             
         return __x, __y, __z, __r
+    
+    def to_str(self):
+        return f"x: {self.x}, y: {self.y}, z: {self.z}, turn_mode: {self.turn_mode}, init_time: {self.init_time}, end_time: {self.end_time}"
 
 def map_to_range(value, old_min=-1, old_max=1, new_min=-1000, new_max=1000):
     # if value type is not float, convert it to float
