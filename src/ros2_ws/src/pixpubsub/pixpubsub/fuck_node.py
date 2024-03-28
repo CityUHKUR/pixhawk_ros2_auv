@@ -94,27 +94,31 @@ class MinimalSubscriber(Node):
 
     def depth_callback(self, msg):
         self.get_logger().info("I heard fluid_pressure {}".format(msg.fluid_pressure))
+        
         if self.first_callback:
-            self.get_logger().info("sucessfully enter callback function")
+            self.get_logger().info("Successfully entered callback function")
             self.first_callback = False
 
         if hasattr(msg, 'fluid_pressure'):
             depth = self.calculate_depth(msg.fluid_pressure)
             self.get_logger().info(f'Calculated Depth: {depth} meters')
-            if (depth > 1.8):
+
+            #SAUVC Maximum depth is 2.0, around 1.25 - 1.3 will be good for passing the gate
+
+            if depth > 1.3:
                 self.get_logger().warn("Pioneer, sink up")
                 self.move(turn_mode=False, x=0, y=0, z=1, duration=1)
 
-            elif (depth < 1.8):
+            elif depth < 1.25:
                 self.get_logger().warn("Pioneer, sink down")
-                self.move(turn_mode=False, x =0, y=0, z= -1, duration=1)
-
+                self.move(turn_mode=False, x=0, y=0, z=-1, duration=1)
+            
             else:
                 self.get_logger().info("Fine, continue to check for depth")
+
         else:
             self.get_logger().warn("The message does not contain a fluid_pressure field")
 
-    
             
 def main(args=None):
     rclpy.init(args=args)
@@ -124,7 +128,6 @@ def main(args=None):
     def ros_spin():
         nonlocal ros_shutdown
         print("ROS2 Spins")
-
         try:
             while rclpy.ok():
                 rclpy.spin_once(minimal_subscriber, timeout_sec=0.001)  # or other value
@@ -147,11 +150,10 @@ def main(args=None):
         try:
             time.sleep(1)
         except KeyboardInterrupt:
+            minimal_subscriber.destroy_node()
+            if not ros_shutdown:
+                rclpy.shutdown()
             break
-
-    if not ros_shutdown and rclpy.ok():
-        minimal_subscriber.destroy_node()
-        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
